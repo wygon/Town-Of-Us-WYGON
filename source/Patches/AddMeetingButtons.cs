@@ -4,20 +4,26 @@ using UnityEngine;
 using TownOfUs.CrewmateRoles.InvestigatorMod;
 using TownOfUs.CrewmateRoles.TrapperMod;
 using System.Collections.Generic;
-using System.Linq;
+using System.Collections;
+using TownOfUs.CrewmateRoles.DeputyMod;
+using TownOfUs.CrewmateRoles.ImitatorMod;
+using TownOfUs.CrewmateRoles.JailorMod;
+using TownOfUs.CrewmateRoles.MayorMod;
+using TownOfUs.CrewmateRoles.PoliticianMod;
+using TownOfUs.CrewmateRoles.ProsecutorMod;
+using TownOfUs.CrewmateRoles.SwapperMod;
+using TownOfUs.CrewmateRoles.VigilanteMod;
+using TownOfUs.ImpostorRoles.HypnotistMod;
+using TownOfUs.Modifiers.AssassinMod;
+using TownOfUs.NeutralRoles.DoomsayerMod;
 
-namespace TownOfUs.CrewmateRoles.ImitatorMod
+namespace TownOfUs.Patches
 {
-
-    [HarmonyPatch(typeof(PlayerControl), nameof(PlayerControl.StartMeeting))]
-    class StartMeetingPatch
+    [HarmonyPatch(typeof(MeetingHud), nameof(MeetingHud.Start))]
+    class AddMeetingButtons
     {
-        public static void Prefix(PlayerControl __instance, [HarmonyArgument(0)] NetworkedPlayerInfo meetingTarget)
+        public static void Prefix(MeetingHud __instance)
         {
-            if (__instance == null)
-            {
-                return;
-            }
             if (StartImitate.ImitatingPlayer != null && !StartImitate.ImitatingPlayer.Is(RoleEnum.Traitor))
             {
                 List<RoleEnum> trappedPlayers = null;
@@ -183,6 +189,19 @@ namespace TownOfUs.CrewmateRoles.ImitatorMod
                 Role.GetRole<Imitator>(StartImitate.ImitatingPlayer).ImitatePlayer = null;
                 StartImitate.ImitatingPlayer = null;
             }
+
+            AddButtonDeputy.AddDepButtons(__instance);
+            AddButtonImitator.AddImitatorButtons(__instance);
+            TempJail.AddTempJail(__instance);
+            AddJailButtons.AddJailorButtons(__instance);
+            AddRevealButton.AddMayorButtons(__instance);
+            AddRevealButtonPolitician.AddPoliticianButtons(__instance);
+            AddProsecute.AddProsecuteButton(__instance);
+            AddButton.AddSwapperButtons(__instance);
+            AddButtonVigi.AddVigilanteButtons(__instance);
+            AddHysteriaButton.AddHypnoButtons(__instance);
+            AddButtonAssassin.AddAssassinButtons(__instance);
+            AddButtonDoom.AddDoomsayerButtons(__instance);
             return;
         }
     }

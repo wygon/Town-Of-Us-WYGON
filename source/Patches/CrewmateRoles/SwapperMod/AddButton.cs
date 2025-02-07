@@ -1,6 +1,5 @@
 using System;
 using System.Linq;
-using HarmonyLib;
 using TownOfUs.Roles;
 using UnityEngine;
 using UnityEngine.UI;
@@ -8,7 +7,6 @@ using Object = UnityEngine.Object;
 
 namespace TownOfUs.CrewmateRoles.SwapperMod
 {
-    [HarmonyPatch(typeof(MeetingHud), nameof(MeetingHud.Start))]
     public class AddButton
     {
         private static int _mostRecentId;
@@ -112,7 +110,7 @@ namespace TownOfUs.CrewmateRoles.SwapperMod
             return Listener;
         }
 
-        public static void Postfix(MeetingHud __instance)
+        public static void AddSwapperButtons(MeetingHud __instance)
         {
             foreach (var role in Role.GetRoles(RoleEnum.Swapper))
             {

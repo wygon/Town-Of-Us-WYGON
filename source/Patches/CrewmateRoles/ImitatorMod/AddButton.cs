@@ -1,6 +1,5 @@
 using System;
 using System.Linq;
-using HarmonyLib;
 using TownOfUs.Roles;
 using UnityEngine;
 using UnityEngine.UI;
@@ -8,7 +7,6 @@ using Object = UnityEngine.Object;
 
 namespace TownOfUs.CrewmateRoles.ImitatorMod
 {
-    [HarmonyPatch(typeof(MeetingHud), nameof(MeetingHud.Start))]
     public class AddButtonImitator
     {
         private static int _mostRecentId;
@@ -115,7 +113,7 @@ namespace TownOfUs.CrewmateRoles.ImitatorMod
             return Listener;
         }
 
-        public static void Postfix(MeetingHud __instance)
+        public static void AddImitatorButtons(MeetingHud __instance)
         {
             foreach (var role in Role.GetRoles(RoleEnum.Imitator))
             {

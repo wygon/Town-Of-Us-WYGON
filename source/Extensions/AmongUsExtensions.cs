@@ -66,6 +66,7 @@ namespace TownOfUs.Extensions
             playerControl.Data.SetOutfit((PlayerOutfitType)CustomOutfitType, outfit);
             playerControl.SetOutfit(CustomOutfitType);
         }
+
         public static void SetOutfit(this PlayerControl playerControl, CustomPlayerOutfitType CustomOutfitType)
         {
             var outfitType = (PlayerOutfitType)CustomOutfitType;

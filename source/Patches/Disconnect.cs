@@ -57,6 +57,7 @@ namespace TownOfUs.Patches
             {
                 var scav = Role.GetRole<Scavenger>(PlayerControl.LocalPlayer);
                 if (scav.Target == player) scav.Target = scav.GetClosestPlayer(player);
+                scav.RegenTask();
             }
             if (MeetingHud.Instance)
             {

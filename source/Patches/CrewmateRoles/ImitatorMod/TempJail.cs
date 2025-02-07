@@ -1,4 +1,3 @@
-using HarmonyLib;
 using Reactor.Utilities.Extensions;
 using TownOfUs.Roles;
 using UnityEngine;
@@ -7,7 +6,6 @@ using Object = UnityEngine.Object;
 
 namespace TownOfUs.CrewmateRoles.ImitatorMod
 {
-    [HarmonyPatch(typeof(MeetingHud), nameof(MeetingHud.Start))]
     public class TempJail
     {
         public static Sprite CellSprite => TownOfUs.InJailSprite;
@@ -30,7 +28,7 @@ namespace TownOfUs.CrewmateRoles.ImitatorMod
             passive.OnClick = new Button.ButtonClickedEvent();
         }
 
-        public static void Postfix(MeetingHud __instance)
+        public static void AddTempJail(MeetingHud __instance)
         {
             foreach (var role in Role.GetRoles(RoleEnum.Imitator))
             {

@@ -398,7 +398,7 @@ namespace TownOfUs.CustomOption
                     }
                 }
 
-                Rpc.SendRpc();
+                Coroutines.Start(Rpc.SendRpc());
 
                 Coroutines.Start(TabPatches.Flash(__instance, ImportText, Color.green));
             }
@@ -598,12 +598,7 @@ namespace TownOfUs.CustomOption
                         var playerCount = GameOptionsManager.Instance.currentNormalGameOptions.MaxPlayers;
                         if (option.Name.StartsWith("Slot "))
                         {
-                            try
-                            {
-                                int slotNumber = int.Parse(option.Name[5..]);
-                                if (slotNumber > GameOptionsManager.Instance.currentNormalGameOptions.MaxPlayers) continue;
-                            }
-                            catch { }
+                            continue;
                         }
 
                         ViewSettingsInfoPanel panel = UnityEngine.Object.Instantiate<ViewSettingsInfoPanel>(__instance.infoPanelOrigin);
@@ -631,27 +626,15 @@ namespace TownOfUs.CustomOption
             }
         }
 
-        [HarmonyPatch(typeof(PlayerControl), nameof(PlayerControl.RpcSyncSettings))]
-        private class PlayerControlPatch
-        {
-            public static void Postfix()
-            {
-                if (PlayerControl.AllPlayerControls.Count < 2 || !AmongUsClient.Instance ||
-                    !PlayerControl.LocalPlayer || !AmongUsClient.Instance.AmHost) return;
-
-                Rpc.SendRpc();
-            }
-        }
-
         [HarmonyPatch(typeof(PlayerPhysics), nameof(PlayerPhysics.CoSpawnPlayer))]
         private class PlayerJoinPatch
         {
-            public static void Postfix()
+            public static void Postfix(PlayerPhysics __instance)
             {
                 if (PlayerControl.AllPlayerControls.Count < 2 || !AmongUsClient.Instance ||
                     !PlayerControl.LocalPlayer || !AmongUsClient.Instance.AmHost) return;
 
-                Rpc.SendRpc();
+                Coroutines.Start(Rpc.SendRpc(RecipientId: __instance.myPlayer.OwnerId));
             }
         }
 

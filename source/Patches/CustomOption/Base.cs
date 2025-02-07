@@ -1,5 +1,7 @@
 using System;
 using System.Collections.Generic;
+using Reactor.Localization.Utilities;
+using Reactor.Utilities;
 
 namespace TownOfUs.CustomOption
 {
@@ -12,6 +14,7 @@ namespace TownOfUs.CustomOption
         public Func<object, string> Format;
         public string Name;
 
+        public StringNames StringName;
 
         protected internal CustomOption(int id, MultiMenu menu, string name, CustomOptionType type, object defaultValue,
             Func<object, string> format = null)
@@ -26,6 +29,8 @@ namespace TownOfUs.CustomOption
             if (Type == CustomOptionType.Button) return;
             AllOptions.Add(this);
             Set(Value);
+
+            StringName = CustomStringName.CreateAndRegister(name);
         }
 
         protected internal object Value { get; set; }
@@ -50,7 +55,7 @@ namespace TownOfUs.CustomOption
 
             Value = value;
 
-            if (Setting != null && AmongUsClient.Instance.AmHost && SendRpc) Rpc.SendRpc(this);
+            if (Setting != null && AmongUsClient.Instance.AmHost && SendRpc) Coroutines.Start(Rpc.SendRpc(this));
 
             try
             {
@@ -77,6 +82,11 @@ namespace TownOfUs.CustomOption
             }
             catch
             {
+            }
+
+            if (HudManager.InstanceExists && Type != CustomOptionType.Header)
+            {
+                HudManager.Instance.Notifier.AddSettingsChangeMessage(StringName, ToString());
             }
         }
     }

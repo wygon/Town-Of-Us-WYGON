@@ -1,5 +1,4 @@
 ﻿using System;
-using HarmonyLib;
 using Reactor.Utilities;
 using Reactor.Utilities.Extensions;
 using TMPro;
@@ -12,8 +11,7 @@ using Object = UnityEngine.Object;
 
 namespace TownOfUs.CrewmateRoles.VigilanteMod
 {
-    [HarmonyPatch(typeof(MeetingHud), nameof(MeetingHud.Start))]
-    public class AddButton
+    public class AddButtonVigi
     {
         private static Sprite CycleBackSprite => TownOfUs.CycleBackSprite;
         private static Sprite CycleForwardSprite => TownOfUs.CycleForwardSprite;
@@ -176,7 +174,7 @@ namespace TownOfUs.CrewmateRoles.VigilanteMod
             return Listener;
         }
 
-        public static void Postfix(MeetingHud __instance)
+        public static void AddVigilanteButtons(MeetingHud __instance)
         {
             foreach (var role in Role.GetRoles(RoleEnum.Vigilante))
             {

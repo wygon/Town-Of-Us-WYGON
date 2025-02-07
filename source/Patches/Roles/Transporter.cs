@@ -11,6 +11,7 @@ using TownOfUs.CrewmateRoles.MedicMod;
 using TownOfUs.Patches.NeutralRoles;
 using TownOfUs.Roles.Modifiers;
 using TownOfUs.Modifiers.ShyMod;
+using TownOfUs.Extensions;
 
 namespace TownOfUs.Roles
 {
@@ -83,14 +84,14 @@ namespace TownOfUs.Roles
                 foreach (var body in deadBodies) if (body.ParentId == TP2.PlayerId) Player2Body = body;
                 if (Player2Body == null) yield break;
             }
-            if (TP1.Is(ModifierEnum.Shy))
+            if (TP1.Is(ModifierEnum.Shy) && TP1.GetCustomOutfitType() == CustomPlayerOutfitType.Default)
             {
                 var shy = Modifier.GetModifier<Shy>(TP1);
                 shy.Opacity = 1f;
                 HudManagerUpdate.SetVisiblity(TP1, shy.Opacity);
                 shy.Moving = true;
             }
-            if (TP2.Is(ModifierEnum.Shy))
+            if (TP2.Is(ModifierEnum.Shy) && TP2.GetCustomOutfitType() == CustomPlayerOutfitType.Default)
             {
                 var shy = Modifier.GetModifier<Shy>(TP2);
                 shy.Opacity = 1f;
@@ -119,14 +120,27 @@ namespace TownOfUs.Roles
             {
                 TP1.MyPhysics.ResetMoveState();
                 TP2.MyPhysics.ResetMoveState();
-                var TempPosition = TP1.GetTruePosition();
-                TP1.transform.position = new Vector2(TP2.GetTruePosition().x, TP2.GetTruePosition().y + 0.3636f);
-                TP1.NetTransform.SnapTo(new Vector2(TP2.GetTruePosition().x, TP2.GetTruePosition().y + 0.3636f));
+                var TP1Position = TP1.GetTruePosition();
+                TP1Position = new Vector2(TP1Position.x, TP1Position.y + 0.3636f);
+                var TP2Position = TP2.GetTruePosition();
+                TP2Position = new Vector2(TP2Position.x, TP2Position.y + 0.3636f);
+                if (TP1.GetAppearance().SizeFactor == new Vector3(0.4f, 0.4f, 1.0f))
+                {
+                    TP1Position = new Vector2(TP1Position.x, TP1Position.y + SizePatch.Radius * 0.75f);
+                    TP2Position = new Vector2(TP2Position.x, TP2Position.y - SizePatch.Radius * 0.75f);
+                }
+                if (TP2.GetAppearance().SizeFactor == new Vector3(0.4f, 0.4f, 1.0f))
+                {
+                    TP1Position = new Vector2(TP1Position.x, TP1Position.y - SizePatch.Radius * 0.75f);
+                    TP2Position = new Vector2(TP2Position.x, TP2Position.y + SizePatch.Radius * 0.75f);
+                }
+                TP1.transform.position = TP2Position;
+                TP1.NetTransform.SnapTo(TP2Position);
                 if (die) Utils.MurderPlayer(TP1, TP2, true);
                 else
                 {
-                    TP2.transform.position = new Vector2(TempPosition.x, TempPosition.y + 0.3636f);
-                    TP2.NetTransform.SnapTo(new Vector2(TempPosition.x, TempPosition.y + 0.3636f));
+                    TP2.transform.position = TP1Position;
+                    TP2.NetTransform.SnapTo(TP1Position);
                 }
 
                 if (SubmergedCompatibility.isSubmerged())
@@ -148,10 +162,18 @@ namespace TownOfUs.Roles
             {
                 StopDragging(Player1Body.ParentId);
                 TP2.MyPhysics.ResetMoveState();
-                var TempPosition = Player1Body.TruePosition;
-                Player1Body.transform.position = TP2.GetTruePosition();
-                TP2.transform.position = new Vector2(TempPosition.x, TempPosition.y + 0.3636f);
-                TP2.NetTransform.SnapTo(new Vector2(TempPosition.x, TempPosition.y + 0.3636f));
+                var TP1Position = Player1Body.TruePosition;
+                TP1Position = new Vector2(TP1Position.x, TP1Position.y + 0.3636f);
+                var TP2Position = TP2.GetTruePosition();
+                TP2Position = new Vector2(TP2Position.x, TP2Position.y + 0.3636f);
+                if (TP2.GetAppearance().SizeFactor == new Vector3(0.4f, 0.4f, 1.0f))
+                {
+                    TP1Position = new Vector2(TP1Position.x, TP1Position.y - SizePatch.Radius * 0.75f);
+                    TP2Position = new Vector2(TP2Position.x, TP2Position.y + SizePatch.Radius * 0.75f);
+                }
+                Player1Body.transform.position = TP2Position;
+                TP2.transform.position = TP1Position;
+                TP2.NetTransform.SnapTo(TP1Position);
 
                 if (SubmergedCompatibility.isSubmerged())
                 {
@@ -160,17 +182,25 @@ namespace TownOfUs.Roles
                         SubmergedCompatibility.ChangeFloor(TP2.GetTruePosition().y > -7);
                         SubmergedCompatibility.CheckOutOfBoundsElevator(PlayerControl.LocalPlayer);
                     }
-
                 }
             }
             else if (Player1Body == null && Player2Body != null)
             {
                 StopDragging(Player2Body.ParentId);
                 TP1.MyPhysics.ResetMoveState();
-                var TempPosition = TP1.GetTruePosition();
-                TP1.transform.position = new Vector2(TP2.GetTruePosition().x, TP2.GetTruePosition().y + 0.3636f);
-                TP1.NetTransform.SnapTo(new Vector2(Player2Body.TruePosition.x, Player2Body.TruePosition.y + 0.3636f));
-                Player2Body.transform.position = TempPosition;
+                var TP1Position = TP1.GetTruePosition();
+                TP1Position = new Vector2(TP1Position.x, TP1Position.y + 0.3636f);
+                var TP2Position = Player2Body.TruePosition;
+                TP2Position = new Vector2(TP2Position.x, TP2Position.y + 0.3636f);
+                if (TP1.GetAppearance().SizeFactor == new Vector3(0.4f, 0.4f, 1.0f))
+                {
+                    TP1Position = new Vector2(TP1Position.x, TP1Position.y + SizePatch.Radius * 0.75f);
+                    TP2Position = new Vector2(TP2Position.x, TP2Position.y - SizePatch.Radius * 0.75f);
+                }
+                Player2Body.transform.position = TP1Position;
+                TP1.transform.position = TP2Position;
+                TP1.NetTransform.SnapTo(TP2Position);
+
                 if (SubmergedCompatibility.isSubmerged())
                 {
                     if (PlayerControl.LocalPlayer.PlayerId == TP1.PlayerId)

@@ -30,6 +30,7 @@ namespace TownOfUs.ImpostorRoles.BlackmailerMod
 
                 foreach (var role in blackmailers)
                 {
+                    if (PlayerControl.LocalPlayer == role.Blackmailed) DestroyableSingleton<HudManager>.Instance.Chat.AddChat(PlayerControl.LocalPlayer, "You are blackmailed, you can't talk");
                     if (role.Blackmailed?.PlayerId == PlayerControl.LocalPlayer.PlayerId && !role.Blackmailed.Data.IsDead)
                     {
                         Coroutines.Start(BlackmailShhh());

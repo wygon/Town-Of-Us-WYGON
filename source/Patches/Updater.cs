@@ -58,7 +58,7 @@ namespace TownOfUs
             }
         }
 
-        private static void UpdateButton(MainMenuManager __instance, Action Onclick, int _pos=0)
+        private static void UpdateButton(MainMenuManager __instance, Action Onclick, int _pos = 0)
         {
             var template = GameObject.Find("ExitGameButton");
             if (template != null)
@@ -73,8 +73,8 @@ namespace TownOfUs
                 SpriteRenderer ButtonSprite = Button.transform.GetChild(1).GetComponent<SpriteRenderer>();
                 passiveButton.OnClick = new UnityEngine.UI.Button.ButtonClickedEvent();
 
-                ButtonSprite.sprite = TOUUpdateSprite;
-                Button.transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = TOUUpdateSprite;
+                ButtonSprite.sprite = _pos == 0 ? TOUUpdateSprite : SubmergedUpdateSprite;
+                Button.transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = _pos == 0 ? TOUUpdateSprite : SubmergedUpdateSprite;
 
                 Button.transform.SetParent(GameObject.Find("RightPanel").transform);
                 var pos = Button.GetComponent<AspectPosition>();

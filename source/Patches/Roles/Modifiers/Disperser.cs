@@ -9,6 +9,7 @@ using Reactor.Networking.Extensions;
 using System;
 using TownOfUs.Patches;
 using TownOfUs.Modifiers.ShyMod;
+using TownOfUs.Extensions;
 
 namespace TownOfUs.Roles.Modifiers
 {
@@ -25,9 +26,6 @@ namespace TownOfUs.Roles.Modifiers
             Color = Patches.Colors.Impostor;
             StartingCooldown = DateTime.UtcNow;
             ModifierType = ModifierEnum.Disperser;
-
-            Logger<TownOfUs>.Info("DISPERSER -==-=-=-=-=-=-=-=-=----------");
-            if (PlayerControl.LocalPlayer == player) Logger<TownOfUs>.Info("ME -==-=-=-=-=-=-=-=-=----------");
         }
         public float StartTimer()
         {
@@ -86,9 +84,14 @@ namespace TownOfUs.Roles.Modifiers
             foreach ((byte key, Vector2 value) in coordinates)
             {
                 PlayerControl player = Utils.PlayerById(key);
-                player.transform.position = value;
-                if (PlayerControl.LocalPlayer == player) PlayerControl.LocalPlayer.NetTransform.RpcSnapTo(value);
-                if (player.Is(ModifierEnum.Shy))
+                var position = value;
+                if (player.GetAppearance().SizeFactor == new Vector3(0.4f, 0.4f, 1.0f))
+                {
+                    position = new Vector2(position.x, position.y - SizePatch.Radius * 0.75f);
+                }
+                player.transform.position = position;
+                if (PlayerControl.LocalPlayer == player) PlayerControl.LocalPlayer.NetTransform.RpcSnapTo(position);
+                if (player.Is(ModifierEnum.Shy) && player.GetCustomOutfitType() == CustomPlayerOutfitType.Default)
                 {
                     var shy = GetModifier<Shy>(player);
                     shy.Opacity = 1f;

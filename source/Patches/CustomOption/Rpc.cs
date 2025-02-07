@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using Hazel;
@@ -8,8 +9,10 @@ namespace TownOfUs.CustomOption
 {
     public static class Rpc
     {
-        public static void SendRpc(CustomOption optionn = null)
+        public static IEnumerator SendRpc(CustomOption optionn = null, int RecipientId = -1)
         {
+            yield return new WaitForSecondsRealtime(0.5f);
+
             List<CustomOption> options;
             if (optionn != null)
                 options = new List<CustomOption> {optionn};
@@ -17,13 +20,13 @@ namespace TownOfUs.CustomOption
                 options = CustomOption.AllOptions;
 
             var writer = AmongUsClient.Instance.StartRpcImmediately(PlayerControl.LocalPlayer.NetId,
-                (byte) CustomRPC.SyncCustomSettings, SendOption.Reliable);
+                (byte) CustomRPC.SyncCustomSettings, SendOption.Reliable, RecipientId);
             foreach (var option in options)
             {
                 if (writer.Position > 1000) {
                     AmongUsClient.Instance.FinishRpcImmediately(writer);
                     writer = AmongUsClient.Instance.StartRpcImmediately(PlayerControl.LocalPlayer.NetId,
-                        (byte) CustomRPC.SyncCustomSettings, SendOption.Reliable);
+                        (byte) CustomRPC.SyncCustomSettings, SendOption.Reliable, RecipientId);
                 }
                 writer.Write(option.ID);
                 if (option.Type == CustomOptionType.Toggle) writer.Write((bool) option.Value);
@@ -59,8 +62,6 @@ namespace TownOfUs.CustomOption
                         panel.titleText.text = customOption.Name;
                     }
                 }
-
-                //PluginSingleton<TownOfUs>.Instance.Log.LogInfo($"{customOption?.Name} : {customOption}:");
             }
         }
     }

@@ -53,16 +53,21 @@ namespace TownOfUs
         {
             if (__instance.AmHost)
             {
-                if (CustomGameOptions.SmallMapHalfVision && vision != 0) GameOptionsManager.Instance.currentNormalGameOptions.CrewLightMod = vision;
-                if (GameOptionsManager.Instance.currentNormalGameOptions.MapId == 1) AdjustCooldowns(CustomGameOptions.SmallMapDecreasedCooldown);
-                if (GameOptionsManager.Instance.currentNormalGameOptions.MapId >= 4) AdjustCooldowns(-CustomGameOptions.LargeMapIncreasedCooldown);
-                if (CustomGameOptions.RandomMapEnabled) GameOptionsManager.Instance.currentNormalGameOptions.MapId = previousMap;
-                if (!(commonTasks == 0 && shortTasks == 0 && longTasks == 0))
-                {
-                    GameOptionsManager.Instance.currentNormalGameOptions.NumCommonTasks = commonTasks;
-                    GameOptionsManager.Instance.currentNormalGameOptions.NumShortTasks = shortTasks;
-                    GameOptionsManager.Instance.currentNormalGameOptions.NumLongTasks = longTasks;
-                }
+                Reset();
+            }
+        }
+
+        public static void Reset()
+        {
+            if (CustomGameOptions.SmallMapHalfVision && vision != 0) GameOptionsManager.Instance.currentNormalGameOptions.CrewLightMod = vision;
+            if (GameOptionsManager.Instance.currentNormalGameOptions.MapId == 1) AdjustCooldowns(CustomGameOptions.SmallMapDecreasedCooldown);
+            if (GameOptionsManager.Instance.currentNormalGameOptions.MapId >= 4) AdjustCooldowns(-CustomGameOptions.LargeMapIncreasedCooldown);
+            if (CustomGameOptions.RandomMapEnabled) GameOptionsManager.Instance.currentNormalGameOptions.MapId = previousMap;
+            if (!(commonTasks == 0 && shortTasks == 0 && longTasks == 0))
+            {
+                GameOptionsManager.Instance.currentNormalGameOptions.NumCommonTasks = commonTasks;
+                GameOptionsManager.Instance.currentNormalGameOptions.NumShortTasks = shortTasks;
+                GameOptionsManager.Instance.currentNormalGameOptions.NumLongTasks = longTasks;
             }
         }
 

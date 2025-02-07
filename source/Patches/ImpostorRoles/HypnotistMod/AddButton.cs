@@ -1,6 +1,4 @@
 using System;
-using HarmonyLib;
-using Reactor.Utilities;
 using Reactor.Utilities.Extensions;
 using TownOfUs.Roles;
 using UnityEngine;
@@ -9,7 +7,6 @@ using Object = UnityEngine.Object;
 
 namespace TownOfUs.ImpostorRoles.HypnotistMod
 {
-    [HarmonyPatch(typeof(MeetingHud), nameof(MeetingHud.Start))]
     public class AddHysteriaButton
     {
         public static Sprite HysteriaSprite => TownOfUs.HysteriaSprite;
@@ -47,7 +44,7 @@ namespace TownOfUs.ImpostorRoles.HypnotistMod
             return Listener;
         }
 
-        public static void Postfix(MeetingHud __instance)
+        public static void AddHypnoButtons(MeetingHud __instance)
         {
             foreach (var role in Role.GetRoles(RoleEnum.Hypnotist))
             {

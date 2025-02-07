@@ -1581,7 +1581,7 @@ namespace TownOfUs
                 if (CustomGameOptions.SeerOn > 0)
                     CrewmateInvestigativeRoles.Add((typeof(Seer), CustomGameOptions.SeerOn, false || CustomGameOptions.UniqueRoles));
 
-                if (CustomGameOptions.SpyOn > 0)
+                if (CustomGameOptions.SpyOn > 0 && GameOptionsManager.Instance.currentNormalGameOptions.MapId != 5)
                     CrewmateInvestigativeRoles.Add((typeof(Spy), CustomGameOptions.SpyOn, false || CustomGameOptions.UniqueRoles));
 
                 if (CustomGameOptions.SnitchOn > 0)
@@ -1722,7 +1722,7 @@ namespace TownOfUs
                     ImpostorKillingRoles.Add((typeof(Scavenger), CustomGameOptions.ScavengerOn, false || CustomGameOptions.UniqueRoles));
                 #endregion
                 #region Crewmate Modifiers
-                if (Check(CustomGameOptions.TorchOn))
+                if (Check(CustomGameOptions.TorchOn) && GameOptionsManager.Instance.currentNormalGameOptions.MapId != 5)
                     CrewmateModifiers.Add((typeof(Torch), CustomGameOptions.TorchOn));
 
                 if (Check(CustomGameOptions.DiseasedOn))

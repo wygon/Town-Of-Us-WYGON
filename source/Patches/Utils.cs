@@ -692,11 +692,11 @@ namespace TownOfUs
 
                 if (target.GetAppearance().SizeFactor == new Vector3(0.4f, 0.4f, 1f))
                 {
-                    target.transform.localPosition += new Vector3(0f, 0.1f, 0f);
+                    target.transform.localPosition += new Vector3(0f, SizePatch.Radius * 0.75f, 0f);
                 }
                 else if (killer.GetAppearance().SizeFactor == new Vector3(0.4f, 0.4f, 1f))
                 {
-                    target.transform.localPosition -= new Vector3(0f, 0.1f, 0f);
+                    target.transform.localPosition -= new Vector3(0f, SizePatch.Radius * 0.75f, 0f);
                 }
 
                 if (killer.Is(ModifierEnum.Shy) && killer.GetCustomOutfitType() == CustomPlayerOutfitType.Default)
@@ -924,6 +924,7 @@ namespace TownOfUs
                 {
                     var scav = Role.GetRole<Scavenger>(PlayerControl.LocalPlayer);
                     if (scav.Target == target) scav.Target = scav.GetClosestPlayer();
+                    scav.RegenTask();
                 }
 
                 if (MeetingHud.Instance) target.Exiled();

@@ -2,7 +2,6 @@
 using System.Linq;
 using TownOfUs.Extensions;
 using UnityEngine;
-using System;
 
 namespace TownOfUs.Patches
 {
@@ -21,6 +20,23 @@ namespace TownOfUs.Patches
                 CircleCollider2D collider = player.Collider.Caster<CircleCollider2D>();
                 if (player.Data != null && !(player.Data.IsDead || player.Data.Disconnected))
                 {
+                    if (player.transform.localScale != player.GetAppearance().SizeFactor)
+                    {
+                        if (player.GetAppearance().SizeFactor == new Vector3(0.4f, 0.4f, 1.0f))
+                        {
+                            var pos = player.transform.localPosition;
+                            pos -= new Vector3(0f, Radius * 0.75f, 0f);
+                            player.transform.localPosition = pos;
+                            player.NetTransform.SnapTo(pos);
+                        }
+                        else if (player.transform.localScale == new Vector3(0.4f, 0.4f, 1.0f))
+                        {
+                            var pos = player.transform.localPosition;
+                            pos += new Vector3(0f, Radius * 0.75f, 0f);
+                            player.transform.localPosition = pos;
+                            player.NetTransform.SnapTo(pos);
+                        }
+                    }
                     player.transform.localScale = player.GetAppearance().SizeFactor;
                     if (player.GetAppearance().SizeFactor == new Vector3(0.4f, 0.4f, 1.0f))
                     {

@@ -1,6 +1,5 @@
 using System;
 using System.Linq;
-using HarmonyLib;
 using Il2CppInterop.Runtime.InteropTypes.Arrays;
 using Reactor.Utilities.Extensions;
 using TownOfUs.CrewmateRoles.MedicMod;
@@ -22,7 +21,6 @@ using TownOfUs.CrewmateRoles.DeputyMod;
 
 namespace TownOfUs.CrewmateRoles.JailorMod
 {
-    [HarmonyPatch(typeof(MeetingHud), nameof(MeetingHud.Start))]
     public class AddJailButtons
     {
         public static Sprite CellSprite => TownOfUs.InJailSprite;
@@ -377,7 +375,7 @@ namespace TownOfUs.CrewmateRoles.JailorMod
             AddHauntPatch.AssassinatedPlayers.Add(player);
         }
 
-        public static void Postfix(MeetingHud __instance)
+        public static void AddJailorButtons(MeetingHud __instance)
         {
             foreach (var role in Role.GetRoles(RoleEnum.Jailor))
             {

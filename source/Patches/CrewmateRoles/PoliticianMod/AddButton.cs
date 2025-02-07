@@ -1,19 +1,14 @@
 using System;
 using System.Linq;
-using HarmonyLib;
 using Reactor.Utilities.Extensions;
-using TMPro;
-using TownOfUs.Modifiers.AssassinMod;
 using TownOfUs.Roles;
-using TownOfUs.Roles.Modifiers;
 using UnityEngine;
 using UnityEngine.UI;
 using Object = UnityEngine.Object;
 
 namespace TownOfUs.CrewmateRoles.PoliticianMod
 {
-    [HarmonyPatch(typeof(MeetingHud), nameof(MeetingHud.Start))]
-    public class AddRevealButton
+    public class AddRevealButtonPolitician
     {
         public static Sprite RevealSprite => TownOfUs.RevealSprite;
 
@@ -42,7 +37,7 @@ namespace TownOfUs.CrewmateRoles.PoliticianMod
             void Listener()
             {
                 role.RevealButton.Destroy();
-                if (role.CampaignedPlayers.ToArray().Where(x => Utils.PlayerById(x) != null && Utils.PlayerById(x).Data != null && !Utils.PlayerById(x).Data.IsDead && !Utils.PlayerById(x).Data.Disconnected && Utils.PlayerById(x).Is(Faction.Crewmates)).ToList().Count * 2 >= 
+                if (role.CampaignedPlayers.ToArray().Where(x => Utils.PlayerById(x) != null && Utils.PlayerById(x).Data != null && !Utils.PlayerById(x).Data.IsDead && !Utils.PlayerById(x).Data.Disconnected && Utils.PlayerById(x).Is(Faction.Crewmates)).ToList().Count * 2 >=
                     PlayerControl.AllPlayerControls.ToArray().Where(x => !x.Data.IsDead && !x.Data.Disconnected && x.Is(Faction.Crewmates) && !x.Is(RoleEnum.Politician)).ToList().Count)
                 {
                     Role.RoleDictionary.Remove(role.Player.PlayerId);
@@ -51,13 +46,17 @@ namespace TownOfUs.CrewmateRoles.PoliticianMod
                     mayorRole.RegenTask();
                     Utils.Rpc(CustomRPC.Elect, role.Player.PlayerId);
                 }
-                else role.CanCampaign = false;
+                else
+                {
+                    role.CanCampaign = false;
+                    DestroyableSingleton<HudManager>.Instance.Chat.AddChat(PlayerControl.LocalPlayer, "You need to campaign more Crewmates! However, you may not campaign next round");
+                }
             }
 
             return Listener;
         }
 
-        public static void Postfix(MeetingHud __instance)
+        public static void AddPoliticianButtons(MeetingHud __instance)
         {
             foreach (var role in Role.GetRoles(RoleEnum.Politician))
             {

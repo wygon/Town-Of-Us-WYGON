@@ -41,6 +41,7 @@ Join our [Discord](https://discord.gg/ugyc4EVUYZ) if you have any problems or wa
 # Releases
 | Among Us - Version| Mod Version | Link |
 |----------|-------------|-----------------|
+| 2024.10.29s & 2024.10.29e | v5.2.1 | [Download](https://github.com/eDonnes124/Town-Of-Us/releases/download/v5.2.1/ToU.v5.2.1.zip) |
 | 2024.10.29s & 2024.10.29e | v5.2.0 | [Download](https://github.com/eDonnes124/Town-Of-Us/releases/download/v5.2.0/ToU.v5.2.0.zip) |
 | 2024.10.29s & 2024.10.29e | v5.1.2 | [Download](https://github.com/eDonnes124/Town-Of-Us/releases/download/v5.1.2/ToU.v5.1.2.zip) |
 | 2024.9.4s & 2024.9.4e | v5.1.1 | [Download](https://github.com/eDonnes124/Town-Of-Us/releases/download/v5.1.1/ToU.v5.1.1.zip) |
@@ -108,6 +109,19 @@ Join our [Discord](https://discord.gg/ugyc4EVUYZ) if you have any problems or wa
 
 <details>
   <summary> Changelog </summary>
+  <details>
+  <summary> v5.2.1 </summary>
+  <ul> <li>Bug Fix: Warden/Warlock Chat Command Issue</li> </ul>
+  <ul> <li>Bug Fix: Mini clipping out of the map when transported, dispersed or morphed</li> </ul>
+  <ul> <li>Bug Fix: Imitator not changing back correctly upon meeting beginning</li> </ul>
+  <ul> <li>Bug Fix: Scavenger task text not updating when target is killed or disconnects</li> </ul>
+  <ul> <li>Disabled Spy and Torch on Fungle</li> </ul>
+  <ul> <li>Divided the Hat Tabs Up, courtesy of @whichtwix</li> </ul>
+  <ul> <li>Notification for modded settings change, courtesy of @whichtwix</li> </ul>
+  <ul> <li>Fixed some issues with lag when players join the game, courtesy of @whichtwix and @lekillerdesgames</li> </ul>
+  <ul> <li>Display Role List in lobby, courtesy of @ItzLoonie</li> </ul>
+  <ul> <li>Cancel start game button, courtesy of @Tommy-XL</li> </ul>
+  </details>
   <details>
   <summary> v5.2.0 </summary>
   <ul> <li>Role Distribution Changed to Hybrid system between role lists and percentages (game modes removed as they can be set up through role lists)</li> </ul>
@@ -939,7 +953,7 @@ On top of this, the Mystic briefly gets an arrow pointing in the direction of th
 ## Oracle
 ### **Team: Crewmates**
 The Oracle is a Crewmate that can get another player to confess information to them.\
-The Oracle has 3 abilities, the first is that when they die, the person confessin to them will reveal their alignment.\
+The Oracle has 3 abilities, the first is that when they die, the person confessing to them will reveal their alignment.\
 The second, is that every meeting the Oracle receives a confession about who might be evil.\
 The final ability is giving a blessing to the person confessing to them, with this the confessing player gains vote immunity!
 ### Game Options

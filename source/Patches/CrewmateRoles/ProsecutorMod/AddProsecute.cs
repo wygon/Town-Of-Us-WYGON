@@ -16,28 +16,22 @@ namespace TownOfUs.CrewmateRoles.ProsecutorMod
             role.Prosecute.GetComponentsInChildren<TextMeshPro>()[0].text = "Prosecute";
         }
 
-
-        [HarmonyPatch(typeof(MeetingHud), nameof(MeetingHud.Start))]
-        public class MeetingHudStart
+        public static void GenButton(Prosecutor role, MeetingHud __instance)
         {
-            public static void GenButton(Prosecutor role, MeetingHud __instance)
-            {
-                var skip = __instance.SkipVoteButton;
-                role.Prosecute = Object.Instantiate(skip, skip.transform.parent);
-                role.Prosecute.Parent = __instance;
-                role.Prosecute.SetTargetPlayerId(251);
-                role.Prosecute.transform.localPosition = skip.transform.localPosition +
-                                                       new Vector3(0f, -0.17f, 0f);
-                skip.transform.localPosition += new Vector3(0f, 0.20f, 0f);
-                UpdateButton(role, __instance);
-            }
+            var skip = __instance.SkipVoteButton;
+            role.Prosecute = Object.Instantiate(skip, skip.transform.parent);
+            role.Prosecute.Parent = __instance;
+            role.Prosecute.SetTargetPlayerId(251);
+            role.Prosecute.transform.localPosition = skip.transform.localPosition + new Vector3(0f, -0.17f, 0f);
+            skip.transform.localPosition += new Vector3(0f, 0.20f, 0f);
+            UpdateButton(role, __instance);
+        }
 
-            public static void Postfix(MeetingHud __instance)
-            {
-                if (!PlayerControl.LocalPlayer.Is(RoleEnum.Prosecutor)) return;
-                var prosRole = Role.GetRole<Prosecutor>(PlayerControl.LocalPlayer);
-                GenButton(prosRole, __instance);
-            }
+        public static void AddProsecuteButton(MeetingHud __instance)
+        {
+            if (!PlayerControl.LocalPlayer.Is(RoleEnum.Prosecutor)) return;
+            var prosRole = Role.GetRole<Prosecutor>(PlayerControl.LocalPlayer);
+            GenButton(prosRole, __instance);
         }
 
         [HarmonyPatch(typeof(MeetingHud), nameof(MeetingHud.ClearVote))]

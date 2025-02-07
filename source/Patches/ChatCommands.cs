@@ -268,11 +268,6 @@ namespace TownOfUs.Patches
                         AddRoleMessage(RoleEnum.Prosecutor);
                         return false;
                     }
-                    else if (chatText.ToLower().StartsWith("/war") || chatText.ToLower().StartsWith("/ war"))
-                    {
-                        AddRoleMessage(RoleEnum.Warlock);
-                        return false;
-                    }
                     else if (chatText.ToLower().StartsWith("/ora") || chatText.ToLower().StartsWith("/ ora"))
                     {
                         AddRoleMessage(RoleEnum.Oracle);
@@ -296,6 +291,11 @@ namespace TownOfUs.Patches
                     else if (chatText.ToLower().StartsWith("/ward") || chatText.ToLower().StartsWith("/ ward"))
                     {
                         AddRoleMessage(RoleEnum.Warden);
+                        return false;
+                    }
+                    else if (chatText.ToLower().StartsWith("/war") || chatText.ToLower().StartsWith("/ war"))
+                    {
+                        AddRoleMessage(RoleEnum.Warlock);
                         return false;
                     }
                     else if (chatText.ToLower().StartsWith("/hypno") || chatText.ToLower().StartsWith("/ hypno"))
