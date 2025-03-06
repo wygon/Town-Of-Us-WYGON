@@ -138,10 +138,14 @@ namespace TownOfUs
             Generate.MimicCooldownOption.Set((float)Generate.MimicCooldownOption.Value + change, false);
             Generate.HackCooldownOption.Set((float)Generate.HackCooldownOption.Value + change, false);
             Generate.GlitchKillCooldownOption.Set((float)Generate.GlitchKillCooldownOption.Value + change, false);
+            Generate.IcenbergKillCooldown.Set((float)Generate.IcenbergKillCooldown.Value + change, false);
             Generate.RampageCooldown.Set((float)Generate.RampageCooldown.Value + change, false);
             Generate.GrenadeCooldown.Set((float)Generate.GrenadeCooldown.Value + change, false);
             Generate.MorphlingCooldown.Set((float)Generate.MorphlingCooldown.Value + change, false);
             Generate.SwoopCooldown.Set((float)Generate.SwoopCooldown.Value + change, false);
+            Generate.NoclipCooldown.Set((float)Generate.NoclipCooldown.Value + change, false);
+            Generate.WingManCooldown.Set((float)Generate.WingManCooldown.Value + change, false);
+            Generate.RewindCooldown.Set((float)Generate.RewindCooldown.Value + change, false);
             Generate.MineCooldown.Set((float)Generate.MineCooldown.Value + change, false);
             Generate.DragCooldown.Set((float)Generate.DragCooldown.Value + change, false);
             Generate.EscapeCooldown.Set((float)Generate.EscapeCooldown.Value + change, false);

@@ -13,6 +13,7 @@ namespace TownOfUs
         Executioner,
         Spy,
         Glitch,
+        Icenberg,
         Snitch,
         Arsonist,
         Altruist,
@@ -46,6 +47,8 @@ namespace TownOfUs
         SoulCollector,
         Lookout,
         Deputy,
+        Falcon,
+        TimeLord,
 
         Miner,
         Swooper,
@@ -61,11 +64,12 @@ namespace TownOfUs
         Venerer,
         Hypnotist,
         Scavenger,
+        Noclip,
 
         Crewmate,
         Impostor,
 
-        None
+        None,
     }
 
     public enum ModifierEnum

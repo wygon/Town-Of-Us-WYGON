@@ -103,6 +103,11 @@ namespace TownOfUs.Patches
                         AddRoleMessage(RoleEnum.Glitch);
                         return false;
                     }
+                    else if (chatText.ToLower().StartsWith("/ice") || chatText.ToLower().StartsWith("/ ice"))
+                    {
+                        AddRoleMessage(RoleEnum.Icenberg);
+                        return false;
+                    }
                     else if (chatText.ToLower().StartsWith("/jest") || chatText.ToLower().StartsWith("/ jest"))
                     {
                         AddRoleMessage(RoleEnum.Jester);
@@ -324,6 +329,22 @@ namespace TownOfUs.Patches
                         AddRoleMessage(RoleEnum.Deputy);
                         return false;
                     }
+                    else if (chatText.ToLower().StartsWith("/noc") || chatText.ToLower().StartsWith("/ noc"))
+                    {
+                        AddRoleMessage(RoleEnum.Noclip);
+                        return false;
+                    }
+                    else if (chatText.ToLower().StartsWith("/fal") || chatText.ToLower().StartsWith("/ fal"))
+                    {
+                        AddRoleMessage(RoleEnum.Falcon);
+                        return false;
+                    }                   
+                    else if (chatText.ToLower().StartsWith("/time") || chatText.ToLower().StartsWith("/ time")
+                    || chatText.ToLower().StartsWith("/tl") || chatText.ToLower().StartsWith("/ tl"))
+                    {
+                        AddRoleMessage(RoleEnum.TimeLord);
+                        return false;
+                    }
                     else if (chatText.ToLower().StartsWith("/lover") || chatText.ToLower().StartsWith("/ lover"))
                     {
                         AddModifierMessage(ModifierEnum.Lover);
@@ -511,6 +532,8 @@ namespace TownOfUs.Patches
                     PlayerControl.LocalPlayer, "The Executioner is a neutral evil role with the goal to vote out a specific player.");
                 if (role == RoleEnum.Glitch) DestroyableSingleton<HudManager>.Instance.Chat.AddChat(PlayerControl.LocalPlayer,
                     "The Glitch is a neutral killer with the goal to kill everyone. In addition to killing, they can also hack players, disabling abilities and mimic players, changing their appearance to look like others.");
+                if (role == RoleEnum.Icenberg) DestroyableSingleton<HudManager>.Instance.Chat.AddChat(PlayerControl.LocalPlayer,
+                    "The Icenberg is a neutral killer with the goal to kill everyone. In addition to killing, they can also freeze players for a certain time.");
                 if (role == RoleEnum.Jester) DestroyableSingleton<HudManager>.Instance.Chat.AddChat(
                     PlayerControl.LocalPlayer, "The Jester is a neutral evil role with the goal to be voted out.");
                 if (role == RoleEnum.Phantom) DestroyableSingleton<HudManager>.Instance.Chat.AddChat(
@@ -525,6 +548,12 @@ namespace TownOfUs.Patches
                     PlayerControl.LocalPlayer, "The Morphling is an impostor who can morph into other players.");
                 if (role == RoleEnum.Swooper) DestroyableSingleton<HudManager>.Instance.Chat.AddChat(
                     PlayerControl.LocalPlayer, "The Swooper is an impostor who can turn invisible.");
+                if (role == RoleEnum.Noclip) DestroyableSingleton<HudManager>.Instance.Chat.AddChat(
+                    PlayerControl.LocalPlayer, "The Noclip is an impostor who can walk trought walls.");
+                if (role == RoleEnum.Falcon) DestroyableSingleton<HudManager>.Instance.Chat.AddChat(
+                    PlayerControl.LocalPlayer, "The Falcon is a crewmate who can zoom out map to see whats happening.");
+                if (role == RoleEnum.TimeLord) DestroyableSingleton<HudManager>.Instance.Chat.AddChat(
+                    PlayerControl.LocalPlayer, "The TimeLord is a crewmate who can rewind time.");
                 if (role == RoleEnum.Undertaker) DestroyableSingleton<HudManager>.Instance.Chat.AddChat(
                     PlayerControl.LocalPlayer, "The Undertaker is an impostor who can drag bodies to different locations.");
                 if (role == RoleEnum.Haunter) DestroyableSingleton<HudManager>.Instance.Chat.AddChat(

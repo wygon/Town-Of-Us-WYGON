@@ -35,4 +35,8 @@
         <EmbeddedResource Include="Resources\*" />
         <EmbeddedResource Include="Resources\Hats\**" />
     </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Patches\CrewmateRoles\TimeLordMod\" />
+    </ItemGroup>
 </Project>

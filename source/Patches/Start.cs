@@ -88,6 +88,13 @@ namespace TownOfUs.Patches
                 transporter.LastTransported = DateTime.UtcNow;
                 transporter.LastTransported = transporter.LastTransported.AddSeconds(CustomGameOptions.InitialCooldowns - CustomGameOptions.TransportCooldown);
             }
+            
+            if (PlayerControl.LocalPlayer.Is(RoleEnum.Falcon))
+            {
+                var falcon = Role.GetRole<Falcon>(PlayerControl.LocalPlayer);
+                falcon.LastZoom = DateTime.UtcNow;
+                falcon.LastZoom = falcon.LastZoom.AddSeconds(CustomGameOptions.InitialCooldowns - CustomGameOptions.WingManCd);
+            }
 
             if (PlayerControl.LocalPlayer.Is(RoleEnum.Trapper))
             {
@@ -168,6 +175,13 @@ namespace TownOfUs.Patches
                 swooper.LastSwooped = DateTime.UtcNow;
                 swooper.LastSwooped = swooper.LastSwooped.AddSeconds(CustomGameOptions.InitialCooldowns - CustomGameOptions.SwoopCd);
             }
+            
+            if (PlayerControl.LocalPlayer.Is(RoleEnum.Noclip))
+            {
+                var noclip = Role.GetRole<Noclip>(PlayerControl.LocalPlayer);
+                noclip.LastNoclip = DateTime.UtcNow;
+                noclip.LastNoclip = noclip.LastNoclip.AddSeconds(CustomGameOptions.InitialCooldowns - CustomGameOptions.NoclipCd);
+            }
 
             if (PlayerControl.LocalPlayer.Is(RoleEnum.Venerer))
             {
@@ -220,6 +234,15 @@ namespace TownOfUs.Patches
                 glitch.LastKill = glitch.LastKill.AddSeconds(CustomGameOptions.InitialCooldowns - CustomGameOptions.GlitchKillCooldown);
                 glitch.LastHack = glitch.LastHack.AddSeconds(CustomGameOptions.InitialCooldowns - CustomGameOptions.HackCooldown);
                 glitch.LastMimic = glitch.LastMimic.AddSeconds(CustomGameOptions.InitialCooldowns - CustomGameOptions.MimicCooldown);
+            }
+            
+            if (PlayerControl.LocalPlayer.Is(RoleEnum.Icenberg))
+            {
+                var icenberg = Role.GetRole<Icenberg> (PlayerControl.LocalPlayer);
+                icenberg.LastKill = DateTime.UtcNow;
+                icenberg.LastFreeze = DateTime.UtcNow;
+                icenberg.LastKill = icenberg.LastKill.AddSeconds(CustomGameOptions.InitialCooldowns - CustomGameOptions.IcenbergKillCooldown);
+                icenberg.LastFreeze = icenberg.LastFreeze.AddSeconds(CustomGameOptions.InitialCooldowns - CustomGameOptions.FreezeCooldown);
             }
 
             if (PlayerControl.LocalPlayer.Is(RoleEnum.GuardianAngel))

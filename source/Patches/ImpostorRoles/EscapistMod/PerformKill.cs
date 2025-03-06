@@ -45,7 +45,6 @@ namespace TownOfUs.ImpostorRoles.EscapistMod
 
                 return false;
             }
-
             return true;
         }
     }

@@ -36,7 +36,6 @@ namespace TownOfUs.CrewmateRoles.EngineerMod
                     if (oxygen1.IsActive) return FixOxygen();
                     var lights1 = ShipStatus.Instance.Systems[SystemTypes.Electrical].Cast<SwitchSystem>();
                     if (lights1.IsActive) return FixLights(lights1);
-
                     break;
                 case 1:
                     var comms2 = ShipStatus.Instance.Systems[SystemTypes.Comms].Cast<HqHudSystemType>();

@@ -13,6 +13,9 @@ namespace TownOfUs.RainbowMod
             for (int i = 0; i < __instance.ColorChips.Count; i++)
             {
                 var colorChip = __instance.ColorChips[i];
+                var colorChipName = __instance.ColorChips[i].name;
+                Debug.Log("\ncolorChip" + colorChip);
+                Debug.Log("\ncolorChipName" + colorChipName);
                 colorChip.transform.localScale *= 0.8f;
                 var x = __instance.XRange.Lerp((i % 5) / 5f) + 0.25f;
                 var y = __instance.YStart - (i / 5) * 0.55f;

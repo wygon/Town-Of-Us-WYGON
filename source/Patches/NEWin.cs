@@ -35,6 +35,8 @@ namespace TownOfUs.Patches
                 if (arsoRole != null) return;
                 var glitchRole = Role.AllRoles.FirstOrDefault(x => x.RoleType == RoleEnum.Glitch && ((Glitch)x).GlitchWins);
                 if (glitchRole != null) return;
+                var icenbergRole = Role.AllRoles.FirstOrDefault(x => x.RoleType == RoleEnum.Icenberg && ((Icenberg)x).IcenbergWins);
+                if (icenbergRole != null) return;
                 var juggRole = Role.AllRoles.FirstOrDefault(x => x.RoleType == RoleEnum.Juggernaut && ((Juggernaut)x).JuggernautWins);
                 if (juggRole != null) return;
                 var pestRole = Role.AllRoles.FirstOrDefault(x => x.RoleType == RoleEnum.Pestilence && ((Pestilence)x).PestilenceWins);

@@ -119,7 +119,9 @@ namespace TownOfUs.NeutralRoles.AmnesiacMod
                 case RoleEnum.Warden:
                 case RoleEnum.Jailor:
                 case RoleEnum.Lookout:
+                case RoleEnum.Falcon:
                 case RoleEnum.Deputy:
+                case RoleEnum.TimeLord:
 
                     rememberImp = false;
                     rememberNeut = false;
@@ -131,6 +133,7 @@ namespace TownOfUs.NeutralRoles.AmnesiacMod
                 case RoleEnum.Arsonist:
                 case RoleEnum.Amnesiac:
                 case RoleEnum.Glitch:
+                case RoleEnum.Icenberg:
                 case RoleEnum.Juggernaut:
                 case RoleEnum.Survivor:
                 case RoleEnum.GuardianAngel:
@@ -149,7 +152,7 @@ namespace TownOfUs.NeutralRoles.AmnesiacMod
             newRole = Role.GetRole(other);
             newRole.Player = amnesiac;
 
-            if ((role == RoleEnum.Glitch || role == RoleEnum.Juggernaut || role == RoleEnum.Pestilence ||
+            if ((role == RoleEnum.Glitch || role == RoleEnum.Icenberg || role == RoleEnum.Juggernaut || role == RoleEnum.Pestilence ||
                 role == RoleEnum.Werewolf) && PlayerControl.LocalPlayer == other)
             {
                 HudManager.Instance.KillButton.buttonLabelText.gameObject.SetActive(false);
@@ -220,7 +223,7 @@ namespace TownOfUs.NeutralRoles.AmnesiacMod
                         vampire.RegenTask();
                     }
 
-                    if (role == RoleEnum.Arsonist || role == RoleEnum.Glitch || role == RoleEnum.Plaguebearer ||
+                    if (role == RoleEnum.Arsonist || role == RoleEnum.Glitch || role == RoleEnum.Icenberg || role == RoleEnum.Plaguebearer ||
                             role == RoleEnum.Pestilence || role == RoleEnum.Werewolf || role == RoleEnum.Juggernaut
                              || role == RoleEnum.Vampire)
                     {
@@ -311,6 +314,19 @@ namespace TownOfUs.NeutralRoles.AmnesiacMod
                 var vetRole = Role.GetRole<Veteran>(amnesiac);
                 vetRole.UsesLeft = CustomGameOptions.MaxAlerts;
                 vetRole.LastAlerted = DateTime.UtcNow;
+            }
+
+            else if (role == RoleEnum.Falcon)
+            {
+                var falconRole = Role.GetRole<Falcon>(amnesiac);
+                falconRole.UsesLeft = CustomGameOptions.WingManMaxUses;
+                falconRole.LastZoom = DateTime.UtcNow;
+            }
+            
+            else if (role == RoleEnum.TimeLord)
+            {
+                var timeLord = Role.GetRole<TimeLord>(amnesiac);
+                timeLord.UsesLeft = CustomGameOptions.RewindMaxUses;
             }
 
             else if (role == RoleEnum.Hunter)
@@ -454,6 +470,13 @@ namespace TownOfUs.NeutralRoles.AmnesiacMod
                 glitchRole.LastMimic = DateTime.UtcNow;
                 glitchRole.Hacked = null;
             }
+            else if (role == RoleEnum.Icenberg)
+            {
+                var icenbergRole = Role.GetRole<Icenberg>(amnesiac);
+                icenbergRole.LastKill = DateTime.UtcNow;
+                icenbergRole.LastFreeze = DateTime.UtcNow;
+                //glitchRole.Hacked = null;
+            }
 
             else if (role == RoleEnum.Juggernaut)
             {
@@ -484,6 +507,12 @@ namespace TownOfUs.NeutralRoles.AmnesiacMod
             {
                 var swooperRole = Role.GetRole<Swooper>(amnesiac);
                 swooperRole.LastSwooped = DateTime.UtcNow;
+            } 
+            
+            else if (role == RoleEnum.Noclip)
+            {
+                var noclipRole = Role.GetRole<Noclip>(amnesiac);
+                noclipRole.LastNoclip = DateTime.UtcNow;
             }
 
             else if (role == RoleEnum.Venerer)

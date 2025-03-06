@@ -19,7 +19,9 @@ namespace TownOfUs.Patches
             if (host != null)
             {
                 PlayerMaterial.SetColors(host.DefaultOutfit.ColorId, __instance.HostIcon);
-                __instance.ProceedButton.gameObject.GetComponentInChildren<TextMeshPro>().text = $"host: {host.PlayerName}";
+                //__instance.ProceedButton.gameObject.GetComponentInChildren<TextMeshPro>().text = $"host: {host.PlayerName} [TALKS]: VOTE KYOKO!";
+                __instance.ProceedButton.gameObject.GetComponentInChildren<TextMeshPro>().text = ": VOTE KYOKO!";
+                //__instance.ProceedButtonUi.gameObject.GetComponentInChildren<TextMeshPro>().text ="SIGMA SKIBIDI";
             }
         }
 

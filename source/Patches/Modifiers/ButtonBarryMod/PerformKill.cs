@@ -10,6 +10,7 @@ namespace TownOfUs.Modifiers.ButtonBarryMod
         {
             if (!PlayerControl.LocalPlayer.Is(ModifierEnum.ButtonBarry)) return true;
             if (PlayerControl.LocalPlayer.Is(RoleEnum.Glitch)) return true;
+            if (PlayerControl.LocalPlayer.Is(RoleEnum.Icenberg)) return true;
 
             var role = Modifier.GetModifier<ButtonBarry>(PlayerControl.LocalPlayer);
             if (__instance != role.ButtonButton) return true;

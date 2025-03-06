@@ -78,6 +78,11 @@ namespace TownOfUs
                 var glitch = (Glitch)role;
                 losers.Add(glitch.Player.GetDefaultOutfit().ColorId);
             }
+            foreach (var role in Role.GetRoles(RoleEnum.Icenberg))
+            {
+                var icenberg = (Icenberg)role;
+                losers.Add(icenberg.Player.GetDefaultOutfit().ColorId);
+            }
             foreach (var role in Role.GetRoles(RoleEnum.Vampire))
             {
                 var vamp = (Vampire)role;
@@ -231,6 +236,17 @@ namespace TownOfUs
                         var glitchData = new CachedPlayerData(glitch.Player.Data);
                         if (PlayerControl.LocalPlayer != glitch.Player) glitchData.IsYou = false;
                         EndGameResult.CachedWinners.Add(glitchData);
+                    }
+                }
+                if (type == RoleEnum.Icenberg)
+                {
+                    var icenberg = (Icenberg)role;
+                    if (icenberg.IcenbergWins)
+                    {
+                        EndGameResult.CachedWinners = new List<CachedPlayerData>();
+                        var icenbergData = new CachedPlayerData(icenberg.Player.Data);
+                        if (PlayerControl.LocalPlayer != icenberg.Player) icenbergData.IsYou = false;
+                        EndGameResult.CachedWinners.Add(icenbergData);
                     }
                 }
                 else if (type == RoleEnum.Juggernaut)

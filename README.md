@@ -5,7 +5,7 @@
 
 An Among Us mod that adds a bunch of roles, modifiers and game settings
 
-Join our [Discord](https://discord.gg/ugyc4EVUYZ) if you have any problems or want to find people to play with!
+Join our [Discord - PL](https://discord.gg/QspGyKzf) if you have any problems or want to find people to play with!
 
 | **Impostor Roles**           | **Crewmate Roles**                | **Neutral Roles**                | **Modifiers**                |
 |:----------------------------:|:---------------------------------:|:--------------------------------:|:----------------------------:|
@@ -23,7 +23,7 @@ Join our [Discord](https://discord.gg/ugyc4EVUYZ) if you have any problems or wa
 | [Undertaker](#undertaker)    | [Medic](#medic)                   | [The Glitch](#the-glitch)        | [Multitasker](#multitasker)  |
 | [Venerer](#venerer)          | [Medium](#medium)                 | [Vampire](#vampire)              | [Radar](#radar)              |
 | [Warlock](#warlock)          | [Mystic](#mystic)                 | [Werewolf](#werewolf)            | [Saboteur](#saboteur)        |
-|                              | [Oracle](#oracle)                 |                                  | [Shy](#shy)                  |
+| [Noclip](#noclip)            | [Oracle](#oracle)                 | [Icenberg](#icenberg)            | [Shy](#shy)                  |
 |                              | [Politician](#politician)         |                                  | [Sixth Sense](#sixth-sense)  |
 |                              | [Prosecutor](#prosecutor)         |                                  | [Sleuth](#sleuth)            |
 |                              | [Seer](#seer)                     |                                  | [Tiebreaker](#tiebreaker)    |
@@ -37,6 +37,7 @@ Join our [Discord](https://discord.gg/ugyc4EVUYZ) if you have any problems or wa
 |                              | [Veteran](#veteran)               |                                  |                              |
 |                              | [Vigilante](#vigilante)           |                                  |                              |
 |                              | [Warden](#warden)                 |                                  |                              |
+|                              | [Falcon](#falcon)                 |                                  |                              |
 -----------------------
 # Releases
 | Among Us - Version| Mod Version | Link |
@@ -1320,6 +1321,21 @@ Players who have been transported are alerted with a blue flash on their screen.
 | Transporter can use Vitals | Whether the Transporter has the ability to use Vitals | Toggle | False |
 
 -----------------------
+## Falcon
+### **Team: Crewmates**
+
+The Falcon is an Crewmate that can temporarily see more.
+
+### Game Options
+| Name | Description | Type | Default |
+|----------|:-------------:|:------:|:------:|
+| Falcon | The percentage probability of the Noclip appearing | Percentage | 0% |
+| Wingman Cooldown | The cooldown of the Wingman button | Time | 25s |
+| Wingman Duration | How long the Wingman lasts for | Time | 5s |
+| Wingman Uses | Whether the Wingman can be used | Number | 5 |
+| Wingman Range | Wingman's sight range | Number | 5 |
+
+-----------------------
 # Neutral Roles
 ## Amnesiac
 ### **Team: Neutral**
@@ -1559,6 +1575,23 @@ The Werewolf needs to be the last killer alive to win the game.
 | Werewolf can Vent when Rampaged | Whether the Werewolf can Vent when Rampaged | Toggle | False |
 
 -----------------------
+## Icenberg
+### **Team: Neutral**
+
+The Icenberg is a Neutral role with its own win condition.\
+The Icenberg's aim is to kill everyone and be the last person standing.\
+The Icenberg can Freeze players, resulting in them being unable to move.
+### Game Options
+| Name | Description | Type | Default |
+|----------|:-------------:|:------:|:------:|
+| Icenberg | The percentage probability of the Icenberg appearing | Percentage | 0% |
+| Freeze Cooldown | The cooldown of the Icenberg's Freeze button | Time | 25s |
+| Freeze Duration | The duration of the Icenberg's Freeze | Time | 3s |
+| Freeze Kill Cooldown | The cooldown of the Icenberg's Kill button | Time | 25s |
+| Icenberg Has Impostor Vision | Whether the Icenberg Has Impostor Vision | Toggle | False |
+| Icenberg can Vent | Whether the Icenberg can Vent| Toggle | True |
+
+-----------------------
 # Impostor Roles
 ## Escapist
 ### **Team: Impostors**
@@ -1619,6 +1652,20 @@ The Swooper is an Impostor that can temporarily turn invisible.
 | Swooper Cooldown | The cooldown of the Swooper's Swoop button | Time | 25s |
 | Swooper Duration | How long the Swooping lasts for | Time | 10s |
 | Swooper can Vent | Whether the Swooper can Vent | Toggle | False |
+
+-----------------------
+## Noclip
+### **Team: Impostors**
+
+The Noclip is an Impostor that can temporarily walk trought walls.
+
+### Game Options
+| Name | Description | Type | Default |
+|----------|:-------------:|:------:|:------:|
+| Noclip | The percentage probability of the Noclip appearing | Percentage | 0% |
+| Noclip Cooldown | The cooldown of the Noclip's WallRun button | Time | 25s |
+| Noclip Duration | How long the Noclip lasts for | Time | 5s |
+| Noclip can Vent | Whether the Noclip can Vent | Toggle | False |
 
 -----------------------
 ## Venerer
@@ -2036,7 +2083,11 @@ Auto adjustments will be made if there are not enough crewmates or impostors to 
 | Slot 13 | What role type can appear in Slot 13 | See Above for Buckets | Non-Imp |
 | Slot 14 | What role type can appear in Slot 14 | See Above for Buckets | Random Impostor |
 | Slot 15 | What role type can appear in Slot 15 | See Above for Buckets | Non-Imp |
-
+| Slot 16 | What role type can appear in Slot 16 | See Above for Buckets | Non-Imp |
+| Slot 18 | What role type can appear in Slot 18 | See Above for Buckets | Non-Imp |
+| Slot 17 | What role type can appear in Slot 17 | See Above for Buckets | Random Impostor |
+| Slot 19 | What role type can appear in Slot 19 | See Above for Buckets | Non-Imp |
+| Slot 20 | What role type can appear in Slot 20 | See Above for Buckets | Non-Imp |
 -----------------------
 # Map Settings
 | Name | Description | Type | Default |
@@ -2152,6 +2203,8 @@ If you have any bugs or any need to contact me, join the [Discord Server](https:
 v1.0.3 uses [Essentials](https://github.com/DorCoMaNdO/Reactor-Essentials) directly.\
 v1.1.0 uses a modified version of Essentials that can be found [here](https://github.com/slushiegoose/Reactor-Essentials).\
 v1.2.0 has Essentials embedded and can be found [here](https://github.com/slushiegoose/Town-Of-Us/tree/master/source/Patches/CustomOption).
+
+[T1MOT1](discord: @timothee7421) - For graphics
 
 #
 <p align="center">This mod is not affiliated with Among Us or Innersloth LLC, and the content contained therein is not endorsed or otherwise sponsored by Innersloth LLC. Portions of the materials contained herein are property of Innersloth LLC.</p>

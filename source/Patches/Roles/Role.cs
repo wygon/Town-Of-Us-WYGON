@@ -580,6 +580,11 @@ namespace TownOfUs.Roles
                         if (players > 12) buckets.Add(CustomGameOptions.Slot13);
                         if (players > 13) buckets.Add(CustomGameOptions.Slot14);
                         if (players > 14) buckets.Add(CustomGameOptions.Slot15);
+                        //if (players > 15) buckets.Add(CustomGameOptions.Slot16);
+                        //if (players > 16) buckets.Add(CustomGameOptions.Slot17);
+                        //if (players > 17) buckets.Add(CustomGameOptions.Slot18);
+                        //if (players > 18) buckets.Add(CustomGameOptions.Slot19);
+                        //if (players > 19) buckets.Add(CustomGameOptions.Slot20);
 
                         foreach (var roleOption in buckets)
                         {
@@ -650,6 +655,11 @@ namespace TownOfUs.Roles
                         if (players > 12) buckets.Add(CustomGameOptions.Slot13);
                         if (players > 13) buckets.Add(CustomGameOptions.Slot14);
                         if (players > 14) buckets.Add(CustomGameOptions.Slot15);
+                        //if (players > 15) buckets.Add(CustomGameOptions.Slot16);
+                        //if (players > 16) buckets.Add(CustomGameOptions.Slot17);
+                        //if (players > 17) buckets.Add(CustomGameOptions.Slot18);
+                        //if (players > 18) buckets.Add(CustomGameOptions.Slot19);
+                        //if (players > 19) buckets.Add(CustomGameOptions.Slot20);
 
                         foreach (var roleOption in buckets)
                         {
@@ -923,7 +933,8 @@ namespace TownOfUs.Roles
                 {
                     if (!(player.Data != null && player.Data.IsImpostor() && PlayerControl.LocalPlayer.Data.IsImpostor()))
                     {
-                        player.nameText().text = player.name;
+                        //player.nameText().text = player.name + " " + player.GetDefaultOutfit().ColorId.ToString();
+                        player.nameText().text = player.name; //+ " " + player.GetDefaultOutfit().ColorId;
                         player.nameText().color = Color.white;
                     }
 

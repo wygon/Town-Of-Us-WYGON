@@ -53,7 +53,10 @@ namespace TownOfUs
         public static int InvestigatorOn => (int)Generate.InvestigatorOn.Get();
         public static int MedicOn => (int)Generate.MedicOn.Get();
         public static int SeerOn => (int)Generate.SeerOn.Get();
+        public static int FalconOn => (int)Generate.FalconOn.Get();
+        public static int TimeLordOn => (int)Generate.TimeLordOn.Get();
         public static int GlitchOn => (int)Generate.GlitchOn.Get();
+        public static int IcenbergOn => (int)Generate.IcenbergOn.Get();
         public static int MorphlingOn => (int)Generate.MorphlingOn.Get();
         public static int ExecutionerOn => (int)Generate.ExecutionerOn.Get();
         public static int SpyOn => (int)Generate.SpyOn.Get();
@@ -88,6 +91,7 @@ namespace TownOfUs
         public static int VampireOn => (int)Generate.VampireOn.Get();
         public static int ProsecutorOn => (int)Generate.ProsecutorOn.Get();
         public static int WarlockOn => (int)Generate.WarlockOn.Get();
+        public static int NoclipOn => (int)Generate.NoclipOn.Get();
         public static int OracleOn => (int)Generate.OracleOn.Get();
         public static int VenererOn => (int)Generate.VenererOn.Get();
         public static int AurialOn => (int)Generate.AurialOn.Get();
@@ -137,6 +141,11 @@ namespace TownOfUs
         public static bool JesterVent => Generate.JesterVent.Get();
         public static bool JesterImpVision => Generate.JesterImpVision.Get();
         public static bool JesterHaunt => Generate.JesterHaunt.Get();
+        public static bool RewindRevive => Generate.RewindRevive.Get();
+        public static float RewindDuration => Generate.RewindDuration.Get();
+        public static float RewindCooldown => Generate.RewindCooldown.Get();
+        public static int RewindMaxUses => (int)Generate.RewindMaxUses.Get();
+        public static bool TimeLordVitals => Generate.TimeLordVitals.Get();
         public static ShieldOptions ShowShielded => (ShieldOptions)Generate.ShowShielded.Get();
 
         public static NotificationOptions NotificationShield =>
@@ -159,6 +168,11 @@ namespace TownOfUs
         public static float GlitchKillCooldown => Generate.GlitchKillCooldownOption.Get();
         public static int GlitchHackDistance => Generate.GlitchHackDistanceOption.Get();
         public static bool GlitchVent => Generate.GlitchVent.Get();
+        public static float IcenbergKillCooldown => Generate.IcenbergKillCooldown.Get();
+        public static float FreezeCooldown => Generate.FreezeCooldown.Get();
+        public static float FreezeDuration => Generate.FreezeDuration.Get();
+        public static bool IcenbergVent => Generate.IcenbergVent.Get();
+        public static bool IcenbergImpVision => Generate.IcenbergImpVision.Get();
         public static float JuggKCd => Generate.JuggKillCooldown.Get();
         public static float ReducedKCdPerKill => Generate.ReducedKCdPerKill.Get();
         public static bool JuggVent => Generate.JuggVent.Get();
@@ -365,6 +379,11 @@ namespace TownOfUs
         public static RoleOptions Slot13 => (RoleOptions)Generate.Slot13.Get();
         public static RoleOptions Slot14 => (RoleOptions)Generate.Slot14.Get();
         public static RoleOptions Slot15 => (RoleOptions)Generate.Slot15.Get();
+        //public static RoleOptions Slot16 => (RoleOptions)Generate.Slot16.Get();
+        //public static RoleOptions Slot17 => (RoleOptions)Generate.Slot17.Get();
+        //public static RoleOptions Slot18 => (RoleOptions)Generate.Slot18.Get();
+        //public static RoleOptions Slot19 => (RoleOptions)Generate.Slot19.Get();
+        //public static RoleOptions Slot20 => (RoleOptions)Generate.Slot20.Get();
         public static bool CamoCommsKillAnyone => Generate.CamoCommsKillAnyone.Get();
         public static bool CrewKillersContinue => Generate.CrewKillersContinue.Get();
         public static float HunterKillCd => Generate.HunterKillCd.Get();
@@ -391,5 +410,12 @@ namespace TownOfUs
         public static float ScavengeCorrectKillCooldown => (float)Generate.ScavengeCorrectKillCooldown.Get();
         public static float ScavengeIncorrectKillCooldown => (float)Generate.ScavengeIncorrectKillCooldown.Get();
         public static float ReducedSaboCd => Generate.ReducedSaboCooldown.Get();
+        public static float NoclipCd => (float)Generate.NoclipCooldown.Get();
+        public static float NoclipDuration => (float)Generate.NoclipDuration.Get();
+        public static bool NoclipVent => Generate.NoclipVent.Get();
+        public static float WingManCd => (float)Generate.WingManCooldown.Get();
+        public static float WingManDuration => (float)Generate.WingManDuration.Get();
+        public static int WingManMaxUses => (int)Generate.WingManMaxUses.Get();
+        public static float WingManRange => (float)Generate.WingManRange.Get();
     }
 }

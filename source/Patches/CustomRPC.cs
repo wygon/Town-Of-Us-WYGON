@@ -20,6 +20,7 @@ namespace TownOfUs
 
         LoveWin,
         GlitchWin,
+        IcenbergWin,
         JuggernautWin,
         ArsonistWin,
         PhantomWin,
@@ -78,12 +79,16 @@ namespace TownOfUs
         Collect,
         Retribution,
         Camp,
+        Rewind,
+        RewindRevive,
 
         BypassKill,
         BypassMultiKill,
         SetMimic,
         RpcResetAnim,
         SetHacked,
+        //SetFreeze,
+        Freeze,
 
         ExecutionerToJester,
         GAToSurv,

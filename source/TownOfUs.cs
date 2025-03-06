@@ -80,6 +80,7 @@ namespace TownOfUs
         public static Sprite ExamineSprite;
         public static Sprite EscapeSprite;
         public static Sprite MarkSprite;
+        public static Sprite NoclipSprite;
         public static Sprite ImitateSelectSprite;
         public static Sprite ImitateDeselectSprite;
         public static Sprite ObserveSprite;
@@ -108,6 +109,9 @@ namespace TownOfUs
         public static Sprite WatchSprite;
         public static Sprite CampSprite;
         public static Sprite ShootSprite;
+        public static Sprite WingManSprite;
+        public static Sprite RewindSprite;
+        public static Sprite FreezeSprite;
 
         public static Sprite ToUBanner;
         public static Sprite UpdateTOUButton;
@@ -184,6 +188,7 @@ namespace TownOfUs
             ExamineSprite = CreateSprite("TownOfUs.Resources.Examine.png");
             EscapeSprite = CreateSprite("TownOfUs.Resources.Recall.png");
             MarkSprite = CreateSprite("TownOfUs.Resources.Mark.png");
+            NoclipSprite = CreateSprite("TownOfUs.Resources.Noclip.png");
             ImitateSelectSprite = CreateSprite("TownOfUs.Resources.ImitateSelect.png");
             ImitateDeselectSprite = CreateSprite("TownOfUs.Resources.ImitateDeselect.png");
             ObserveSprite = CreateSprite("TownOfUs.Resources.Observe.png");
@@ -212,6 +217,9 @@ namespace TownOfUs
             WatchSprite = CreateSprite("TownOfUs.Resources.Watch.png");
             CampSprite = CreateSprite("TownOfUs.Resources.Camp.png");
             ShootSprite = CreateSprite("TownOfUs.Resources.Shoot.png");
+            WingManSprite = CreateSprite("TownOfUs.Resources.Wingman.png");
+            RewindSprite = CreateSprite("TownOfUs.Resources.Rewind.png");
+            FreezeSprite = CreateSprite("TownOfUs.Resources.Freeze.png");
 
             ToUBanner = CreateSprite("TownOfUs.Resources.TownOfUsBanner.png");
             UpdateTOUButton = CreateSprite("TownOfUs.Resources.UpdateToUButton.png");

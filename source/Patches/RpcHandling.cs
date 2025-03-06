@@ -39,6 +39,8 @@ using TownOfUs.ImpostorRoles.BomberMod;
 using TownOfUs.CrewmateRoles.HunterMod;
 using Il2CppSystem.Linq;
 using TownOfUs.CrewmateRoles.DeputyMod;
+using TownOfUs.ImpostorRoles.NoclipMod;
+using TownOfUs.CrewmateRoles.TimeLordMod;
 
 namespace TownOfUs
 {
@@ -157,6 +159,15 @@ namespace TownOfUs
             if (players > 12) buckets.Add(CustomGameOptions.Slot13);
             if (players > 13) buckets.Add(CustomGameOptions.Slot14);
             if (players > 14) buckets.Add(CustomGameOptions.Slot15);
+            //if (players > 15) buckets.Add(CustomGameOptions.Slot16);
+            //if (players > 16) buckets.Add(CustomGameOptions.Slot17);
+            //if (players > 17)
+            //{
+            //    buckets.Add(CustomGameOptions.Slot18);
+            //    minCrewmates += 1;
+            //}
+            //if (players > 18) buckets.Add(CustomGameOptions.Slot19);
+            //if (players > 19) buckets.Add(CustomGameOptions.Slot20);
             if (players > 15)
             {
                 for (int i = 0; i < players - 15; i++)
@@ -644,6 +655,7 @@ namespace TownOfUs
 
             // The Glitch cannot have Button Modifiers.
             canHaveModifier.RemoveAll(player => player.Is(RoleEnum.Glitch));
+            canHaveModifier.RemoveAll(player => player.Is(RoleEnum.Icenberg));
             ButtonModifiers.SortModifiers(canHaveModifier.Count);
 
             foreach (var (type, id) in ButtonModifiers)
@@ -927,6 +939,16 @@ namespace TownOfUs
                                 break;
                         }
                         break;
+                    case CustomRPC.Rewind:
+                        readByte = reader.ReadByte();
+                        var TimeLordPlayer = Utils.PlayerById(readByte);
+                        var TimeLordRole = Role.GetRole<TimeLord>(TimeLordPlayer);
+                        StartStop.StartRewind(TimeLordRole);
+                        break;
+                    case CustomRPC.RewindRevive:
+                        readByte = reader.ReadByte();
+                        RecordRewind.ReviveBody(Utils.PlayerById(readByte));
+                        break;
                     case CustomRPC.Protect:
                         readByte1 = reader.ReadByte();
                         readByte2 = reader.ReadByte();
@@ -979,6 +1001,24 @@ namespace TownOfUs
                         glitchRole.IsUsingMimic = true;
                         Utils.Morph(glitchPlayer, mimicPlayer);
                         break;
+                    case CustomRPC.Freeze:
+                        var icenbergPlayer = Utils.PlayerById(reader.ReadByte());
+                        var freezePlayer = Utils.PlayerById(reader.ReadByte());
+                        var icenbergRole = Role.GetRole<Icenberg>(icenbergPlayer);
+                        icenbergRole.FreezeTarget = freezePlayer;
+                        icenbergRole.IsUsingFreeze = true;
+                        Utils.Freeze(icenbergPlayer, freezePlayer);
+                        //Coroutines.Start(Icenberg.FreezePlayer(reader.ReadByte()));
+                        break;
+                    //case CustomRPC.Unfreeze:
+                    //    var icenbergPlayer = Utils.PlayerById(reader.ReadByte());
+                    //    var freezePlayer = Utils.PlayerById(reader.ReadByte());
+                    //    var icenbergRole = Role.GetRole<Icenberg>(icenbergPlayer);
+                    //    icenbergRole.FreezeTarget = freezePlayer;
+                    //    icenbergRole.IsUsingFreeze = true;
+                    //    Utils.Freeze(icenbergPlayer, freezePlayer);
+                    //    //Coroutines.Start(Icenberg.FreezePlayer(reader.ReadByte()));
+                    //    break;
                     case CustomRPC.RpcResetAnim:
                         var animPlayer = Utils.PlayerById(reader.ReadByte());
                         var theGlitchRole = Role.GetRole<Glitch>(animPlayer);
@@ -989,6 +1029,10 @@ namespace TownOfUs
                     case CustomRPC.GlitchWin:
                         var theGlitch = Role.AllRoles.FirstOrDefault(x => x.RoleType == RoleEnum.Glitch);
                         ((Glitch) theGlitch)?.Wins();
+                        break;
+                    case CustomRPC.IcenbergWin:
+                        var icenberg = Role.AllRoles.FirstOrDefault(x => x.RoleType == RoleEnum.Icenberg);
+                        ((Icenberg) icenberg)?.Wins();
                         break;
                     case CustomRPC.JuggernautWin:
                         var juggernaut = Role.AllRoles.FirstOrDefault(x => x.RoleType == RoleEnum.Juggernaut);
@@ -1587,6 +1631,12 @@ namespace TownOfUs
                 if (CustomGameOptions.SnitchOn > 0)
                     CrewmateInvestigativeRoles.Add((typeof(Snitch), CustomGameOptions.SnitchOn, true));
 
+                if (CustomGameOptions.FalconOn > 0)
+                    CrewmateInvestigativeRoles.Add((typeof(Falcon), CustomGameOptions.FalconOn, false || CustomGameOptions.UniqueRoles));
+                
+                if (CustomGameOptions.TimeLordOn > 0)
+                    CrewmateInvestigativeRoles.Add((typeof(TimeLord), CustomGameOptions.TimeLordOn, false || CustomGameOptions.UniqueRoles));
+
                 if (CustomGameOptions.AltruistOn > 0)
                     CrewmateProtectiveRoles.Add((typeof(Altruist), CustomGameOptions.AltruistOn, true));
 
@@ -1665,6 +1715,9 @@ namespace TownOfUs
 
                 if (CustomGameOptions.GlitchOn > 0)
                     NeutralKillingRoles.Add((typeof(Glitch), CustomGameOptions.GlitchOn, true));
+                
+                if (CustomGameOptions.IcenbergOn > 0)
+                    NeutralKillingRoles.Add((typeof(Icenberg), CustomGameOptions.IcenbergOn, true));
 
                 if (CustomGameOptions.ArsonistOn > 0)
                     NeutralKillingRoles.Add((typeof(Arsonist), CustomGameOptions.ArsonistOn, true));
@@ -1699,6 +1752,9 @@ namespace TownOfUs
 
                 if (CustomGameOptions.JanitorOn > 0)
                     ImpostorSupportRoles.Add((typeof(Janitor), CustomGameOptions.JanitorOn, false || CustomGameOptions.UniqueRoles));
+
+                if (CustomGameOptions.NoclipOn > 0)
+                    ImpostorConcealingRoles.Add((typeof(Noclip), CustomGameOptions.NoclipOn, false || CustomGameOptions.UniqueRoles));
 
                 if (CustomGameOptions.GrenadierOn > 0)
                     ImpostorConcealingRoles.Add((typeof(Grenadier), CustomGameOptions.GrenadierOn, true));

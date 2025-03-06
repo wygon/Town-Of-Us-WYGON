@@ -501,7 +501,7 @@ namespace TownOfUs.Roles
                     __gInstance.MimicButton.isCoolingDown = false;
                     __gInstance.MimicButton.graphic.material.SetFloat("_Desat", 0f);
                     __gInstance.MimicButton.graphic.color = Palette.EnabledColor;
-                    if (Rewired.ReInput.players.GetPlayer(0).GetButtonDown("ToU bb/disperse/mimic")) __gInstance.MimicButton.DoClick();
+                    if (Rewired.ReInput.players.GetPlayer(0).GetButtonDown("ToU bb/disperse/mimic/freeze")) __gInstance.MimicButton.DoClick();
                 }
                 else
                 {

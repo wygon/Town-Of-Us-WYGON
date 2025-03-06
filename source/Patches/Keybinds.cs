@@ -18,12 +18,12 @@ namespace TownOfUs
             //change the text shown on the screen for the kill keybind
             __instance.userData.GetAction("ActionSecondary").descriptiveName = "Kill / Crew & neutral benign abilities / infect & douse";
             __instance.userData.RegisterBind("ToU imp/nk", "Impostor abilities / ignite");
-            __instance.userData.RegisterBind("ToU bb/disperse/mimic", "Button barry / disperse / glitch mimic");
+            __instance.userData.RegisterBind("ToU bb/disperse/mimic/freeze", "Button barry / disperse / glitch mimic / freeze");
             __instance.userData.RegisterBind("ToU hack", "Glitch's hack");
-            __instance.userData.RegisterBind("ToU cycle +", "Cycle forward mimic / transport / guess menu");
-            __instance.userData.RegisterBind("ToU cycle -", "Cycle backward mimic / transport / guess menu");
+            __instance.userData.RegisterBind("ToU cycle +", "Cycle forward mimic / transport / guess menu / freeze");
+            __instance.userData.RegisterBind("ToU cycle -", "Cycle backward mimic / transport / guess menu / freeze");
             __instance.userData.RegisterBind("ToU cycle players", "Cycle players as guesser in meetings");
-            __instance.userData.RegisterBind("ToU confirm", "Confirm mimic / transport / guess");
+            __instance.userData.RegisterBind("ToU confirm", "Confirm mimic / transport / guess / freeze");
         }
 
         private static int RegisterBind(this UserData self, string name, string description, int elementIdentifierId = -1, int category = 0, InputActionType type = InputActionType.Button)
