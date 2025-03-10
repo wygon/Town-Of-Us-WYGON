@@ -90,6 +90,7 @@ namespace TownOfUs.CustomOption
         public static CustomNumberOption FrostyOn;
         public static CustomNumberOption MultitaskerOn;
         public static CustomNumberOption TorchOn;
+        public static CustomNumberOption DrunkOn;
 
         public static CustomHeaderOption GlobalModifiers;
         public static CustomNumberOption ButtonBarryOn;
@@ -532,6 +533,9 @@ namespace TownOfUs.CustomOption
         public static CustomNumberOption ChillDuration;
         public static CustomNumberOption ChillStartSpeed;
 
+        public static CustomHeaderOption Drunk;
+        public static CustomNumberOption DrunkDuration;
+
         public static CustomHeaderOption Shy;
         public static CustomNumberOption InvisDelay;
         public static CustomNumberOption TransformInvisDuration;
@@ -548,7 +552,7 @@ namespace TownOfUs.CustomOption
         public static Func<object, string> PercentFormat { get; } = value => $"{value:0}%";
         private static Func<object, string> CooldownFormat { get; } = value => $"{value:0.0#}s";
         private static Func<object, string> MultiplierFormat { get; } = value => $"{value:0.0#}x";
-
+        private static Func<object, string> RoundsFormat { get; } = value => $"{value:0} Round(s)";
 
         public static void GenerateAll()
         {
@@ -729,6 +733,8 @@ namespace TownOfUs.CustomOption
             SleuthOn = new CustomNumberOption(num++, MultiMenu.modifiers, "<color=#803333FF>Sleuth</color>", 0f, 0f, 100f, 10f,
                 PercentFormat);
             TiebreakerOn = new CustomNumberOption(num++, MultiMenu.modifiers, "<color=#99E699FF>Tiebreaker</color>", 0f, 0f, 100f, 10f,
+                PercentFormat);
+            DrunkOn = new CustomNumberOption(num++, MultiMenu.modifiers, "<color=#758000FF>Drunk</color>", 0f, 0f, 100f, 10f,
                 PercentFormat);
 
             ImpostorModifiers = new CustomHeaderOption(num++, MultiMenu.modifiers, "Impostor Modifiers");
@@ -1495,6 +1501,9 @@ namespace TownOfUs.CustomOption
             Frosty = new CustomHeaderOption(num++, MultiMenu.modifiers, "<color=#99FFFFFF>Frosty</color>");
             ChillDuration = new CustomNumberOption(num++, MultiMenu.modifiers, "Chill Duration", 10f, 1f, 15f, 1f, CooldownFormat);
             ChillStartSpeed = new CustomNumberOption(num++, MultiMenu.modifiers, "Chill Start Speed", 0.75f, 0.25f, 0.95f, 0.05f, MultiplierFormat);
+
+            Drunk = new CustomHeaderOption(num++, MultiMenu.modifiers, "<color=#758000FF>Drunk</color>");
+            DrunkDuration = new CustomNumberOption(num++, MultiMenu.modifiers, "Drunk Stays", 3, 1, 5, 1, RoundsFormat);
 
             Flash = new CustomHeaderOption(num++, MultiMenu.modifiers, "<color=#FF8080FF>Flash</color>");
             FlashSpeed = new CustomNumberOption(num++, MultiMenu.modifiers, "Flash Speed", 1.25f, 1.05f, 2.5f, 0.05f, MultiplierFormat);

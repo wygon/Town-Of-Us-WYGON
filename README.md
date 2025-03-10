@@ -29,7 +29,7 @@ Join our [Discord - PL](https://discord.gg/QspGyKzf) if you have any problems or
 |                              | [Seer](#seer)                     |                                  | [Tiebreaker](#tiebreaker)    |
 |                              | [Sheriff](#sheriff)               |                                  | [Torch](#torch)              |
 |                              | [Snitch](#snitch)                 |                                  | [Underdog](#underdog)        |
-|                              | [Spy](#spy)                       |                                  |                              |
+|                              | [Spy](#spy)                       |                                  | [Drunk](#drunk)              |
 |                              | [Swapper](#swapper)               |                                  |                              |
 |                              | [Tracker](#tracker)               |                                  |                              |
 |                              | [Trapper](#trapper)               |                                  |                              |
@@ -1988,6 +1988,16 @@ If they voted another player, they will get voted out.
 | Name | Description | Type | Default |
 |----------|:-------------:|:------:|:------:|
 | Tiebreaker | The percentage probability of the Tiebreaker appearing | Percentage | 0% |
+-----------------------
+## Drunk
+### **Applied to: All**
+You just drunk
+### Game Options
+| Name | Description | Type | Default |
+|----------|:-------------:|:------:|:------:|
+| Drunk | The percentage probability of the Drunk appearing | Percentage | 0% |
+| DrunkRounds | Rounds being Drunk | Rounds | 3 |
+
 
 -----------------------
 ## Disperser

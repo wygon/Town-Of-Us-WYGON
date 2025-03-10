@@ -1792,6 +1792,8 @@ namespace TownOfUs
 
                 if (Check(CustomGameOptions.MultitaskerOn))
                     CrewmateModifiers.Add((typeof(Multitasker), CustomGameOptions.MultitaskerOn));
+                //if (Check(CustomGameOptions.DrunkOn))
+                //    CrewmateModifiers.Add((typeof(Drunk), CustomGameOptions.DrunkOn));
 
                 if (Check(CustomGameOptions.FrostyOn))
                     CrewmateModifiers.Add((typeof(Frosty), CustomGameOptions.FrostyOn));
@@ -1826,6 +1828,9 @@ namespace TownOfUs
 
                 if (Check(CustomGameOptions.MiniOn))
                     GlobalModifiers.Add((typeof(Mini), CustomGameOptions.MiniOn));
+
+                if (Check(CustomGameOptions.DrunkOn))
+                    GlobalModifiers.Add((typeof(Drunk), CustomGameOptions.DrunkOn));
                 #endregion
                 #region Impostor Modifiers
                 if (Check(CustomGameOptions.DisperserOn) && GameOptionsManager.Instance.currentNormalGameOptions.MapId < 4)

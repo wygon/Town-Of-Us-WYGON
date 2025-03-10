@@ -44,7 +44,13 @@ namespace TownOfUs.Patches
                 seer.LastInvestigated = DateTime.UtcNow;
                 seer.LastInvestigated = seer.LastInvestigated.AddSeconds(CustomGameOptions.InitialCooldowns - CustomGameOptions.SeerCd);
             }
-
+            
+            if (PlayerControl.LocalPlayer.Is(ModifierEnum.Drunk))
+            {
+                var drunk = Modifier.GetModifier<Drunk>(PlayerControl.LocalPlayer);
+                drunk.RoundsLeft = CustomGameOptions.DrunkDuration;
+            }
+            
             if (PlayerControl.LocalPlayer.Is(RoleEnum.Oracle))
             {
                 var oracle = Role.GetRole<Oracle>(PlayerControl.LocalPlayer);

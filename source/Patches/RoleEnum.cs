@@ -93,7 +93,8 @@ namespace TownOfUs
         SixthSense,
         Shy,
         Mini,
-        Saboteur
+        Saboteur,
+        Drunk
     }
 
     public enum AbilityEnum

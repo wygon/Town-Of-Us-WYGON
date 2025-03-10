@@ -75,6 +75,6 @@ namespace TownOfUs.Patches
         public readonly static Color SixthSense = new Color(0.85f, 1f, 0.55f, 1f);
         public readonly static Color Shy = new Color(1f, 0.7f, 0.8f, 1f);
         public readonly static Color Mini = new Color(0.8f, 1f, 0.9f, 1f);
-
+        public readonly static Color Drunk = new Color(0.46f, 0.5f, 0f, 1f);
     }
 }

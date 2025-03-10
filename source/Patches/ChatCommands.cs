@@ -431,6 +431,11 @@ namespace TownOfUs.Patches
                         AddModifierMessage(ModifierEnum.Frosty);
                         return false;
                     }
+                    else if (chatText.ToLower().StartsWith("/dru") || chatText.ToLower().StartsWith("/ dru"))
+                    {
+                        AddModifierMessage(ModifierEnum.Drunk);
+                        return false;
+                    }
                     else if (chatText.ToLower().StartsWith("/sense") || chatText.ToLower().StartsWith("/ sense") ||
                         chatText.ToLower().StartsWith("/sixth") || chatText.ToLower().StartsWith("/ sixth"))
                     {
@@ -664,6 +669,8 @@ namespace TownOfUs.Patches
                     PlayerControl.LocalPlayer, "The Underdog is an impostor modifier that grants Impostors a reduced kill cooldown when alone.");
                 if (modifier == ModifierEnum.Frosty) DestroyableSingleton<HudManager>.Instance.Chat.AddChat(
                     PlayerControl.LocalPlayer, "The Frosty is a crewmate modifier that reduces the speed of their killer temporarily.");
+                if (modifier == ModifierEnum.Drunk) DestroyableSingleton<HudManager>.Instance.Chat.AddChat(
+                    PlayerControl.LocalPlayer, "The Drunk is a crewmate modifier that drunk too much...");
                 if (modifier == ModifierEnum.SixthSense) DestroyableSingleton<HudManager>.Instance.Chat.AddChat(
                     PlayerControl.LocalPlayer, "The Sixth Sense is a global modifier that alerts players to when someone interacts with them.");
                 if (modifier == ModifierEnum.Shy) DestroyableSingleton<HudManager>.Instance.Chat.AddChat(

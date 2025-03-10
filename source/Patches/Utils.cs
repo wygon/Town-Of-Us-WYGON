@@ -1725,6 +1725,13 @@ namespace TownOfUs
                 undertaker.CurrentlyDragging = null;
             }
             #endregion
+            #region Modifiers
+            foreach (var modifier in Modifier.GetModifiers(ModifierEnum.Drunk))
+            {
+                var drunk = (Drunk)modifier;
+                drunk.RoundsLeft -= 1;
+            }
+            #endregion
         }
     }
 }

@@ -115,6 +115,7 @@ namespace TownOfUs.Roles.Modifiers
                 if (CustomGameOptions.FrostyOn > 0) ColorMapping.Add("Frosty", Colors.Frosty);
                 if (CustomGameOptions.MultitaskerOn > 0) ColorMapping.Add("Multitasker", Colors.Multitasker);
                 if (CustomGameOptions.TorchOn > 0) ColorMapping.Add("Torch", Colors.Torch);
+                if (CustomGameOptions.DrunkOn > 0) ColorMapping.Add("Drunk", Colors.Drunk);
             }
             if (CustomGameOptions.AssassinGuessLovers && CustomGameOptions.LoversOn > 0) ColorMapping.Add("Lover", Colors.Lovers);
 
