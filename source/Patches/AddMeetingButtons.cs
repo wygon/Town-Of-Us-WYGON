@@ -15,7 +15,7 @@ using TownOfUs.CrewmateRoles.SwapperMod;
 using TownOfUs.CrewmateRoles.VigilanteMod;
 using TownOfUs.ImpostorRoles.HypnotistMod;
 using TownOfUs.Modifiers.AssassinMod;
-using TownOfUs.NeutralRoles.DoomsayerMod;
+using TownOfUs.NeutralRoles.ForetellerMod;
 
 namespace TownOfUs.Patches
 {

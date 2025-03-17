@@ -140,7 +140,7 @@ namespace TownOfUs
                 __instance.KillButton.graphic.sprite = Inspect;
                 flag = true;
             }
-            else if (PlayerControl.LocalPlayer.Is(RoleEnum.Doomsayer))
+            else if (PlayerControl.LocalPlayer.Is(RoleEnum.Foreteller))
             {
                 __instance.KillButton.graphic.sprite = Observe;
                 flag = true;

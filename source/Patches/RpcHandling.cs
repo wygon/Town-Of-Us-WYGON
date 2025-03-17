@@ -11,7 +11,7 @@ using TownOfUs.CrewmateRoles.MedicMod;
 using TownOfUs.CrewmateRoles.SwapperMod;
 using TownOfUs.CrewmateRoles.VigilanteMod;
 using TownOfUs.CrewmateRoles.JailorMod;
-using TownOfUs.NeutralRoles.DoomsayerMod;
+using TownOfUs.NeutralRoles.ForetellerMod;
 using TownOfUs.CustomOption;
 using TownOfUs.Extensions;
 using TownOfUs.Modifiers.AssassinMod;
@@ -990,8 +990,8 @@ namespace TownOfUs
                     case CustomRPC.DoomsayerKill:
                         var toDie3 = Utils.PlayerById(reader.ReadByte());
                         var doom = Utils.PlayerById(reader.ReadByte());
-                        DoomsayerKill.DoomKillCount(toDie3, doom);
                         DoomsayerKill.MurderPlayer(toDie3);
+                        DoomsayerKill.DoomKillCount(toDie3, doom);
                         break;
                     case CustomRPC.SetMimic:
                         var glitchPlayer = Utils.PlayerById(reader.ReadByte());
@@ -1702,7 +1702,7 @@ namespace TownOfUs
                     NeutralEvilRoles.Add((typeof(Executioner), CustomGameOptions.ExecutionerOn, false || CustomGameOptions.UniqueRoles));
 
                 if (CustomGameOptions.DoomsayerOn > 0)
-                    NeutralEvilRoles.Add((typeof(Doomsayer), CustomGameOptions.DoomsayerOn, false || CustomGameOptions.UniqueRoles));
+                    NeutralEvilRoles.Add((typeof(Foreteller), CustomGameOptions.DoomsayerOn, false || CustomGameOptions.UniqueRoles));
 
                 if (CustomGameOptions.SoulCollectorOn > 0)
                     NeutralEvilRoles.Add((typeof(SoulCollector), CustomGameOptions.SoulCollectorOn, true));

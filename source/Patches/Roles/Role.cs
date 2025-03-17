@@ -197,9 +197,9 @@ namespace TownOfUs.Roles
                 var exeRole = (Executioner)exe;
                 if (exeRole.TargetVotedOut && CustomGameOptions.NeutralEvilWinEndsGame) return;
             }
-            foreach (var doom in GetRoles(RoleEnum.Doomsayer))
+            foreach (var doom in GetRoles(RoleEnum.Foreteller))
             {
-                var doomRole = (Doomsayer)doom;
+                var doomRole = (Foreteller)doom;
                 if (doomRole.WonByGuessing && CustomGameOptions.NeutralEvilWinEndsGame) return;
             }
             foreach (var sc in GetRoles(RoleEnum.SoulCollector))

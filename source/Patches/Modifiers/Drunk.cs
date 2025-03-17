@@ -13,7 +13,7 @@ namespace TownOfUs.Modifiers
                 if (__instance.myPlayer.Is(ModifierEnum.Drunk))
                     if (__instance.AmOwner && GameData.Instance && __instance.myPlayer.CanMove)
                         if (!(Modifier.GetModifier<Drunk>(__instance.myPlayer).RoundsLeft <= 0))
-                            __instance.body.velocity *= -1;
+                            __instance.body.velocity *= -1;             
             }
         }
     }

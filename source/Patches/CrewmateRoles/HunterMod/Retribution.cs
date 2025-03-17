@@ -14,7 +14,7 @@ using TownOfUs.CrewmateRoles.SwapperMod;
 using TownOfUs.CrewmateRoles.VigilanteMod;
 using TownOfUs.ImpostorRoles.BlackmailerMod;
 using TownOfUs.Modifiers.AssassinMod;
-using TownOfUs.NeutralRoles.DoomsayerMod;
+using TownOfUs.NeutralRoles.ForetellerMod;
 using UnityEngine.UI;
 
 namespace TownOfUs.CrewmateRoles.HunterMod

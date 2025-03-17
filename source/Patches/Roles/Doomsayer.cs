@@ -9,7 +9,7 @@ using System;
 
 namespace TownOfUs.Roles
 {
-    public class Doomsayer : Role, IGuesser
+    public class Foreteller : Role, IGuesser
     {
         public Dictionary<byte, (GameObject, GameObject, GameObject, TMP_Text)> Buttons { get; set; } = new();
         public Dictionary<byte, TMP_Text> RoleGuess { get; set; } = new();
@@ -23,13 +23,13 @@ namespace TownOfUs.Roles
         public PlayerControl ClosestPlayer;
         public PlayerControl LastObservedPlayer;
 
-        public Doomsayer(PlayerControl player) : base(player)
+        public Foreteller(PlayerControl player) : base(player)
         {
-            Name = "Doomsayer";
+            Name = "Foreteller";
             ImpostorText = () => "Guess People's Roles To Win!";
             TaskText = () => "Win by guessing player's roles\nFake Tasks:";
-            Color = Patches.Colors.Doomsayer;
-            RoleType = RoleEnum.Doomsayer;
+            Color = Patches.Colors.Foreteller;
+            RoleType = RoleEnum.Foreteller;
             LastObserved = DateTime.UtcNow;
             AddToRoleHistory(RoleType);
             Faction = Faction.NeutralEvil;
@@ -93,7 +93,7 @@ namespace TownOfUs.Roles
             }
             if (CustomGameOptions.DoomsayerGuessNeutralEvil)
             {
-                if (!CustomGameOptions.UniqueRoles) ColorMapping.Add("Doomsayer", Colors.Doomsayer);
+                if (!CustomGameOptions.UniqueRoles) ColorMapping.Add("Foreteller", Colors.Foreteller);
                 if (CustomGameOptions.ExecutionerOn > 0) ColorMapping.Add("Executioner", Colors.Executioner);
                 if (CustomGameOptions.JesterOn > 0 || (CustomGameOptions.ExecutionerOn > 0 && CustomGameOptions.OnTargetDead == OnTargetDead.Jester) || (CustomGameOptions.GuardianAngelOn > 0 && CustomGameOptions.GaOnTargetDeath == BecomeOptions.Jester)) ColorMapping.Add("Jester", Colors.Jester);
                 if (CustomGameOptions.SoulCollectorOn > 0) ColorMapping.Add("Soul Collector", Colors.SoulCollector);

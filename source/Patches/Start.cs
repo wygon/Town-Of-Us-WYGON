@@ -210,9 +210,9 @@ namespace TownOfUs.Patches
                 arsonist.LastDoused = arsonist.LastDoused.AddSeconds(CustomGameOptions.InitialCooldowns - CustomGameOptions.DouseCd);
             }
 
-            if (PlayerControl.LocalPlayer.Is(RoleEnum.Doomsayer))
+            if (PlayerControl.LocalPlayer.Is(RoleEnum.Foreteller))
             {
-                var doomsayer = Role.GetRole<Doomsayer>(PlayerControl.LocalPlayer);
+                var doomsayer = Role.GetRole<Foreteller>(PlayerControl.LocalPlayer);
                 doomsayer.LastObserved = DateTime.UtcNow;
                 doomsayer.LastObserved = doomsayer.LastObserved.AddSeconds(CustomGameOptions.InitialCooldowns - CustomGameOptions.ObserveCooldown);
             }

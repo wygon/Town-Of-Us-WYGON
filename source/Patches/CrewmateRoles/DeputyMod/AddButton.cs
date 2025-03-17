@@ -9,7 +9,7 @@ using TownOfUs.CrewmateRoles.VigilanteMod;
 using TownOfUs.Extensions;
 using TownOfUs.ImpostorRoles.BlackmailerMod;
 using TownOfUs.Modifiers.AssassinMod;
-using TownOfUs.NeutralRoles.DoomsayerMod;
+using TownOfUs.NeutralRoles.ForetellerMod;
 using TownOfUs.Patches;
 using TownOfUs.Roles;
 using TownOfUs.Roles.Modifiers;
@@ -182,9 +182,9 @@ namespace TownOfUs.CrewmateRoles.DeputyMod
                     ShowHideButtons.HideButtons(assassin);
                 }
 
-                if (player.Is(RoleEnum.Doomsayer))
+                if (player.Is(RoleEnum.Foreteller))
                 {
-                    var doomsayer = Role.GetRole<Doomsayer>(PlayerControl.LocalPlayer);
+                    var doomsayer = Role.GetRole<Foreteller>(PlayerControl.LocalPlayer);
                     ShowHideButtonsDoom.HideButtonsDoom(doomsayer);
                     ShowHideButtonsDoom.HideTextDoom(doomsayer);
                 }
@@ -278,9 +278,9 @@ namespace TownOfUs.CrewmateRoles.DeputyMod
                 ShowHideButtons.HideTarget(assassin, voteArea.TargetPlayerId);
             }
 
-            if (PlayerControl.LocalPlayer.Is(RoleEnum.Doomsayer) && !PlayerControl.LocalPlayer.Data.IsDead)
+            if (PlayerControl.LocalPlayer.Is(RoleEnum.Foreteller) && !PlayerControl.LocalPlayer.Data.IsDead)
             {
-                var doom = Role.GetRole<Doomsayer>(PlayerControl.LocalPlayer);
+                var doom = Role.GetRole<Foreteller>(PlayerControl.LocalPlayer);
                 ShowHideButtonsDoom.HideTarget(doom, voteArea.TargetPlayerId);
             }
 

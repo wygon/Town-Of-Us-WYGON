@@ -8,7 +8,7 @@ using TownOfUs.Roles.Modifiers;
 using UnityEngine;
 using UnityEngine.UI;
 using Object = UnityEngine.Object;
-using TownOfUs.NeutralRoles.DoomsayerMod;
+using TownOfUs.NeutralRoles.ForetellerMod;
 
 namespace TownOfUs.CrewmateRoles.MayorMod
 {
@@ -59,9 +59,9 @@ namespace TownOfUs.CrewmateRoles.MayorMod
                 ShowHideButtons.HideTarget(assassin, voteArea.TargetPlayerId);
                 voteArea.NameText.transform.localPosition = new Vector3(0.3384f, 0.0311f, -0.1f);
             }
-            else if (PlayerControl.LocalPlayer.Is(RoleEnum.Doomsayer))
+            else if (PlayerControl.LocalPlayer.Is(RoleEnum.Foreteller))
             {
-                var doomsayer = Role.GetRole<Doomsayer>(PlayerControl.LocalPlayer);
+                var doomsayer = Role.GetRole<Foreteller>(PlayerControl.LocalPlayer);
                 ShowHideButtonsDoom.HideTarget(doomsayer, voteArea.TargetPlayerId);
                 voteArea.NameText.transform.localPosition = new Vector3(0.3384f, 0.0311f, -0.1f);
                 foreach (var (targetId, guessText) in doomsayer.RoleGuess)

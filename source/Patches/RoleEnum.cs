@@ -35,7 +35,7 @@ namespace TownOfUs
         Werewolf,
         Detective,
         Imitator,
-        Doomsayer,
+        Foreteller,
         Vampire,
         Prosecutor,
         Oracle,

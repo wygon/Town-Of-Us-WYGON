@@ -636,7 +636,7 @@ namespace TownOfUs.CustomOption
                 PercentFormat);
 
             NeutralEvilRoles = new CustomHeaderOption(num++, MultiMenu.neutral, "Neutral Evil Roles");
-            DoomsayerOn = new CustomNumberOption(num++, MultiMenu.neutral, "<color=#00FF80FF>Doomsayer</color>", 0f, 0f, 100f, 10f,
+            DoomsayerOn = new CustomNumberOption(num++, MultiMenu.neutral, "<color=#00FF80FF>Foreteller</color>", 0f, 0f, 100f, 10f,
                 PercentFormat);
             ExecutionerOn = new CustomNumberOption(num++, MultiMenu.neutral, "<color=#8C4005FF>Executioner</color>", 0f, 0f, 100f, 10f,
                 PercentFormat);
@@ -1079,9 +1079,9 @@ namespace TownOfUs.CustomOption
             WingManCooldown =
                 new CustomNumberOption(num++, MultiMenu.crewmate, "Wingman Cooldown", 25f, 10f, 60f, 2.5f, CooldownFormat);
             WingManDuration =
-                new CustomNumberOption(num++, MultiMenu.crewmate, "Wingman Duration", 5f, 2f, 15f, 1f, CooldownFormat);
+                new CustomNumberOption(num++, MultiMenu.crewmate, "Wingman Duration", 7f, 2f, 15f, 1f, CooldownFormat);
             WingManMaxUses = new CustomNumberOption(num++, MultiMenu.crewmate, "Maximum Number Of Wingmans", 5, 1, 15, 1);
-            WingManRange = new CustomNumberOption(num++, MultiMenu.crewmate, "Range of Wingman", 5, 4, 8, 1);
+            WingManRange = new CustomNumberOption(num++, MultiMenu.crewmate, "Range of Wingman", 5, 4, 6, 1);
             
             Hunter =
                new CustomHeaderOption(num++, MultiMenu.crewmate, "<color=#29AB87FF>Hunter</color>");
@@ -1253,14 +1253,14 @@ namespace TownOfUs.CustomOption
             MaxVests =
                 new CustomNumberOption(num++, MultiMenu.neutral, "Maximum Number Of Vests", 5, 1, 15, 1);
 
-            Doomsayer = new CustomHeaderOption(num++, MultiMenu.neutral, "<color=#00FF80FF>Doomsayer</color>");
+            Doomsayer = new CustomHeaderOption(num++, MultiMenu.neutral, "<color=#00FF80FF>Foreteller</color>");
             ObserveCooldown =
                 new CustomNumberOption(num++, MultiMenu.neutral, "Observe Cooldown", 25f, 10f, 60f, 2.5f, CooldownFormat);
-            DoomsayerGuessNeutralBenign = new CustomToggleOption(num++, MultiMenu.neutral, "Doomsayer Can Guess Neutral Benign Roles", false);
-            DoomsayerGuessNeutralEvil = new CustomToggleOption(num++, MultiMenu.neutral, "Doomsayer Can Guess Neutral Evil Roles", false);
-            DoomsayerGuessNeutralKilling = new CustomToggleOption(num++, MultiMenu.neutral, "Doomsayer Can Guess Neutral Killing Roles", false);
-            DoomsayerGuessImpostors = new CustomToggleOption(num++, MultiMenu.neutral, "Doomsayer Can Guess Impostor Roles", false);
-            DoomsayerCantObserve = new CustomToggleOption(num++, MultiMenu.neutral, "Doomsayer Can't Observe", false);
+            DoomsayerGuessNeutralBenign = new CustomToggleOption(num++, MultiMenu.neutral, "Foreteller Can Guess Neutral Benign Roles", true);
+            DoomsayerGuessNeutralEvil = new CustomToggleOption(num++, MultiMenu.neutral, "Foreteller Can Guess Neutral Evil Roles", true);
+            DoomsayerGuessNeutralKilling = new CustomToggleOption(num++, MultiMenu.neutral, "Foreteller Can Guess Neutral Killing Roles", true);
+            DoomsayerGuessImpostors = new CustomToggleOption(num++, MultiMenu.neutral, "Foreteller Can Guess Impostor Roles", true);
+            DoomsayerCantObserve = new CustomToggleOption(num++, MultiMenu.neutral, "Foreteller Can't Observe", true);
 
             Executioner =
                 new CustomHeaderOption(num++, MultiMenu.neutral, "<color=#8C4005FF>Executioner</color>");
@@ -1422,9 +1422,10 @@ namespace TownOfUs.CustomOption
             NoclipCooldown =
                 new CustomNumberOption(num++, MultiMenu.imposter, "Noclip Cooldown", 25f, 10f, 60f, 2.5f, CooldownFormat);
             NoclipDuration =
-                new CustomNumberOption(num++, MultiMenu.imposter, "Noclip Duration", 5f, 2f, 20f, 1f, CooldownFormat);
+                new CustomNumberOption(num++, MultiMenu.imposter, "Noclip Duration", 10f, 5f, 20f, 1f, CooldownFormat);
             NoclipVent =
                 new CustomToggleOption(num++, MultiMenu.imposter, "Noclip Can Vent", false);
+
             Venerer = new CustomHeaderOption(num++, MultiMenu.imposter, "<color=#FF0000FF>Venerer</color>");
             AbilityCooldown =
                 new CustomNumberOption(num++, MultiMenu.imposter, "Ability Cooldown", 25f, 10f, 60f, 2.5f, CooldownFormat);

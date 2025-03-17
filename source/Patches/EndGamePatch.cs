@@ -94,7 +94,7 @@ namespace TownOfUs.Patches {
                     else if (role.Value == RoleEnum.Escapist) { playerRole += "<color=#" + Patches.Colors.Impostor.ToHtmlStringRGBA() + ">Escapist</color> > "; }
                     else if (role.Value == RoleEnum.Imitator) { playerRole += "<color=#" + Patches.Colors.Imitator.ToHtmlStringRGBA() + ">Imitator</color> > "; }
                     else if (role.Value == RoleEnum.Bomber) { playerRole += "<color=#" + Patches.Colors.Impostor.ToHtmlStringRGBA() + ">Bomber</color> > "; }
-                    else if (role.Value == RoleEnum.Doomsayer) { playerRole += "<color=#" + Patches.Colors.Doomsayer.ToHtmlStringRGBA() + ">Doomsayer</color> > "; }
+                    else if (role.Value == RoleEnum.Foreteller) { playerRole += "<color=#" + Patches.Colors.Foreteller.ToHtmlStringRGBA() + ">Foreteller</color> > "; }
                     else if (role.Value == RoleEnum.Vampire) { playerRole += "<color=#" + Patches.Colors.Vampire.ToHtmlStringRGBA() + ">Vampire</color> > "; }
                     else if (role.Value == RoleEnum.Prosecutor) { playerRole += "<color=#" + Patches.Colors.Prosecutor.ToHtmlStringRGBA() + ">Prosecutor</color> > "; }
                     else if (role.Value == RoleEnum.Warlock) { playerRole += "<color=#" + Patches.Colors.Impostor.ToHtmlStringRGBA() + ">Warlock</color> > "; }
@@ -171,12 +171,12 @@ namespace TownOfUs.Patches {
                 }
                 if (!CustomGameOptions.NeutralEvilWinEndsGame)
                 {
-                    if (playerControl.Is(RoleEnum.Doomsayer))
+                    if (playerControl.Is(RoleEnum.Foreteller))
                     {
-                        var doom = Role.GetRole<Doomsayer>(playerControl);
+                        var doom = Role.GetRole<Foreteller>(playerControl);
                         if (doom.WonByGuessing)
                         {
-                            AdditionalTempData.otherWinners.Add(new AdditionalTempData.Winners() { PlayerName = doom.Player.Data.PlayerName, Role = RoleEnum.Doomsayer });
+                            AdditionalTempData.otherWinners.Add(new AdditionalTempData.Winners() { PlayerName = doom.Player.Data.PlayerName, Role = RoleEnum.Foreteller });
                             playerName += $"<color=#EFBF04>{playerControl.Data.PlayerName}</color>";
                         }
                     }
@@ -253,7 +253,7 @@ namespace TownOfUs.Patches {
                 roleSummaryText.AppendLine("\n\n\nOther Winners:");
                 foreach (var data in AdditionalTempData.otherWinners)
                 {
-                    if (data.Role == RoleEnum.Doomsayer) roleSummaryText.AppendLine("<color=#" + Patches.Colors.Doomsayer.ToHtmlStringRGBA() + $">{data.PlayerName}</color>");
+                    if (data.Role == RoleEnum.Foreteller) roleSummaryText.AppendLine("<color=#" + Patches.Colors.Foreteller.ToHtmlStringRGBA() + $">{data.PlayerName}</color>");
                     else if (data.Role == RoleEnum.Executioner) roleSummaryText.AppendLine("<color=#" + Patches.Colors.Executioner.ToHtmlStringRGBA() + $">{data.PlayerName}</color>");
                     else if (data.Role == RoleEnum.Jester) roleSummaryText.AppendLine("<color=#" + Patches.Colors.Jester.ToHtmlStringRGBA() + $">{data.PlayerName}</color>");
                     else if (data.Role == RoleEnum.Phantom) roleSummaryText.AppendLine("<color=#" + Patches.Colors.Phantom.ToHtmlStringRGBA() + $">{data.PlayerName}</color>");

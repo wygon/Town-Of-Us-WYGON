@@ -25,7 +25,7 @@ namespace TownOfUs
                             playerInfo._object.Is(RoleEnum.Icenberg) ||
                             playerInfo._object.Is(RoleEnum.Arsonist) || playerInfo._object.Is(RoleEnum.Juggernaut) ||
                             playerInfo._object.Is(RoleEnum.Plaguebearer) || playerInfo._object.Is(RoleEnum.Pestilence) ||
-                            playerInfo._object.Is(RoleEnum.Werewolf) || playerInfo._object.Is(RoleEnum.Doomsayer) ||
+                            playerInfo._object.Is(RoleEnum.Werewolf) || playerInfo._object.Is(RoleEnum.Foreteller) ||
                             playerInfo._object.Is(RoleEnum.Vampire) || playerInfo._object.Is(RoleEnum.SoulCollector) ||
                             playerInfo._object.Is(RoleEnum.Phantom) || playerInfo._object.Is(RoleEnum.Haunter) ||
                             (playerInfo._object.Is(ModifierEnum.Lover) && !Modifier.GetModifier<Lover>(playerInfo._object).OtherLover.Player.Is(Faction.Crewmates))
@@ -59,7 +59,7 @@ namespace TownOfUs
                            || playerControl.Is(RoleEnum.Plaguebearer)
                            || playerControl.Is(RoleEnum.Pestilence)
                            || playerControl.Is(RoleEnum.Werewolf)
-                           || playerControl.Is(RoleEnum.Doomsayer)
+                           || playerControl.Is(RoleEnum.Foreteller)
                            || playerControl.Is(RoleEnum.Vampire)
                            || playerControl.Is(RoleEnum.SoulCollector);
 

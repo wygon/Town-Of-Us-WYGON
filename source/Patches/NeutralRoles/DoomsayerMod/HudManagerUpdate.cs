@@ -1,7 +1,7 @@
 using HarmonyLib;
 using TownOfUs.Roles;
 
-namespace TownOfUs.NeutralRoles.DoomsayerMod
+namespace TownOfUs.NeutralRoles.ForetellerMod
 {
     [HarmonyPatch(typeof(HudManager), nameof(HudManager.Update))]
     public static class HudManagerUpdate
@@ -11,8 +11,8 @@ namespace TownOfUs.NeutralRoles.DoomsayerMod
             if (PlayerControl.AllPlayerControls.Count <= 1) return;
             if (PlayerControl.LocalPlayer == null) return;
             if (PlayerControl.LocalPlayer.Data == null) return;
-            if (!PlayerControl.LocalPlayer.Is(RoleEnum.Doomsayer)) return;
-            var role = Role.GetRole<Doomsayer>(PlayerControl.LocalPlayer);
+            if (!PlayerControl.LocalPlayer.Is(RoleEnum.Foreteller)) return;
+            var role = Role.GetRole<Foreteller>(PlayerControl.LocalPlayer);
 
             __instance.KillButton.gameObject.SetActive((__instance.UseButton.isActiveAndEnabled || __instance.PetButton.isActiveAndEnabled)
                     && !MeetingHud.Instance && !PlayerControl.LocalPlayer.Data.IsDead

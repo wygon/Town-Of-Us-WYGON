@@ -28,7 +28,7 @@ namespace TownOfUs.NeutralRoles.PhantomMod
             var exiled = __instance.initData.networkedPlayer?.Object;
             if (!WillBePhantom.Data.IsDead && (exiled.Is(Faction.NeutralKilling) || exiled.Is(Faction.NeutralEvil) || exiled.Is(Faction.NeutralBenign)) && !exiled.IsLover()) WillBePhantom = exiled;
             if (exiled == WillBePhantom && exiled.Is(RoleEnum.Jester)) return;
-            var doomRole = Role.AllRoles.FirstOrDefault(x => x.RoleType == RoleEnum.Doomsayer && ((Doomsayer)x).WonByGuessing && ((Doomsayer)x).Player == WillBePhantom);
+            var doomRole = Role.AllRoles.FirstOrDefault(x => x.RoleType == RoleEnum.Foreteller && ((Foreteller)x).WonByGuessing && ((Foreteller)x).Player == WillBePhantom);
             if (doomRole != null) return;
             var exeRole = Role.AllRoles.FirstOrDefault(x => x.RoleType == RoleEnum.Executioner && ((Executioner)x).TargetVotedOut && ((Executioner)x).Player == WillBePhantom);
             if (exeRole != null) return;

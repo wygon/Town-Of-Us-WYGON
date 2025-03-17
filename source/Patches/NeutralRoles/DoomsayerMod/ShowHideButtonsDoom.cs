@@ -4,12 +4,12 @@ using UnityEngine.UI;
 using UnityEngine;
 using System.Linq;
 
-namespace TownOfUs.NeutralRoles.DoomsayerMod
+namespace TownOfUs.NeutralRoles.ForetellerMod
 {
     [HarmonyPatch(typeof(MeetingHud), nameof(MeetingHud.Confirm))]
     public class ShowHideButtonsDoom
     {
-        public static void HideButtonsDoom(Doomsayer role)
+        public static void HideButtonsDoom(Foreteller role)
         {
             foreach (var (_, (cycleBack, cycleForward, guess, guessText)) in role.Buttons)
             {
@@ -30,7 +30,7 @@ namespace TownOfUs.NeutralRoles.DoomsayerMod
             }
         }
 
-        public static void HideTextDoom(Doomsayer role)
+        public static void HideTextDoom(Foreteller role)
         {
             foreach (var (_, guessText) in role.RoleGuess)
             {
@@ -40,7 +40,7 @@ namespace TownOfUs.NeutralRoles.DoomsayerMod
         }
 
         public static void HideSingle(
-            Doomsayer role,
+            Foreteller role,
             byte targetId,
             bool killedSelf
         )
@@ -49,7 +49,7 @@ namespace TownOfUs.NeutralRoles.DoomsayerMod
             else HideTarget(role, targetId);
         }
         public static void HideTarget(
-            Doomsayer role,
+            Foreteller role,
             byte targetId
         )
         {

@@ -12,7 +12,7 @@ namespace TownOfUs.Patches
         {
             if (CustomGameOptions.NeutralEvilWinEndsGame) return;
             var neWin = false;
-            var doomRole = Role.AllRoles.FirstOrDefault(x => x.RoleType == RoleEnum.Doomsayer && ((Doomsayer)x).WonByGuessing && ((Doomsayer)x).Player == PlayerControl.LocalPlayer);
+            var doomRole = Role.AllRoles.FirstOrDefault(x => x.RoleType == RoleEnum.Foreteller && ((Foreteller)x).WonByGuessing && ((Foreteller)x).Player == PlayerControl.LocalPlayer);
             if (doomRole != null) neWin = true;
             var exeRole = Role.AllRoles.FirstOrDefault(x => x.RoleType == RoleEnum.Executioner && ((Executioner)x).TargetVotedOut && ((Executioner)x).Player == PlayerControl.LocalPlayer);
             if (exeRole != null) neWin = true;

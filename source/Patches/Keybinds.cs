@@ -80,10 +80,10 @@ namespace TownOfUs
                 else player.SetHighlighted(false);
             }
 
-            if (role is Vigilante || role.Player.Is(AbilityEnum.Assassin) || role.Player.Is(RoleEnum.Doomsayer))
+            if (role is Vigilante || role.Player.Is(AbilityEnum.Assassin) || role.Player.Is(RoleEnum.Foreteller))
             {
                 dynamic guesser = role is Vigilante ? Role.GetRole<Vigilante>(role.Player) : Ability.GetAbility<Assassin>(role.Player);
-                if (guesser == null) guesser = Role.GetRole<Doomsayer>(role.Player);
+                if (guesser == null) guesser = Role.GetRole<Foreteller>(role.Player);
                 if (role is Vigilante)
                 {
                     if (Role.GetRole<Vigilante>(role.Player).RemainingKills == 0) return;
