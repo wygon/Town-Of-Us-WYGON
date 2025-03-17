@@ -11,7 +11,7 @@ Join our [Discord - PL](https://discord.gg/QspGyKzf) if you have any problems or
 |:----------------------------:|:---------------------------------:|:--------------------------------:|:----------------------------:|
 | [Blackmailer](#blackmailer)  | [Altruist](#altruist)             | [Amnesiac](#amnesiac)            | [Aftermath](#aftermath)      |
 | [Bomber](#bomber)            | [Aurial](#aurial)                 | [Arsonist](#arsonist)            | [Bait](#bait)                |
-| [Escapist](#escapist)        | [Deputy](#deputy)                 | [Doomsayer](#doomsayer)          | [Button Barry](#button-barry)|
+| [Escapist](#escapist)        | [Deputy](#deputy)                 | [Foreteller](#Foreteller)        | [Button Barry](#button-barry)|
 | [Grenadier](#grenadier)      | [Detective](#detective)           | [Executioner](#executioner)      | [Diseased](#diseased)        |
 | [Hypnotist](#hypnotist)      | [Engineer](#engineer)             | [Guardian Angel](#guardian-angel)| [Disperser](#disperser)      |
 | [Janitor](#janitor)          | [Haunter](#haunter)               | [Jester](#jester)                | [Double Shot](#double-shot)  |
@@ -1388,22 +1388,21 @@ However, if Lovers, or a Neutral Evil role wins the game, the survivor loses.
 | Max Uses | The amount of times the Vest ability can be used | Number | 5 |
 
 -----------------------
-## Doomsayer
+## Foreteller
 ### **Team: Neutral**
-The Doomsayer is a Neutral role with its own win condition.\
-Their goal is to assassinate 3 players to win.\
-If there are only 2 other people alive, the Doomsayer only needs to assassinate the remainder of the players.\
+The Foreteller is a Neutral role with its own win condition.\
+Their goal is to assassinate 4 players to win.\
 They have an additional observe ability that hints towards certain player's roles.
 ### Game Options
 | Name | Description | Type | Default |
 |----------|:-------------:|:------:|:------:|
-| Doomsayer | The percentage probability of the Doomsayer appearing | Percentage | 0% |
-| Observe Cooldown | The Cooldown of the Doomsayer's Observe button | Time | 25s |
-| Doomsayer Guess Neutral Benign  | Whether the Doomsayer can Guess Neutral Benign roles | Toggle | False |
-| Doomsayer Guess Neutral Evil  | Whether the Doomsayer can Guess Neutral Evil roles | Toggle | False |
-| Doomsayer Guess Neutral Killing  | Whether the Doomsayer can Guess Neutral Killing roles | Toggle | False |
-| Doomsayer Guess Impostors  | Whether the Doomsayer can Guess Impostor roles | Toggle | False |
-| (Experienced) Doomsayer Can't Observe | The Doomsayer doesn't have the observe feature | Toggle | False |
+| Foreteller | The percentage probability of the Foreteller appearing | Percentage | 0% |
+| Observe Cooldown | The Cooldown of the Foreteller's Observe button | Time | 25s |
+| Foreteller Guess Neutral Benign  | Whether the Foreteller can Guess Neutral Benign roles | Toggle | True |
+| Foreteller Guess Neutral Evil  | Whether the Foreteller can Guess Neutral Evil roles | Toggle | True |
+| Foreteller Guess Neutral Killing  | Whether the Foreteller can Guess Neutral Killing roles | Toggle | True |
+| Foreteller Guess Impostors  | Whether the Foreteller can Guess Impostor roles | Toggle | True |
+| (Experienced) Foreteller Can't Observe | The Foreteller doesn't have the observe feature | Toggle | True |
 
 -----------------------
 ## Executioner
