@@ -1,13 +1,13 @@
-## *Note: This repository is an unofficial continuation of Town of Us due to the original repository being discontinued.*
+## *Note: To repozytorium to odbicie od linii głównej Town Of Us - Remastered w wersji przyjaznej dla polaków.*
 
 ![LOGO](./Images/TOU-logo.png)
 ![Roles](./Images/Roles.png)
 
-An Among Us mod that adds a bunch of roles, modifiers and game settings
+Modyfikacja Among Us dodająca mnóstwo ról, modyfikatorów i ustawień gry
 
-Join our [Discord - PL](https://discord.gg/QspGyKzf) if you have any problems or want to find people to play with!
+Dołącz do naszego [Discord](https://discord.gg/Aw8Ns2g5aT), jeśli masz jakieś problemy lub chcesz znaleźć ludzi do gry!
 
-| **Impostor Roles**           | **Crewmate Roles**                | **Neutral Roles**                | **Modifiers**                |
+| **Impostor Role**            | **Crewmate Role**                 | **Neutral Role**                 | **Modyfikacje**              |
 |:----------------------------:|:---------------------------------:|:--------------------------------:|:----------------------------:|
 | [Blackmailer](#blackmailer)  | [Altruist](#altruist)             | [Amnesiac](#amnesiac)            | [Aftermath](#aftermath)      |
 | [Bomber](#bomber)            | [Aurial](#aurial)                 | [Arsonist](#arsonist)            | [Bait](#bait)                |
@@ -39,722 +39,36 @@ Join our [Discord - PL](https://discord.gg/QspGyKzf) if you have any problems or
 |                              | [Warden](#warden)                 |                                  |                              |
 |                              | [Falcon](#falcon)                 |                                  |                              |
 -----------------------
-# Releases
-| Among Us - Version| Mod Version | Link |
+# Wydania
+| Among Us - Wersja| Mod Wersja | Link |
 |----------|-------------|-----------------|
-| 2024.10.29s & 2024.10.29e | v5.2.1 | [Download](https://github.com/eDonnes124/Town-Of-Us/releases/download/v5.2.1/ToU.v5.2.1.zip) |
-| 2024.10.29s & 2024.10.29e | v5.2.0 | [Download](https://github.com/eDonnes124/Town-Of-Us/releases/download/v5.2.0/ToU.v5.2.0.zip) |
-| 2024.10.29s & 2024.10.29e | v5.1.2 | [Download](https://github.com/eDonnes124/Town-Of-Us/releases/download/v5.1.2/ToU.v5.1.2.zip) |
-| 2024.9.4s & 2024.9.4e | v5.1.1 | [Download](https://github.com/eDonnes124/Town-Of-Us/releases/download/v5.1.1/ToU.v5.1.1.zip) |
-| 2024.9.4s & 2024.9.4e | v5.1.0 | [Download](https://github.com/eDonnes124/Town-Of-Us/releases/download/v5.1.0/ToU.v5.1.0.zip) |
-| 2024.3.5s & 2024.3.5e | v5.0.4 | [Download](https://github.com/eDonnes124/Town-Of-Us/releases/download/v5.0.4/ToU.v5.0.4.zip) |
-| 2023.11.28s & 2023.11.28e | v5.0.3 | [Download](https://github.com/eDonnes124/Town-Of-Us/releases/download/v5.0.3/ToU.v5.0.3.zip) |
-| 2023.7.12s & 2023.7.12e | v5.0.2 | [Download](https://github.com/eDonnes124/Town-Of-Us/releases/download/v5.0.2/ToU.v5.0.2.zip) |
-| 2023.6.13s & 2023.6.13e | v5.0.1 | [Download](https://github.com/eDonnes124/Town-Of-Us/releases/download/v5.0.1/ToU.v5.0.1.zip) |
-| 2023.6.13s & 2023.6.13e | v5.0.0 | [Download](https://github.com/eDonnes124/Town-Of-Us/releases/download/v5.0.0/ToU.v5.0.0.zip) |
-| 2023.3.28s & 2023.3.28e | v4.0.6 | [Download](https://github.com/eDonnes124/Town-Of-Us/releases/download/v4.0.6/ToU.v4.0.6.zip) |
-| 2023.3.28s & 2023.3.28e | v4.0.5 | [Download](https://github.com/eDonnes124/Town-Of-Us/releases/download/v4.0.5/ToU.v4.0.5.zip) |
-| 2023.3.28s & 2023.3.28e | v4.0.4 | [Download](https://github.com/eDonnes124/Town-Of-Us/releases/download/v4.0.4/ToU.v4.0.4.zip) |
-| 2023.2.28s & 2023.2.28e | v4.0.3 | [Download](https://github.com/eDonnes124/Town-Of-Us/releases/download/v4.0.3/ToU.v4.0.3.zip) |
-| 2022.12.14s & 2022.12.14e | v4.0.2 | [Download](https://github.com/eDonnes124/Town-Of-Us/releases/download/v4.0.2/ToU.v4.0.2.zip) |
-| 2022.12.14s & 2022.12.14e | v4.0.1 | [Download](https://github.com/eDonnes124/Town-Of-Us/releases/download/v4.0.1/ToU.v4.0.1.zip) |
-| 2022.12.14s & 2022.12.14e | v4.0.0 | [Download](https://github.com/eDonnes124/Town-Of-Us/releases/download/v4.0.0/ToU.v4.0.0.zip) |
-| 2022.10.25s & 2022.10.25e | v3.4.0 | [Download](https://github.com/eDonnes124/Town-Of-Us/releases/download/v3.4.0/ToU.v3.4.0.zip) |
-| 2022.8.24s & 2022.8.24e & 2022.9.20s & 2022.9.20e | v3.3.2 | [Download](https://github.com/eDonnes124/Town-Of-Us/releases/download/v3.3.2/ToU.v3.3.2.zip) |
-| 2022.8.24s & 2022.8.24e & 2022.9.20s & 2022.9.20e | v3.3.1 | [Download](https://github.com/eDonnes124/Town-Of-Us/releases/download/v3.3.1/ToU.v3.3.1.zip) |
-| 2022.8.24s & 2022.8.24e & 2022.9.20s & 2022.9.20e | v3.3.0 | [Download](https://github.com/eDonnes124/Town-Of-Us/releases/download/v3.3.0/ToU.v3.3.0.zip) |
-| 2022.6.21s & 2022.6.21e & 2022.7.12s & 2022.7.12e | v3.2.0 | [Download](https://github.com/eDonnes124/Town-Of-Us/releases/download/v3.2.0/ToU.v3.2.0.zip) |
-| 2022.3.29s & 2022.3.29e & 2022.4.19e | v3.1.0 | [Download](https://github.com/eDonnes124/Town-Of-Us/releases/download/v3.1.0/ToU.v3.1.0.zip) |
-| 2022.3.29s & 2022.3.29e & 2022.4.19e | v3.0.1 | [Download](https://github.com/eDonnes124/Town-Of-Us/releases/download/v3.0.1/ToU.v3.0.1.zip) |
-| 2022.3.29s & 2022.3.29e & 2022.4.19e | v3.0.0 | [Download](https://github.com/eDonnes124/Town-Of-Us/releases/download/v3.0.0/ToU.v3.0.0.zip) |
-| 2021.12.15s & 2021.12.15e Until 2022.2.24s & 2022.2.24e | v2.6.5 | [Download](https://github.com/eDonnes124/Town-Of-Us/releases/download/v2.6.5/ToU.v2.6.5.zip) |
-| 2021.12.15s & 2021.12.15e Until 2022.2.24s & 2022.2.24e | v2.6.4 | [Download](https://github.com/eDonnes124/Town-Of-Us/releases/download/v2.6.4/ToU.v2.6.4.zip) |
-| 2021.6.30s & 2021.6.30e & 2021.7.20e | v2.6.4 | [Download](https://github.com/eDonnes124/Town-Of-Us/releases/download/v2.6.4/ToU.v2.6.4-2021.6.30.zip) |
-| 2021.12.15s & 2021.12.15e Until 2022.2.24s & 2022.2.24e | v2.6.3 | [Download](https://github.com/eDonnes124/Town-Of-Us/releases/download/v2.6.3/ToU.v2.6.3.zip) |
-| 2021.6.30s & 2021.6.30e & 2021.7.20e | v2.6.3 | [Download](https://github.com/eDonnes124/Town-Of-Us/releases/download/v2.6.3/ToU.v2.6.3-2021.6.30.zip) |
-| 2021.12.15s & 2021.12.15e Until 2022.2.24s & 2022.2.24e | v2.6.2 | [Download](https://github.com/eDonnes124/Town-Of-Us/releases/download/v2.6.2/ToU.v2.6.2.zip) |
-| 2021.6.30s & 2021.6.30e & 2021.7.20e | v2.6.2 | [Download](https://github.com/eDonnes124/Town-Of-Us/releases/download/v2.6.2/ToU.v2.6.2-2021.6.30.zip) |
-| 2021.12.15s & 2021.12.15e Until 2022.2.24s & 2022.2.24e | v2.6.1 | [Download](https://github.com/eDonnes124/Town-Of-Us/releases/download/v2.6.1/ToU.v2.6.1.zip) |
-| 2021.6.30s & 2021.6.30e & 2021.7.20e | v2.6.1 | [Download](https://github.com/eDonnes124/Town-Of-Us/releases/download/v2.6.1/ToU.v2.6.1.Old.zip) |
-| 2021.12.15s & 2021.12.15e Until 2022.2.24s & 2022.2.24e | v2.6.0 | [Download](https://github.com/eDonnes124/Town-Of-Us/releases/download/v2.6.0/ToU.v2.6.0.zip) |
-| 2021.6.30s & 2021.6.30e & 2021.7.20e | v2.6.0 | [Download](https://github.com/eDonnes124/Town-Of-Us/releases/download/v2.6.0/ToU.v2.6.0.Old.zip) |
-| 2021.12.15s & 2021.12.15e Until 2022.2.24s & 2022.2.24e | v2.5.1 | [Download](https://github.com/eDonnes124/Town-Of-Us/releases/download/v2.5.1/ToU.v2.5.1.zip) |
-| 2021.12.15s & 2021.12.15e Until 2022.2.24s & 2022.2.24e | v2.5.0 | [Download](https://github.com/eDonnes124/Town-Of-Us/releases/download/v2.5.0/ToU.v2.5.0.zip) |
-| 2021.6.30s & 2021.6.30e & 2021.7.20e | v2.5.0 | [Download](https://github.com/eDonnes124/Town-Of-Us/releases/download/v2.5.0/ToU.v2.5.0.Old.zip) |
-| 2021.12.15s & 2021.12.15e Until 2022.2.24s & 2022.2.24e | v2.4.2 | [Download](https://github.com/eDonnes124/Town-Of-Us/releases/download/v2.4.2/ToU.v2.4.2.zip) |
-| 2021.12.15s & 2021.12.15e Until 2022.2.24s & 2022.2.24e | v2.4.1 | [Download](https://github.com/eDonnes124/Town-Of-Us/releases/download/v2.4.1/ToU.v2.4.1.zip) |
-| 2021.11.9.5s & 2021.11.9.5e | v2.4.0 | [Download](https://github.com/eDonnes124/Town-Of-Us/releases/download/v2.4.0/ToU.v2.4.0.zip) |
-| 2021.6.30s & 2021.6.30e & 2021.7.20e | v2.3.4 | [Download](https://github.com/eDonnes124/Town-Of-Us/releases/download/v2.3.4/ToU.v2.3.4.zip) |
-| 2021.6.30s & 2021.6.30e & 2021.7.20e | v2.3.3 | [Download](https://github.com/eDonnes124/Town-Of-Us/releases/download/v2.3.3/ToU.v2.3.3.zip) |
-| 2021.6.30s & 2021.6.30e & 2021.7.20e | v2.3.2 | [Download](https://github.com/eDonnes124/Town-Of-Us/releases/download/v2.3.2/ToU.v2.3.2.zip) |
-| 2021.6.30s & 2021.6.30e & 2021.7.20e | v2.3.1 | [Download](https://github.com/eDonnes124/Town-Of-Us/releases/download/v2.3.1/ToU.v2.3.1.zip) |
-| 2021.6.30s & 2021.6.30e & 2021.7.20e | v2.3.0 | [Download](https://github.com/eDonnes124/Town-Of-Us/releases/download/v2.3.0/ToU.v2.3.0.zip) |
-| 2021.6.30s & 2021.6.30e & 2021.7.20e | v2.2.1 | [Download](https://github.com/polusgg/Town-Of-Us/releases/download/v2.2.1/TOU_221.zip) |
-| 2021.6.30s & 2021.6.30e & 2021.7.20e | v2.2.0 | [Download](https://github.com/polusgg/Town-Of-Us/releases/download/v2.2.0/TOU_220.zip) |
-| 2021.6.15s & 2021.6.15e | v2.1.4 | [Download](https://github.com/polusgg/Town-Of-Us/releases/download/v2.1.4/TOU_214.zip) |
-| 2021.6.15s & 2021.6.15e | v2.1.3 | [Download](https://github.com/polusgg/Town-Of-Us/releases/download/v2.1.3/TownOfUs213_1.zip) |
-| 2021.6.15s & 2021.6.15e | v2.1.2 | [Download](https://github.com/polusgg/Town-Of-Us/releases/download/v2.1.2/TownOfUs212_1.zip) |
-| 2021.6.15s & 2021.6.15e | v2.1.1 | [Download](https://github.com/polusgg/Town-Of-Us/releases/download/v2.1.1/TownOfUs211_1.zip) |
-| 2021.5.10s | v2.0.4 | [Download](https://github.com/polusgg/Town-Of-Us/releases/download/v2.0.4/TownOfUs-v2.0.4.zip) |
-| 2021.5.10s | v2.0.3 | [Download](https://github.com/polusgg/Town-Of-Us/releases/download/v2.0.3/TownOfUs-v2.0.3.zip) |
-| 2021.4.12s & 2021.4.14s | v2.0.2 | [Download](https://github.com/polusgg/Town-Of-Us/releases/download/v2.0.2/TownOfUs-v2.0.2.zip) |
-| 2021.4.12s | v2.0.1 | [Download](https://github.com/polusgg/Town-Of-Us/releases/download/v2.0.1/TownOfUs-v2.0.1.zip) |
-| 2021.3.31.3s | v2.0.0 | [Download](https://github.com/polusgg/Town-Of-Us/releases/download/v2.0.0/TownOfUs-v2.0.0.zip) |
-| 2021.3.5s | v1.2.0 | [Download](https://github.com/polusgg/Town-Of-Us/releases/download/v1.2.0/TownOfUs-v1.2.0.zip) |
-| 2021.3.5s | v1.1.0 | [Download](https://github.com/polusgg/Town-Of-Us/releases/download/v1.1.0/TownOfUs-v1.1.0-2021.3.5s.zip) |
-| 2020.12.19s | v1.1.0 | [Download](https://github.com/polusgg/Town-Of-Us/releases/download/v1.1.0/TownOfUs-v1.1.0-2020.12.9s.zip) |
-| 2020.12.19s | v1.0.3 | [Download](https://github.com/polusgg/Town-Of-Us/releases/download/v1.0.3/TownOfUs-v1.0.3.zip) |
-| 2020.12.19s | v1.0.2 | [Download](https://github.com/polusgg/Town-Of-Us/releases/download/v1.0.2/TownOfUs-v1.0.2.zip) |
-| 2020.12.19s | v1.0.1 | [Download](https://github.com/polusgg/Town-Of-Us/releases/download/v1.0.1/TownOfUs-v1.0.1.zip) |
-| 2020.12.19s | v1.0.0 | [Download](https://github.com/polusgg/Town-Of-Us/releases/download/v1.0.0/TownOfUs-v1.0.0.zip) |
+| 18.03.2025r | v1.0.2 | [Pobierz](https://github.com/wygon/Town-Of-Us-WYGON/releases/download/v1.0.2/ToU-W.v1.0.2.rar) |
+| 04.03.2025r | v1.0.1 | [Pobierz](https://github.com/wygon/Town-Of-Us-WYGON/releases/download/v1.0.1/Town-Of-Us-R-WYGON-1.0.1.zip) |
 
 <details>
   <summary> Changelog </summary>
-  <details>
-  <summary> v5.2.1 </summary>
-  <ul> <li>Bug Fix: Warden/Warlock Chat Command Issue</li> </ul>
-  <ul> <li>Bug Fix: Mini clipping out of the map when transported, dispersed or morphed</li> </ul>
-  <ul> <li>Bug Fix: Imitator not changing back correctly upon meeting beginning</li> </ul>
-  <ul> <li>Bug Fix: Scavenger task text not updating when target is killed or disconnects</li> </ul>
-  <ul> <li>Disabled Spy and Torch on Fungle</li> </ul>
-  <ul> <li>Divided the Hat Tabs Up, courtesy of @whichtwix</li> </ul>
-  <ul> <li>Notification for modded settings change, courtesy of @whichtwix</li> </ul>
-  <ul> <li>Fixed some issues with lag when players join the game, courtesy of @whichtwix and @lekillerdesgames</li> </ul>
-  <ul> <li>Display Role List in lobby, courtesy of @ItzLoonie</li> </ul>
-  <ul> <li>Cancel start game button, courtesy of @Tommy-XL</li> </ul>
-  </details>
-  <details>
-  <summary> v5.2.0 </summary>
-  <ul> <li>Role Distribution Changed to Hybrid system between role lists and percentages (game modes removed as they can be set up through role lists)</li> </ul>
-  <ul> <li>New Role: Lookout</li> </ul>
-  <ul> <li>New Role: Scavenger</li> </ul>
-  <ul> <li>New Role: Deputy</li> </ul>
-  <ul> <li>New Modifier: Mini</li> </ul>
-  <ul> <li>New Modifier: Saboteur</li> </ul>
-  <ul> <li>New Setting: Vigilante can guess Impostor Modifiers</li> </ul>
-  <ul> <li>New Setting: Maximum Players Alive Where Blackmailed Can Vote</li> </ul>
-  <ul> <li>Bug Fix: Shy disconnecting breaking all hud cooldowns and visuals</li> </ul>
-  <ul> <li>Bug Fix: Role unreveal name position</li> </ul>
-  <ul> <li>Bug Fix: Ghost hat opacity</li> </ul>
-  <ul> <li>Bug Fix: Mayor reveal name position (vigi/doom/assassin)</li> </ul>
-  <ul> <li>Bug Fix: Assassinated players name positions (vigi/doom/assassin)</li> </ul>
-  <ul> <li>Several Doomsayer Fixes and UI changes</li> </ul>
-  <ul> <li>Doomsayer can now win by guessing every player they can physically guess as long as there are at least 2 people to guess (3 guesses to win if possible still)</li> </ul>
-  <ul> <li>Fixed (some?) Grenadier sync issues</li> </ul>
-  <ul> <li>If a Crewmate Lover has an evil teammate, their tasks no longer count towards task completion</li> </ul>
-  <ul> <li>Vigi/Doom/Assassin guess after voting setting removed, now can always guess after voting</li> </ul>
-  <ul> <li>Politician/Imitator/Hypnotist buttons now can be used after voting</li> </ul>
-  <ul> <li>Investigator no longer sees true colours for morph/mimic/swoop/camo</li> </ul>
-  <ul> <li>Investigator no longer see footprints when hypnotised</li> </ul>
-  <ul> <li>Imitator can imitate all Crewmate roles no matter if they can use them or not</li> </ul>
-  <ul> <li>Warden no longer has a cooldown and can instantly use Fortify like Medic can Shield</li> </ul>
-  <ul> <li>Juggernaut is no longer a 'Hidden Role'</li> </ul>
-  <ul> <li>Settings slots can be renamed, courtesy of @AlchlcDvl</li> </ul>
-  <ul> <li>Added chat commands, you can now type /r or /role for your current role info or /m or /modifier for your modifier, for specific roles type /ROLENAME (as long as you get the first few letters correct it will return the role you want)</li> </ul>
-  </details>
-  <details>
-  <summary> v5.1.2 </summary>
-  <ul> <li>Compatibility with the new Among Us version v2024.10.29</li> </ul>
-  <ul> <li>Minor Bug Fixes</li> </ul>
-  <ul> <li>Added Retribution back to Hunter as a setting</li> </ul>
-  </details>
-  <details>
-  <summary> v5.1.1 </summary>
-  <ul> <li>Hotfix Versioning Issue</li> </ul>
-  </details>
-  <details>
-  <summary> v5.1.0 </summary>
-  <ul> <li>Compatibility with the new Among Us version v2024.9.4</li> </ul>
-  <ul> <li>New Role: Hypnotist</li> </ul>
-  <ul> <li>New Role: Jailor</li> </ul>
-  <ul> <li>New Role: Soul Collector</li> </ul>
-  <ul> <li>New Role: Warden</li> </ul>
-  <ul> <li>New Modifier: Shy</li> </ul>
-  <ul> <li>New Modifier: Sixth Sense</li> </ul>
-  <ul> <li>Reworked Aurial</li> </ul>
-  <ul> <li>Reworked Detective, courtesy of @fariparedes</li> </ul>
-  <ul> <li>Reworked Mayor into Politician, idea based off of @fariparedes</li> </ul>
-  <ul> <li>Reworked Doomsayer</li> </ul>
-  <ul> <li>Reworked Glitch's Hack Ability</li> </ul>
-  <ul> <li>Hunter suspicious activity now triggered by all button abilities</li> </ul>
-  <ul> <li>Removed Retribution from Hunter</li> </ul>
-  <ul> <li>New Setting: Crew Killers Continue Game</li> </ul>
-  <ul> <li>New Setting: Kill Anyone During Camouflaged Comms</li> </ul>
-  <ul> <li>New Setting: Impostor Lover Can Kill Teammate</li> </ul>
-  <ul> <li>New Bomber Setting: All Impostors See Bomb</li> </ul>
-  <ul> <li>Sheriff Kill Settings Merged to Neutral Evil and Neutral Killing</li> </ul>
-  <ul> <li>Lovers can no longer accidentally kill each other</li> </ul>
-  <ul> <li>Venting is disabled when 2 people are left alive</li> </ul>
-  <ul> <li>A lot of bug fixes</li> </ul>
-  </details>
-  <details>
-  <summary> v5.0.4 </summary>
-  <ul> <li>Compatibility with the new Among Us version v2024.3.5</li> </ul>
-  <ul> <li>Added ghosts ignore tasks option</li> </ul>
-  <ul> <li>Hide vanilla roles in hudstring and its tab, courtesy of @whichtwix</li> </ul>
-  <ul> <li>April fools options, courtesy of @whichtwix</li> </ul>
-  <ul> <li>Vampire Remains Vampire When Remembered, courtesy of @Loons-Loons/@Loonie-Toons</li> </ul>
-  <ul> <li>Hats system standardised to Unity Addressables</li> </ul>
-  <ul> <li>New Role: Hunter, courtesy of @fariparedes</li> </ul>
-  <ul> <li>Modified updater, courtesy of @whichtwix</li> </ul>
-  </details>
-  <details>
-  <summary> v5.0.3 </summary>
-  <ul> <li>Compatibility with the new Among Us version v2023.11.28</li> </ul>
-  <ul> <li>Role gen system repaired, courtesy of @AlchlcDvl</li> </ul>
-  <ul> <li>Role color is now used for interaction highlights</li> </ul>
-  <ul> <li>Changes to intro role colors, courtesy of @Loonie-Toons</li> </ul>
-  <ul> <li>Custom keybinds for interactions - integration to among us keybinds, courtesy of @whichtwix</li> </ul>
-  <ul> <li>Added a tiny discord rich presence line</li> </ul>
-  <ul> <li>Disperse added back to Submerged and Airship</li> </ul>
-  <ul> <li>Multiple revived people from altruist appear on imposters arrows, rather than just the latest, courtesy of @whichtwix</li> </ul>
-  <ul> <li>Ping tracker reduced in size</li> </ul>
-  <ul> <li>Host is now shown in the ping tracker whilst in the lobby</li> </ul>
-  <ul> <li>Shows host in top left of lobby meetings</li> </ul>
-  <ul> <li>-- Soon to come: Full rewrite.</li> </ul>
-  </details>
-  <details>
-  <summary> v5.0.2 </summary>
-  <ul> <li>Compatibility with the new Among Us version v2023.7.12</li> </ul>
-  <ul> <li>New Setting: Detective can detect last killer</li> </ul>
-  <ul> <li>New Setting: Neutral Evil Win Ends Game</li> </ul>
-  <ul> <li>New Settings: Neutral Evils can kill players on victory</li> </ul>
-  </details>
-  <details>
-  <summary> v5.0.1 </summary>
-  <ul> <li>Bug Fix: Airship Ladders work again</li> </ul>
-  </details>
-  <details>
-  <summary> v5.0.0 </summary>
-  <ul> <li>Compatibility with the new Among Us version v2023.6.13</li> </ul>
-  <ul> <li>New Role: Doomsayer</li> </ul>
-  <ul> <li>New Role: Vampire</li> </ul>
-  <ul> <li>New Role: Vampire Hunter</li> </ul>
-  <ul> <li>New Role: Prosecutor</li> </ul>
-  <ul> <li>New Role: Warlock</li> </ul>
-  <ul> <li>New Role: Oracle</li> </ul>
-  <ul> <li>New Role: Venerer</li> </ul>
-  <ul> <li>New Role: Aurial</li> </ul>
-  <ul> <li>Reworked Detective</li> </ul>
-  <ul> <li>Reworked Mayor</li> </ul>
-  <ul> <li>New Modifier: Frosty</li> </ul>
-  <ul> <li>New Modifier: Aftermath</li> </ul>
-  <ul> <li>Removed Blind</li> </ul>
-  <ul> <li>Neutral Non-Killing settings split into Neutral Benign and Neutral Evil</li> </ul>
-  <ul> <li>New Setting: First round shield for first death in prior game</li> </ul>
-  <ul> <li>New Setting: Guardian Angel target evil percentage</li> </ul>
-  <ul> <li>Removed Settings for disabling name plates and level numbers</li> </ul>
-  <ul> <li>Guardian Angel targets can now be a Neutral Killer</li> </ul>
-  <ul> <li>Bug Fix: Plaguebearer no longer turns into Pestilence early</li> </ul>
-  <ul> <li>Added a new version of Snitch to Cultist</li> </ul>
-  </details>
-  <details>
-  <summary> v4.0.6 </summary>
-  <ul> <li>Bug Fixes: Reverted alot of the changes from the last few patches...</li> </ul>
-  </details>
-  <details>
-  <summary> v4.0.5 </summary>
-  <ul> <li>Bug Fix: Exile Functions now work when someone disconnects right after being assassinated</li> </ul>
-  </details>
-  <details>
-  <summary> v4.0.4 </summary>
-  <ul> <li>Compatibility with the new Among Us version v2023.3.28</li> </ul>
-  <ul> <li>Haunter/Phantom/Traitor spawn adjustments</li> </ul>
-  </details>
-  <details>
-  <summary> v4.0.3 </summary>
-  <ul> <li>Compatibility with the new Among Us version v2023.2.28</li> </ul>
-  <ul> <li>New Setting: Who can see dead players on admin (under Spy)</li> </ul>
-  <ul> <li>Bug Fix: Transporter and Glitch get everyone alive on their transport/mimic menus</li> </ul>
-  <ul> <li>Bug Fix: Undertaker can no longer drag bodies to unreportable positions</li> </ul>
-  <ul> <li>Bug Fix: Players can no longer infinitely vent in Hide & Seek</li> </ul>
-  <ul> <li>Bug Fix: Swapper swap bugs... all of them... I think</li> </ul>
-  <ul> <li>Optimisation: As Imitator you no longer need to deselect someone to select another player</li> </ul>
-  <ul> <li>Medic Shields and Guardian Angel Protects now stop a Bomb detonation and Arsonist ignites</li> </ul>
-  </details>
-  <details>
-  <summary> v4.0.2 </summary>
-  <ul> <li>Bug Fix: Cultist no longer doesn't automatically set the Impostors to 1 for the game mode</li> </ul>
-  <ul> <li>Bug Fix: Dead people no longer interfere with how many people die to a bomb</li> </ul>
-  <ul> <li>Added a new Examine Report to Detective</li> </ul>
-  <ul> <li>Engineer Fix Per Round/Game changed to Uses throughout the game</li> </ul>
-  <ul> <li>Made Medic & Trapper imitatable for the Imitator</li> </ul>
-  <ul> <li>Added indications so the dead can see who the Guardian Angel and Executioner targets are</li> </ul>
-  <ul> <li>Removed option for Snitch to be hidden on Game Start</li> </ul>
-  </details>
-  <details>
-  <summary> v4.0.1 </summary>
-  <ul> <li>Fixed the Kill Button not working in Hide & Seek</li> </ul>
-  </details>
-  <details>
-  <summary> v4.0.0 </summary>
-  <ul> <li>Compatibility with the new Among Us version v2022.12.14</li> </ul>
-  <ul> <li>New Role: Imitator (Replacing Time Lord)</li> </ul>
-  <ul> <li>New Role: Bomber (Poisoner rework)</li> </ul>
-  <ul> <li>New Game Mode: Cultist</li> </ul>
-  <ul> <li>New Game Mode Roles: Necromancer & Whisperer as well as Crewmate/Impostor variants of already existing roles</li> </ul>
-  <ul> <li>New Setting: Enable Hidden Roles</li> </ul>
-  <ul> <li>New Settings for hidden roles</li> </ul>
-  <ul> <li>New Setting: Undertaker Drag Speed</li> </ul>
-  <ul> <li>Bug Fix: Executioner/Guardian Angel turned Amnesiac/Jester/Survivor no longer have red text after changing role</li> </ul>
-  <ul> <li>Amnesiac remembering a role no longer makes their task list swap with the player they remembered</li> </ul>
-  <ul> <li>Bug Fix: Amnesiac no longer sees themself with the remembered players' modifier</li> </ul>
-  <ul> <li>Bug Fix: Amnesiac no longer loses tasks if the person they remembered from disconnects or vice versa</li> </ul>
-  <ul> <li>Bug Fix: Underdog kill timer is now in sync with normal kill cooldowns</li> </ul>
-  <ul> <li>Bug Fix: Underdog now has the correct kill cooldown on game start</li> </ul>
-  <ul> <li>Bug Fix: Underdog now can have a kill cooldown below 10secs</li> </ul>
-  <ul> <li>Bug Fix: Miner's mines are no longer invisible in certain places</li> </ul>
-  <ul> <li>Bug Fix: Undertaker no longer can make a body become invisible in certain places</li> </ul>
-  <ul> <li>Bug Fix: Neutral Killers now get correct cooldowns when attacking a vesting Survivor or a Guardian Angel shield</li> </ul>
-  <ul> <li>Adjusted the Trapper's trap & Grenadier's flash radius so they scale correctly</li> </ul>
-  </details>
-  <details>
-  <summary> v3.4.0 </summary>
-  <ul> <li>New Role: Escapist</li> </ul>
-  <ul> <li>New Modifier: Radar</li> </ul>
-  <ul> <li>New Modifier: Disperser</li> </ul>
-  <ul> <li>New Modifier: Multitasker</li> </ul>
-  <ul> <li>New Modifier: Double Shot</li> </ul>
-  <ul> <li>New Settings: Arsonist/Jester has Impostor Vision</li> </ul>
-  <ul> <li>New Setting: Arsonist Ignite Cooldown removed when they're the final killer</li> </ul>
-  <ul> <li>Reporting bodies now spreads the Plaguebearer's infection</li> </ul>
-  <ul> <li>Changed Underdog from a role to a modifier</li> </ul>
-  <ul> <li>Changed Blind to a Crewmate Modifier</li> </ul>
-  </details>
-  <details>
-  <summary> v3.3.2 </summary>
-  <ul> <li>New Setting: Snitch doesn't see Traitor</li> </ul>
-  <ul> <li>New Settings: Neutral Killing Roles can assassinate</li> </ul>
-  <ul> <li>Bug Fix: People no longer show as Phantom/Haunter when they're not</li> </ul>
-  </details>
-  <details>
-  <summary> v3.3.1 </summary>
-  <ul> <li>Bug Fix: The game no longer occasionally freezes after a meeting</li> </ul>
-  </details>
-  <details>
-  <summary> v3.3.0 </summary>
-  <ul> <li>New Game Mode: All Any</li> </ul>
-  <ul> <li>New Game Mode: Killers Only</li> </ul>
-  <ul> <li>New Settings for Random Maps</li> </ul>
-  <ul> <li>New Settings for Automatically adjusting settings depending on the map</li> </ul>
-  <ul> <li>New Settings for Better Polus (and some adjustments were added as well)</li> </ul>
-  <ul> <li>Split Settings Menu into 5 different menus (however settings are still loaded from the main one)</li> </ul>
-  <ul> <li>Added 2 more Settings slots (bringing the total to 5)</li> </ul>
-  <ul> <li>Bug Fix: Sheriff can no longer get the report button through walls</li> </ul>
-  <ul> <li>Bug Fix: Starting Impostor Kill Cooldown is now always set to the right amount</li> </ul>
-  <ul> <li>Bug Fix: Amnesiac remembering Traitor no longer makes another Traitor spawn</li> </ul>
-  <ul> <li>Bug Fix: Underdog now gets the correct cooldown when there is more then 1 Impostor</li> </ul>
-  <ul> <li>Bug Fix: An Impostor killing a Diseased player will now get the correct cooldown</li> </ul>
-  <ul> <li>Bug Fix: The only person who will know they have a GA is the GA target (if target knows they have a GA)</li> </ul>
-  <ul> <li>Bug Fix: Revived players from Poisoner kills no longer instantly die at the start of the next meeting</li> </ul>
-  </details>
-  <details>
-  <summary> v3.2.0 </summary>
-  <ul> <li>Compatability with the new Among Us version thanks to MyDragonBreath</li> </ul>
-  <ul> <li>New Role: Plaguebearer/Pestilence</li> </ul>
-  <ul> <li>New Role: Werewolf</li> </ul>
-  <ul> <li>New Role: Trapper</li> </ul>
-  <ul> <li>New Role: Detective</li> </ul>
-  <ul> <li>New Modifier: Blind (replacing Drunk)</li> </ul>
-  <ul> <li>Arsonist Rework: Douse and Ignite are on the same cooldown, however to ignite they must be standing next to one of their douses</li> </ul>
-  <ul> <li>New Settings: Vigilante/Assassin can guess lovers</li> </ul>
-  <ul> <li>New Setting: Traitor does not swap colours for Seer</li> </ul>
-  <ul> <li>New Settings: Sheriff can shoot Werewolf/Plaguebearer</li> </ul>
-  <ul> <li>New Settings: Min and Max Neutral Killing/Non-Killing Roles</li> </ul>
-  <ul> <li>Setting Change: Traitor does not spawn if Glitch is alive to Traitor does not spawn if Neutral Killing is alive</li> </ul>
-  <ul> <li>Survivor can now win with neutral killing roles and can get a Survivor only win</li> </ul>
-  <ul> <li>Tasks can now be set above the maximum default values</li> </ul>
-  <ul> <li>Transporter can now die to a Veteran on alert if they transport the Veteran</li> </ul>
-  <ul> <li>Bug Fix: Impostors on high ping can no longer kill multiple players</li> </ul>
-  <ul> <li>Bug Fix: Poisoned players now die before a meeting and not during a meeting</li> </ul>
-  <ul> <li>Bug Fix: Glitch and Poisoner can no longer kill/poison in vents</li> </ul>
-  <ul> <li>Bug Fix: Underdog now gets the correct cooldown when killing a diseased player</li> </ul>
-  <ul> <li>Bug Fix: Phantom/Haunter now appear in the correct places</li> </ul>
-  <ul> <li>Bug Fix: The Blackmailer now sees the correct colour name of their teammates depending on if they are blackmailed or not</li> </ul>
-  <ul> <li>Bug Fix: Lag is no longer caused when attempting to repick the Traitor</li> </ul>
-  </details>
-  <details>
-  <summary> v3.1.0 </summary>
-  <ul> <li>Submerged Compatibility mostly thanks to MyDragonBreath</li> </ul>
-  <ul> <li>New Setting: Assassins can guess Crewmate Modifiers</li> </ul>
-  <ul> <li>New Setting: Assassins and Vigilante can guess after voting</li> </ul>
-  <ul> <li>New Settings: Guardian Angel knows their target's role and Guardian Angel's target knows they have a Guardian Angel</li> </ul>
-  <ul> <li>New Settings: Bait minimum and maximum delay</li> </ul>
-  <ul> <li>New Setting: Diseased Kill Multiplier</li> </ul>
-  <ul> <li>New Setting: Flash Speed</li> </ul>
-  <ul> <li>New Setting: Giant Speed</li> </ul>
-  <ul> <li>New Setting: Disable meeting skip button</li> </ul>
-  <ul> <li>Bug Fix: Kill buttons should have the correct text and sprite now</li> </ul>
-  <ul> <li>Bug Fix: Glitch kills no longer bypass Survivor Vests and GA Protects</li> </ul>
-  <ul> <li>Lighter and Darker indicators for Medic</li> </ul>
-  </details>
-  <details>
-  <summary> v3.0.1 </summary>
-  <ul> <li>Bug Fix: All the flashes on screen now work again</li> </ul>
-  <ul> <li>Bug Fix: Amnesiac turned Sheriff/Glitch/Impostor now has a kill button again</li> </ul>
-  <ul> <li>Bug Fix: The kill button now has the word 'Kill' on it again</li> </ul>
-  <ul> <li>Bug Fix: The Blackmailer's blackmail button will now not always show active even when not near someone</li> </ul>
-  <ul> <li>Blackmailer now only has an initial cooldown, meaning the cooldown doesn't reset after a use now</li> </ul>
-  </details>
-  <details>
-  <summary> v3.0.0 </summary>
-  <ul> <li>New Role: Medium</li> </ul>
-  <ul> <li>New Role: Survivor</li> </ul>
-  <ul> <li>New Role: Guardian Angel</li> </ul>
-  <ul> <li>New Role: Blackmailer</li> </ul>
-  <ul> <li>New Role: Mystic</li> </ul>
-  <ul> <li>Camouflager removed</li> </ul>
-  <ul> <li>New Settings for Vigilante to kill each type of Neutral role</li> </ul>
-  <ul> <li>New Settings for Assassins to kill each type of Neutral role</li> </ul>
-  <ul> <li>Bug Fix: Executioner will always get a target unless there is no feasible target</li> </ul>
-  <ul> <li>Bug Fix: Executioner will always win when their target is voted out</li> </ul>
-  <ul> <li>The future Phantom, Haunter and Traitor will change depending on the current circumstances</li> </ul>
-  <ul> <li>Bug Fix: Abilities can no longer be used while loading into a game</li> </ul>
-  <ul> <li>Added an option to cycle backwards for Assassins and Vigilante</li> </ul>
-  </details>
-  <details>
-  <summary> v2.6.5 </summary>
-  <ul> <li>Fixed Amnesiac remembering Poisoner interaction</li> </ul>
-  <ul> <li>Fixed Button Barry not working during sabotages</li> </ul>
-  <ul> <li>Fixed Poisoner interactions against Medic shields and Veteran alerts</li> </ul>
-  <ul> <li>Transporting now works a little differently</li> </ul>
-  <ul> <li>If a player is transported when they are in a position out of bounds while on something like a ladder, it rejects the transport</li> </ul>
-  <ul> <li>Glitch and Transporter can now be lovers</li> </ul>
-  </details>
-  <details>
-  <summary> v2.6.4 </summary>
-  <ul> <li>Fixed Transporter bugging out after transporting a dead body</li> </ul>
-  <ul> <li>Reduced Tracker arrow lag</li> </ul>
-  <ul> <li>Fixed bug with Swapper where you wouldn't appear as dead after being assassinated with your swap targets already selected</li> </ul>
-  <ul> <li>Fixed Medic shield not protecting the target from impostors if the Shield Breaks option is off</li> </ul>
-  <ul> <li>Fixed Medic reports saying the wrong color if the body's killer was morphed</li> </ul>
-  <ul> <li>Fixed Investigator showing a morphed player's footprints as the color of the player they were morphed into</li> </ul>
-  <ul> <li>Ghosts no longer briefly appear after a player dies</li> </ul>
-  </details>
-  <details>
-  <summary> v2.6.3 </summary>
-  <ul> <li>Fixed the bug where games don't end (Sorry about that)</li> </ul>
-  <ul> <li>Fixed Bait not causing a self-report sometimes</li> </ul>
-  <ul> <li>Fixed Amnesiac turned Impostor not being able to kill</li> </ul>
-  <ul> <li>Fixed Traitor not being able to kill</li> </ul>
-  <ul> <li>Fixed Impostors not being able to kill a player revived by an Altruist</li> </ul>
-  <ul> <li>Fixed Flash and Giant not appearing to move at the correct speed for other players</li> </ul>
-  <ul> <li>Changed Giant and Flash colors</li> </ul>
-  <ul> <li>Split Classic Nameplates setting into Disable Level Icon and Disable Background Cosmetics</li> </ul>
-  </details>
-  <details>
-  <summary> v2.6.2 </summary>
-  <ul> <li>Fixed End Game Tracker Bug</li> </ul>
-  <ul> <li>Fixed Snitch Arrows</li> </ul>
-  <ul> <li>Added Olive Colour</li> </ul>
-  <ul> <li>Dead bodies are now removed after meetings</li> </ul>
-  <ul> <li>Added an option for Amnesiac Arrows</li> </ul>
-  <ul> <li>Fixed the issue where if a player is transported as they jump in a vent they are freezed in place</li> </ul>
-  </details>
-  <details>
-  <summary> v2.6.1 </summary>
-  <ul> <li>Fixed Poisoner killing Bait after another report resulting in a duplicated meeting</li> </ul>
-  <ul> <li>Fixed the issue where the Snitch spawning as Crewmate would see their name gold</li> </ul>
-  <ul> <li>Fixed Amnesiac remembering Transporter becoming an Impostor</li> </ul>
-  <ul> <li>Fixed Tracker Arrows</li> </ul>
-  </details>
-  <details>
-  <summary> v2.6.0 </summary>
-  <ul> <li>Fixed killing the Bait instantly banning everyone</li> </ul>
-  <ul> <li>Fixed Tracker lag</li> </ul>
-  <ul> <li>Seer adjustments</li> </ul>
-  <ul> <li>Settings for task tracking</li> </ul>
-  <ul> <li>Added a flash radius setting for Grenadier</li> </ul>
-  <ul> <li>New Role: Traitor</li> </ul>
-  <ul> <li>New Role: Transporter</li> </ul>
-  <ul> <li>New Modifier: Sleuth</li> </ul>
-  <ul> <li>Fixed Snitch/Haunter meetings when someone disconnects</li> </ul>
-  <ul> <li>Fixed Amnesiac/Snitch and Amnesiac/Mayor interactions</li> </ul>
-  <ul> <li>Jester can vent Setting</li> </ul>
-  <ul> <li>Made Modifiers disable upon death</li> </ul>
-  <ul> <li>Made anything that affects the colour of names disable upon death</li> </ul>
-  </details>
-  <details>
-  <summary> v2.5.1 </summary>
-  <ul> <li>Fixed Amnesiac/Impostor Interaction</li> </ul>
-  </details>
-  <details>
-  <summary> v2.5.0 </summary>
-  <ul> <li>Changed Lovers to a Modifier</li> </ul>
-  <ul> <li>Added Loving Impostor Percentage Setting</li> </ul>
-  <ul> <li>Added Neutral Lover Setting</li> </ul>
-  <ul> <li>Changed Assassin from a Role to a Default Ability</li> </ul>
-  <ul> <li>New Role: Amnesiac (replacing Shifter)</li> </ul>
-  <ul> <li>New Role: Veteran</li> </ul>
-  <ul> <li>New Role: Poisoner</li> </ul>
-  <ul> <li>New Role: Tracker</li> </ul>
-  <ul> <li>New Modifier: Bait</li> </ul>
-  <ul> <li>Renamed Retributionist to Vigilante</li> </ul>
-  <ul> <li>End Game Summary Added</li> </ul>
-  <ul> <li>In Game Task Tracking Added</li> </ul>
-  </details>
-  <details>
-  <summary> v2.4.2 </summary>
-  <ul> <li>New Hats</li> </ul>
-  <ul> <li>Bug Fix for Mayor Abstain Button</li> </ul>
-  <ul> <li>Readded the Missing Modstamp</li> </ul>
-  </details>
-  <details>
-  <summary> v2.4.1 </summary>
-  <ul> <li>Support for the new version of Among Us on v2021.12.15</li> </ul>
-  </details>
-  <details>
-  <summary> v2.4.0 </summary>
-  <ul> <li>Support for the new version of Among Us on v2021.11.9.5</li> </ul>
-  </details>
-  <details>
-  <summary> v2.3.4 </summary>
-  <ul> <li>Reverted the change made to Mayor as it had an unintended concequence for Assassin and Retributionist</li> </ul>
-  </details>
-  <details>
-  <summary> v2.3.3 </summary>
-  <ul> <li>Added the remaining hats with credits from ToU v2.2.1-t</li> </ul>
-  <ul> <li>Added some new hats from Pigoletto</li> </ul>
-  <ul> <li>Removed Acron’s hats as he requested their removal</li> </ul>
-  <ul> <li>Bug Fix: Lovers no longer win if the other disconnects</li> </ul>
-  <ul> <li>Bug Fix: Mayor votes no longer double on a disconnect</li> </ul>
-  <ul> <li>Bug Fix: When Shifter shifts with Arsonist, the douse also shifts now</li> </ul>
-  <ul> <li>Bug Fix: Shifter can now ignite after shifting with the Arsonist</li> </ul>
-  <ul> <li>Bug Fix: Impostors no longer see their teammate’s name go pink at the end of the meeting if their teammate is a Loving Impostor</li> </ul>
-  <ul> <li>Bug Fix: Investigator no longer lags the player into oblivion</li> </ul>
-  <ul> <li>Bug Fix: The game no longer infinitely tries to distribute crewmate modifiers when there are more modifiers than crewmates</li> </ul>
-  <ul> <li>Bug Fix: Shield now breaks when Medic disconnects</li> </ul>
-  </details>
-  <details>
-  <summary> v2.3.2 </summary>
-  <ul> <li>Bug Fix: Sheriff no longer instantly ends the game and bans the host for hacking</li> </ul>
-  <ul> <li>Bug Fix: Retributionist/Mayor interaction</li> </ul>
-  <ul> <li>Bug Fix: Executioner always gets a target now</li> </ul>
-  <ul> <li>Executioner can not have Lovers, Swapper, Mayor or Retributionist as their target</li> </ul>
-  <ul> <li>Made it so dead Impostors don’t see Haunter arrows</li> </ul>
-  <ul> <li>Made it so if Haunter reveals Neutral roles, all Neutral roles are alerted when Haunter is nearly finished tasks</li> </ul>
-  <ul> <li>Removed alert for Phantom</li> </ul>
-  <ul> <li>All hats with credits from v2.2.1-t have been added</li> </ul>
-  <ul> <li>Removed the settings about when Phantom/Haunter can be clicked and replaced them with ‘tasks remaining when they can be clicked’</li> </ul>
-  <ul> <li>Removed the settings for Phantom/Haunter to have less tasks</li> </ul>
-  <ul> <li>Changed kill cooldown bonus for Underdog from 2.5-10secs to 2.5-30secs</li> </ul>
-  </details>
-  <details>
-  <summary> v2.3.1 </summary>
-  <ul> <li>Removed Modded Handshake as that was causing the host to crash</li> </ul>
-  <ul> <li>Minor Bug Fixes</li> </ul>
-  </details>
-  <details>
-  <summary> v2.3.0 </summary>
-  <ul> <li>New Role: Retributionist (Assassin Crewmate)</li> </ul>
-  <ul> <li>New Role: Haunter (basically the Phantom but a Crewmate, once tasks are finished Impostors are revealed)</li> </ul>
-  <ul> <li>New Role: Grenadier (blinds Crewmates with flashbangs)</li> </ul>
-  <ul> <li>Added the remaining missing hats from v2.0.4 and prior</li> </ul>
-  <ul> <li>Glitch cooldowns adjusted to be the same as other roles</li> </ul>
-  <ul> <li>Made Swapper able to get Button Barry Modifier</li> </ul>
-  <ul> <li>Button Barry vision no longer reduced after Button Barry ability was used</li> </ul>
-  <ul> <li>Standardised starting cooldowns to not be decreased (for round start only) for all roles</li> </ul>
-  <ul> <li>Added alert for when Phantom is nearly finished</li> </ul>
-  <ul> <li>Glitch does not get notification for Snitch unless Snitch sees neutral roles</li> </ul>
-  <ul> <li>Made it so Impostors know when Snitch is done all tasks</li> </ul>
-  <ul> <li>Reworked how Phantom is set because of Haunter addition</li> </ul>
-  <ul> <li>Gray colour changed to ‘Darker’ for Medic reports</li> </ul>
-  <ul> <li>Made the Seer unable to see through the disguises of Morphling and Glitch</li> </ul>
-  <ul> <li>Split shifter into two settings, who can Shifter shift on and what shifted becomes</li> </ul>
-  <ul> <li>Setting for Sheriff can kill Executioner</li> </ul>
-  <ul> <li>Setting for Morphling, Swooper, Undertaker and Glitch to vent</li> </ul>
-  <ul> <li>Setting for Undertaker to vent while dragging a body</li> </ul>
-  <ul> <li>Setting for Mayor, Swapper, Jester, Executioner and Arsonist to not be able to button</li> </ul>
-  <ul> <li>Setting for Executioner becomes Shifter on target death</li> </ul>
-  <ul> <li>Setting for Phantom to do less tasks</li> </ul>
-  <ul> <li>Setting for Assassin to assassinate Snitch via ‘Crewmate’ guess</li> </ul>
-  <ul> <li>Underdog changes: Setting to choose kill cooldown bonus</li> </ul>
-  <ul> <li>Setting for Underdog to not have increased kill cooldown when 2+ imps</li> </ul>
-  <ul> <li>Settings for the Phantom to not be clickable before and after alert</li> </ul>
-  <ul> <li>Setting for Shifter to win with Crewmates</li> </ul>
-  <ul> <li>Setting for starting cooldowns on game start for all roles (a general setting)</li> </ul>
-  <ul> <li>Setting for when Snitch is revealed</li> </ul>
-  <ul> <li>Settings for clicking Phantom, one for before alert and the other for after alert</li> </ul>
-  <ul> <li>Setting for Snitch to not see Impostor names mid-meeting</li> </ul>
-  <ul> <li>Time Lord rewind time decreased from 3-15secs to 2-5secs</li> </ul>
-  <ul> <li>Time Lord cooldown increased from 10-40secs to 10-60secs</li> </ul>
-  <ul> <li>The maximum number of kills an Assassin can do during a meeting increased from 1-5 to 1-15</li> </ul>
-  <ul> <li>Bug Fix: Host no longer sees Undertaker dragging a body after they dropped it</li> </ul>
-  <ul> <li>Bug Fix: Host now has correct cooldowns on game start</li> </ul>
-  <ul> <li>Bug Fix: Investigator footprint interval fixed (lag not entirely fixed)</li> </ul>
-  <ul> <li>Bug Fix: Fixed the issue where Torch/Diseased were not given to anyone</li> </ul>
-  <ul> <li>Bug Fix: Made it so the Phantom only has to upload data and not download it</li> </ul>
-  <ul> <li>Bug Fix: Phantom no longer spawns in the admin vent</li> </ul>
-  </details>
-  <details>
-  <summary> v2.2.1 </summary>
-  <ul> <li>Fix for the credits removed in v2.0.3 </li> </ul>
-  </details>
-  <details>
-  <summary> v2.2.0 </summary>
-  <ul> <li> Compatibility for v2021.6.30 </li> </ul>
-  <ul> <li> Role percentages now change by 10%, or 5% if you hold shift </li> </ul>
-  <ul> <li> New Drag/Drop Buttons for the Undertaker </li> </ul>
-  <ul> <li> New Button Image for the Button Barry </li> </ul>
-  <ul> <li> Phantom can't switch between vents </li> </ul>
-  <ul> <li> Increased Max Cooldown for the Shifter to 60s </li> </ul>
-  <ul> <li> Swapper can no longer get the Button Barry Modifier </li> </ul>
-  <ul> <li> Glitch can no longer get the Button Barry Modifier </li> </ul>
-  <ul> <li> Mayor votes are refunded if the player disconnects </li> </ul>
-  <ul> <li> Mayor votes are refunded if the player is killed by the assassin </li> </ul>
-  <ul> <li> Handshake refactor </li> </ul>
-  <ul> <li> Fix for the Crashing Issues </li> </ul>
-  <ul> <li> Fix for the Interaction Shifter/Giant </li> </ul>
-  <ul> <li> Fix for the Interaction Shifter/Engineer </li> </ul>    
-  <ul> <li> Fix for the Interaction Glitch/Jester </li> </ul>
-  <ul> <li> Fix for the Interaction Morphling/Giant </li> </ul>
-  <ul> <li> Fix for the Altruist Body Issues </li> </ul>
-  <ul> <li> Fix for the Assassin DC Issues </li> </ul>
-  <ul> <li> Fix for the Executioner Spawn Issues </li> </ul>
-  <ul> <li> Fix for the Phantom Vent Spawn Issues </li> </ul>    
-  <ul> <li> Fix for the Phantom Walking Through Walls Issues </li> </ul>
-  <ul> <li> Fix for the Phantom Doors Issues </li> </ul>
-  <ul> <li> Fix for the Phantom Tasks Issues </li> </ul>
-  <ul> <li> Fix for the Swooper Invisible Issues </li> </ul>    
-  <ul> <li> Fix for the Time Lord Flashing Ability Issues </li> </ul>
-  <ul> <li> Fix for the Time Lord Rewind Vent Issues </li> </ul>
-  <ul> <li> Fix for the Undertaker Dragging Issues </li> </ul>    
-  <ul> <li> Fix for the Underdog Cooldown Issues </li> </ul>
-  <ul> <li> Fix for the Giant Modifier Size Issues </li> </ul>
-  <ul> <li> Fix for the State Of Dead/DC Bodies In Meeting Issues </li> </ul>   
-  <ul> <li> Fix for the Voting Visual Issues </li> </ul>      
-  <ul> <li> Minor enhancements and bug fixes </li> </ul>
- </details>
-  <details>
-  <summary> v2.1.4 </summary>
-  <ul> <li> New Role (Phantom, Undertaker, Underdog) </li> </ul>
-  <ul> <li> Custom Color </li> </ul>
-  <ul> <li> Hats </li> </ul>
-  <ul> <li> Fix for launching issues </li> </ul>
-  <ul> <li> Fix for the Voting issues </li> </ul>
-  <ul> <li> Fix for the disconnect issue</li> </ul>
-  <ul> <li> Fix for the username placement </li> </ul>
-  <ul> <li> Fix for the Medic  </li> </ul>
-  <ul> <li> Fix for the Spy </li> </ul>
-  <ul> <li> Fix for the Mayor </li> </ul>
-  <ul> <li> Fix for the Arsonist </li> </ul>
-  <ul> <li> Fix for the Assassin </li> </ul>
-  <ul> <li> Fix for the Phantom </li> </ul>
-  <ul> <li> Modded Handshake </li> </ul>
-  <ul> <li> Child is removed </li> </ul>
-  <ul> <li> Minor enhancements and bug fixes </li> </ul>
- </details>
- <details>
-  <summary> v2.1.3 </summary>
-  <ul> <li> Fix the launch issue </li> </ul>
-  <ul> <li> Fix for the swooper role </li> </ul>
-  <ul> <li> Fix for the janitor role </li> </ul>
-  <ul> <li> Minor enhancements and bug fixes </li> </ul>
- </details>
- <details>
-  <summary> v2.1.2 </summary>
-  <ul> <li> Crucial bug fixes </li> </ul>
- </details>
- <details>
-  <summary> v2.1.1 </summary>
-  <ul> <li> 2021.6.15 support, Epic Games compatibility and Assassin Role </li> </ul>
- </details>
-  <details>
-  <summary> v2.0.4 </summary>
-  <ul> <li> Crucial bug fixes </li> </ul>
- </details>
- <details>
-  <summary> v2.0.3 </summary>
-  <ul> <li> 2021.5.10s support </li> </ul>
- </details>
- <details>
-  <summary> v2.0.2 </summary>
-  <ul> <li> 2021.4.14s support and temporary auth fixes </li> </ul>
- </details>
- <details>
-  <summary> v2.0.1 </summary>
-  <ul> <li> 2021.4.12s support </li> </ul>
- </details>
- <details>
-  <summary> v2.0.0 </summary>
-  <ul>
-   <li> Airship support! </li>
-   <li> New role - Altruist </li>
-   <li> New modifiers - Giant & Button Barry </li>
-   <li> Airship comms fix built-in </li>
-   <li> Bug fixes with Lovers, Time Lord etc. </li>
-   <li> New hats based on streamers! </li>
-   <li> Investigator cannot spawn on airship due to too much lag with handling footprints </li>
-  </ul>
- </details>
-  
- <details>
-  <summary> v1.2.0 </summary>
-  <ul>
-    <li> New roles (see above)</a>
-    <li> New modifiers (see above)</li>
-    <li> Exporting and Importing game settings which sync between versions 1.2.0 and future versions</li>
-    <li> Disconnect fix </li>
-    <li> Mayor additions - Abstain button, Option for Mayor's extra votes to be anonymous </li>
-    <li> Option for dead to see the roles of everyone </li>
-    <li> Custom colours now work! </li>
-  </ul>
- </details>
- <details>
-  <summary> v1.1.0 </summary>
-  <ul>
-    <li> New roles (see above)</a>
-    <li> New modifiers (see above)</li>
-    <li> The Engineer has been changed to the <a href="https://github.com/NotHunter101/ExtraRolesAmongUs">ExtraRoles</a> version </li>
-    <li> Backend overhaul! This will make it easier to add new roles </li>
-    <li> New Button Art! </li>
-    <li> Maps and Impostor Count can be changed from the Lobby! </li>
-    <li> Shadows for the Custom Colours </li>
-    <li> Fixes </li>
-    <ul>
-      <li> The Jester and The Shifter unable to fix Sabotages </li>
-      <li> The Time Lord's Rewind not auto-force closing tasks </li>
-      <li> The Q button not working for Sheriff </li>
-      <li> The Shifter's Shift looking too much like a Kill </li>
-      <li> Changing colours would render you weirdly green in normal Among Us </li>
-    </ul>
-  </ul>
-  </details>
-
-
-  <details>
-  <summary> v1.0.3 </summary>
-  <p> Fixes: </p>
-  <ul>
-    <li> Engineer being able to Fix every sabotage </li>
-    <li> The Investigator being able to revive people voted out (and instead made it an option) </li>
-    <li> Footprints not appearing if a person walks over old footprints </li>
-    <li> Graphical glitch where Jester and Lovers simultaneously win </li>
-    <li> Players spawning back into positions from the last game when time is rewound right at the beginning of a new game </li>
-    <li> Graphical Bug of Time Lord's name not being blue in Meetings </li>
-    <li> Fixed Medbay Scan not working for custom colours </li>
-  </ul>
-  </details>
 
   <details>
   <summary> v1.0.2 </summary>
-  <p> Fixes: </p>
+  <p> Dodano: </p>
   <ul>
-    <li>  The Swapper being unable to vote </li>
-    Swapper unable to vote
-    <li> Mayor Vote Bank ending up negative </li>
-    <li> Anonymous Voting not working when Mayor is in a game </li>
-    <li> Chats not working in the lobby </li>
-    <li> Sheriff desync (I think) </li>
-    <li> Buttons being able to be used during meetings </li>
+    <li>Foreteller</li>
+    <li>Drunk - modyfikator</li>
   </ul>
   <hr>
   </details>
 
   <details>
   <summary> v1.0.1 </summary>
-  <p> Fixes errors of not being able to launch. </p>
+  <p> Dodano: </p>
+  <ul>
+    <li>Falcon</li>
+    <li>TimeLord</li>
+    <li>Icenberg</li>
+    <li>Noclip</li>
+  </ul>
   </details>
+
 </details>
 
 
@@ -864,308 +178,314 @@ If there any problems with the script please check the [faq](https://github.com/
 If you have issues installing Town of Us, you can join our [Discord](https://discord.gg/ugyc4EVUYZ) to receive help.
 
 -----------------------
-# Roles
-# Crewmate Roles
+# Role
+# Crewmate
 ## Aurial
-### **Team: Crewmates**
-The Aurial is a Crewmate that can sense things in their surrounding Aura.\
-If any player near the Aurial uses a button ability, the Aurial will get an arrow pointing towards where that ability was used.
-### Game Options
-| Name | Description | Type | Default |
+### **Zespół: Crewmate**
+Aurial to Crewmate, który może wyczuwać rzeczy w otaczającej go Aurze.\
+Jeśli którykolwiek gracz w pobliżu Auriala użyje zdolności, Aurial otrzyma strzałkę wskazującą miejsce, w którym użyto tej zdolności.
+
+### Opcje gry
+| Nazwa | Opis | Typ | Domyślne |
 |----------|:-------------:|:------:|:------:|
-| Aurial | The percentage probability of the Aurial appearing | Percentage | 0% |
-| Radiate Colour Range | The range of the Aurial's aura where they see the colour of the ability user | Multiplier | 0.5x |
-| Radiate Max Range | The max range of the Aurial's aura where they see ability uses | Multiplier | 1.5x |
-| Sense Duration | The duration of the arrow to show an ability use | Time | 10s |
+| Aurial | Procentowe prawdopodobieństwo pojawienia się Aurial | Procent | 0% |
+| Zakres koloru promieniowania | Zasięg aury Aurial, w którym widzą kolor użytkownika zdolności | Mnożnik | 0,5x |
+| Maksymalny zasięg promieniowania | Maksymalny zasięg aury Aurial, w którym widzą użycia zdolności | Mnożnik | 1,5x |
+| Czas trwania wykrywania | Czas trwania strzałki pokazującej użycie umiejętności | Czas | 10s |
 
 -----------------------
 ## Detective
-### **Team: Crewmates**
-The Detective is a Crewmate that can inspect crime scenes and then examine players.\
-The Detective must first find a crime scene and inspect it.\
-During the same or following rounds the Detective can then examine players to see if they were the killer.\
-If the examined player is the killer or were near the crime scene at any point, they will receive a red flash, else the flash will be green.
-### Game Options
-| Name | Description | Type | Default |
-|----------|:-------------:|:------:|:------:|
-| Detective | The percentage probability of the Detective appearing | Percentage | 0% |
-| Examine Cooldown | The cooldown of the Detective's Examine button | Time | 25s |
-| Show Detective Reports | Whether the Detective should get information when reporting a body | Toggle | True |
-| Time Where Detective Reports Will Have Role | If a body has been dead for shorter than this amount, the Detective's report will contain the killer's role | Time | 15s |
-| Time Where Detective Reports Will Have Faction | If a body has been dead for shorter than this amount, the Detective's report will contain the killer's faction | Time | 30s |
+### **Zespół: Crewmate**
+Detektyw jest Crewmate, który może badać miejsca zbrodni, a następnie badać graczy.\
+Detektyw musi najpierw znaleźć miejsce zbrodni i je zbadać.\
+Podczas tej samej lub kolejnych rund Detektyw może badać graczy, aby sprawdzić, czy to oni byli zabójcą.\
+Jeśli badany gracz jest zabójcą lub znajdował się w pobliżu miejsca zbrodni w dowolnym momencie, otrzyma czerwony błysk, w przeciwnym razie błysk będzie zielony.
+
+### Opcje gry
+| Nazwa | Opis | Typ | Domyślne |
+|----------|:------------:|:------:|:------:|
+| Detektyw | Procentowe prawdopodobieństwo pojawienia się Detektywa | Procent | 0% |
+| Czas odnowienia badania | Czas odnowienia przycisku badania Detektywa | Czas | 25 s |
+| Pokaż raporty detektywa | Czy detektyw powinien otrzymywać informacje podczas zgłaszania zwłok | Przełącz | Prawda |
+| Czas, w którym raporty detektywa będą miały rolę | Jeśli ciało jest martwe krócej niż ten okres, raport detektywa będzie zawierał rolę zabójcy | Czas | 15 s |
+| Czas, w którym raporty detektywa będą miały frakcję | Jeśli ciało jest martwe krócej niż ten okres, raport detektywa będzie zawierał frakcję zabójcy | Czas | 30 s |
 
 -----------------------
 ## Haunter
-### **Team: Crewmates**
-The Haunter is a dead Crewmate that can reveal Impostors if they finish all their tasks.\
-Upon finishing all of their tasks, Impostors are revealed to alive crewmates after a meeting is called.\
-However, if the Haunter is clicked they lose their ability to reveal Impostors and are once again a normal ghost.
-### Game Options
-| Name | Description | Type | Default |
+### **Zespół: Crewmate**
+Haunter to martwy Crewmate, który może ujawnić oszustów, jeśli wykona wszystkie swoje zadania.\
+Po wykonaniu wszystkich zadań oszustowie są ujawniani żywym członkom załogi po zwołaniu spotkania.\
+Jednak jeśli klikniesz Hauntera, traci on zdolność ujawniania oszustów i znów staje się zwykłym duchem.
+
+### Opcje gry
+| Nazwa | Opis | Typ | Domyślny |
 |----------|:-------------:|:------:|:------:|
-| Haunter | The percentage probability of the Haunter appearing | Percentage | 0% |
-| When Haunter Can Be Clicked | The amount of tasks remaining when the Haunter Can Be Clicked | Number | 5 |
-| Haunter Alert | The amount of tasks remaining when the Impostors are alreted that the Haunter is nearly finished | Number | 1 |
-| Haunter Reveals Neutral Roles | Whether the Haunter also Reveals Neutral Roles | Toggle | False |
-| Who can Click Haunter | Whether even other Crewmates can click the Haunter | All / Non-Crew / Imps Only | All |
+| Haunter | Procentowe prawdopodobieństwo pojawienia się Hauntera | Procent | 0% |
+| Kiedy można kliknąć Hauntera | Liczba zadań pozostałych, gdy można kliknąć Hauntera | Liczba | 5 |
+| Alert Hauntera | Liczba zadań pozostałych, gdy oszuści zostaną powiadomieni, że Haunter jest prawie ukończony | Liczba | 1 |
+| Haunter ujawnia neutralne role | Czy Haunter ujawnia również neutralne role | Przełącz | Fałsz |
+| Kto może kliknąć Hauntera | Czy nawet inni członkowie załogi mogą kliknąć Hauntera | Wszyscy / Osoby spoza załogi / Tylko Impy | Wszyscy |
 
 -----------------------
 ## Investigator
-### **Team: Crewmates**
-The Investigator is a Crewmate that can see the footprints of players.\
-Every footprint disappears after a set amount of time.
+### **Zespół: Crewmate**
+Śledczy to Członek załogi, który widzi ślady stóp graczy.\
+Każdy ślad znika po określonym czasie.
 
-### Game Options
-| Name | Description | Type | Default |
-|----------|:-------------:|:------:|:------:|
-| Investigator | The percentage probability of the Investigator appearing | Percentage | 0% |
-| Footprint Size | The size of the footprint on a scale of 1 to 10 | Number | 4 |
-| Footprint Interval | The time interval between two footprints | Time | 0.1s |
-| Footprint Duration | The amount of time that the footprint stays on the ground for | Time | 10s |
-| Anonymous Footprint | When enabled, all footprints are grey instead of the player's colors | Toggle | False |
-| Footprint Vent Visible | Whether footprints near vents are shown | Toggle | False |
+### Opcje gry
+| Nazwa | Opis | Typ | Domyślne |
+|----------|:------------:|:------:|:------:|
+| Śledczy | Procentowe prawdopodobieństwo pojawienia się Śledczego | Procent | 0% |
+| Rozmiar śladu | Rozmiar śladu w skali od 1 do 10 | Liczba | 4 |
+| Interwał śladu | Interwał czasu między dwoma śladami | Czas | 0,1 s |
+| Czas trwania śladu | Czas, przez który ślad pozostaje na ziemi | Czas | 10 s |
+| Anonimowy ślad | Po włączeniu wszystkie ślady stóp są szare, a nie w kolorach gracza | Przełącz | Fałsz |
+| Widoczny otwór wentylacyjny | Czy ślady stóp w pobliżu otworów wentylacyjnych są widoczne | Przełącz | Fałsz |
 
 -----------------------
 ## Lookout
-### **Team: Crewmates**
+### **Zespół: Crewmate**
 
-The Lookout is a Crewmate that can watch other players during rounds.\
-During meetings they will see all roles who interact with each watched player.
-### Game Options
-| Name | Description | Type | Default |
-|----------|:-------------:|:------:|:------:|
-| Lookout | The percentage probability of the Lookout appearing | Percentage | 0% |
-| Watch Cooldown | The cooldown on the Lookout's Watch button | Time | 25s |
-| Lookout Watches Reset After Each Round | Whether Lookout Watches are removed after each meeting | Toggle | True |
-| Maximum Number Of Players That Can Be Watched | The number of people they can watch | Number | 5 |
+Lookout to Członek załogi, który może obserwować innych graczy podczas rund.\
+Podczas spotkań będzie widział wszystkie role, które wchodzą w interakcje z każdym obserwowanym graczem.
+### Opcje gry
+| Nazwa | Opis | Typ | Domyślne |
+|----------|:------------:|:------:|:------:|
+| Lookout | Prawdopodobieństwo procentowe pojawienia się Lookout | Procent | 0% |
+| Czas odnowienia Watch | Czas odnowienia przycisku Watch Lookout | Czas | 25 s |
+| Zegarki Lookout resetują się po każdej rundzie | Czy obserwacje są usuwane po każdym spotkaniu | Przełącz | Prawda |
+| Maksymalna liczba graczy, których można obserwować | Liczba osób, które można obserwować | Liczba | 5 |
 
 -----------------------
 ## Mystic
-### **Team: Crewmates**
-The Mystic is a Crewmate that gets an alert revealing when someone has died.\
-On top of this, the Mystic briefly gets an arrow pointing in the direction of the body.
-### Game Options
-| Name | Description | Type | Default |
-|----------|:-------------:|:------:|:------:|
-| Mystic | The percentage probability of the Mystic appearing | Percentage | 0% |
-| Arrow Duration | The duration of the arrows pointing to the bodies | Time | 0.1s |
+### **Zespół: Crewmate**
+Mystic to członek załogi, który otrzymuje powiadomienie informujące o śmierci kogoś.\
+Poza tym Mystic na krótko otrzymuje strzałkę wskazującą w kierunku ciała.
+### Opcje gry
+| Nazwa | Opis | Typ | Domyślne |
+|----------|:------------:|:------:|:------:|
+| Mystic | Prawdopodobieństwo procentowe pojawienia się Mystic | Procent | 0% |
+| Czas trwania strzałki | Czas trwania strzałek wskazujących na ciała | Czas | 0,1 s |
 
 -----------------------
 ## Oracle
-### **Team: Crewmates**
-The Oracle is a Crewmate that can get another player to confess information to them.\
-The Oracle has 3 abilities, the first is that when they die, the person confessing to them will reveal their alignment.\
-The second, is that every meeting the Oracle receives a confession about who might be evil.\
-The final ability is giving a blessing to the person confessing to them, with this the confessing player gains vote immunity!
-### Game Options
-| Name | Description | Type | Default |
-|----------|:-------------:|:------:|:------:|
-| Oracle | The percentage probability of the Oracle appearing | Percentage | 0% |
-| Confess Cooldown | The Cooldown of the Oracle's Confess button | Time | 25s |
-| Reveal Accuracy | The percentage probability of the Oracle's confessed player telling the truth | Percentage | 80% |
-| Neutral Benign show up as Evil | Neutral Benign roles show up as Evil | Toggle | False |
-| Neutral Evil show up as Evil | Neutral Evil roles show up as Evil | Toggle | False |
-| Neutral Killing show up as Evil | Neutral Killing roles show up as Evil | Toggle | True |
+### **Zespół: Członkowie załogi**
+Oracle to członek załogi, który może sprawić, że inny gracz wyzna mu informacje.\
+Oracle ma 3 umiejętności, pierwsza to taka, że ​​gdy umrze, osoba wyznająca mu ujawni swoje pochodzenie.\
+Druga to taka, że ​​za każdym razem, gdy spotka Oracle, otrzymuje wyznanie o tym, kto może być zły.\
+Ostatnią umiejętnością jest udzielenie błogosławieństwa osobie wyznającej mu, dzięki czemu wyznający gracz zyskuje immunitet głosowy!
+### Opcje gry
+| Nazwa | Opis | Typ | Domyślne |
+|----------|:------------:|:------:|:------:|
+| Oracle | Prawdopodobieństwo procentowe pojawienia się Oracle | Procent | 0% |
+| Czas odnowienia Confess | Czas odnowienia przycisku Confess Oracle | Czas | 25 s |
+| Dokładność ujawnienia | Prawdopodobieństwo, że wyznający Wyrocznię gracz powie prawdę | Procent | 80% |
+| Neutralni Łagodni są pokazywani jako Zli | Neutralni Łagodni są pokazywani jako Zli | Przełącz | Fałsz |
+| Neutralni Zli są pokazywani jako Zli | Neutralni Zli są pokazywani jako Zli | Przełącz | Fałsz |
+| Neutralni Zabójcy są pokazywani jako Zli | Neutralni Zabójcy są pokazywani jako Zli | Przełącz | Prawda |
 
 -----------------------
 ## Seer
-### **Team: Crewmates**
-The Seer is a Crewmate that can reveal the alliance of other players.\
-Based on settings, the Seer can find out whether a player is a Good or an Evil role.\
-A player's name will change color depending on faction and role.
-### Game Options
-| Name | Description | Type | Default |
-|----------|:-------------:|:------:|:------:|
-| Seer | The percentage probability of the Seer appearing | Percentage | 0% |
-| Seer Cooldown | The Cooldown of the Seer's Reveal button | Time | 25s |
-| Crewmate Killing Roles Are Red | Crewmate Killing roles show up as Red | Toggle | False |
-| Neutral Benign Roles Are Red | Neutral Benign roles show up as Red | Toggle | False |
-| Neutral Evil Roles Are Red | Neutral Evil roles show up as Red | Toggle | False |
-| Neutral Killing Roles Are Red | Neutral Killing roles show up as Red | Toggle | True |
-| Traitor does not swap Colours | The Traitor remains their original colour | Toggle | False |
+### **Zespół: Członkowie załogi**
+Seer to Członek załogi, który może ujawnić sojusz innych graczy.\
+Na podstawie ustawień Seer może dowiedzieć się, czy gracz jest Dobrym czy Złym.\
+Imię gracza zmienia kolor w zależności od frakcji i roli.
+### Opcje gry
+| Nazwa | Opis | Typ | Domyślny | |----------|:-------------:|:------:|:------:|
+| Seer | Procentowe prawdopodobieństwo pojawienia się Seer | Procent | 0% |
+| Czas odnowienia Seer | Czas odnowienia przycisku ujawnienia Seer | Czas | 25 s |
+| Role Crewmate Killing są czerwone | Role Crewmate Killing są wyświetlane jako czerwone | Przełącz | Fałsz |
+| Neutralne łagodne role są czerwone | Neutralne łagodne role są wyświetlane jako czerwone | Przełącz | Fałsz |
+| Neutralne złe role są czerwone | Neutralne złe role są wyświetlane jako czerwone | Przełącz | Fałsz |
+| Neutralne zabójcze role są czerwone | Neutralne zabójcze role są wyświetlane jako czerwone | Przełącz | Prawda |
+| Zdrajca nie zamienia kolorów | Zdrajca zachowuje swój oryginalny kolor | Przełącz | Fałsz |
 
 -----------------------
 ## Snitch
-### **Team: Crewmates**
+### **Zespół: Członkowie załogi**
 
-The Snitch is a Crewmate that can get arrows pointing towards the Impostors, once all their tasks are finished.\
-The names of the Impostors will also show up as red on their screen.\
-However, when they only have a single task left, the Impostors get an arrow pointing towards the Snitch.
-### Game Options
-| Name | Description | Type | Default |
-|----------|:-------------:|:------:|:------:|
-| Snitch | The percentage probability of the Snitch appearing | Percentage | 0% |
-| Snitch Sees Neutral Roles | Whether the Snitch also Reveals Neutral Roles | Toggle | False |
-| Tasks Remaining When Revealed | The number of tasks remaining when the Snitch is revealed to Impostors | Number | 1 |
-| Snitch Sees Impostors in Meetings | Whether the Snitch sees the Impostor's names red in Meetings | Toggle | True |
-| Snitch Sees Traitor | Whether the Snitch sees the Traitor | Toggle | True |
+Snitch to Członek załogi, który może otrzymać strzałki wskazujące na Oszustów, gdy wszystkie ich zadania zostaną wykonane.\
+Imiona Oszustów również będą wyświetlane na czerwono na ich ekranie.\
+Jednak gdy pozostało im tylko jedno zadanie, Oszuści otrzymują strzałkę wskazującą na Snitcha.
+### Opcje gry
+| Nazwa | Opis | Typ | Domyślne |
+|----------|:------------:|:------:|:------:|
+| Snitch | Prawdopodobieństwo procentowe pojawienia się Snitcha | Procent | 0% |
+| Snitch widzi neutralne role | Czy Snitch ujawnia również neutralne role | Przełącz | Fałsz |
+| Pozostałe zadania po ujawnieniu | Liczba zadań pozostałych po ujawnieniu kapusia oszustom | Liczba | 1 |
+| Kapuś widzi oszustów na spotkaniach | Czy kapuś widzi nazwiska oszustów na czerwono na spotkaniach | Przełącz | Prawda |
+| Kapuś widzi zdrajcę | Czy kapuś widzi zdrajcę | Przełącz | Prawda |
 
 -----------------------
 ## Spy
-### **Team: Crewmates**
+### **Zespół: Członkowie załogi**
 
-The Spy is a Crewmate that gains more information when on the Admin Table.\
-On Admin Table, the Spy can see the colors of every person on the map.
-### Game Options
-| Name | Description | Type | Default |
-|----------|:-------------:|:------:|:------:|
-| Spy | The percentage probability of the Spy appearing | Percentage | 0% |
-| Who Sees Dead Bodies On Admin | Which players see dead bodies on the admin map | Nobody / Spy / Everyone But Spy / Everyone | Nobody |
+Szpieg to członek załogi, który uzyskuje więcej informacji, gdy znajduje się w Tabeli administratora.\
+W Tabeli administratora szpieg może zobaczyć kolory każdej osoby na mapie.
+### Opcje gry
+| Nazwa | Opis | Typ | Domyślne |
+|----------|:-------------:|:-------:|:-------:|
+| Szpieg | Prawdopodobieństwo pojawienia się Szpiega | Procent | 0% |
+| Kto widzi zwłoki na mapie administracyjnej | Którzy gracze widzą zwłoki na mapie administracyjnej | Nikt / Szpieg / Wszyscy oprócz Szpiega / Wszyscy | Nikt |
 
 -----------------------
 ## Tracker
-### **Team: Crewmates**
+### **Zespół: Członkowie załogi**
 
-The Tracker is a Crewmate that can track other players by tracking them during a round.\
-Once they track someone, an arrow is continuously pointing to them, which updates in set intervals.
-### Game Options
-| Name | Description | Type | Default |
-|----------|:-------------:|:------:|:------:|
-| Tracker | The percentage probability of the Tracker appearing | Percentage | 0% |
-| Arrow Update Interval | The time it takes for the arrow to update to the new location of the tracked player | Time | 5s |
-| Track Cooldown | The cooldown on the Tracker's track button | Time | 25s |
-| Tracker Arrows Reset Each Round | Whether Tracker Arrows are removed after each meeting | Toggle | True |
-| Maximum Number of Tracks | The number of people they can track | Number | 5 |
+Tracker to członek załogi, który może śledzić innych graczy, śledząc ich podczas rundy.\
+Gdy ktoś zacznie śledzić kogoś, strzałka stale na niego wskazuje, a jej wartość aktualizuje się w ustalonych odstępach czasu.
+
+### Opcje gry
+| Nazwa | Opis | Typ | Domyślne |
+|----------|:------------:|:------:|:------:|
+| Tracker | Procentowe prawdopodobieństwo pojawienia się Trackera | Procent | 0% |
+| Interwał aktualizacji strzałki | Czas, w którym strzałka aktualizuje się do nowej lokalizacji śledzonego gracza | Czas | 5s |
+| Czas odnowienia śledzenia | Czas odnowienia przycisku śledzenia Trackera | Czas | 25s |
+| Strzałki Trackera resetują się w każdej rundzie | Czy strzałki Trackera są usuwane po każdym spotkaniu | Przełącz | Prawda |
+| Maksymalna liczba śladów | Liczba osób, które mogą śledzić | Liczba | 5 |
 
 -----------------------
 ## Trapper
-### **Team: Crewmates**
+### **Zespół: Członkowie załogi**
 
-The Trapper is a Crewmate that can place traps around the map.\
-When players enter a trap they trigger the trap.\
-In the following meeting, all players who triggered a trap will have their role displayed to the trapper.\
-However, this is done so in a random order, not stating who entered the trap, nor what role a specific player is.
-### Game Options
-| Name | Description | Type | Default |
+Traper to członek załogi, który może umieszczać pułapki na mapie.\
+Gdy gracze wchodzą do pułapki, uruchamiają pułapkę.\
+Podczas następnego spotkania wszyscy gracze, którzy uruchomili pułapkę, będą mieli wyświetloną swoją rolę traperowi.\
+Jednakże odbywa się to w losowej kolejności, bez określania, kto wszedł do pułapki, ani jaką rolę pełni konkretny gracz.
+
+### Opcje gry
+| Nazwa | Opis | Typ | Domyślne |
 |----------|:-------------:|:------:|:------:|
-| Trapper | The percentage probability of the Trapper appearing | Percentage | 0% |
-| Min Amount of Time in Trap to Register | How long a player must stay in the trap for it to trigger | Time | 1s |
-| Trap Cooldown | The cooldown on the Trapper's trap button | Time | 25s |
-| Traps Removed Each Round | Whether the Trapper's traps are removed after each meeting | Toggle | True |
-| Maximum Number of Traps | The number of traps they can place | Number | 5 |
-| Trap Size | The size of each trap | Factor | 0.25x |
-| Minimum Number of Roles required to Trigger Trap | The number of players that must enter the trap for it to be triggered | Number | 3 |
+| Traper | Procentowe prawdopodobieństwo pojawienia się Trapera | Procent | 0% |
+| Minimalny czas w pułapce do zarejestrowania | Jak długo gracz musi pozostać w pułapce, aby została uruchomiona | Czas | 1s |
+| Czas odnowienia pułapki | Czas odnowienia przycisku pułapki trapera | Czas | 25s |
+| Pułapki usuwane w każdej rundzie | Czy pułapki trapera są usuwane po każdym spotkaniu | Przełącznik | Prawda |
+| Maksymalna liczba pułapek | Liczba pułapek, które mogą umieścić | Liczba | 5 |
+| Rozmiar pułapki | Rozmiar każdej pułapki | Współczynnik | 0,25x |
+| Minimalna liczba ról wymaganych do uruchomienia pułapki | Liczba graczy, którzy muszą wejść do pułapki, aby została uruchomiona | Liczba | 3 |
 
 -----------------------
-## Deputy
-### **Team: Crewmates**
-The Deputy is a Crewmate that can camp other players.\
-Camped players will alert the Deputy when they are killed.\
-The following meeting the Deputy then can attempt to shoot their killer.\
-If they successfully shoot the killer, they die, otherwise nothing happens.
+## Imitator
+### **Zespół: Członkowie załogi**
+Zastępca jest członkiem załogi, który może obozować innych graczy.\
+Obozujący gracze zaalarmują zastępcę, gdy zostaną zabici.\
+Podczas następnego spotkania zastępca może spróbować zastrzelić swojego zabójcę.\
+Jeśli uda im się zastrzelić zabójcę, giną, w przeciwnym razie nic się nie dzieje.
 
-### Game Options
-| Name | Description | Type | Default |
+### Opcje gry
+| Nazwa | Opis | Typ | Domyślne |
 |----------|:-------------:|:------:|:------:|
-| Deputy | The percentage probability of the Deputy appearing | Percentage | 0% |
+| Zastępca | Prawdopodobieństwo pojawienia się Zastępcy | Procent | 0% |
 
 -----------------------
 ## Hunter
-### **Team: Crewmates**
+### **Zespół: Członkowie załogi**
 
-The Hunter is a Crewmate Killing role with the ability to track players and execute them if they do anything suspicious.\ 
-Unlike the Sheriff, the Hunter does not die if they kill an innocent player,\
-however the Hunter may only execute players who have given them probable cause.
-### Game Options
-| Name | Description | Type | Default |
+Łowca jest postacią Zabójcy Członka załogi, która potrafi śledzić graczy i zabijać ich, jeśli zrobią coś podejrzanego.\
+W przeciwieństwie do szeryfa, Łowca nie umiera, jeśli zabije niewinnego gracza,\
+jednak Łowca może zabić tylko tych graczy, którzy dali mu prawdopodobny powód.
+
+### Opcje gry
+| Nazwa | Opis | Typ | Domyślne |
 |----------|:-------------:|:------:|:------:|
-| Hunter | The percentage probability of the Hunter appearing | Percentage | 0% |
-| Hunter Kill Cooldown | The cooldown of the Hunter's Kill button | Number | 25s |
-| Hunter Stalk Cooldown | The cooldown of the Hunter's Stalk button | Number | 10s |
-| Hunter Stalk Duration | The duration of the Hunter's Stalk | Number | 25s |
-| Maximum Stalk Uses | Maximum number of times a Hunter can Stalk | Number | 5 |
-| Hunter Kills Last Voter If Voted Out |  Whether the Hunter kills the last person that votes them if they are voted out  | Toggle | False |
-| Hunter Can Report Who They've Killed |  Whether the Hunter is able to report their own kills | Toggle | True |
+| Łowca | Procentowe prawdopodobieństwo pojawienia się Łowcy | Procent | 0% |
+| Czas odnowienia zabójstwa Łowcy | Czas odnowienia przycisku Zabij Łowcy | Liczba | 25 s |
+| Czas odnowienia Podchodu Łowcy | Czas odnowienia przycisku Podchodu Łowcy | Liczba | 10 s |
+| Czas trwania Podchodu Łowcy | Czas trwania Podchodu Łowcy | Liczba | 25 s |
+| Maksymalna liczba użyć Podchodu | Maksymalna liczba razy, kiedy Łowca może Podchodzić | Liczba | 5 |
+| Łowca zabija ostatniego głosującego, jeśli zostanie wyrzucony | Czy Łowca zabija ostatnią osobę, która na niego głosowała, jeśli zostanie wyrzucony | Przełącz | Fałsz |
+| Łowca może zgłaszać, kogo zabił | Czy Łowca może zgłaszać własne zabójstwa | Przełącz | Prawda |
 
 -----------------------
 ## Jailor
-### **Team: Crewmates**
-The Jailor is a Crewmate that can jail Crewmates.\
-During meetings all players can see when a Crewmate is jailed.\
-When someone is jailed they cannot use any meeting ability and no meeting ability can be used on them.\
-The Jailor may privately communicate with the jailee.\
-If the Jailor then thinks the jailee is bad, they may then execute them.\
-If the Jailor executes incorrectly, they lose the ability to jail.
+### **Zespół: Członkowie załogi**
+Jailor to Członek załogi, który może więzić Członków załogi.\
+Podczas spotkań wszyscy gracze mogą zobaczyć, kiedy Członek załogi jest uwięziony.\
+Kiedy ktoś jest uwięziony, nie może używać żadnej umiejętności spotkania i nie można na nim użyć żadnej umiejętności spotkania.\
+Jailor może prywatnie komunikować się z więźniem.\
+Jeśli Jailor uzna więźnia za złego, może go zabić.\
+Jeśli Jailor wykona egzekucję nieprawidłowo, traci możliwość więzienia.
 
-### Game Options
-| Name | Description | Type | Default |
-|----------|:-------------:|:------:|:------:|
-| Jailor | The percentage probability of the Jailor appearing | Percentage | 0% |
-| Jail Cooldown | The cooldown on the Jailor's jail button | Time | 25s |
-| Maximum Executes | Maximum number of times a Jailor can Execute | Number | 3 |
+### Opcje gry
+| Nazwa | Opis | Typ | Domyślne |
+|----------|:------------:|:------:|:------:|
+| Jailor | Prawdopodobieństwo procentowe pojawienia się Jailora | Procent | 0% |
+| Czas odnowienia więzienia | Czas odnowienia przycisku więzienia Jailora | Czas | 25s |
+| Maksymalna liczba Wykonań | Maksymalna liczba Wykonań, jaką Jailor może wykonać | Liczba | 3 |
 
 -----------------------
 ## Sheriff
-### **Team: Crewmates**
-The Sheriff is a Crewmate that has the ability to eliminate the Impostors using their kill button.\
-However, if they kill a Crewmate or a Neutral player they can't kill, they instead die themselves.
+### **Zespół: Członkowie załogi**
+Szeryf to Członek załogi, który ma zdolność eliminowania oszustów za pomocą przycisku zabijania.\
+Jeśli jednak zabije Członka załogi lub neutralnego gracza, którego nie może zabić, sam ginie.
 
-### Game Options
-| Name | Description | Type | Default |
+### Opcje gry
+| Nazwa | Opis | Typ | Domyślne |
 |----------|:-------------:|:------:|:------:|
-| Sheriff | The percentage probability of the Sheriff appearing | Percentage | 0% |
-| Sheriff Miskill Kills Crewmate | Whether the other player is killed if the Sheriff Misfires | Toggle | False |
-| Sheriff Kills Neutral Evil Roles | Whether the Sheriff is able to kill a Neutral Evil Role | Toggle | False |
-| Sheriff Kills Neutral Killing Roles | Whether the Sheriff is able to kill a Neutral Killing Role | Toggle | False |
-| Sheriff Kill Cooldown | The cooldown on the Sheriff's kill button | Time | 25s |
-| Sheriff can report who they've killed | Whether the Sheriff is able to report their own kills | Toggle | True |
+| Szeryf | Procentowe prawdopodobieństwo pojawienia się Szeryfa | Procent | 0% |
+| Szeryf Miskill zabija Członka załogi | Czy drugi gracz zostanie zabity, jeśli Szeryf nie wystrzeli | Przełącz | Fałsz |
+| Szeryf zabija neutralne role złe | Czy Szeryf jest w stanie zabić neutralną rolę złą | Przełącz | Fałsz |
+| Szeryf zabija neutralne role zabijania | Czy szeryf jest w stanie zabić neutralną rolę zabijania | Przełącz | Fałsz |
+| Czas odnowienia zabójstwa szeryfa | Czas odnowienia przycisku zabijania szeryfa | Czas | 25 s |
+| Szeryf może zgłaszać, kogo zabił | Czy szeryf jest w stanie zgłaszać własne zabójstwa | Przełącz | Prawda |
 
 -----------------------
 ## Veteran
-### **Team: Crewmates**
+### **Drużyna: Członkowie załogi**
 
-The Veteran is a Crewmate that can go on alert.\
-When the Veteran is on alert, anyone, whether crew, neutral or impostor, if they interact with the Veteran, they die.
-### Game Options
-| Name | Description | Type | Default |
-|----------|:-------------:|:------:|:------:|
-| Veteran | The percentage probability of the Veteran appearing | Percentage | 0% |
-| Can Be Killed On Alert | Whether the Veteran dies when someone tries to kill them when they're on alert | Toggle | False |
-| Alert Cooldown | The cooldown on the Veteran's alert button. | Time | 5s |
-| Alert Duration | The duration of the alert | Time | 25s |
-| Maximum Number of Alerts | The number of times the Veteran can alert throughout the game | Number | 3 |
+Weteran jest członkiem załogi, który może przejść w stan gotowości.\
+Kiedy Weteran jest w stanie gotowości, każdy, czy to członek załogi, neutralny czy oszust, jeśli wejdzie w interakcję z Weteranem, ginie.
+### Opcje gry
+| Nazwa | Opis | Typ | Domyślne |
+|----------|:-------------:|:-------:|:------:|
+| Weteran | Procentowe prawdopodobieństwo pojawienia się Weterana | Procent | 0% |
+| Może zostać zabity w stanie gotowości | Czy Weteran zginie, gdy ktoś spróbuje go zabić, gdy jest w stanie gotowości | Przełącz | Fałsz |
+| Czas odnowienia alertu | Czas odnowienia przycisku alertu Weterana. | Czas | 5 s |
+| Czas trwania alertu | Czas | 25 s |
+| Maksymalna liczba alertów | Liczba razy, w których Weteran może zaalarmować w trakcie gry | Liczba | 3 |
 
 -----------------------
 ## Vigilante
-### **Team: Crewmates**
+### **Zespół: Członkowie załogi**
 
-The Vigilante is a Crewmate that can kill during meetings.\
-During meetings, the Vigilante can choose to kill someone by guessing their role, however, if they guess incorrectly, they die instead.
-### Game Options
-| Name | Description | Type | Default |
-|----------|:-------------:|:------:|:------:|
-| Vigilante | The percentage probability of the Vigilante appearing | Percentage | 0% |
-| Vigilante Kill | The number of kill the Vigilante can do with his ability | Number | 1 |
-| Vigilante Multiple Kill  | Whether the Vigilante can kill more than once per meeting | Toggle | False |
-| Vigilante Guess Neutral Benign  | Whether the Vigilante can Guess Neutral Benign roles | Toggle | False |
-| Vigilante Guess Neutral Evil  | Whether the Vigilante can Guess Neutral Evil roles | Toggle | False |
-| Vigilante Guess Neutral Killing  | Whether the Vigilante can Guess Neutral Killing roles | Toggle | False |
-| Vigilante Guess Impostor Modifiers  | Whether the Vigilante can Guess Impostor modifiers | Toggle | False |
-| Vigilante Guess Lovers  | Whether the Vigilante can Guess Lovers | Toggle | False |
+Vigilante to Członek załogi, który może zabijać podczas spotkań.\
+Podczas spotkań Vigilante może zdecydować się zabić kogoś, zgadując jego rolę, jednak jeśli zgadnie niepoprawnie, ginie.
+### Opcje gry
+| Nazwa | Opis | Typ | Domyślne | |----------|:-------------:|:------:|:------:|
+| Vigilante | Procentowe prawdopodobieństwo pojawienia się Vigilante | Procent | 0% |
+| Vigilante Kill | Liczba zabójstw, które Vigilante może wykonać dzięki swojej umiejętności | Liczba | 1 |
+| Vigilante Multiple Kill | Czy Vigilante może zabić więcej niż raz na spotkanie | Przełącz | Fałsz |
+| Vigilante Guess Neutral Benign | Czy Vigilante może zgadnąć role Neutral Benign | Przełącz | Fałsz |
+| Vigilante Guess Neutral Evil | Czy Vigilante może zgadnąć role Neutral Evil | Przełącz | Fałsz |
+| Vigilante Guess Neutral Killing | Czy Vigilante może zgadnąć role Neutral Killing | Przełącz | Fałsz |
+| Vigilante Guess Impostor Modifiers | Czy Vigilante może odgadnąć modyfikatory oszusta | Przełącz | Fałsz |
+| Vigilante zgaduje kochanków | Czy Vigilante może odgadnąć kochanków | Przełącz | Fałsz |
 
 -----------------------
 ## Altruist
-### **Team: Crewmates**
+### **Zespół: Członkowie załogi**
 
-The Altruist is a Crewmate that is capable of reviving dead players.\
-Upon finding a dead body, the Altruist can hit their revive button, risking sacrificing themselves for the revival of another player.\
-If enabled, the dead body disappears, so only the Altruist's body remains at the scene.\
-After a set period of time, the player will be resurrected, if the revival isn't interrupted.
-### Game Options
-| Name | Description | Type | Default |
+Altruista to członek załogi, który potrafi wskrzeszać martwych graczy.\
+Po znalezieniu zwłok Altruista może nacisnąć przycisk wskrzeszania, ryzykując poświęceniem się dla wskrzeszenia innego gracza.\
+Jeśli ta opcja jest włączona, martwe ciało znika, więc na miejscu pozostaje tylko ciało Altruisty.\
+Po określonym czasie gracz zostanie wskrzeszony, jeśli wskrzeszenie nie zostanie przerwane.
+
+### Opcje gry
+| Nazwa | Opis | Typ | Domyślny |
 |----------|:-------------:|:------:|:------:|
-| Altruist | The percentage probability of the Altruist appearing | Percentage | 0% |
-| Altruist Revive Duration | The time it takes for the Altruist to revive a dead body | Time | 10s |
-| Target's body disappears on beginning of revive | Whether the dead body of the player the Altruist is reviving disappears upon revival | Toggle | False |
+| Altruista | Procentowe prawdopodobieństwo pojawienia się Altruisty | Procent | 0% |
+| Czas trwania ożywienia Altruisty | Czas potrzebny Altruiście na ożywienie martwego ciała | Czas | 10s |
+| Ciało celu znika na początku ożywienia | Czy martwe ciało gracza, którego Altruista ożywia, znika po ożywieniu | Przełącz | Fałsz |
 
 -----------------------
 ## Medic
-### **Team: Crewmates**
-The Medic is a Crewmate that can give any player a shield that will make them immortal until the Medic dies.\
-A Shielded player cannot be killed by anyone, unless by suicide.\
-If the Medic reports a dead body, they can get a report containing clues to the Killer's identity.\
-A report can contain the name of the killer or the color type (Darker/Lighter)
-### Colors
+### **Zespół: Członkowie załogi**
+Medyk to Członek załogi, który może dać każdemu graczowi tarczę, która uczyni go nieśmiertelnym, dopóki Medyk nie umrze.\
+Gracz z tarczą nie może zostać zabity przez nikogo, chyba że przez samobójstwo.\
+Jeśli Medyk zgłosi zgon, może otrzymać raport zawierający wskazówki dotyczące tożsamości Zabójcy.\
+Raport może zawierać imię zabójcy lub typ koloru (ciemniejszy/jaśniejszy)
+
+### Kolory
 - Red - Darker
 - Blue - Darker
 - Green - Darker
@@ -1202,857 +522,811 @@ A report can contain the name of the killer or the color type (Darker/Lighter)
 - Gold - Lighter
 - Rainbow - Lighter
 
-### Game Options
-| Name | Description | Type | Default |
+### Opcje gry
+| Nazwa | Opis | Typ | Domyślne |
 |----------|:-------------:|:------:|:------:|
-| Medic | The percentage probability of the Medic appearing | Percentage | 0% |
-| Show Shielded Player | Who should be able to see who is Shielded | Self / Medic / Self + Medic / Everyone | Self |
-| Show Medic Reports | Whether the Medic should get information when reporting a body | Toggle | True |
-| Time Where Medic Reports Will Have Name | If a body has been dead for shorter than this amount, the Medic's report will contain the killer's name | Time | 0s |
-| Time Where Medic Reports Will Have Color Type | If a body has been dead for shorter than this amount, the Medic's report will have the type of color | Time | 15s |
-| Who gets murder attempt indicator | Who will receive an indicator when someone tries to Kill them | Medic / Shielded / Everyone / Nobody | Medic |
-| Shield breaks on murder attempt | Whether the Shield breaks when someone attempts to Kill them | Toggle | False |
+| Medyk | Procentowe prawdopodobieństwo pojawienia się Medyka | Procent | 0% |
+| Pokaż gracza chronionego | Kto powinien widzieć, kto jest chroniony | Ja / Medyk / Ja + Medyk / Wszyscy | Ja |
+| Pokaż raporty Medyka | Czy Medyk powinien otrzymywać informacje podczas zgłaszania zwłok | Przełącz | Prawda |
+| Czas, w którym raporty Medyka będą zawierały imię | Jeśli ciało nie żyje krócej niż ten okres, raport Medyka będzie zawierał imię zabójcy | Czas | 0s |
+| Czas, w którym raporty Medyka będą zawierały typ koloru | Jeśli ciało nie żyje krócej niż ten okres, raport Medyka będzie zawierał typ koloru | Czas | 15s |
+| Kto otrzymuje wskaźnik próby zabójstwa | Kto otrzyma wskaźnik, gdy ktoś spróbuje go zabić | Medyk / Osłonięty / Wszyscy / Nikt | Medyk |
+| Tarcza pęka przy próbie zabójstwa | Czy tarcza pęka, gdy ktoś próbuje go zabić | Przełącz | Fałsz |
 
 -----------------------
 ## Warden
-### **Team: Crewmates**
-The Warden is a Crewmate that can fortify other players.\
-Fortified players cannot be interacted with and cannot be assassinated.\
-If someone tries to interact with or assassinate a fortified player,\
-Both the Warden and the interactor or assassin receive an alert.\
-Fortify does not stop direct kills.
+### **Zespół: Członkowie załogi**
+Strażnik jest członkiem załogi, który może wzmacniać innych graczy.\
+Z wzmocnionymi graczami nie można wchodzić w interakcje ani ich zabijać.\
+Jeśli ktoś próbuje wchodzić w interakcje lub zabijać wzmocnionego gracza,\
+Zarówno Strażnik, jak i interaktor lub zabójca otrzymują alert.\
+Wzmocnienie nie zatrzymuje bezpośrednich zabójstw.
 
-### Game Options
-| Name | Description | Type | Default |
-|----------|:-------------:|:------:|:------:|
-| Warden | The percentage probability of the Warden appearing | Percentage | 0% |
+### Opcje gry
+| Nazwa | Opis | Typ | Domyślne |
+|----------|:------------:|:------:|:------:|
+| Strażnik | Prawdopodobieństwo pojawienia się Strażnika w procentach | Procent | 0% |
 
 -----------------------
 ## Engineer
-### **Team: Crewmates**
-The Engineer is a Crewmate that can fix sabotages from anywhere on the map.\
-They can use vents to get across the map easily.
+### **Zespół: Członkowie załogi**
+Inżynier to Członek załogi, który może naprawiać sabotaże z dowolnego miejsca na mapie.\
+Mogą używać otworów wentylacyjnych, aby łatwo przemieszczać się po mapie.
 
-### Game Options
-| Name | Description | Type | Default |
-|----------|:-------------:|:------:|:------:|
-| Engineer | The percentage probability of the Engineer appearing | Percentage | 0% |
-| Maximum Fixes | The number of times the Engineer can fix a sabotage | Number | 5 |
+### Opcje gry
+| Nazwa | Opis | Typ | Domyślne |
+|----------|:------------:|:------:|:------:|
+| Inżynier | Prawdopodobieństwo pojawienia się Inżyniera w procentach | Procent | 0% |
+| Maksymalna liczba napraw | Liczba razy, kiedy Inżynier może naprawić sabotaż | Liczba | 5 |
 
 -----------------------
 ## Imitator
-### **Team: Crewmates**
-The Imitator is a Crewmate that can mimic dead crewamtes.\
-During meetings the Imitator can select who they are going to imitate the following round from the dead.\
-They can choose to use each dead players as many times as they wish.
+### **Zespół: Członkowie załogi**
+Imitator to Członek załogi, który może naśladować martwych członków załogi.\
+Podczas spotkań Imitator może wybrać, kogo będzie naśladował w następnej rundzie spośród martwych.\
+Może wybrać wykorzystanie każdego martwego gracza tyle razy, ile chce.
 
-### Game Options
-| Name | Description | Type | Default |
-|----------|:-------------:|:------:|:------:|
-| Imitator | The percentage probability of the Imitator appearing | Percentage | 0% |
-| Imitator Can Become Mayor | Whether the Imitator can permanently become the Mayor | Toggle | True |
+### Opcje gry
+| Nazwa | Opis | Typ | Domyślne |
+|----------|:------------:|:------:|:------:|
+| Imitator | Procentowe prawdopodobieństwo pojawienia się Imitatora | Procent | 0% |
+| Imitator może zostać burmistrzem | Czy Imitator może na stałe zostać burmistrzem | Przełącz | Prawda |
 
 -----------------------
 ## Medium
-### **Team: Crewmates**
-The Medium is a Crewmate that can see ghosts.\
-During each round the Medium has an ability called Mediate.\
-If the Medium uses this ability and no one is dead, nothing will happen.\
-However, if someone is dead, the Medium and the dead player will be able to see each other and communicate from beyond the grave!
+### **Zespół: Członkowie załogi**
+Medium to Członek załogi, który widzi duchy.\
+Podczas każdej rundy Medium ma umiejętność zwaną Mediacja.\
+Jeśli Medium użyje tej umiejętności i nikt nie będzie martwy, nic się nie stanie.\
+Jednak jeśli ktoś nie żyje, Medium i martwy gracz będą mogli się widzieć i komunikować zza grobu!
 
-### Game Options
-| Name | Description | Type | Default |
-|----------|:-------------:|:------:|:------:|
-| Medium | The percentage probability of the Medium appearing | Percentage | 0% |
-| Mediate Cooldown | The cooldown of the Medium's Mediate button | Time | 10s |
-| Reveal Appearance of Mediate Target | Whether the Ghosts will show as themselves, or camouflaged | Toggle | True |
-| Reveal the Medium to the Mediate Target | Whether the ghosts can see that the Medium is the Medium | Toggle | True |
-| Who is Revealed | Which players are revealed to the Medium | Oldest Dead / Newest Dead / All Dead | Oldest Dead |
+### Opcje gry
+| Nazwa | Opis | Typ | Domyślne |
+|----------|:------------:|:------:|:------:|
+| Medium | Procentowe prawdopodobieństwo pojawienia się Medium | Procent | 0% |
+| Czas odnowienia Mediacji | Czas odnowienia przycisku Mediacji Medium | Czas | 10 s |
+| Ujawnienie pojawienia się celu Mediacji | Czy Duchy pokażą się jako one same, czy zakamuflowane | Przełącz | Prawda |
+| Ujawnij Medium dla Celu Pośrednika | Czy Duchy mogą zobaczyć, że Medium jest Medium | Przełącz | Prawda |
+| Kto jest ujawniany | Którzy gracze są ujawniani Medium | Najstarszy martwy / Najnowszy martwy / Wszyscy martwi | Najstarszy martwy |
 
 -----------------------
 ## Politician
-### **Team: Crewmates**
-The Politician is a Crewmate that can campaign to other players.\
-Once half or more of the crewmates are campaigned to, the Politician can reveal themselves as the new Mayor.\
-If less then half of the crewmates have been campaigned to the reveal will fail and the Politician will be unable to campaign for 1 round.
+### **Zespół: Członkowie załogi**
+Polityk jest członkiem załogi, który może prowadzić kampanię wśród innych graczy.\
+Gdy kampania dotrze do połowy lub większej liczby członków załogi, polityk może ujawnić się jako nowy burmistrz.\
+Jeśli kampania dotrze do mniej niż połowy członków załogi, ujawnienie się nie powiedzie, a polityk nie będzie mógł prowadzić kampanii przez 1 rundę.
 
-### Game Options
-| Name | Description | Type | Default |
-|----------|:-------------:|:------:|:------:|
-| Politician | The percentage probability of the Politician appearing | Percentage | 0% |
-| Campaign Cooldown | The cooldown of the Politician's Campaign button | Time | 25s |
+### Opcje gry
+| Nazwa | Opis | Typ | Domyślne |
+|----------|:------------:|:------:|:------:|
+| Polityk | Procentowe prawdopodobieństwo pojawienia się polityka | Procent | 0% |
+| Czas odnowienia kampanii | Czas odnowienia przycisku kampanii polityka | Czas | 25 s |
 
 -----------------------
 ## Prosecutor
-### **Team: Crewmates**
-The Prosecutor is a Crewmate that can once per game prosecute a player which results in them being exiled that meeting.\
-The Prosecutor can also see votes non-anonymously.
+### **Zespół: Członkowie załogi**
+Prokurator jest członkiem załogi, który może raz na grę ścigać gracza, co skutkuje wygnaniem go na tym spotkaniu.\
+Prokurator może również widzieć głosy nieanonimowo.
 
-### Game Options
-| Name | Description | Type | Default |
-|----------|:-------------:|:------:|:------:|
-| Prosecutor | The percentage probability of the Prosecutor appearing | Percentage | 0% |
-| Prosecutor Dies When They Exile A Crewmate | Whether the Prosecutor also gets exiled when they exile a Crewmate | Toggle | False |
+### Opcje gry
+| Nazwa | Opis | Typ | Domyślne |
+|----------|:------------:|:------:|:------:|
+| Prokurator | Procentowe prawdopodobieństwo pojawienia się Prokuratora | Procent | 0% |
+| Prokurator ginie, gdy wygania członka załogi | Czy Prokurator również zostaje wygnany, gdy wygania członka załogi | Przełącz | Fałsz |
 
 -----------------------
 ## Swapper
-### **Team: Crewmates**
-The Swapper is a Crewmate that can swap the votes on 2 players during a meeting.\
-All the votes for the first player will instead be counted towards the second player and vice versa.
+### **Zespół: Członkowie załogi**
+Swapper to Członek załogi, który może zamieniać głosy na 2 graczy podczas spotkania.\
+Wszystkie głosy na pierwszego gracza będą zamiast tego liczone na drugiego gracza i odwrotnie.
 
-### Game Options
-| Name | Description | Type | Default |
-|----------|:-------------:|:------:|:------:|
-| Swapper | The percentage probability of the Swapper appearing | Percentage | 0% |
-| Swapper Can Button | Whether the Swapper Can Press the Button | Toggle | True |
+### Opcje gry
+| Nazwa | Opis | Typ | Domyślne |
+|----------|:------------:|:------:|:------:|
+| Swapper | Procentowe prawdopodobieństwo pojawienia się Swappera | Procent | 0% |
+| Swapper może nacisnąć przycisk | Czy Swapper może nacisnąć przycisk | Przełącz | Prawda |
 
 -----------------------
 ## Transporter
-### **Team: Crewmates**
-The Transporter is a Crewmate that can change the locations of two random players at will.\
-Players who have been transported are alerted with a blue flash on their screen.
+### **Zespół: Członkowie załogi**
+Transporter to Członek załogi, który może dowolnie zmieniać położenie dwóch losowych graczy.\
+Gracze, którzy zostali przetransportowani, są powiadamiani niebieskim błyskiem na ekranie.
 
-### Game Options
-| Name | Description | Type | Default |
-|----------|:-------------:|:------:|:------:|
-| Transporter | The percentage probability of the Transporter appearing | Percentage | 0% |
-| Transport Cooldown | The cooldown of the Transporter's transport ability | Time | 25s |
-| Max Uses | The amount of times the Transport ability can be used | Number | 5 |
-| Transporter can use Vitals | Whether the Transporter has the ability to use Vitals | Toggle | False |
+### Opcje gry
+| Nazwa | Opis | Typ | Domyślne |
+|----------|:------------:|:------:|:------:|
+| Transporter | Procentowe prawdopodobieństwo pojawienia się Transportera | Procent | 0% |
+| Czas odnowienia Transportera | Czas odnowienia zdolności transportowej Transportera | Czas | 25 s |
+| Maksymalne użycie | Liczba razy, kiedy zdolność Transportera może zostać użyta | Liczba | 5 |
+| Transporter może używać Vitals | Czy Transporter ma zdolność używania Vitals | Przełącz | Fałsz |
 
 -----------------------
 ## Falcon
-### **Team: Crewmates**
+### **Zespół: Członkowie załogi**
 
-The Falcon is an Crewmate that can temporarily see more.
+Falcon to Członek załogi, który może tymczasowo widzieć więcej.
 
-### Game Options
-| Name | Description | Type | Default |
-|----------|:-------------:|:------:|:------:|
-| Falcon | The percentage probability of the Noclip appearing | Percentage | 0% |
-| Wingman Cooldown | The cooldown of the Wingman button | Time | 25s |
-| Wingman Duration | How long the Wingman lasts for | Time | 5s |
-| Wingman Uses | Whether the Wingman can be used | Number | 5 |
-| Wingman Range | Wingman's sight range | Number | 5 |
+### Opcje gry
+| Nazwa | Opis | Typ | Domyślne |
+|----------|:------------:|:------:|:------:|
+| Falcon | Procentowe prawdopodobieństwo pojawienia się Noclip | Procent | 0% |
+| Czas odnowienia Wingman | Czas odnowienia przycisku Wingman | Czas | 25s |
+| Czas trwania Wingman | Jak długo trwa Wingman | Czas | 5s |
+| Zastosowania Wingman | Czy Wingman może być używany | Liczba | 5 |
+| Zasięg Wingman | Zasięg widzenia Wingman | Liczba | 5 |
 
 -----------------------
-# Neutral Roles
+# Role neutralne
 ## Amnesiac
-### **Team: Neutral**
-The Amnesiac is a Neutral role with no win condition.\
-They have zero tasks and are essentially roleless.\
-However, they can remember a role by finding a dead player.\
-Once they remember their role, they go on to try win with their new win condition.
+### **Zespół: Neutralny**
+Amnesiac to rola neutralna bez warunku wygranej.\
+Nie mają żadnych zadań i są zasadniczo bez roli.\
+Jednak mogą zapamiętać rolę, znajdując martwego gracza.\
+Po przypomnieniu sobie swojej roli próbują wygrać z nowym warunkiem wygranej.
 
-### Game Options
-| Name | Description | Type | Default |
-|----------|:-------------:|:------:|:------:|
-| Amnesiac | The percentage probability of the Amnesiac appearing | Percentage | 0% |
-| Amnesiac Gets Arrows | Whether the Amnesiac has arrows pointing to dead bodies | Toggle | False |
-| Arrow Appear Delay | The delay of the arrows appearing after the person died | Time | 5s |
+### Opcje gry
+| Nazwa | Opis | Typ | Domyślne |
+|----------|:------------:|:------:|:------:|
+| Amnesiac | Prawdopodobieństwo procentowe pojawienia się Amnesiac | Procent | 0% |
+| Amnesiac Otrzymuje Strzały | Czy Amnesiac ma strzały wskazujące na ciała zmarłych | Przełącz | Fałsz |
+| Opóźnienie pojawienia się strzałek | Opóźnienie pojawienia się strzałek po śmierci osoby | Czas | 5s |
 
 -----------------------
 ## Guardian Angel
-### **Team: Neutral**
-The Guardian Angel is a Neutral role which aligns with the faction of their target.\
-Their job is to protect their target at all costs.\
-If their target loses, they lose.
+### **Zespół: Neutralny**
+Anioł Stróż to neutralna rola, która jest zgodna z frakcją celu.\
+Ich zadaniem jest ochrona celu za wszelką cenę.\
+Jeśli cel przegra, oni przegrywają.
 
-### Game Options
-| Name | Description | Type | Default |
+### Opcje gry
+| Nazwa | Opis | Typ | Domyślne |
 |----------|:-------------:|:------:|:------:|
-| Guardian Angel | The percentage probability of the Guardian Angel appearing | Percentage | 0% |
-| Protect Cooldown | The cooldown of the Guardian Angel's Protect button | Time | 25s |
-| Protect Duration | How long The Guardian Angel's Protect lasts | Time | 10s |
-| Kill Cooldown Reset on Attack | The attackers kill cooldown after they attacked the protected target | Time | 2.5s |
-| Max Uses | The amount of times the Protect ability can be used | Number | 5 |
-| Show Protected Player | Who should be able to see who is Protected | Self / GA / Self + GA / Everyone | Self |
-| Guardian Angel becomes on Target Dead | Which role the Guardian Angel becomes when their target dies | Crewmate / Amnesiac / Survivor / Jester | Crewmate |
-| Target Knows GA Exists | Whether the GA's Target knows they have a GA | Toggle | False |
-| GA Knows Targets Role | Whether the GA knows their target's role | Toggle | False |
-| Odds Of Target Being Evil | The chances of the Guardian Angel's target being evil | Percentage | 20% |
+| Anioł Stróż | Procentowe prawdopodobieństwo pojawienia się Anioła Stróża | Procent | 0% |
+| Czas odnowienia ochrony | Czas odnowienia przycisku Ochrony Anioła Stróża | Czas | 25 s |
+| Czas trwania ochrony | Jak długo trwa Ochrona Anioła Stróża | Czas | 10 s |
+| Czas odnowienia zabójstwa resetowany podczas ataku | Czas odnowienia zabójstwa atakującego po zaatakowaniu chronionego celu | Czas | 2,5 s |
+| Maksymalne użycie | Ilość razy, kiedy można użyć zdolności ochrony | Liczba | 5 |
+| Pokaż chronionego gracza | Kto powinien móc zobaczyć, kto jest chroniony | Ja / GA / Ja + GA / Wszyscy | Ja |
+| Anioł Stróż staje się martwy na celu | Jaką rolę przyjmuje Anioł Stróż, gdy jego cel umiera | Członek załogi / Amnezjak / Ocalały / Błazen | Członek załogi |
+| Cel wie, że GA istnieje | Czy cel GA wie, że ma GA | Przełącz | Fałsz |
+| GA zna rolę celu | Czy GA zna rolę swojego celu | Przełącz | Fałsz |
+| Szansa, że ​​cel jest zły | Szansa, że ​​cel Anioła Stróża jest zły | Procent | 20% |
 
 -----------------------
 ## Survivor
-### **Team: Neutral**
-The Survivor is a Neutral role which can win by simply surviving.\
-However, if Lovers, or a Neutral Evil role wins the game, the survivor loses.
+### **Drużyna: Neutralna**
+Ocalały to neutralna rola, która może wygrać po prostu przeżywając.\
+Jednak jeśli Kochankowie lub Neutralna Zła rola wygrywa grę, ocalały przegrywa.
 
-### Game Options
-| Name | Description | Type | Default |
-|----------|:-------------:|:------:|:------:|
-| Survivor | The percentage probability of the Survivor appearing | Percentage | 0% |
-| Vest Cooldown | The cooldown of the Survivor's Vest button | Time | 25s |
-| Vest Duration | How long The Survivor's Vest lasts | Time | 10s |
-| Kill Cooldown Reset on Attack | The attackers kill cooldown after they attacked the veste Survivor | Time | 2.5s |
-| Max Uses | The amount of times the Vest ability can be used | Number | 5 |
+### Opcje gry
+| Nazwa | Opis | Typ | Domyślne |
+|----------|:------------:|:------:|:------:|
+| Ocalały | Procentowe prawdopodobieństwo pojawienia się Ocalałego | Procent | 0% |
+| Czas odnowienia kamizelki | Czas odnowienia przycisku Kamizelki Ocalałego | Czas | 25 s |
+| Czas trwania kamizelki | Jak długo trwa Kamizelka Ocalałego | Czas | 10 s |
+| Czas odnowienia zabójstwa resetowany podczas ataku | Atakujący zabijają cooldown po zaatakowaniu veste Survivor | Czas | 2,5 s |
+| Maksymalne użycie | Liczba razy, kiedy można użyć zdolności Vest | Liczba | 5 |
 
 -----------------------
 ## Foreteller
-### **Team: Neutral**
-The Foreteller is a Neutral role with its own win condition.\
-Their goal is to assassinate 4 players to win.\
-They have an additional observe ability that hints towards certain player's roles.
-### Game Options
-| Name | Description | Type | Default |
-|----------|:-------------:|:------:|:------:|
-| Foreteller | The percentage probability of the Foreteller appearing | Percentage | 0% |
-| Observe Cooldown | The Cooldown of the Foreteller's Observe button | Time | 25s |
-| Foreteller Guess Neutral Benign  | Whether the Foreteller can Guess Neutral Benign roles | Toggle | True |
-| Foreteller Guess Neutral Evil  | Whether the Foreteller can Guess Neutral Evil roles | Toggle | True |
-| Foreteller Guess Neutral Killing  | Whether the Foreteller can Guess Neutral Killing roles | Toggle | True |
-| Foreteller Guess Impostors  | Whether the Foreteller can Guess Impostor roles | Toggle | True |
-| (Experienced) Foreteller Can't Observe | The Foreteller doesn't have the observe feature | Toggle | True |
+### **Drużyna: Neutralna**
+Foreteller jest rolą Neutralną z własnym warunkiem wygranej.\
+Ich celem jest zabicie 4 graczy, aby wygrać.\
+Posiadają dodatkową zdolność obserwacji, która wskazuje na role niektórych graczy.
+
+### Opcje gry
+| Nazwa | Opis | Typ | Domyślne |
+|----------|:------------:|:------:|:------:|
+| Foreteller | Prawdopodobieństwo procentowe pojawienia się Foretellera | Procent | 0% |
+| Cooldown Obserwacji | Cooldown przycisku Obserwacji Foretellera | Czas | 25s |
+| Przepowiadający zgaduje neutralne łagodne | Czy Przepowiadający może zgadywać role neutralne łagodne | Przełącz | Prawda |
+| Przepowiadający zgaduje neutralne złe | Czy Przepowiadający może zgadywać role neutralne złe | Przełącz | Prawda |
+| Przepowiadający zgaduje neutralne zabijanie | Czy Przepowiadający może zgadywać role neutralne zabijanie | Przełącz | Prawda |
+| Przepowiadający zgaduje oszustów | Czy Przepowiadający może zgadywać role oszustów | Przełącz | Prawda |
+| (Doświadczony) Przepowiadający nie może obserwować | Przepowiadający nie ma funkcji obserwowania | Przełącz | Prawda |
 
 -----------------------
 ## Executioner
-### **Team: Neutral**
+### **Zespół: Neutralny**
 
-The Executioner is a Neutral role with its own win condition.\
-Their goal is to vote out a player, specified in the beginning of a game.\
-If that player gets voted out, they win the game.
-### Game Options
-| Name | Description | Type | Default |
-|----------|:-------------:|:------:|:------:|
-| Executioner | The percentage probability of the Executioner appearing | Percentage | 0% |
-| Executioner becomes on Target Dead | Which role the Executioner becomes when their target dies | Crewmate / Amnesiac / Survivor / Jester | Crewmate |
-| Executioner Can Button | Whether the Executioner Can Press the Button | Toggle | True |
-| Executioner Torment On Victory | Whether the Executioner can torment someone when they win | Toggle | True |
+Kat jest rolą neutralną z własnym warunkiem wygranej.\
+Ich celem jest wyrzucenie gracza, określonego na początku gry.\
+Jeśli gracz zostanie wyrzucony, wygrywa grę.
+
+### Opcje gry
+| Nazwa | Opis | Typ | Domyślne |
+|----------|:------------:|:------:|:------:|
+| Kat | Procentowe prawdopodobieństwo pojawienia się Kata | Procent | 0% |
+| Kat staje się martwym celem | Jaką rolę przyjmuje Kat, gdy jego cel umiera | Członek załogi / Amnezjak / Ocalały / Jester | Członek załogi |
+| Przycisk możliwości Kata | Czy kat może nacisnąć przycisk | Przełącz | Prawda |
+| Dręczenie kata po zwycięstwie | Czy kat może dręczyć kogoś, gdy wygrywa | Przełącz | Prawda |
 
 -----------------------
 ## Jester
-### **Team: Neutral**
-The Jester is a Neutral role with its own win condition.\
-If they are voted out after a meeting, the game finishes and they win.\
-However, the Jester does not win if the Crewmates, Impostors or another Neutral role wins.
+### **Zespół: Neutralny**
+Jester jest rolą neutralną z własnym warunkiem wygranej.\
+Jeśli zostaną wyrzuceni po spotkaniu, gra się kończy i wygrywają.\
+Jednak Jester nie wygrywa, jeśli wygrywają członkowie załogi, oszuści lub inna neutralna rola.
 
-### Game Options
-| Name | Description | Type | Default |
-|----------|:-------------:|:------:|:------:|
-| Jester | The percentage probability of the Jester appearing | Percentage | 0% |
-| Jester Can Button | Whether the Jester Can Press the Button | Toggle | True |
-| Jester Can Vent | Whether the Jester Can Vent | Toggle | False |
-| Jester Has Impostor Vision | Whether the Jester Has Impostor Vision | Toggle | False |
-| Jester Haunt On Victory | Whether the Jester can haunt someone when they win | Toggle | True |
+### Opcje gry
+| Nazwa | Opis | Typ | Domyślne |
+|----------|:------------:|:-------:|:------:|
+| Jester | Prawdopodobieństwo procentowe pojawienia się Jestera | Procent | 0% |
+| Jester Can Button | Czy błazen może nacisnąć przycisk | Przełącz | Prawda |
+| Błazen może się wygadać | Czy błazen może się wygadać | Przełącz | Fałsz |
+| Błazen ma wizję oszusta | Czy błazen ma wizję oszusta | Przełącz | Fałsz |
+| Błazen nawiedzany po zwycięstwie | Czy błazen może nawiedzać kogoś, gdy wygrywa | Przełącz | Prawda |
 
 -----------------------
 ## Phantom
-### **Team: Neutral**
+### **Zespół: Neutralny**
 
-The Phantom is a Neutral role with its own win condition.\
-They become half-invisible when they die and has to complete all their tasks without getting caught.
-### Game Options
-| Name | Description | Type | Default |
+Phantom jest rolą neutralną z własnym warunkiem wygranej.\
+Stają się półniewidzialni, gdy umierają i muszą wykonać wszystkie swoje zadania, nie dając się złapać.
+
+### Opcje gry
+| Nazwa | Opis | Typ | Domyślne |
 |----------|:-------------:|:------:|:------:|
-| Phantom | The percentage probability of the Phantom appearing | Percentage | 0% |
-| When Phantom Can Be Clicked | The amount of tasks remaining when the Phantom Can Be Clicked | Number | 5 |
-| Phantom Spook On Victory | Whether the Phantom can spook someone when they win | Toggle | True |
+| Phantom | Procentowe prawdopodobieństwo pojawienia się Phantom | Procent | 0% |
+| Kiedy Phantom może zostać kliknięty | Liczba zadań pozostałych, gdy Phantom może zostać kliknięty | Liczba | 5 |
+| Phantom Spook On Victory | Czy Phantom może kogoś przestraszyć, gdy wygrywa | Przełącz | Prawda |
 
 -----------------------
-## Soul Collector
-### **Team: Neutral**
-The Soul Collector is a Neutral role with its own win condition.\
-Their goal is to collect a certain number of souls to win.
-### Game Options
-| Name | Description | Type | Default |
+## Soul collector
+### **Zespół: Neutralny**
+Zbieracz dusz to rola neutralna z własnym warunkiem wygranej.\
+Ich celem jest zebranie określonej liczby dusz, aby wygrać.
+
+### Opcje gry
+| Nazwa | Opis | Typ | Domyślne |
 |----------|:-------------:|:------:|:------:|
-| Soul Collector | The percentage probability of the Soul Collector appearing | Percentage | 0% |
-| Reap Cooldown | The Cooldown of the Soul Collector's Reap button | Time | 25s |
-| Passively Collect Soul Each Round | Whether the Soul Collector collects a soul after each meeting | Toggle | True |
-| Amount Of Souls Required To Win | The amount of souls the Soul Collector requires to win | Number | 5 |
+| Zbieracz dusz | Procentowe prawdopodobieństwo pojawienia się Zbieracza dusz | Procent | 0% |
+| Czas odnowienia żniw | Czas odnowienia przycisku Zbieracza dusz | Czas | 25 s |
+| Pasywne zbieranie dusz w każdej rundzie | Czy Zbieracz dusz zbiera duszę po każdym spotkaniu | Przełącz | Prawda |
+| Liczba dusz wymaganych do wygranej | Liczba dusz, których Zbieracz dusz potrzebuje, aby wygrać | Liczba | 5 |
 
 -----------------------
 ## Arsonist
-### **Team: Neutral**
+### **Zespół: Neutralny**
 
-The Arsonist is a Neutral role with its own win condition.\
-They have two abilities, one is to douse other players with gasoline.\
-The other is to ignite all doused players.\
-The Arsonist needs to be the last killer alive to win the game.
-### Game Options
-| Name | Description | Type | Default |
-|----------|:-------------:|:------:|:------:|
-| Arsonist | The percentage probability of the Arsonist appearing | Percentage | 0% |
-| Douse Cooldown | The cooldown of the Arsonist's Douse button | Time | 25s |
-| Maximum Alive Players Doused | The maximum amount of players that the Arsonist can have doused | Number | 5 |
-| Arsonist Has Impostor Vision | Whether the Arsonist Has Impostor Vision | Toggle | False |
-| Ignite Cooldown Removed When Arso Is Last Killer | Whether the Arsonist's Ignite Cooldown is removed when they're the final killer | Toggle | False |
+Podpalacz jest rolą neutralną z własnym warunkiem wygranej.\
+Ma dwie umiejętności, jedną jest oblewanie innych graczy benzyną.\
+Drugą jest podpalanie wszystkich oblanych graczy.\
+Podpalacz musi być ostatnim żywym zabójcą, aby wygrać grę.
+
+### Opcje gry
+| Nazwa | Opis | Typ | Domyślne |
+|----------|:------------:|:------:|:------:|
+| Podpalacz | Procentowe prawdopodobieństwo pojawienia się Podpalacza | Procent | 0% |
+| Czas odnowienia Oblania | Czas odnowienia przycisku Oblania Podpalacza | Czas | 25 s |
+| Maksymalna liczba żywych graczy oblanych benzyną | Maksymalna liczba graczy, których Podpalacz może oblał | Liczba | 5 |
+| Arsonist Has Impostor Vision | Czy Arsonist Has Impostor Vision | Przełącz | Fałsz |
+| Czas odnowienia Ignite jest usuwany, gdy Arso jest ostatnim zabójcą | Czy czas odnowienia Ignite Arsonist jest usuwany, gdy jest ostatnim zabójcą | Przełącz | Fałsz |
 
 -----------------------
 ## Juggernaut
-### **Team: Neutral**
+### **Drużyna: Neutralna**
 
-The Juggernaut is a Neutral role with its own win condition.\
-The Juggernaut's special ability is that their kill cooldown reduces with each kill.\
-This means in theory the Juggernaut can have a 0 second kill cooldown!\
-The Juggernaut is also a hidden role, meaning it will show up randomly and can not be toggled by percentages like other roles.\
-The Juggernaut needs to be the last killer alive to win the game.
-### Game Options
-| Name | Description | Type | Default |
+Juggernaut jest rolą neutralną z własnym warunkiem wygranej.\
+Specjalną umiejętnością Juggernauta jest to, że czas odnowienia zabójstwa zmniejsza się z każdym zabójstwem.\
+Teoretycznie oznacza to, że Juggernaut może mieć czas odnowienia zabójstwa wynoszący 0 sekund!\
+Juggernaut jest również ukrytą rolą, co oznacza, że ​​pojawi się losowo i nie można jej przełączać za pomocą procentów, jak w przypadku innych ról.\
+Juggernaut musi być ostatnim żywym zabójcą, aby wygrać grę.
+
+### Opcje gry
+| Nazwa | Opis | Typ | Domyślny |
 |----------|:-------------:|:------:|:------:|
-| Juggernaut | The percentage probability of the Juggernaut appearing | Percentage | 0% |
-| Juggernaut Kill Cooldown | The initial cooldown of the Juggernaut's Kill button | Time | 25s |
-| Reduced Kill Cooldown Per Kill | The amount of time removed from the Juggernaut's Kill Cooldown Per Kill | Time | 5s |
-| Juggernaut can Vent | Whether the Juggernaut can Vent | Toggle | False |
+| Juggernaut | Procentowe prawdopodobieństwo pojawienia się Juggernauta | Procent | 0% |
+| Czas odnowienia zabójstwa Juggernauta | Początkowy czas odnowienia przycisku Zabij Juggernauta | Czas | 25 s |
+| Skrócony czas odnowienia zabójstwa na zabójstwo | Ilość czasu skrócona o czas odnowienia zabójstwa Juggernauta na zabójstwo | Czas | 5 s |
+| Juggernaut może się odpowietrzyć | Czy Juggernaut może się odpowietrzyć | Przełącz | Fałsz |
 
 -----------------------
 ## Plaguebearer
-### **Team: Neutral**
+### **Zespół: Neutralny**
 
-The Plaguebearer is a Neutral role with its own win condition, as well as an ability to transform into another role.\
-The Plaguebearer has one ability, which allows them to infect other players.\
-Once infected, the infected player can go and infect other players via interacting with them.\
-Once all players are infected, the Plaguebearer becomes Pestilence.\
-The Pestilence is a unkillable force which can only be killed by being voted out, even their lover dying won't kill them.\
-The Plaguebearer or Pestilence needs to be the last killer alive to win the game.
-### Game Options
-| Name | Description | Type | Default |
+Plaguebearer jest rolą neutralną z własnym warunkiem wygranej, a także zdolnością do transformacji w inną rolę.\
+Plaguebearer ma jedną zdolność, która pozwala mu zarażać innych graczy.\
+Po zarażeniu, zarażony gracz może iść i zarażać innych graczy poprzez interakcję z nimi.\
+Gdy wszyscy gracze zostaną zarażeni, Plaguebearer staje się Pestilence.\
+Pestilence to niezniszczalna siła, którą można zabić tylko poprzez głosowanie, nawet śmierć ich kochanka ich nie zabije.\
+Plaguebearer lub Pestilence muszą być ostatnimi żywymi zabójcami, aby wygrać grę.
+
+### Opcje gry
+| Nazwa | Opis | Typ | Domyślny |
 |----------|:-------------:|:------:|:------:|
-| Plaguebearer | The percentage probability of the Plaguebearer appearing | Percentage | 0% |
-| Infect Cooldown | The cooldown of the Plaguebearer's Infect button | Time | 25s |
-| Pestilence Kill Cooldown | The cooldown of the Pestilence's Kill button | Time | 25s |
-| Pestilence can Vent | Whether the Pestilence can Vent | Toggle | False |
+| Plaguebearer | Procentowe prawdopodobieństwo pojawienia się Plaguebearera | Procent | 0% |
+| Czas odnowienia infekcji | Czas odnowienia przycisku Infect (Zakaż) Plaguebearera | Czas | 25 s |
+| Czas odnowienia zabójstwa zarazy | Czas odnowienia przycisku Kill (Zabij) zarazy | Czas | 25 s |
+| Zaraza może się ulotnić | Czy zaraza może się ulotnić | Przełącz | Fałsz |
 
 -----------------------
 ## The Glitch
-### **Team: Neutral**
+### **Zespół: Neutralny**
 
-The Glitch is a Neutral role with its own win condition.\
-The Glitch's aim is to kill everyone and be the last person standing.\
-The Glitch can Hack players, resulting in them being unable to report bodies and do tasks.\
-Hacking prevents the hacked player from doing anything but walk around the map.\
-The Glitch can Mimic someone, which results in them looking exactly like the other person.
+The Glitch to rola neutralna z własnym warunkiem wygranej.\
+Celem The Glitch jest zabicie wszystkich i zostanie ostatnią osobą stojącą.\
+The Glitch może Hackować graczy, co uniemożliwia im zgłaszanie ciał i wykonywanie zadań.\
+Hackowanie uniemożliwia zhakowanemu graczowi robienie czegokolwiek poza chodzeniem po mapie.\
+The Glitch może naśladować kogoś, co powoduje, że wygląda on dokładnie jak druga osoba.
 
-### Game Options
-| Name | Description | Type | Default |
-|----------|:-------------:|:------:|:------:|
-| The Glitch | The percentage probability of The Glitch appearing | Percentage | 0% |
-| Mimic Cooldown | The cooldown of The Glitch's Mimic button | Time | 25s |
-| Mimic Duration | How long The Glitch can Mimic a player | Time | 10s |
-| Hack Cooldown | The cooldown of The Glitch's Hack button | Time | 25s |
-| Hack Duration | How long The Glitch can Hack a player | Time | 10s |
-| Glitch Kill Cooldown | The cooldown of the Glitch's Kill button | Time | 25s |
-| Glitch Hack Distance | How far away The Glitch can Hack someone from | Short / Normal / Long | Short |
-| Glitch can Vent | Whether the Glitch can Vent | Toggle | False |
+### Opcje gry
+| Nazwa | Opis | Typ | Domyślne |
+|----------|:------------:|:-------:|:------:|
+| The Glitch | Prawdopodobieństwo procentowe pojawienia się The Glitch | Procent | 0% |
+| Czas odnowienia Mimika | Czas odnowienia przycisku Mimika The Glitch | Czas | 25 s |
+| Czas trwania naśladowania | Jak długo Glitch może naśladować gracza | Czas | 10s |
+| Czas odnowienia hacka | Czas odnowienia przycisku hacka Glitcha | Czas | 25s |
+| Czas trwania hacka | Jak długo Glitch może zhakować gracza | Czas | 10s |
+| Czas odnowienia zabójstwa Glitcha | Czas odnowienia przycisku zabicia Glitcha | Czas | 25s |
+| Odległość hacka Glitcha | Jak daleko Glitch może kogoś zhakować | Krótki / Normalny / Długi | Krótki |
+| Glitch może się odpowietrzyć | Czy Glitch może się odpowietrzyć | Przełącz | Fałsz |
 
 -----------------------
-## Vampire
-### **Team: Neutral**
+## Wampir
+### **Zespół: Neutralny**
 
-The Vampire is a Neutral role with its own win condition.\
-The Vampire can convert or kill other players by biting them.\
-If the bitten player was a Crewmate they will turn into a Vampire (unless there are 2 Vampires alive)\
-Else they will kill the bitten player.
-### Game Options
-| Name | Description | Type | Default |
-|----------|:-------------:|:------:|:------:|
-| Vampire | The percentage probability of the Vampire appearing | Percentage | 0% |
-| Bite Cooldown | The cooldown of the Vampire's Bite button | Time | 25s |
-| Vampire Has Impostor Vision | Whether the Vampire Has Impostor Vision | Toggle | False |
-| Vampire Can Vent | Whether the Vampire Can Vent | Toggle | False |
-| New Vampire Can Assassinated | Whether the new Vampire can assassinate | Toggle | False |
-| Maximum Vampires Per Game | The maximum amount of players that can be Vampires | Number | 2 |
-| Can Convert Neutral Benign Roles | Whether Neutral Benign Roles can be turned into Vampires | Toggle | False |
-| Can Convert Neutral Evil Roles | Whether Neutral Evil Roles can be turned into Vampires | Toggle | False |
+Wampir jest rolą neutralną z własnym warunkiem wygranej.\
+Wampir może nawracać lub zabijać innych graczy, gryząc ich.\
+Jeśli ugryziony gracz był członkiem załogi, zamieni się w Wampira (chyba że żyją 2 Wampiry)\
+W przeciwnym wypadku zabiją ugryzionego gracza.
+
+### Opcje gry
+| Nazwa | Opis | Typ | Domyślne |
+|----------|:------------:|:------:|:------:|
+| Wampir | Prawdopodobieństwo pojawienia się Wampira w procentach | Procent | 0% |
+| Czas odnowienia Ugryzienia | Czas odnowienia przycisku Ugryzienia Wampira | Czas | 25 s |
+| Wampir ma wizję oszusta | Czy wampir ma wizję oszusta | Przełącz | Fałsz |
+| Wampir może się uwolnić | Czy wampir może się uwolnić | Przełącz | Fałsz |
+| Nowy wampir może zostać zamordowany | Czy nowy wampir może dokonać zamachu | Przełącz | Fałsz |
+| Maksymalna liczba wampirów na grę | Maksymalna liczba graczy, którzy mogą być wampirami | Liczba | 2 |
+| Możliwość konwersji neutralnych łagodnych ról | Czy neutralne łagodne role mogą zostać zmienione w wampiry | Przełącz | Fałsz |
+| Możliwość konwersji neutralnych złych ról | Czy neutralne złe role mogą zostać zmienione w wampiry | Przełącz | Fałsz |
 
 -----------------------
 ## Werewolf
-### **Team: Neutral**
+### **Drużyna: Neutralna**
 
-The Werewolf is a Neutral role with its own win condition.\
-Although the Werewolf has a kill button, they can't use it unless they are Rampaged.\
-Once the Werewolf rampages they gain Impostor vision and the ability to kill.\
-However, unlike most killers their kill cooldown is really short.\
-The Werewolf needs to be the last killer alive to win the game.
-### Game Options
-| Name | Description | Type | Default |
-|----------|:-------------:|:------:|:------:|
-| Werewolf | The percentage probability of the Werewolf appearing | Percentage | 0% |
-| Rampage Cooldown | The cooldown of the Werewolf's Rampage button | Time | 25s |
-| Rampage Duration | The duration of the Werewolf's Rampage | Time | 25s |
-| Rampage Kill Cooldown | The cooldown of the Werewolf's Kill button | Time | 10s |
-| Werewolf can Vent when Rampaged | Whether the Werewolf can Vent when Rampaged | Toggle | False |
+Wilkołak jest rolą neutralną z własnym warunkiem wygranej.\
+Chociaż Wilkołak ma przycisk zabijania, nie może go użyć, chyba że zostanie Rozwalony.\
+Gdy Wilkołak szaleje, zyskuje wizję oszusta i zdolność zabijania.\
+Jednak w przeciwieństwie do większości zabójców ich czas odnowienia zabójstwa jest naprawdę krótki.\
+Wilkołak musi być ostatnim żywym zabójcą, aby wygrać grę.
+
+### Opcje gry
+| Nazwa | Opis | Typ | Domyślne |
+|----------|:------------:|:------:|:------:|
+| Wilkołak | Procentowe prawdopodobieństwo pojawienia się Wilkołaka | Procent | 0% |
+| Czas odnowienia Rozwalonego | Czas odnowienia przycisku Szału Wilkołaka | Czas | 25 s |
+| Czas trwania Szału | Czas trwania Szału Wilkołaka | Czas | 25 s |
+| Czas odnowienia Zabójstwa Szału | Czas odnowienia przycisku Zabicia Wilkołaka | Czas | 10 s |
+| Wilkołak może się uwolnić, gdy jest Szał | Czy Wilkołak może się uwolnić, gdy jest Szał | Przełącz | Fałsz |
 
 -----------------------
 ## Icenberg
-### **Team: Neutral**
+### **Drużyna: Neutralna**
 
-The Icenberg is a Neutral role with its own win condition.\
-The Icenberg's aim is to kill everyone and be the last person standing.\
-The Icenberg can Freeze players, resulting in them being unable to move.
-### Game Options
-| Name | Description | Type | Default |
-|----------|:-------------:|:------:|:------:|
-| Icenberg | The percentage probability of the Icenberg appearing | Percentage | 0% |
-| Freeze Cooldown | The cooldown of the Icenberg's Freeze button | Time | 25s |
-| Freeze Duration | The duration of the Icenberg's Freeze | Time | 3s |
-| Freeze Kill Cooldown | The cooldown of the Icenberg's Kill button | Time | 25s |
-| Icenberg Has Impostor Vision | Whether the Icenberg Has Impostor Vision | Toggle | False |
-| Icenberg can Vent | Whether the Icenberg can Vent| Toggle | True |
+Icenberg jest rolą neutralną z własnym warunkiem zwycięstwa.\
+Celem Icenberga jest zabicie wszystkich i zostanie ostatnią osobą stojącą.\
+Icenberg może zamrozić graczy, uniemożliwiając im ruch.
+
+### Opcje gry
+| Nazwa | Opis | Typ | Domyślny | |----------|:-------------:|:------:|:------:|
+| Icenberg | Procentowe prawdopodobieństwo pojawienia się Icenberga | Procent | 0% |
+| Czas odnowienia zamrożenia | Czas odnowienia przycisku zamrożenia Icenberga | Czas | 25 s |
+| Czas trwania zamrożenia | Czas trwania zamrożenia Icenberga | Czas | 3 s |
+| Czas odnowienia zabicia zamrożenia | Czas odnowienia przycisku zabicia Icenberga | Czas | 25 s |
+| Icenberg ma wizję oszusta | Czy Icenberg ma wizję oszusta | Przełącz | Fałsz |
+| Icenberg może się odpowietrzyć | Czy Icenberg może się odpowietrzyć | Przełącz | Prawda |
 
 -----------------------
-# Impostor Roles
+# Role oszustów
 ## Escapist
-### **Team: Impostors**
+### **Zespół: Oszuści**
 
-The Escapist is an Impostor that can teleport to a different location.\
-Once per round the Escapist can Mark a location which they can then escape to later in the round.
+Uciekinierka to oszust, który może teleportować się do innej lokalizacji.\
+Raz na rundę Uciekinierka może oznaczyć lokalizację, do której może uciec później w rundzie.
 
-### Game Options
-| Name | Description | Type | Default |
-|----------|:-------------:|:------:|:------:|
-| Escapist | The percentage probability of the Escapist appearing | Percentage | 0% |
-| Recall Cooldown | The cooldown of the Escapist's Recall button | Time | 25s |
-| Escapist can Vent | Whether the Escapist can Vent | Toggle | False |
-
------------------------
-## Grenadier
-### **Team: Impostors**
-
-The Grenadier is an Impostor that can throw smoke grenades.\
-During the game, the Grenadier has the option to throw down a smoke grenade which blinds crewmates so they can't see.\
-However, a sabotage and a smoke grenade can not be active at the same time.
-
-### Game Options
-| Name | Description | Type | Default |
-|----------|:-------------:|:------:|:------:|
-| Grenadier | The percentage probability of the Grenadier appearing | Percentage | 0% |
-| Flash Grenade Cooldown | The cooldown of the Grenadier's Flash button | Time | 25s |
-| Flash Grenade Duration | How long the Flash Grenade lasts for | Time | 10s |
-| Flash Radius | How wide the flash radius is | Multiplier | 1x |
-| Indicate Flashed Crewmates | Whether the Grenadier can see who has been flashed | Toggle | False |
-| Grenadier can Vent | Whether the Grenadier can Vent | Toggle | False |
------------------------
-## Morphling
-### **Team: Impostors**
-
-The Morphling is an Impostor that can Morph into another player.\
-At the beginning of the game and after every meeting, they can choose someone to Sample.\
-They can then Morph into that person at any time for a limited amount of time.
-
-### Game Options
-| Name | Description | Type | Default |
-|----------|:-------------:|:------:|:------:|
-| Morphling | The percentage probability of the Morphling appearing | Percentage | 0% |
-| Morph Cooldown | The cooldown of the Morphling's Morph button | Time | 25s |
-| Morph Duration | How long the Morph lasts for | Time | 10s |
-| Morphling can Vent | Whether the Morphling can Vent | Toggle | False |
-
------------------------
-## Swooper
-### **Team: Impostors**
-
-The Swooper is an Impostor that can temporarily turn invisible.
-
-### Game Options
-| Name | Description | Type | Default |
-|----------|:-------------:|:------:|:------:|
-| Swooper | The percentage probability of the Swooper appearing | Percentage | 0% |
-| Swooper Cooldown | The cooldown of the Swooper's Swoop button | Time | 25s |
-| Swooper Duration | How long the Swooping lasts for | Time | 10s |
-| Swooper can Vent | Whether the Swooper can Vent | Toggle | False |
-
------------------------
-## Noclip
-### **Team: Impostors**
-
-The Noclip is an Impostor that can temporarily walk trought walls.
-
-### Game Options
-| Name | Description | Type | Default |
-|----------|:-------------:|:------:|:------:|
-| Noclip | The percentage probability of the Noclip appearing | Percentage | 0% |
-| Noclip Cooldown | The cooldown of the Noclip's WallRun button | Time | 25s |
-| Noclip Duration | How long the Noclip lasts for | Time | 5s |
-| Noclip can Vent | Whether the Noclip can Vent | Toggle | False |
+### Opcje gry
+| Nazwa | Opis | Typ | Domyślne |
+|----------|:------------:|:------:|:------:|
+| Uciekinierka | Procentowe prawdopodobieństwo pojawienia się Uciekinierki | Procent | 0% |
+| Czas odnowienia powrotu | Czas odnowienia przycisku powrotu Uciekinierki | Czas | 25 s |
+| Uciekinierka może się odpowietrzyć | Czy Uciekinierka może się odpowietrzyć | Przełącz | Fałsz |
 
 -----------------------
 ## Venerer
-### **Team: Impostors**
+### **Zespół: Oszuści**
 
-The Venerer is an Impostor that gains abilities through killing.\
-After their first kill, the Venerer can camouflage themself.\
-After their second kill, the Venerer can sprint.\
-After their third kill, every other player is slowed while their ability is activated.\
-All abilities are activated by the one button and have the same duration.
-
-### Game Options
-| Name | Description | Type | Default |
+### Opcje gry
+| Nazwa | Opis | Typ | Domyślne |
 |----------|:-------------:|:------:|:------:|
-| Venerer | The percentage probability of the Venerer appearing | Percentage | 0% |
-| Ability Cooldown | The cooldown of the Venerer's Ability button | Time | 25s |
-| Ability Duration | How long the Venerer's ability lasts for | Time | 10s |
-| Sprint Speed | How fast the speed increase of the Venerer is when sprinting | Multiplier | 1.25x |
-| Freeze Speed | How slow the speed decrease of other players is when the Venerer's ability is active | Multiplier | 0.75x |
+| Venerer | Procentowe prawdopodobieństwo pojawienia się Venerera | Procent | 0% |
+| Czas odnowienia umiejętności | Czas odnowienia przycisku umiejętności Venerera | Czas | 25 s |
+| Czas trwania umiejętności | Jak długo trwa umiejętność Venerera | Czas | 10 s |
+| Prędkość sprintu | Jak szybko zwiększa się prędkość Venerera podczas sprintu | Mnożnik | 1,25x |
+| Prędkość zamrażania | Jak wolno zmniejsza się prędkość innych graczy, gdy umiejętność Venerera jest aktywna | Mnożnik | 0,75x |
 
 -----------------------
 ## Bomber
-### **Team: Impostors**
+### **Zespół: Oszuści**
 
-The Bomber is an Impostor who has the ability to plant bombs instead of kill.\
-After a bomb is planted, the bomb will detonate a fixed time period as per settings.\
-Once the bomb detonates it will kill all crewmates (and Impostors!) inside the radius.
+Bombowiec to oszust, który ma zdolność podkładania bomb zamiast zabijania.\
+Po podłożeniu bomby, bomba będzie detonować przez ustalony okres czasu zgodnie z ustawieniami.\
+Po detonacji bomba zabije wszystkich członków załogi (i oszustów!) w promieniu.
 
-### Game Options
-| Name | Description | Type | Default |
-|----------|:-------------:|:------:|:------:|
-| Bomber | The percentage probability of the Bomber appearing | Percentage | 0% |
-| Detonate Delay | The delay of the detonation after bomb has been planted | Time | 5s |
-| Max Kills In Detonation | Maximum number of kills in the detonation | Time | 5s |
-| Detonate Radius | How wide the detonate radius is | Multiplier | 0.25x |
-| Bomber can Vent | Whether the Bomber can Vent | Toggle | False |
-| All Imps See Bomb | Whether all the Impostors see the Bomber's bombs | Toggle | False |
+### Opcje gry
+| Nazwa | Opis | Typ | Domyślne |
+|----------|:------------:|:------:|:------:|
+| Bombowiec | Procentowe prawdopodobieństwo pojawienia się Bombowca | Procent | 0% |
+| Opóźnienie detonacji | Opóźnienie detonacji po podłożeniu bomby | Czas | 5s |
+| Maksymalna liczba zabójstw podczas detonacji | Maksymalna liczba zabójstw podczas detonacji | Czas | 5s |
+| Promień detonacji | Jak szeroki jest promień detonacji | Mnożnik | 0,25x |
+| Bombowiec może odpowietrzyć | Czy Bombowiec może odpowietrzyć | Przełącz | Fałsz |
+| Wszystkie Impy widzą bombę | Czy wszyscy Oszuści widzą bomby Bombowca | Przełącz | Fałsz |
 
 -----------------------
-## Scavenger
-### **Team: Impostors**
+## Zbieracz
+### **Drużyna: Oszuści**
 
-The Scavenger is an Impostor who hunts down prey.\
-With each successful hunt the Scavenger has a shortened kill cooldown.\
-On an incorrect kill the Scavenger has a significantly increased kill cooldown.
+Zbieracz to Oszust, który poluje na ofiarę.\
+Z każdym udanym polowaniem Zbieracz ma skrócony czas odnowienia zabójstwa.\
+W przypadku nieudanego zabicia Zbieracz ma znacznie wydłużony czas odnowienia zabójstwa.
 
-### Game Options
-| Name | Description | Type | Default |
+### Opcje gry
+| Nazwa | Opis | Typ | Domyślne |
 |----------|:-------------:|:------:|:------:|
-| Scavenger | The percentage probability of the Scavenger appearing | Percentage | 0% |
-| Scavenge Duration | How long the Scavenger's scavenge lasts for | Time | 25s |
-| Scavenge Duration Increase Per Kill | How much time the Scavenge duration increases on a correct kill | Time | 10s |
-| Scavenge Kill Cooldown On Correct Kill | The kill cooldown the Scavenger has on a correct kill | Time | 10s |
-| Kill Cooldown Multiplier On Incorrect Kill | The increased time the kill cooldown has on an incorrect kill | Multiplier | 3x |
+| Zbieracz | Procentowe prawdopodobieństwo pojawienia się Zbieracza | Procent | 0% |
+| Czas trwania Zbieracza | Jak długo trwa zbieranie Zbieracza | Czas | 25s |
+| Zwiększenie czasu trwania Zbieracza na zabójstwo | O ile czasu wydłuża się czas trwania Zbieracza po poprawnym zabiciu | Czas | 10s |
+| Czas odnowienia Zbieracza po poprawnym zabiciu | Czas odnowienia Zbieracza po poprawnym zabiciu | Czas | 10s |
+| Mnożnik czasu odnowienia Zbieracza po błędnym zabiciu | Zwiększony czas odnowienia Zbieracza po błędnym zabiciu | Mnożnik | 3x |
 
 -----------------------
 ## Traitor
-### **Team: Impostors**
+### **Zespół: Oszuści**
 
-If all Impostors die before a certain point in the game, a random crewmate is selected to become the Traitor.\
-The Traitor has no additional abilities and their job is simply to avenge the dead Impostors.\
-Once this player has turned into the Traitor their alliance sits with the Impostors.
+Jeśli wszyscy Oszuści zginą przed pewnym momentem w grze, losowy członek załogi zostaje wybrany, aby zostać Zdrajcą.\
+Zdrajca nie ma żadnych dodatkowych umiejętności, a jego zadaniem jest po prostu pomścić zabitych Oszustów.\
+Gdy ten gracz zamieni się w Zdrajcę, jego sojusz zawiązuje się z Oszustami.
 
-### Game Options
-| Name | Description | Type | Default |
-|----------|:-------------:|:------:|:------:|
-| Traitor | The percentage probability of the Traitor appearing | Percentage | 0% |
-| Minimum People Alive When Traitor Can Spawn | The minimum number of people alive when a Traitor can spawn | Number | 5 |
-| Traitor Won't Spawn if Neutral Killing are Alive | Whether the Traitor won't spawn if any Neutral Killing roles are alive | Toggle | False |
+### Opcje gry
+| Nazwa | Opis | Typ | Domyślne |
+|----------|:------------:|:------:|:------:|
+| Zdrajca | Procentowe prawdopodobieństwo pojawienia się Zdrajcy | Procent | 0% |
+| Minimalna liczba żywych osób, gdy Zdrajca może się pojawić | Minimalna liczba żywych osób, gdy Zdrajca może się pojawić | Liczba | 5 |
+| Zdrajca nie pojawi się, jeśli neutralni zabijający są żywi | Czy zdrajca nie pojawi się, jeśli jacyś neutralni zabijający są żywi | Przełącz | Fałsz |
 
 -----------------------
 ## Warlock
-### **Team: Impostors**
+### **Drużyna: Oszuści**
 
-The Warlock is an Impostor that can charge up their kill button.\
-Once activated the Warlock can use their kill button infinitely until they run out of charge.\
-However, they do not need to fully charge their kill button to use it.
+Warlock to oszust, który może ładować swój przycisk zabijania.\
+Po aktywacji Warlock może używać swojego przycisku zabijania w nieskończoność, dopóki nie wyczerpie się mu ładunek.\
+Jednak nie musi w pełni ładować swojego przycisku zabijania, aby go użyć.
 
-### Game Options
-| Name | Description | Type | Default |
-|----------|:-------------:|:------:|:------:|
-| Warlock | The percentage probability of the Warlock appearing | Percentage | 0% |
-| Time It Takes To Fully Charge | The time it takes to fully charge the Warlock's Kill Button | Time | 25s |
-| Time It Takes To Use Full Charge | The maximum duration a charge of the Warlock's Kill Button lasts | Time | 1s |
+### Opcje gry
+| Nazwa | Opis | Typ | Domyślne |
+|----------|:------------:|:------:|:------:|
+| Warlock | Procentowe prawdopodobieństwo pojawienia się Warlocka | Procent | 0% |
+| Czas pełnego naładowania | Czas pełnego naładowania przycisku Kill Button Warlocka | Czas | 25 s |
+| Czas pełnego naładowania | Maksymalny czas trwania ładowania przycisku Kill Button Warlocka | Czas | 1 s |
 
 -----------------------
 ## Blackmailer
-### **Team: Impostors**
-The Blackmailer is an Impostor that can silence people in meetings.\
-During each round, the Blackmailer can go up to someone and blackmail them.\
-This prevents the blackmailed person from speaking and possibly voting during the next meeting.
+### **Zespół: Oszuści**
+Szantażysta to oszust, który może uciszyć ludzi na spotkaniach.\
+Podczas każdej rundy Szantażysta może podejść do kogoś i go szantażować.\
+Uniemożliwia to szantażowanej osobie zabieranie głosu i ewentualne głosowanie podczas następnego spotkania.
 
-### Game Options
-| Name | Description | Type | Default |
-|----------|:-------------:|:------:|:------:|
-| Blackmailer | The percentage probability of the Blackmailer appearing | Percentage | 0% |
-| Initial Blackmail Cooldown | The initial cooldown of the Blackmailer's Blackmail button | Time | 10s |
-| Only Target Sees Blackmail | If enabled, only the blackmailed player (and the Blackmailer) will see that the player can't speak | Toggle | False |
-| Maximum People Alive Where Blackmailed Can Vote | The maximum number of players alive to allow the blackmailed player to vote | Number | 5 |
+### Opcje gry
+| Nazwa | Opis | Typ | Domyślne |
+|----------|:------------:|:------:|:------:|
+| Szantażysta | Procentowe prawdopodobieństwo pojawienia się Szantażysty | Procent | 0% |
+| Początkowy czas odnowienia szantażu | Początkowy czas odnowienia przycisku Szantaż Szantaż | Czas | 10 s |
+| Tylko cel widzi Szantaż | Jeśli włączone, tylko szantażowany gracz (i Szantaż) zobaczą, że gracz nie może mówić | Przełącz | Fałsz |
+| Maksymalna liczba żywych osób, w których szantażowany może głosować | Maksymalna liczba żywych graczy, która pozwala szantażowanemu graczowi głosować | Liczba | 5 |
 
 -----------------------
-## Hypnotist
-### **Team: Impostors**
-The Hypnotist is an Impostor that can hypnotize people.\
-Once enough people are hypnotized, the Hypnotist can release Mass Hysteria.\
-With Mass Hysteria released, all hypnotized players see all other players as either themselves, camouflaged or invisible.\
-Once the Hypnotist dies Mass Hysteria is removed and people can see everyone normally again.
+## Hipnotist
+### **Zespół: Oszuści**
+Hipnotyzer to oszust, który potrafi hipnotyzować ludzi.\
+Gdy wystarczająca liczba osób zostanie zahipnotyzowana, Hipnotyzer może uwolnić Histerię Masową.\
+Po uwolnieniu Histerii Masowej wszyscy zahipnotyzowani gracze widzą wszystkich innych graczy jako siebie, zakamuflowanych lub niewidzialnych.\
+Gdy Hipnotyzer umrze, Histeria Masowa zostanie usunięta i ludzie znów będą mogli widzieć wszystkich normalnie.
 
-### Game Options
-| Name | Description | Type | Default |
-|----------|:-------------:|:------:|:------:|
-| Hypnotist | The percentage probability of the Hypnotist appearing | Percentage | 0% |
-| Hypnotize Cooldown | The cooldown of the Hypnotist's Hypnotize button | Time | 25s |
+### Opcje gry
+| Nazwa | Opis | Typ | Domyślne |
+|----------|:------------:|:------:|:------:|
+| Hipnotyzer | Procentowe prawdopodobieństwo pojawienia się Hipnotyzera | Procent | 0% |
+| Czas odnowienia Hipnotyzera | Czas odnowienia przycisku Hipnotyzera | Czas | 25 s |
 
 -----------------------
 ## Janitor
-### **Team: Impostors**
-The Janitor is an Impostor that can clean up bodies.\
-Both their Kill and Clean ability have a shared cooldown, meaning they have to choose which one they want to use.
+### **Zespół: Oszuści**
+Sprzątacz to oszust, który może czyścić ciała.\
+Zarówno ich umiejętność Zabij, jak i Czyść mają wspólny czas odnowienia, co oznacza, że ​​muszą wybrać, której z nich chcą użyć.
 
-### Game Options
-| Name | Description | Type | Default |
-|----------|:-------------:|:------:|:------:|
-| Janitor | The percentage probability of the Janitor appearing | Percentage | 0% |
+### Opcje gry
+| Nazwa | Opis | Typ | Domyślne |
+|----------|:------------:|:------:|:------:|
+| Sprzątacz | Prawdopodobieństwo pojawienia się Sprzątarza w procentach | Procent | 0% |
 
 -----------------------
 ## Miner
-### **Team: Impostors**
+### **Zespół: Oszuści**
 
-The Miner is an Impostor that can create new vents.\
-These vents only connect to each other, forming a new passway.
+Górnik to oszust, który może tworzyć nowe otwory wentylacyjne.\
+Te otwory wentylacyjne łączą się tylko ze sobą, tworząc nowe przejście.
 
-### Game Options
-| Name | Description | Type | Default |
+### Opcje gry
+| Nazwa | Opis | Typ | Domyślne |
 |----------|:-------------:|:------:|:------:|
-| Miner | The percentage probability of the Miner appearing | Percentage | 0% |
-| Mine Cooldown | The cooldown of the Miner's Mine button | Time | 25s |
+| Górnik | Procentowe prawdopodobieństwo pojawienia się Górnika | Procent | 0% |
+| Czas odnowienia kopalni | Czas odnowienia przycisku Kopalni Górnika | Czas | 25 s |
 
 -----------------------
 ## Undertaker
-### **Team: Impostors**
+### **Zespół: Oszuści**
 
-The Undertaker is an Impostor that can drag and drop bodies.
+Undertaker to oszust, który może przeciągać i upuszczać ciała.
 
-### Game Options
-| Name | Description | Type | Default |
-|----------|:-------------:|:------:|:------:|
-| Undertaker | The percentage probability of the Undertaker appearing | Percentage | 0% |
-| Undertaker Drag Cooldown | The cooldown of the Undertaker Drag ability | Time | 25s |
-| Undertaker Speed While Dragging | How fast the Undertaker moves while dragging a body in comparison to normal | Multiplier | 0.75x |
-| Undertaker can Vent | Whether the Undertaker can Vent | Toggle | False |
-| Undertaker can Vent while Dragging | Whether the Undertaker can Vent when they are Dragging a Body | Toggle | False |
+### Opcje gry
+| Nazwa | Opis | Typ | Domyślne |
+|----------|:------------:|:------:|:------:|
+| Undertaker | Prawdopodobieństwo pojawienia się Undertakera | Procent | 0% |
+| Czas odnowienia umiejętności Undertaker Drag | Czas odnowienia umiejętności Undertaker Drag | Czas | 25 s |
+| Prędkość Undertaker podczas przeciągania | Jak szybko Undertaker porusza się podczas przeciągania ciała w porównaniu do normalnego | Mnożnik | 0,75x |
+| Undertaker może się odpowietrzyć | Czy Undertaker może się odpowietrzyć | Przełącz | Fałsz |
+| Undertaker może się odpowietrzyć podczas przeciągania | Czy Undertaker może się odpowietrzyć podczas przeciągania ciała | Przełącz | Fałsz |
 
 -----------------------
 
-# Modifiers
-Modifiers are added on top of players' roles.
-## Aftermath
-### **Applied to: Crewmates**
-Killing the Aftermath forces their killer to use their ability (if they have one and it's not in use).
-### Game Options
-| Name | Description | Type | Default |
-|----------|:-------------:|:------:|:------:|
-| Aftermath | The percentage probability of the Aftermath appearing | Percentage | 0% |
+# Modyfikatory
+Modyfikatory są dodawane do ról graczy.
+## Następstwa
+### **Zastosowane do: Członków załogi**
+Zabicie Następstwa zmusza zabójcę do użycia jego umiejętności (jeśli ją posiada i nie jest używana).
+
+### Opcje gry
+| Nazwa | Opis | Typ | Domyślne | |----------|:-------------:|:------:|:------:|
+| Następstwa | Procentowe prawdopodobieństwo pojawienia się Następstw | Procent | 0% |
 
 -----------------------
 ## Bait
-### **Applied to: Crewmates**
-Killing the Bait makes the killer auto self-report.
-### Game Options
-| Name | Description | Type | Default |
-|----------|:-------------:|:------:|:------:|
-| Bait | The percentage probability of the Bait appearing | Percentage | 0% |
-| Bait Minimum Delay | The minimum time the killer of the Bait reports the body | Time | 0s |
-| Bait Maximum Delay | The maximum time the killer of the Bait reports the body | Time | 1s |
+### **Zastosowano do: Członków załogi**
+Zabicie Przynęty powoduje, że zabójca automatycznie zgłasza siebie.
+
+### Opcje gry
+| Nazwa | Opis | Typ | Domyślne |
+|----------|:-----------:|:------:|:------:|
+| Przynęta | Procentowe prawdopodobieństwo pojawienia się Przynęty | Procent | 0% |
+| Minimalne opóźnienie Przynęty | Minimalny czas, w którym zabójca Przynęty zgłasza ciało | Czas | 0s |
+| Maksymalne opóźnienie Przynęty | Maksymalny czas, w którym zabójca przynęty zgłasza ciało | Czas | 1s |
 
 -----------------------
-## Diseased
-### **Applied to: Crewmates**
-Killing the Diseased increases the killer's kill cooldown.
-### Game Options
-| Name | Description | Type | Default |
-|----------|:-------------:|:------:|:------:|
-| Diseased | The percentage probability of the Diseased appearing | Percentage | 0% |
-| Kill Multiplier | How much the Kill Cooldown of the Impostor is increased by | Multiplier | 3x |
+## Dieseased
+### **Dotyczy: Członków załogi**
+Zabicie Chorego wydłuża czas odnowienia zabójstwa zabójcy.
+
+### Opcje gry
+| Nazwa | Opis | Typ | Domyślne |
+|----------|:------------:|:------:|:------:|
+| Chory | Procentowe prawdopodobieństwo pojawienia się Chorego | Procent | 0% |
+| Mnożnik zabójstwa | O ile zwiększa się czas odnowienia zabójstwa oszusta | Mnożnik | 3x |
 
 -----------------------
 ## Frosty
-### **Applied to: Crewmates**
-Killing the Frosty slows the killer for a short duration.
-### Game Options
-| Name | Description | Type | Default |
+### **Dotyczy: Członków załogi**
+Zabicie Mroźnego spowalnia zabójcę na krótki czas.
+
+### Opcje gry
+| Nazwa | Opis | Typ | Domyślny |
 |----------|:-------------:|:------:|:------:|
-| Frosty | The percentage probability of the Frosty appearing | Percentage | 0% |
-| Chill Duration | The duration of the chill after killing the Frosty | Time | 10s |
-| Chill Start Speed | The start speed of the chill after killing the Frosty | Multiplier | 0.75x |
+| Frosty | Procentowe prawdopodobieństwo pojawienia się Frosty | Procent | 0% |
+| Czas trwania chłodu | Czas trwania chłodu po zabiciu Frosty | Czas | 10s |
+| Prędkość początkowa chłodu | Prędkość początkowa chłodu po zabiciu Frosty | Mnożnik | 0,75x |
 
 -----------------------
 ## Multitasker
-### **Applied to: Crewmates**
-The Multitasker's tasks are transparent.
-### Game Options
-| Name | Description | Type | Default |
+### **Dotyczy: Członków załogi**
+Zadania Multitaskera są przejrzyste.
+
+### Opcje gry
+| Nazwa | Opis | Typ | Domyślne |
 |----------|:-------------:|:------:|:------:|
-| Multitasker | The percentage probability of the Multitasker appearing | Percentage | 0% |
+| Multitasker | Procentowe prawdopodobieństwo pojawienia się Multitaskera | Procent | 0% |
 
 -----------------------
 ## Torch
-### **Applied to: Crewmates**
-The Torch's vision doesn't get reduced when the lights are sabotaged.
-### Game Options
-| Name | Description | Type | Default |
-|----------|:-------------:|:------:|:------:|
-| Torch | The percentage probability of the Torch appearing | Percentage | 0% |
+### **Dotyczy: Członków załogi**
+Wizja Torch nie zmniejsza się, gdy światła są sabotowane.
+
+### Opcje gry
+| Nazwa | Opis | Typ | Domyślne |
+|----------|:------------:|:------:|:------:|
+| Torch | Procentowe prawdopodobieństwo pojawienia się Torch | Procent | 0% |
 
 -----------------------
 ## Button Barry
-### **Applied to: All**
-Button Barry has the ability to call a meeting from anywhere on the map, even during sabotages.
-They have the same amount of meetings as a regular player.
-### Game Options
-| Name | Description | Type | Default |
+### **Dotyczy: Wszystkich**
+Button Barry ma możliwość zwołania zebrania z dowolnego miejsca na mapie, nawet podczas sabotażu.
+Mają taką samą liczbę zebrań jak zwykły gracz.
+
+### Opcje gry
+| Nazwa | Opis | Typ | Domyślne |
 |----------|:-------------:|:------:|:------:|
-| Button Barry | The percentage probability of Button Barry appearing | Percentage | 0% |
+| Button Barry | Procentowe prawdopodobieństwo pojawienia się Button Barry | Procent | 0% |
 
 -----------------------
 ## Flash
-### **Applied to: All**
-The Flash travels at a faster speed in comparison to a normal player.
-### Game Options
-| Name | Description | Type | Default |
-|----------|:-------------:|:------:|:------:|
-| Flash | The percentage probability of the Flash appearing | Percentage | 0% |
-| Speed | How fast the Flash moves in comparison to normal | Multiplier | 1.25x |
+### **Dotyczy: Wszystkich**
+Flash porusza się z większą prędkością w porównaniu do zwykłego gracza.
+
+### Opcje gry
+| Nazwa | Opis | Typ | Domyślne | |----------|:-------------:|:------:|:------:|
+| Flash | Procentowe prawdopodobieństwo pojawienia się Flasha | Procent | 0% |
+| Prędkość | Jak szybko Flash się porusza w porównaniu do normalnego | Mnożnik | 1,25x |
 
 -----------------------
 ## Giant
-### **Applied to: All**
-The Giant is a gigantic Crewmate, that has a decreased walk speed.
-### Game Options
-| Name | Description | Type | Default |
-|----------|:-------------:|:------:|:------:|
-| Giant | The percentage probability of the Giant appearing | Percentage | 0% |
-| Speed | How fast the Giant moves in comparison to normal | Multiplier | 0.75x |
+### **Zastosowano do: Wszystkich**
+Gigant to gigantyczny Członek załogi, który ma zmniejszoną prędkość chodzenia.
+
+### Opcje gry
+| Nazwa | Opis | Typ | Domyślne |
+|----------|:------------:|:------:|:------:|
+| Gigant | Procentowe prawdopodobieństwo pojawienia się Giganta | Procent | 0% |
+| Prędkość | Jak szybko Gigant się porusza w porównaniu do normalnego | Mnożnik | 0,75x |
 
 -----------------------
 ## Lovers
-### **Applied to: All**
-The Lovers are two players who are linked together.\
-These two players get picked randomly between Crewmates and Impostors.\
-They gain the primary objective to stay alive together.\
-If they are both among the last 3 players, they win.\
-In order to do so, they gain access to a private chat, only visible by them in between meetings.\
-However, they can also win with their respective team, hence why the Lovers do not know the role of the other lover.
+### **Dotyczy: Wszystkich**
+Kochankowie to dwaj gracze, którzy są ze sobą połączeni.\
+Ci dwaj gracze są wybierani losowo spośród Członków załogi i Oszustów.\
+Otrzymują główny cel, aby wspólnie przetrwać.\
+Jeśli obaj są wśród ostatnich 3 graczy, wygrywają.\
+Aby to zrobić, uzyskują dostęp do prywatnego czatu, widocznego tylko dla nich między spotkaniami.\
+Jednak mogą również wygrać ze swoją drużyną, stąd Kochankowie nie znają roli drugiego kochanka.
 
-### Game Options
-| Name | Description | Type | Default |
+### Opcje gry
+| Nazwa | Opis | Typ | Domyślne |
 |----------|:-------------:|:------:|:------:|
-| Lovers | The percentage probability of the Lovers appearing | Percentage | 0% |
-| Both Lovers Die | Whether the other Lover automatically dies if the other does | Toggle | True |
-| Loving Impostor Probability | The chances of one lover being an Impostor | Percentage | 20% |
-| Neutral Roles Can Be Lovers | Whether a Lover can be a Neutral Role | Toggle | True |
-| Impostor Lover Can Kill Teammate | Whether an Impostor Lover can kill another Impostor | Toggle | False |
+| Kochankowie | Procentowe prawdopodobieństwo pojawienia się Kochanków | Procent | 0% |
+| Oboje Kochankowie Umierają | Czy drugi Kochanek automatycznie umiera, jeśli drugi umrze | Przełącz | Prawda |
+| Prawdopodobieństwo Kochającego Oszusta | Szanse, że jeden z Kochanków będzie Oszustem | Procent | 20% |
+| Role Neutralne Mogą Być Kochankami | Czy Kochanek Może Być Rolą Neutralną | Przełącz | Prawda |
+| Oszustyczny Kochanek Może Zabić Członka Drużyny | Czy Oszustyczny Kochanek Może Zabić Innego Oszusta | Przełącz | Fałsz |
 
 -----------------------
 ## Mini
-### **Applied to: All**
-The Mini is a tiny Crewmate.
-### Game Options
-| Name | Description | Type | Default |
-|----------|:-------------:|:------:|:------:|
-| Mini | The percentage probability of the Mini appearing | Percentage | 0% |
+### **Zastosowano do: Wszystkich**
+
+Mini jest malutkim Członkiem Załogi.
+### Opcje Gry
+| Nazwa | Opis | Typ | Domyślne |
+|----------|:------------:|:-------:|:-------:|
+| Mini | Procentowe prawdopodobieństwo pojawienia się Mini | Procent | 0% |
 
 -----------------------
 ## Radar
-### **Applied to: All**
-The Radar is a crewmate who knows where the closest player is to them.
-### Game Options
-| Name | Description | Type | Default |
-|----------|:-------------:|:------:|:------:|
-| Radar | The percentage probability of the Radar appearing | Percentage | 0% |
+### **Dotyczy: Wszystkich**
+Radar to członek załogi, który wie, gdzie jest najbliższy gracz.
+
+### Opcje gry
+| Nazwa | Opis | Typ | Domyślne |
+|----------|:------------:|:------:|:------:|
+| Radar | Procent prawdopodobieństwa pojawienia się radaru | Procent | 0% |
 
 -----------------------
 ## Shy
-### **Applied to: All**
-The Shy becomes transparent when standing still for a short duration.
-### Game Options
-| Name | Description | Type | Default |
+### **Dotyczy: Wszystkich**
+Nieśmiały staje się przezroczysty, gdy stoi nieruchomo przez krótki czas.
+
+### Opcje gry
+| Nazwa | Opis | Typ | Domyślne |
 |----------|:-------------:|:------:|:------:|
-| Shy | The percentage probability of the Shy appearing | Percentage | 0% |
-| Transparency Delay | The delay until the Shy starts turning transparent | Time | 5s |
-| Turn Transparent Duration | The duration of the Shy turning transparent | Time | 5s |
-| Final Opacity | The final opacity level of the Shy | Percentage | 20% |
+| Shy | Procent prawdopodobieństwa pojawienia się Shy | Procent | 0% |
+| Opóźnienie przezroczystości | Opóźnienie, zanim Shy zacznie stawać się przezroczysty | Czas | 5s |
+| Czas trwania przezroczystości tury | Czas trwania przezroczystości Shy | Czas | 5s |
+| Ostateczna nieprzezroczystość | Ostateczny poziom nieprzezroczystości Shy | Procent | 20% |
 
 -----------------------
 ## Sixth Sense
-### **Applied to: All**
-The Sixth Sense is a crewmate who can see who interacts with them.
-### Game Options
-| Name | Description | Type | Default |
-|----------|:-------------:|:------:|:------:|
-| Sixth Sense | The percentage probability of the Sixth Sense appearing | Percentage | 0% |
+### **Zastosowano do: Wszystkich**
+Szósty zmysł to członek załogi, który widzi, kto wchodzi z nim w interakcję.
+
+### Opcje gry
+| Nazwa | Opis | Typ | Domyślny | |----------|:-------------:|:------:|:------:|
+| Szósty zmysł | Procentowe prawdopodobieństwo pojawienia się Szóstego zmysłu | Procent | 0% |
 
 -----------------------
 ## Sleuth
-### **Applied to: All**
-The Sleuth is a crewmate who gains knowledge from reporting dead bodies.\
-During meetings the Sleuth can see the roles of all players in which they've reported.
-### Game Options
-| Name | Description | Type | Default |
-|----------|:-------------:|:------:|:------:|
-| Sleuth | The percentage probability of the Sleuth appearing | Percentage | 0% |
+### **Zastosowano do: Wszystkich**
+Detektyw jest członkiem załogi, który zdobywa wiedzę, zgłaszając zwłoki.\
+Podczas spotkań Detektyw może zobaczyć role wszystkich graczy, w których zgłosili.
 
+### Opcje gry
+| Nazwa | Opis | Typ | Domyślne |
+|----------|:------------:|:------:|:------:|
+| Detektyw | Procentowe prawdopodobieństwo pojawienia się Detektywa | Procent | 0% |
 -----------------------
 ## Tiebreaker
-### **Applied to: All**
-If any vote is a draw, the Tiebreaker's vote will go through.\
-If they voted another player, they will get voted out.
-### Game Options
-| Name | Description | Type | Default |
-|----------|:-------------:|:------:|:------:|
-| Tiebreaker | The percentage probability of the Tiebreaker appearing | Percentage | 0% |
+### **Dotyczy: Wszystkich**
+Jeśli którykolwiek głos jest remisowy, głos Tiebreakera zostanie uznany.\
+Jeśli zagłosowali na innego gracza, zostaną wyeliminowani.
+
+### Opcje gry
+| Nazwa | Opis | Typ | Domyślne |
+|----------|:------------:|:------:|:------:|
+| Tiebreaker | Procentowe prawdopodobieństwo pojawienia się Tiebreakera | Procent | 0% |
 -----------------------
 ## Drunk
-### **Applied to: All**
-You just drunk
-### Game Options
-| Name | Description | Type | Default |
-|----------|:-------------:|:------:|:------:|
-| Drunk | The percentage probability of the Drunk appearing | Percentage | 0% |
-| DrunkRounds | Rounds being Drunk | Rounds | 3 |
+### **Dotyczy: Wszystkich**
+Właśnie jesteś pijany
 
+### Opcje gry
+| Nazwa | Opis | Typ | Domyślne |
+|----------|:------------:|:------:| | Pijany | Procentowe prawdopodobieństwo pojawienia się Pijanego | Procent | 0% |
+| PijaneRundy | Rundy będące pijanymi | Rundy | 3 |
 
 -----------------------
 ## Disperser
-### **Applied to: Impostors**
-The Disperser is an Impostor who has a 1 time use ability to send all players to a random vent.\
-This includes miner vents.\
-Does not appear on Airship or Submerged.
-### Game Options
-| Name | Description | Type | Default |
+### **Dotyczy: Oszustów**
+Rozpraszacz to Oszust, który ma jednorazową zdolność wysłania wszystkich graczy do losowego otworu wentylacyjnego.\
+Dotyczy to otworów wentylacyjnych górników.\
+Nie pojawia się na statku powietrznym ani w zanurzeniu.
+
+### Opcje gry
+| Nazwa | Opis | Typ | Domyślne |
 |----------|:-------------:|:------:|:------:|
-| Disperser | The percentage probability of the Disperser appearing | Percentage | 0% |
+| Rozpraszacz | Procentowe prawdopodobieństwo pojawienia się Rozpraszacza | Procent | 0% |
 
 -----------------------
 ## Double Shot
-### **Applied to: Impostors**
-Double Shot is an Impostor who gets an extra life when assassinating.\
-Once they use their life they are indicated with a red flash\
-and can no longer guess the person who they guessed wrong for the remainder of that meeting.
-### Game Options
-| Name | Description | Type | Default |
-|----------|:-------------:|:------:|:------:|
-| Double Shot| The percentage probability of Double Shot appearing | Percentage | 0% |
+### **Dotyczy: Impostorów**
+Double Shot to Impostor, który otrzymuje dodatkowe życie podczas zabójstwa.\
+Po wykorzystaniu swojego życia zostaje oznaczony czerwonym błyskiem\
+i nie może już zgadnąć osoby, którą źle odgadł do końca spotkania.
+
+### Opcje gry
+| Nazwa | Opis | Typ | Domyślne |
+|----------|:------------:|:------:|:------:|
+| Double Shot| Prawdopodobieństwo pojawienia się Double Shot w procentach | Procent | 0% |
 
 -----------------------
 ## Saboteur
-### **Applied to: Impostors**
+### **Dotyczy: Impostorów**
 
-The Saboteur is an Impostor with a passive sabotage cooldown reduction.
+Sabotażysta to Impostor z pasywną redukcją czasu odnowienia sabotażu.
 
-### Game Options
-| Name | Description | Type | Default |
+### Opcje gry
+| Nazwa | Opis | Typ | Domyślny |
 |----------|:-------------:|:------:|:------:|
-| Saboteur | The percentage probability of the Saboteur appearing | Percentage | 0% |
-| Reduced Sabotage Bonus | The amount of time removed from the Saboteur's sabotage cooldowns | Time | 10s |
+| Sabotażysta | Procent prawdopodobieństwa pojawienia się Sabotażysty | Procent | 0% |
+| Zmniejszony bonus za sabotaż | Ilość czasu usunięta z czasów odnowienia sabotażu Sabotażysty | Czas | 10 s |
 
 -----------------------
 ## Underdog
-### **Applied to: Impostors**
+### **Dotyczy: Oszustów**
 
-The Underdog is an Impostor with a prolonged kill cooldown.\
-When they are the only remaining Impostor, they will have their kill cooldown shortened.
+Underdog to Oszust z wydłużonym czasem odnowienia zabicia.\
+Kiedy jest jedynym pozostałym Oszustem, jego czas odnowienia zabicia zostanie skrócony.
 
-### Game Options
-| Name | Description | Type | Default |
+### Opcje gry
+| Nazwa | Opis | Typ | Domyślny |
 |----------|:-------------:|:------:|:------:|
-| Underdog | The percentage probability of the Underdog appearing | Percentage | 0% |
-| Kill Cooldown Bonus | The amount of time added or removed from the Underdog's Kill Cooldown | Time | 5s |
-| Increased Kill Cooldown  | Whether the Underdog's Kill Cooldown is Increased when 2+ Imps are alive | Toggle | True |
+| Underdog | Procentowe prawdopodobieństwo pojawienia się Underdoga | Procent | 0% |
+| Bonus do czasu odnowienia zabójstwa | Ilość czasu dodana lub odjęta od czasu odnowienia zabójstwa Underdoga | Czas | 5s |
+| Zwiększony czas odnowienia zabójstwa | Czy czas odnowienia zabójstwa Underdoga jest zwiększany, gdy żyje 2 lub więcej Impów | Przełącz | Prawda |
 
 -----------------------
-# Role List Settings
-The Role List dictates what roles will spawn in game.\
-However many players there are in a game, will dictate the last slot used,\
-for example, if there are 9 players, only the first 9 slots will be used.\
-Common buckets, only take in roles which are not a killing role in that faction.\
-Auto adjustments will be made if there are not enough crewmates or impostors to make a more balanced game.
+# Ustawienia listy ról
+Lista ról określa, jakie role pojawią się w grze.\
+Ilość graczy w grze decyduje o tym, który slot zostanie ostatnio użyty,\
+na przykład, jeśli jest 9 graczy, użytych zostanie tylko pierwszych 9 slotów.\
+Wspólne grupy obejmują tylko role, które nie są rolami zabójczymi w danej frakcji.\
+Jeśli nie będzie wystarczającej liczby członków załogi lub oszustów, zostaną wprowadzone automatyczne zmiany, aby gra była bardziej zrównoważona.
 ### Buckets
 - Crewmate Investigative
 - Crewmate Killing
@@ -2073,148 +1347,146 @@ Auto adjustments will be made if there are not enough crewmates or impostors to 
 - Non-Impostor
 - Any
 
-### Game Options
-| Name | Description | Type | Default |
+### Opcje gry
+| Nazwa | Opis | Typ | Domyślne |
 |----------|:-------------:|:------:|:------:|
-| Unique Roles  | Whether all roles can appear a maximum of 1 time | Toggle | True |
-| Slot 1 | What role type can appear in Slot 1 | See Above for Buckets | Non-Imp |
-| Slot 2 | What role type can appear in Slot 2 | See Above for Buckets | Non-Imp |
-| Slot 3 | What role type can appear in Slot 3 | See Above for Buckets | Non-Imp |
-| Slot 4 | What role type can appear in Slot 4 | See Above for Buckets | Random Impostor |
-| Slot 5 | What role type can appear in Slot 5 | See Above for Buckets | Non-Imp |
-| Slot 6 | What role type can appear in Slot 6 | See Above for Buckets | Non-Imp |
-| Slot 7 | What role type can appear in Slot 7 | See Above for Buckets | Non-Imp |
-| Slot 8 | What role type can appear in Slot 8 | See Above for Buckets | Non-Imp |
-| Slot 9 | What role type can appear in Slot 9 | See Above for Buckets | Random Impostor |
-| Slot 10 | What role type can appear in Slot 10 | See Above for Buckets | Non-Imp |
-| Slot 11 | What role type can appear in Slot 11 | See Above for Buckets | Non-Imp |
-| Slot 12 | What role type can appear in Slot 12 | See Above for Buckets | Non-Imp |
-| Slot 13 | What role type can appear in Slot 13 | See Above for Buckets | Non-Imp |
-| Slot 14 | What role type can appear in Slot 14 | See Above for Buckets | Random Impostor |
-| Slot 15 | What role type can appear in Slot 15 | See Above for Buckets | Non-Imp |
-| Slot 16 | What role type can appear in Slot 16 | See Above for Buckets | Non-Imp |
-| Slot 18 | What role type can appear in Slot 18 | See Above for Buckets | Non-Imp |
-| Slot 17 | What role type can appear in Slot 17 | See Above for Buckets | Random Impostor |
-| Slot 19 | What role type can appear in Slot 19 | See Above for Buckets | Non-Imp |
-| Slot 20 | What role type can appear in Slot 20 | See Above for Buckets | Non-Imp |
+| Unikalne role | Czy wszystkie role mogą pojawić się maksymalnie 1 raz | Przełącz | Prawda |
+| Slot 1 | Jaki typ roli może pojawić się w Slocie 1 | Patrz powyżej dla Bucketów | Non-Imp |
+| Slot 2 | Jaki typ roli może pojawić się w Slocie 2 | Patrz powyżej dla Bucketów | Non-Imp |
+| Slot 3 | Jaki typ roli może pojawić się w Slocie 3 | Patrz powyżej dla Bucketów | Non-Imp |
+| Slot 4 | Jaki typ roli może pojawić się w Slocie 4 | Patrz powyżej dla Bucketów | Losowy oszust |
+| Slot 5 | Jaki typ roli może pojawić się w Slocie 5 | Patrz powyżej dla Bucketów | Non-Imp |
+| Slot 6 | Jaki typ roli może pojawić się w Slocie 6 | Patrz powyżej dla Bucketów | Non-Imp |
+| Slot 7 | Jaki typ roli może pojawić się w Slocie 7 | Patrz powyżej dla Bucketów | Non-Imp |
+| Slot 8 | Jaki typ roli może pojawić się w Slocie 8 | Patrz powyżej dla Bucketów | Non-Imp |
+| Slot 9 | Jaki typ roli może pojawić się w Slocie 9 | Patrz powyżej dla Bucketów | Random Impostor |
+| Slot 10 | Jaki typ roli może pojawić się w Slocie 10 | Patrz powyżej dla Bucketów | Non-Imp |
+| Slot 11 | Jaki typ roli może pojawić się w Slocie 11 | Patrz powyżej dla Bucketów | Non-Imp |
+| Slot 12 | Jaki typ roli może pojawić się w Slocie 12 | Patrz powyżej dla Bucketów | Non-Imp |
+| Slot 13 | Jaki typ roli może pojawić się w Slocie 13 | Patrz powyżej dla Bucketów | Non-Imp |
+| Slot 14 | Jaki typ roli może pojawić się w Slocie 14 | Patrz powyżej dla Bucketów | Losowy oszust |
+| Slot 15 | Jaki typ roli może pojawić się w Slocie 15 | Patrz powyżej dla Bucketów | Non-Imp |
+| Slot 16 | Jaki typ roli może pojawić się w Slocie 16 | Patrz powyżej dla Bucketów | Non-Imp |
+| Slot 18 | Jaki typ roli może pojawić się w Slocie 18 | Patrz powyżej dla Bucketów | Non-Imp |
+| Slot 17 | Jaki typ roli może pojawić się w Slocie 17 | Patrz powyżej dla Bucketów | Random Impostor |
+| Slot 19 | Jaki typ roli może pojawić się w Slocie 19 | Patrz powyżej dla Bucketów | Non-Imp |
+| Slot 20 | Jaki typ roli może pojawić się w Slocie 20 | Patrz powyżej dla Bucketów | Non-Imp |
 -----------------------
-# Map Settings
-| Name | Description | Type | Default |
+# Ustawienia mapy
+| Nazwa | Opis | Typ | Domyślny |
 |----------|:-------------:|:------:|:------:|
-| Choose Random Map | Whether the Map is randomly picked at the start of the game | Toggle | False |
-| Skeld Chance | The percentage probability of the Skeld map being chosen | Percentage | 0% |
-| Mira HQ Chance | The percentage probability of the Mira HQ map being chosen | Percentage | 0% |
-| Polus Chance | The percentage probability of the Polus map being chosen | Percentage | 0% |
-| Airship Chance | The percentage probability of the Airship map being chosen | Percentage | 0% |
-| Submerged Chance | The percentage probability of the Submerged map being chosen | Percentage | 0% |
-| Level Impostor Chance | The percentage probability of a Level Impostor map being chosen | Percentage | 0% |
-| Half Vision on Skeld/Mira HQ | Whether the Vision is automatically halved on Skeld/Mira HQ | Toggle | False |
-| Mira HQ Decreased Cooldowns | How much less time the cooldowns are set to for Mira HQ | Time | 0s |
-| Airship/Submerged Increased Cooldowns | How much more time the cooldowns are set to for Airship/Submerged | Time | 0s |
-| Skeld/Mira HQ Increased Short Tasks | How many extra short tasks when the map is Skeld/Mira HQ | Number | 0 |
-| Skeld/Mira HQ Increased Longt Tasks | How many extra long tasks when the map is Skeld/Mira HQ | Number | 0 |
-| Airship/Submerged Decreased Short Tasks | How many less short tasks when the map is Airship/Submerged | Number | 0 |
-| Airship/Submerged Decreased Longt Tasks | How many less long tasks when the map is Airship/Submerged | Number | 0 |
-
------------------------
-# Better Polus Settings
-| Name | Description | Type | Default |
-|----------|:-------------:|:------:|:------:|
-| Better Polus Vent Layout | Optimises Vent Layout on Polus | Toggle | False |
-| Vitals Moved to Lab | Whether the Vitals panel is moved into the Laboratory | Toggle | False |
-| Cole Temp Moved to Death Valley | Whether the cold temperature task is moved to death valley | Toggle | False |
-| Reboot Wifi and Chart Course Swapped | Whether the Reboot Wifi and Chart Course swap locations | Toggle | False |
+| Wybierz losową mapę | Czy mapa jest wybierana losowo na początku gry | Przełącz | Fałsz |
+| Szansa Skeld | Procentowe prawdopodobieństwo wybrania mapy Skeld | Procent | 0% |
+| Szansa Mira HQ | Procentowe prawdopodobieństwo wybrania mapy Mira HQ | Procent | 0% |
+| Szansa Polus | Procentowe prawdopodobieństwo wybrania mapy Polus | Procent | 0% |
+| Szansa Airship | Procentowe prawdopodobieństwo wybrania mapy Airship | Procent | 0% |
+| Szansa Submerged | Procentowe prawdopodobieństwo wybrania mapy Submerged | Procent | 0% |
+| Szansa Level Impostor | Procentowe prawdopodobieństwo wybrania mapy Level Impostor | Procent | 0% |
+| Połowa widzenia w Skeld/Mira HQ | Czy widzenie jest automatycznie dzielone na pół w Skeld/Mira HQ | Przełącz | Fałsz |
+| Zmniejszone czasy odnowienia Mira HQ | O ile krótszy jest czas odnowienia dla Mira HQ | Czas | 0s |
+| Zwiększone czasy odnowienia Airship/Submerged | O ile dłuższy jest czas odnowienia dla Airship/Submerged | Czas | 0s |
+| Zwiększone krótkie zadania Skeld/Mira HQ | Ile dodatkowych krótkich zadań, gdy mapa to Skeld/Mira HQ | Liczba | 0 |
+| Zwiększone długie zadania Skeld/Mira HQ | Ile dodatkowych długich zadań, gdy mapa to Skeld/Mira HQ | Liczba | 0 |
+| Zmniejszone krótkie zadania Airship/Submerged | O ile mniej krótkich zadań, gdy mapa to Airship/Submerged | Liczba | 0 |
+| Sterowiec/Zanurzony Zmniejszone Długie Zadania | Ile krótszych zadań, gdy mapa jest Sterowcem/Zanurzonym | Liczba | 0 |
 
 -----------------------
-# Custom Game Options
-| Name | Description | Type | Default |
+# Ustawienia Better Polus
+| Nazwa | Opis | Typ | Domyślne |
 |----------|:-------------:|:------:|:------:|
-| Camouflaged Comms | Whether everyone becomes camouflaged when Comms are sabotaged | Toggle | False |
-| Kill Anyone During Camouflaged Comms | Whether teammates can kill each other during camouflaged comms | Toggle | False |
-| Impostors can see the roles of their team | Whether Impostors are able to see which Impostor roles their teammates have | Toggle | False |
-| Dead can see everyone's roles and Votes | Whether dead players are able to see the roles and votes of everyone else | Toggle | False |
-| Game Start Cooldowns | The cooldown for all roles at the start of the game | Time | 10s |
-| Parallel Medbay Scans | Whether players have to wait for others to scan | Toggle | False |
-| Disable Meeting Skip Button | Whether the meeting button is disabled | No / Emergency / Always | No |
-| First Death Shield Next Game | Whether the first player to die gets a shield for the first round next game | Toggle | False |
-| Neutral Evils Win Ends Game | Whether a Neutral Evil role winning ends the game | Toggle | True |
-| Crew Killers Continue Game | Whether the game will continue if crewmates can fight back | Toggle | False |
+| Lepszy układ odpowietrzników Polus | Optymalizacja układu odpowietrzników w Polus | Przełącz | Fałsz |
+| Przeniesienie parametrów życiowych do laboratorium | Czy panel parametrów życiowych zostanie przeniesiony do laboratorium | Przełącz | Fałsz |
+| Przeniesienie temperatury Cole'a do Doliny Śmierci | Czy zadanie niskiej temperatury zostanie przeniesione do Doliny Śmierci | Przełącz | Fałsz |
+| Zamieniono położenie Reboot Wifi i Chart Course | Czy Reboot Wifi i Chart Course zamieniły się miejscami | Przełącz | Fałsz |
 
 -----------------------
-# Task Tracking Settings
-| Name | Description | Type | Default |
+# Opcje gry niestandardowej
+| Nazwa | Opis | Typ | Domyślne |
 |----------|:-------------:|:------:|:------:|
-| See Tasks During Round | Whether people see their tasks update in game | Toggle | False |
-| See Tasks During Meetings | Whether people see their task count during meetings | Toggle | False |
-| See Tasks When Dead | Whether people see everyone's tasks when they're dead | Toggle | False |
+| Zakamuflowana komunikacja | Czy wszyscy stają się zakamuflowani, gdy komunikacja jest sabotowana | Przełącz | Fałsz |
+| Zabij każdego podczas zakamuflowanej komunikacji | Czy członkowie drużyny mogą zabijać się nawzajem podczas zakamuflowanej komunikacji | Przełącz | Fałsz |
+| Oszuści mogą widzieć role swojej drużyny | Czy Oszuści mogą widzieć, jakie role oszustów mają ich członkowie drużyny | Przełącz | Fałsz |
+| Martwi mogą widzieć role i głosy wszystkich | Czy martwi gracze mogą widzieć role i głosy wszystkich innych | Przełącz | Fałsz |
+| Czas odnowienia na początku gry | Czas odnowienia dla wszystkich ról na początku gry | Czas | 10 s |
+| Równoległe skanowanie w Medbay | Czy gracze muszą czekać, aż inni zeskanują | Przełącz | Fałsz |
+| Wyłącz przycisk pomijania spotkania | Czy przycisk spotkania jest wyłączony | Nie / Awaryjny / Zawsze | Nie |
+| Pierwsza tarcza śmierci w następnej grze | Czy pierwszy gracz, który zginie, otrzyma tarczę na pierwszą rundę w następnej grze | Przełącz | Fałsz |
+| Neutralne zło wygrywa grę | Czy wygrana neutralnego zła kończy grę | Przełącz | Prawda |
+| Zabójcy załogi kontynuują grę | Czy gra będzie kontynuowana, jeśli członkowie załogi będą mogli się bronić | Przełącz | Fałsz |
 
 -----------------------
-## Assassin Ability
-### **Team: Impostors**
-
-The Assassin Ability is given to a certain number of Impostors or Neutral Killers.\
-This ability gives the Impostor or Neutral Killer a chance to kill during meetings by guessing the roles or modifiers of others.\
-If they guess wrong, they die instead.
-
-### Game Options
-| Name | Description | Type | Default |
-|----------|:-------------:|:------:|:------:|
-| Number of Impostor Assassins | How many Impostors can Assassinate | Number | 1 |
-| Number of Neutral Killing Assassins | How many Neutral Killers can Assassinate | Number | 1 |
-| Amnesiac Turned Impostor Can Assassinate | Whether former Amnesiacs now Impostor can Assassinate | Toggle | False |
-| Amnesiac Turned Neutral Killing Can Assassinate | Whether former Amnesiacs now Neutral Killers can Assassinate | Toggle | False |
-| Traitor Can Assassinate | If someone turns into a Traitor they can Assassinate | Toggle | False |
-| Assassin Kill | The number of kill the Assassin can do with his ability | Number | 1 |
-| Assassin Guess Crewmate | Whether the Assassin can Guess "Crewmate" | Toggle | False |
-| Assassin Multiple Kill  | Whether the Assassin can kill more than once per meeting | Toggle | False |
-| Assassin Guess Neutral Benign  | Whether the Assassin can Guess Neutral Benign roles | Toggle | False |
-| Assassin Guess Neutral Evil  | Whether the Assassin can Guess Neutral Evil roles | Toggle | False |
-| Assassin Guess Neutral Killing  | Whether the Assassin can Guess Neutral Killing roles | Toggle | False |
-| Assassin Guess Impostors  | Whether the Assassin can Guess Impostor roles | Toggle | False |
-| Assassin Guess Crewmate Modifiers  | Whether the Assassin can Guess Crewmate Modifiers | Toggle | False |
-| Assassin Can Guess Lovers  | Whether the Assassin can Guess Lovers | Toggle | False |
+# Ustawienia śledzenia zadań
+| Nazwa | Opis | Typ | Domyślne |
+|----------|:------------:|:-------:|
+| Zobacz zadania w trakcie rundy | Czy ludzie widzą aktualizację swoich zadań w grze | Przełącz | Fałsz |
+| Zobacz zadania w trakcie spotkań | Czy ludzie widzą liczbę swoich zadań w trakcie spotkań | Przełącz | Fałsz |
+| Zobacz zadania po śmierci | Czy ludzie widzą zadania wszystkich, gdy są martwi | Przełącz | Fałsz |
 
 -----------------------
-# Extras
-## New Colors!
-New colors are added for crewmates to pick from.
-## Rainbow Color!
-A rainbow color has also been added. Anyone who equips this color will constantly switch between the colors of the rainbow.
-## Custom Hats!
-Custom hats have been added, made by some very talented artists. These are mostly hats for streamers.
+## Zdolność zabójcy
+### **Zespół: Oszuści**
+
+Zdolność zabójcy jest przyznawana określonej liczbie Oszustów lub Neutralnych Zabójców.\
+Ta zdolność daje Oszustowi lub Neutralnemu Zabójcy szansę na zabicie podczas spotkań poprzez zgadywanie ról lub modyfikatorów innych.\
+Jeśli zgadną źle, giną zamiast tego.
+
+### Opcje gry
+| Nazwa | Opis | Typ | Domyślne |
+|----------|:------------:|:------:|:------:|
+| Liczba Oszustów Zabójców | Ilu Oszustów może zabić | Liczba | 1 |
+| Liczba Neutralnych Zabójców Zabójców | Ilu neutralnych zabójców może zabić | Liczba | 1 |
+| Amnezjak, który stał się oszustem, może zabić | Czy byli amnezjacy, teraz oszust, mogą zabić | Przełącz | Fałsz |
+| Amnezjak, który stał się neutralnym zabójcą, może zabić | Czy byli amnezjacy, teraz neutralni zabójcy, mogą zabić | Przełącz | Fałsz |
+| Zdrajca może zabić | Jeśli ktoś zamienia się w zdrajcę, może zabić | Przełącz | Fałsz |
+| Zabójca zabija | Liczba zabójstw, które zabójca może wykonać dzięki swojej umiejętności | Liczba | 1 |
+| Zabójca zgaduje członka załogi | Czy zabójca może zgadnąć „członka załogi” | Przełącz | Fałsz |
+| Zabójca zabija wielokrotnie | Czy zabójca może zabić więcej niż raz na spotkanie | Przełącz | Fałsz |
+| Zabójca zgaduje neutralny łagodny | Czy zabójca może odgadnąć role neutralne łagodne | Przełącz | Fałsz |
+| Zabójca odgadnie neutralne złe | Czy zabójca może odgadnąć role neutralne złe | Przełącz | Fałsz |
+| Zabójca odgadnie neutralne zabijanie | Czy zabójca może odgadnąć role neutralne zabijanie | Przełącz | Fałsz |
+| Zabójca odgadnie oszustów | Czy zabójca może odgadnąć role oszustów | Przełącz | Fałsz |
+| Zabójca odgadnie modyfikatory członków załogi | Czy zabójca może odgadnąć modyfikatory członków załogi | Przełącz | Fałsz |
+| Zabójca może odgadnąć kochanków | Czy zabójca może odgadnąć kochanków | Przełącz | Fałsz |
+
+-----------------------
+# Dodatki
+## Nowe kolory!
+Dodano nowe kolory do wyboru dla członków załogi.
+## Kolor tęczy!
+Dodano również kolor tęczy. Każdy, kto założy ten kolor, będzie stale przełączał się między kolorami tęczy.
+## Niestandardowe czapki!
+Dodano niestandardowe czapki, wykonane przez bardzo utalentowanych artystów. Są to głównie czapki dla streamerów.
 
 -----------------------
 # Bug / Suggestions
-If you have any bugs or any need to contact me, join the [Discord Server](https://discord.gg/ugyc4EVUYZ) or create a ticket on GitHub.
+If you have any bugs or any need to contact me, join the [Discord Server](https://discord.gg/Aw8Ns2g5aT) or create a ticket on GitHub.
 
 -----------------------
 # Credits & Resources
-[Reactor](https://github.com/NuclearPowered/Reactor) - The framework of the mod\
-[BepInEx](https://github.com/BepInEx) - For hooking game functions\
-[Among-Us-Sheriff-Mod](https://github.com/Woodi-dev/Among-Us-Sheriff-Mod) - For the Sheriff role.\
-[Among-Us-Love-Couple-Mod](https://github.com/Woodi-dev/Among-Us-Love-Couple-Mod) - For the inspiration of Lovers role.\
-[ExtraRolesAmongUs](https://github.com/NotHunter101/ExtraRolesAmongUs) - For the Engineer & Medic roles.\
-[TooManyRolesMods](https://github.com/Hardel-DW/TooManyRolesMods) - For the Investigator & Time Lord roles.\
-[TorchMod](https://github.com/tomozbot/TorchMod) - For the inspiration of the Torch modifier.\
-[XtraCube](https://github.com/XtraCube) - For the RainbowMod.\
-[PhasmoFireGod](https://twitch.tv/PhasmoFireGod) and [Ophidian](https://www.instagram.com/ixean.studio) - Button Art.\
-[TheOtherRoles](https://github.com/Eisbison/TheOtherRoles) - For the inspiration of the Vigilante, Tracker and Spy roles, as well as the Bait modifier.\
-[5up](https://www.twitch.tv/5uppp) and the Submarine Team - For the inspiration of the Grenadier role.\
-[Guus](https://github.com/OhMyGuus) - For support for the old Among Us versions (v2021.11.9.5 and v2021.12.15).\
-[MyDragonBreath](https://github.com/MyDragonBreath) - For Submerged Compatibility, the Trapper and Aurial roles, the Aftermath modifier and support for the new Among Us versions (v2022.6.21, v2023.6.13 & v2023.7.12).\
-[ItsTheNumberH](https://github.com/itsTheNumberH/Town-Of-H) - For the code used for Blind, Bait, Poisoner and partially for Tracker, as well as other bug fixes.\
-[Ruiner](https://github.com/ruiner189/Town-Of-Us-Redux) - For lovers changed into a modifier and Task Tracking.\
-[Term](https://www.twitch.tv/termboii) - For creating Transporter, Medium, Blackmailer, Plaguebearer, Sleuth, Multitasker and porting v2.5.0 to the new Among Us version (v2021.12.15).\
-[BryBry16](https://github.com/Brybry16/BetterPolus) - For the code used for Better Polus.\
-[Alexejhero](https://github.com/SubmergedAmongUs/Submerged) - For the Submerged map.\
-[Tajemniczy Typiarz](https://github.com/TTypiarz) - For Foreteller idea
+[Reactor](https://github.com/NuclearPowered/Reactor) - Struktura moda\
+[BepInEx](https://github.com/BepInEx) - Do podłączania funkcji gry\
+[Among-Us-Sheriff-Mod](https://github.com/Woodi-dev/Among-Us-Sheriff-Mod) - Za role Sheriff.\
+[Among-Us-Love-Couple-Mod](https://github.com/Woodi-dev/Among-Us-Love-Couple-Mod) - Dla inspiracji do roli Loversow.\
+[ExtraRolesAmongUs](https://github.com/NotHunter101/ExtraRolesAmongUs) - Za role Engineer & Medic.\
+[TooManyRolesMods](https://github.com/Hardel-DW/TooManyRolesMods) - Za role Investigator & Time Lord.\
+[TorchMod](https://github.com/tomozbot/TorchMod) - Za inspiracje do Torch modyfikacji.\
+[XtraCube](https://github.com/XtraCube) - Za RainbowMod.\
+[PhasmoFireGod](https://twitch.tv/PhasmoFireGod) i [Ophidian](https://www.instagram.com/ixean.studio) - Przyciski.\
+[TheOtherRoles](https://github.com/Eisbison/TheOtherRoles) - Za role Vigilante, Tracker, Spy i Bait modifikator.\
+[5up](https://www.twitch.tv/5uppp) and the Submarine Team - Za role Grenadier.\
+[MyDragonBreath](https://github.com/MyDragonBreath) - Za Submerged Compatibility, Trapper i Aurial, Aftermath modifikator.\
+[Ruiner](https://github.com/ruiner189/Town-Of-Us-Redux) - Za loversów zamienionych w modyfikator i trackowanie tasków.\
+[Term](https://www.twitch.tv/termboii) - Za role Transporter, Medium, Blackmailer, Plaguebearer, Sleuth, Multitasker.\
+[BryBry16](https://github.com/Brybry16/BetterPolus) - Za kod do Better Polus.\
+[Alexejhero](https://github.com/SubmergedAmongUs/Submerged) - Za mape Submerged.\
+[Tajemniczy Typiarz](https://github.com/TTypiarz) - Za pomysł na rolę Foreteller.
 
-[Essentials](https://github.com/DorCoMaNdO/Reactor-Essentials) - For created custom game options.\
+[Essentials](https://github.com/DorCoMaNdO/Reactor-Essentials) - Za customowe opcje gry.\
 v1.0.3 uses [Essentials](https://github.com/DorCoMaNdO/Reactor-Essentials) directly.\
 v1.1.0 uses a modified version of Essentials that can be found [here](https://github.com/slushiegoose/Reactor-Essentials).\
 v1.2.0 has Essentials embedded and can be found [here](https://github.com/slushiegoose/Town-Of-Us/tree/master/source/Patches/CustomOption).
 
-[T1MOT1](discord: @timothee7421) - For graphics
+[T1MOT1](discord: @timothee7421) - Za grafiki
 
 #
 <p align="center">This mod is not affiliated with Among Us or Innersloth LLC, and the content contained therein is not endorsed or otherwise sponsored by Innersloth LLC. Portions of the materials contained herein are property of Innersloth LLC.</p>
