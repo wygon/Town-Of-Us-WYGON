@@ -18,8 +18,8 @@ namespace TownOfUs.Roles
         public Lookout(PlayerControl player) : base(player)
         {
             Name = "Lookout";
-            ImpostorText = () => "Keep Your Eyes Wide Open";
-            TaskText = () => "Watch other crewmates";
+            ImpostorText = () => Patches.TranslationPatches.CurrentLanguage == 0 ? "Keep Your Eyes Wide Open" : "Miej Oczy Szeroko Otwarte";
+            TaskText = () => Patches.TranslationPatches.CurrentLanguage == 0 ? "See what everyone is doing" : "Obserwuj co wszyscy robia";
             Color = Patches.Colors.Lookout;
             LastWatched = DateTime.UtcNow;
             RoleType = RoleEnum.Lookout;

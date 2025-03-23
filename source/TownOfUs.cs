@@ -20,6 +20,8 @@ using TownOfUs.CrewmateRoles.DetectiveMod;
 using TownOfUs.NeutralRoles.SoulCollectorMod;
 using System.IO;
 using Reactor.Utilities;
+using AmongUs.GameOptions;
+using System.Linq;
 
 namespace TownOfUs
 {
@@ -33,6 +35,9 @@ namespace TownOfUs
         public const string VersionString = "5.2.1";
         public static System.Version Version = System.Version.Parse(VersionString);
         public const string VersionTag = "<color=#ff33fc></color>";
+
+        public const int MaxPlayers = 35;
+        public const int MaxImpostors = 35 / 2;
 
         public static AssetLoader bundledAssets;
 
@@ -139,6 +144,10 @@ namespace TownOfUs
             System.Console.WriteLine("000.000.000.000/000000000000000000");
 
             _harmony = new Harmony("com.slushiegoose.townofus");
+
+            NormalGameOptionsV08.RecommendedImpostors = NormalGameOptionsV08.MaxImpostors = Enumerable.Repeat(35, 35).ToArray();
+            NormalGameOptionsV08.MinPlayers = Enumerable.Repeat(4, 35).ToArray();
+            HideNSeekGameOptionsV08.MinPlayers = Enumerable.Repeat(4, 35).ToArray();
 
             Generate.GenerateAll();
 

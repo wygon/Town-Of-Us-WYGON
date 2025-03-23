@@ -8,6 +8,7 @@ using TownOfUs.Roles;
 using TownOfUs.Extensions;
 using AmongUs.GameOptions;
 using TownOfUs.Patches.ScreenEffects;
+using static Il2CppSystem.Globalization.CultureInfo;
 
 namespace TownOfUs.Patches {
 
@@ -243,9 +244,45 @@ namespace TownOfUs.Patches {
 
             var roleSummaryText = new StringBuilder();
             roleSummaryText.AppendLine("End game summary:");
+            //string owner = "wygon";
             foreach(var data in AdditionalTempData.playerRoles) {
                 var role = string.Join(" ", data.Role);
-                roleSummaryText.AppendLine($"{data.PlayerName} - {role}");
+                //data.PlayerName.Equals(owner) ? roleSummaryText.AppendLine($"{data.PlayerName} - {role} <-- Sigma") : roleSummaryText.AppendLine($"{data.PlayerName} - {role}");
+                switch (data.PlayerName.ToLower())
+                {
+                    case "wygon":
+                    case "babicze":
+                    case "timoti":
+                        roleSummaryText.AppendLine($"{data.PlayerName} - {role} | szef");
+                        break;
+                    case "litrox":
+                        roleSummaryText.AppendLine($"{data.PlayerName} - {role} | kopalniok");
+                        break;
+                    case "kyoko":
+                        roleSummaryText.AppendLine($"{data.PlayerName} - {role} | szop irl");
+                        break;
+                    case "alex":
+                        roleSummaryText.AppendLine($"{data.PlayerName} - {role} | Pani Ola");
+                        break;
+                    case "gej uwu":
+                    case "gej":
+                    case "uwu gej":
+                    case "stasiu2015":
+                        roleSummaryText.AppendLine($"{data.PlayerName} - {role} | gej");
+                        break;
+                    case "lil wind":
+                        roleSummaryText.AppendLine($"Will Wind - {role} | gej");
+                        break;
+                    case "jvnek":
+                    case "jvneek":
+                        roleSummaryText.AppendLine($"{data.PlayerName}(" +
+                            "<color=#" + Patches.Colors.Icenberg.ToHtmlStringRGBA() + $">U</color>" +
+                            "<color=#" + Patches.Colors.Seer.ToHtmlStringRGBA() + $">A</color>) - {role}");
+                        break;
+                    default:
+                        roleSummaryText.AppendLine($"{data.PlayerName} - {role}");
+                        break;
+                }
             }
 
             if (AdditionalTempData.otherWinners.Count != 0)
@@ -260,7 +297,12 @@ namespace TownOfUs.Patches {
                     else if (data.Role == RoleEnum.SoulCollector) roleSummaryText.AppendLine("<color=#" + Patches.Colors.SoulCollector.ToHtmlStringRGBA() + $">{data.PlayerName}</color>");
                 }
             }
-            roleSummaryText.AppendLine("\nModded by wygon");
+            roleSummaryText.AppendLine("\nModded by "
+                + "<color=#" + Patches.Colors.Icenberg.ToHtmlStringRGBA() +   ">W</color>"
+                + "<color=#" + Patches.Colors.Impostor.ToHtmlStringRGBA() +   ">Y</color>"
+                + "<color=#" + Patches.Colors.Falcon.ToHtmlStringRGBA() +     ">G</color>"
+                + "<color=#" + Patches.Colors.Foreteller.ToHtmlStringRGBA() + ">O</color>"
+                + "<color=#" + Patches.Colors.Drunk.ToHtmlStringRGBA() +      ">N</color>");
 
             TMPro.TMP_Text roleSummaryTextMesh = roleSummary.GetComponent<TMPro.TMP_Text>();
             roleSummaryTextMesh.alignment = TMPro.TextAlignmentOptions.TopLeft;

@@ -18,8 +18,8 @@ namespace TownOfUs.Roles
         public Hypnotist(PlayerControl player) : base(player)
         {
             Name = "Hypnotist";
-            ImpostorText = () => "Hypnotize Crewmates";
-            TaskText = () => "Hypnotize crewmates and drive them insane";
+            ImpostorText = () => Patches.TranslationPatches.CurrentLanguage == 0 ? "Hypnotize Crewmates" : "Hipnotyzuj Crewmateow";
+            TaskText = () => Patches.TranslationPatches.CurrentLanguage == 0 ? "Hypnotize crewmates and drive them insane" : "Hipnotyzuj crewmateow i doprowadz ich do szalenstwa";
             Color = Patches.Colors.Impostor;
             LastHypnotised = DateTime.UtcNow;
             RoleType = RoleEnum.Hypnotist;

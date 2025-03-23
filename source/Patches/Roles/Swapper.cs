@@ -15,8 +15,8 @@ namespace TownOfUs.Roles
         public Swapper(PlayerControl player) : base(player)
         {
             Name = "Swapper";
-            ImpostorText = () => "Swap The Votes Of Two People";
-            TaskText = () => "Swap two people's votes to save the Crew!";
+            ImpostorText = () => Patches.TranslationPatches.CurrentLanguage == 0 ? "Swap The Votes Of Two People" : "Zamien Glosy Dwoch Ludzi";
+            TaskText = () => Patches.TranslationPatches.CurrentLanguage == 0 ? "Swap two people's votes to save the Crew!" : "Zamien glosy dwóch ludzi by ocalic zaloge!";
             Color = Patches.Colors.Swapper;
             RoleType = RoleEnum.Swapper;
             AddToRoleHistory(RoleType);

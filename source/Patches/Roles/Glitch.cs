@@ -36,8 +36,8 @@ namespace TownOfUs.Roles
             IsUsingMimic = false;
             RoleType = RoleEnum.Glitch;
             AddToRoleHistory(RoleType);
-            ImpostorText = () => "Murder, Mimic, Hack... Data Lost";
-            TaskText = () => "Murder everyone to win\nFake Tasks:";
+            ImpostorText = () => Patches.TranslationPatches.CurrentLanguage == 0 ? "Murder, Mimic, Hack... Data Lost" : "Zabijaj, Imituj, Hakuj... Utrata Danych";
+            TaskText = () => Patches.TranslationPatches.CurrentLanguage == 0 ? "Murder everyone to win\nFake Tasks:" : "Zabij wszystkich by wygrac\nFake Tasks:";
             Faction = Faction.NeutralKilling;
         }
 

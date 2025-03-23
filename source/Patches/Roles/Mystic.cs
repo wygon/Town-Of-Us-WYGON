@@ -10,8 +10,8 @@ namespace TownOfUs.Roles
         public Mystic(PlayerControl player) : base(player)
         {
             Name = "Mystic";
-            ImpostorText = () => "Understand When And Where Kills Happen";
-            TaskText = () => "Know When and Where Kills Happen";
+            ImpostorText = () => Patches.TranslationPatches.CurrentLanguage == 0 ? "Understand When And Where Kills Happen" : "Zrozum Gdzie I Kiedy Padaja Ciala";
+            TaskText = () => Patches.TranslationPatches.CurrentLanguage == 0 ? "Know When and Where Kills Happen" : "Wiedz kiedy i gdzie sa zabójstwa";
             Color = Patches.Colors.Mystic;
             RoleType = RoleEnum.Mystic;
             AddToRoleHistory(RoleType);

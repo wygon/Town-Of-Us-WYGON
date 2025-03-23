@@ -26,8 +26,8 @@ namespace TownOfUs.Roles
         public Foreteller(PlayerControl player) : base(player)
         {
             Name = "Foreteller";
-            ImpostorText = () => "Guess People's Roles To Win!";
-            TaskText = () => "Win by guessing player's roles\nFake Tasks:";
+            ImpostorText = () => Patches.TranslationPatches.CurrentLanguage == 0 ? "Guess People's Roles To Win!" : "Zgaduj Role Aby Wygrac!";
+            TaskText = () => Patches.TranslationPatches.CurrentLanguage == 0 ? "Win by guessing player's roles\nFake Tasks:" : "Wygraj zgadujac role graczy\nFake Tasks:";
             Color = Patches.Colors.Foreteller;
             RoleType = RoleEnum.Foreteller;
             LastObserved = DateTime.UtcNow;

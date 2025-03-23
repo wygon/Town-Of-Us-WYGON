@@ -20,8 +20,8 @@ namespace TownOfUs.Roles
         public Falcon(PlayerControl player) : base(player)
         {
             Name = "Falcon";
-            ImpostorText = () => "Use Wingman and see more!";
-            TaskText = () => "Use your friend to get more information";
+            ImpostorText = () => Patches.TranslationPatches.CurrentLanguage == 0 ? "See more!" : "Zobacz wiecej!";
+            TaskText = () => Patches.TranslationPatches.CurrentLanguage == 0 ? "Use your friend to get more information" : "Uzyj przyjaciela aby zobaczyc wiecej";
             Color = Patches.Colors.Falcon;
             RoleType = RoleEnum.Falcon;
             AddToRoleHistory(RoleType);
@@ -48,16 +48,16 @@ namespace TownOfUs.Roles
             if (Player.Data.IsDead)
             {
                 TimeRemaining = 0f;
-                Debug.Log($"[WingMan] deactivated for player: {Player.name}");
+                //Debug.Log($"[WingMan] deactivated for player: {Player.name}");
             }
-            Debug.Log($"[WingMan] activated for player: {Player.name} uses left {UsesLeft}");
+            //Debug.Log($"[WingMan] activated for player: {Player.name} uses left {UsesLeft}");
         }
         public void UnZoom()
         {
             Enabled = false;
             LastZoom = DateTime.UtcNow;
             Zooming(Enabled);
-            Debug.Log($"[WingMan] Player {Player.name} unzoomed.");
+            //Debug.Log($"[WingMan] Player {Player.name} unzoomed.");
         }
         private void Zooming(bool enabled)
         {
@@ -84,7 +84,7 @@ namespace TownOfUs.Roles
                 case 7:
                     if (lights.IsActive)
                     {      
-                        Debug.Log("[MAP ID]" + GameOptionsManager.Instance.currentNormalGameOptions.MapId);
+                        //Debug.Log("[MAP ID]" + GameOptionsManager.Instance.currentNormalGameOptions.MapId);
                         return true;
                     }
                     //break;

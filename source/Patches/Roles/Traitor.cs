@@ -7,7 +7,7 @@ namespace TownOfUs.Roles
         {
             Name = "Traitor";
             ImpostorText = () => "";
-            TaskText = () => "Betray the Crewmates!";
+            TaskText = () => Patches.TranslationPatches.CurrentLanguage == 0 ? "Betray the Crewmates!" : "Zdradz Crewmate'ów!";
             Color = Patches.Colors.Impostor;
             RoleType = RoleEnum.Traitor;
             AddToRoleHistory(RoleType);

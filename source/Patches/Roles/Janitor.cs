@@ -7,8 +7,8 @@ namespace TownOfUs.Roles
         public Janitor(PlayerControl player) : base(player)
         {
             Name = "Janitor";
-            ImpostorText = () => "Clean Up Bodies";
-            TaskText = () => "Clean bodies to prevent Crewmates from discovering them";
+            ImpostorText = () => Patches.TranslationPatches.CurrentLanguage == 0 ? "Clean Up Bodies" : "Sprzataj ciala";
+            TaskText = () => Patches.TranslationPatches.CurrentLanguage == 0 ? "Clean bodies to prevent Crewmates from discovering them" : "Wyczysc ciala by powstrzymac Crewmate'ów od odkrycia ich";
             Color = Patches.Colors.Impostor;
             RoleType = RoleEnum.Janitor;
             AddToRoleHistory(RoleType);

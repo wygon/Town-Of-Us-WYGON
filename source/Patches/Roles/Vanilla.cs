@@ -5,6 +5,7 @@ namespace TownOfUs.Roles
         public Impostor(PlayerControl player) : base(player)
         {
             Name = "Impostor";
+            TaskText = () => Patches.TranslationPatches.CurrentLanguage == 0 ? "Kill and sabotage" : "Zabijaj i sabotuj";
             Hidden = true;
             Faction = Faction.Impostors;
             RoleType = RoleEnum.Impostor;
@@ -18,6 +19,7 @@ namespace TownOfUs.Roles
         public Crewmate(PlayerControl player) : base(player)
         {
             Name = "Crewmate";
+            TaskText = () => Patches.TranslationPatches.CurrentLanguage == 0 ? "Do your tasks" : "Rób swoje zadania";
             Hidden = true;
             Faction = Faction.Crewmates;
             RoleType = RoleEnum.Crewmate;

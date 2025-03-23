@@ -8,8 +8,8 @@ namespace TownOfUs.Roles
         public Prosecutor(PlayerControl player) : base(player)
         {
             Name = "Prosecutor";
-            ImpostorText = () => "Exile One Person Of Your Choosing";
-            TaskText = () => "Choose to exile anyone you want";
+            ImpostorText = () => Patches.TranslationPatches.CurrentLanguage == 0 ? "Exile One Person Of Your Choosing" : "Wygnaj Wybrana Osobe";
+            TaskText = () => Patches.TranslationPatches.CurrentLanguage == 0 ? "Choose to exile anyone you want" : "Wybierz by wyrzucic osobe twojego uznania";
             Color = Patches.Colors.Prosecutor;
             RoleType = RoleEnum.Prosecutor;
             AddToRoleHistory(RoleType);

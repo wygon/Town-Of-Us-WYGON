@@ -12,8 +12,8 @@ namespace TownOfUs.Roles
         public Medic(PlayerControl player) : base(player)
         {
             Name = "Medic";
-            ImpostorText = () => "Create A Shield To Protect A Crewmate";
-            TaskText = () => "Protect a crewmate with a shield";
+            ImpostorText = () => Patches.TranslationPatches.CurrentLanguage == 0 ? "Create A Shield To Protect A Crewmate" : "Ochron Tarcza Crewmate";
+            TaskText = () => Patches.TranslationPatches.CurrentLanguage == 0 ? "Protect a crewmate with a shield" : "Chron crewmate'a tarcza";
             Color = Patches.Colors.Medic;
             StartingCooldown = DateTime.UtcNow;
             RoleType = RoleEnum.Medic;

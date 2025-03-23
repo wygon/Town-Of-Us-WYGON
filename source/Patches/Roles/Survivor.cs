@@ -21,7 +21,9 @@ namespace TownOfUs.Roles
         {
             Name = "Survivor";
             ImpostorText = () => "Do Whatever It Takes To Live";
-            TaskText = () => SpawnedAs ? "Stay alive to win" : "Your target was killed. Now you just need to live!";
+            TaskText = () => Patches.TranslationPatches.CurrentLanguage == 0 ? 
+            (SpawnedAs ? "Stay alive to win" : "Your target was killed. Now you just need to live!") :
+            (SpawnedAs ? "Przezyj aby wygrac" : "Twoj cel zostal zabity. Teraz musisz tylko przezyc!");
             Color = Patches.Colors.Survivor;
             LastVested = DateTime.UtcNow;
             RoleType = RoleEnum.Survivor;

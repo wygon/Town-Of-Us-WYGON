@@ -16,8 +16,8 @@ namespace TownOfUs.Roles
         public Medium(PlayerControl player) : base(player)
         {
             Name = "Medium";
-            ImpostorText = () => "Watch The Spooky Ghosts";
-            TaskText = () => "Follow ghosts to get clues from them";
+            ImpostorText = () => Patches.TranslationPatches.CurrentLanguage == 0 ? "Watch The Spooky Ghosts" : "Patrz Co Robia Duchy";
+            TaskText = () => Patches.TranslationPatches.CurrentLanguage == 0 ? "Follow ghosts to get clues from them" : "Sledz duchy by dostac wskazówki od nich";
             Color = Patches.Colors.Medium;
             LastMediated = DateTime.UtcNow;
             RoleType = RoleEnum.Medium;

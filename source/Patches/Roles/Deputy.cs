@@ -18,8 +18,8 @@ namespace TownOfUs.Roles
         public Deputy(PlayerControl player) : base(player)
         {
             Name = "Deputy";
-            ImpostorText = () => "Camp Crewmates To Catch Their Killer";
-            TaskText = () => "Camp crewmates then shoot their killer";
+            ImpostorText = () => Patches.TranslationPatches.CurrentLanguage == 0 ? "Kill Evils During Meetings" : "Zabijaj Zloczyncow Podczas Spotkan";
+            TaskText = () => Patches.TranslationPatches.CurrentLanguage == 0 ? "Shoot out evildoers in broad daylight" : "Wystrzel zloczynców w swietle dnia";
             Color = Patches.Colors.Deputy;
             StartingCooldown = DateTime.UtcNow;
             RoleType = RoleEnum.Deputy;

@@ -14,8 +14,8 @@ namespace TownOfUs.Roles
         public Aurial(PlayerControl player) : base(player)
         {
             Name = "Aurial";
-            ImpostorText = () => "Sense Disturbances In Your Aura";
-            TaskText = () => "Any player ability uses inside your aura you will sense";
+            ImpostorText = () => Patches.TranslationPatches.CurrentLanguage == 0 ? "Sense Disturbances In Your Aura" : "Zaburzenia Czucia W Twojej Aurze";
+            TaskText = () => Patches.TranslationPatches.CurrentLanguage == 0 ? "Any player ability uses inside your aura you will sense" : "Wyczuj co sie dzieje w poblizu";
             Color = Patches.Colors.Aurial;
             RoleType = RoleEnum.Aurial;
             AddToRoleHistory(RoleType);

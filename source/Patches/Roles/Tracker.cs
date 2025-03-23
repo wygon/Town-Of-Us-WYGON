@@ -20,8 +20,8 @@ namespace TownOfUs.Roles
         public Tracker(PlayerControl player) : base(player)
         {
             Name = "Tracker";
-            ImpostorText = () => "Track Everyone's Movement";
-            TaskText = () => "Track suspicious players";
+            ImpostorText = () => Patches.TranslationPatches.CurrentLanguage == 0 ? "Track Everyone's Movement" : "Sledz Kroki Podejrzanych";
+            TaskText = () => Patches.TranslationPatches.CurrentLanguage == 0 ? "Track suspicious players" : "Sledz podejrzanych graczy";
             Color = Patches.Colors.Tracker;
             LastTracked = DateTime.UtcNow;
             RoleType = RoleEnum.Tracker;

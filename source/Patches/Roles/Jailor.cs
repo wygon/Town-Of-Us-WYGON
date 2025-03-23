@@ -19,8 +19,8 @@ namespace TownOfUs.Roles
         public Jailor(PlayerControl player) : base(player)
         {
             Name = "Jailor";
-            ImpostorText = () => "Jail And Execute The <color=#FF0000FF>Impostor</color>";
-            TaskText = () => "Execute evildoers but not crewmates";
+            ImpostorText = () => Patches.TranslationPatches.CurrentLanguage == 0 ? "Jail And Execute The <color=#FF0000FF>Impostor</color>" : "Zamknji I Zabij <color=#FF0000FF>Impostorow</color>";
+            TaskText = () => Patches.TranslationPatches.CurrentLanguage == 0 ? "Execute evildoers but not crewmates" : "Zabij zloczynzow, nie crewmateow";
             Color = Patches.Colors.Jailor;
             LastJailed = DateTime.UtcNow;
             RoleType = RoleEnum.Jailor;

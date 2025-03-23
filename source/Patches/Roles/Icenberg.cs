@@ -34,8 +34,8 @@ namespace TownOfUs.Roles
             KillTarget = null;
             RoleType = RoleEnum.Icenberg;
             AddToRoleHistory(RoleType);
-            ImpostorText = () => "So cold... Ye?";
-            TaskText = () => "Freeze to death and win\nFake Tasks:";
+            ImpostorText = () => Patches.TranslationPatches.CurrentLanguage == 0 ? "So cold... Ye?" : "Zimno... Co?";
+            TaskText = () => Patches.TranslationPatches.CurrentLanguage == 0 ? "Freeze to death and win\nFake Tasks:" : "Zamroz na smierc i wygraj\nFake Tasks:";
             Faction = Faction.NeutralKilling;
         }
         public PlayerControl ClosestPlayer;

@@ -8,8 +8,8 @@ namespace TownOfUs.Roles
         public Warlock(PlayerControl player) : base(player)
         {
             Name = "Warlock";
-            ImpostorText = () => "Charge Up Your Kill Button To Multi Kill";
-            TaskText = () => "Kill people in small bursts";
+            ImpostorText = () => Patches.TranslationPatches.CurrentLanguage == 0 ? "Charge Up Your Kill Button To Multi Kill" : "Naladuj Sie I Zabij Wszystkich";
+            TaskText = () => Patches.TranslationPatches.CurrentLanguage == 0 ? "Kill people in small bursts" : "Zabijaj graczy w malych seriach";
             Color = Patches.Colors.Impostor;
             RoleType = RoleEnum.Warlock;
             AddToRoleHistory(RoleType);

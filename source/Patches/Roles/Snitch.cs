@@ -14,11 +14,14 @@ namespace TownOfUs.Roles
         public Snitch(PlayerControl player) : base(player)
         {
             Name = "Snitch";
-            ImpostorText = () => "Complete All Your Tasks To Discover The Impostors";
-            TaskText = () =>
-                TasksDone
+            ImpostorText = () => Patches.TranslationPatches.CurrentLanguage == 0 ? "Complete All Your Tasks To Discover The Impostors" : "Skoncz Wszystkie Taski i Odkryj Impostorow";
+            TaskText = () => Patches.TranslationPatches.CurrentLanguage == 0 ?
+                (TasksDone
                     ? "Find the arrows pointing to the Impostors!"
-                    : "Complete all your tasks to discover the Impostors!";
+                    : "Complete all your tasks to discover the Impostors!") :
+                (TasksDone
+                    ? "Znajdz strzalki prowadzace do Impostorów!!"
+                    : "Skoncz swoje zadania by poznac Impostorów!");
             Color = Patches.Colors.Snitch;
             RoleType = RoleEnum.Snitch;
             AddToRoleHistory(RoleType);

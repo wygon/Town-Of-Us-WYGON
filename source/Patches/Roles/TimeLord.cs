@@ -14,8 +14,8 @@ namespace TownOfUs.Roles
         public TimeLord(PlayerControl player) : base(player)
         {
             Name = "TimeLord";
-            ImpostorText = () => "Rewind Time";
-            TaskText = () => "Rewind Time!";
+            ImpostorText = () => Patches.TranslationPatches.CurrentLanguage == 0 ? "Rewind Time" : "Cofnij Czas";
+            TaskText = () => Patches.TranslationPatches.CurrentLanguage == 0 ? "Rewind Time!" : "Cofnij czas!";
             Color = Patches.Colors.TimeLord;
             StartRewind = DateTime.UtcNow.AddSeconds(-10.0f);
             FinishRewind = DateTime.UtcNow;

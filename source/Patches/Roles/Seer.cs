@@ -10,8 +10,8 @@ namespace TownOfUs.Roles
         public Seer(PlayerControl player) : base(player)
         {
             Name = "Seer";
-            ImpostorText = () => "Reveal The Alliance Of Other Players";
-            TaskText = () => "Reveal alliances of other players to find the Impostors";
+            ImpostorText = () => Patches.TranslationPatches.CurrentLanguage == 0 ? "Reveal The Alliance Of Other Players" : "Odkryj Sojusze Innych Graczy";
+            TaskText = () => Patches.TranslationPatches.CurrentLanguage == 0 ? "Reveal alliances of other players to find the Impostors" : "Sprawdz sojusze graczy by znalesc Impostorów";
             Color = Patches.Colors.Seer;
             LastInvestigated = DateTime.UtcNow;
             RoleType = RoleEnum.Seer;

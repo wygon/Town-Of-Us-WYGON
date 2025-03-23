@@ -10,12 +10,16 @@ namespace TownOfUs.Roles
         public Executioner(PlayerControl player) : base(player)
         {
             Name = "Executioner";
-            ImpostorText = () =>
-                target == null ? "You don't have a target for some reason... weird..." : $"Vote {target.name} Out";
-            TaskText = () =>
-                target == null
+            ImpostorText = () => Patches.TranslationPatches.CurrentLanguage == 0 
+                ? (target == null ? "You don't have a target for some reason... weird..." : $"Vote {target.name} Out") 
+                : (target == null ? "Nie masz celu... dziwne..." : $"Wyglosuj {target.name}!");
+            TaskText = () => Patches.TranslationPatches.CurrentLanguage == 0 ?
+                (target == null
                     ? "You don't have a target for some reason... weird..."
-                    : $"Vote {target.name} out!\nFake Tasks:";
+                    : $"Vote {target.name} out!\nFake Tasks:") :
+                (target == null
+                    ? "Nie masz celu z jakiegos powodu... dziwne..."
+                    : $"Wyglosuj {target.name}!\nFake Tasks:");
             Color = Patches.Colors.Executioner;
             RoleType = RoleEnum.Executioner;
             AddToRoleHistory(RoleType);

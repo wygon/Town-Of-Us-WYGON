@@ -17,8 +17,8 @@ namespace TownOfUs.Roles
         public Noclip(PlayerControl player) : base(player)
         {
             Name = "Noclip";
-            ImpostorText = () => "Walk Through Walls and Kill Your Enemies";
-            TaskText = () => "Use your power to surprise your enemies";
+            ImpostorText = () => Patches.TranslationPatches.CurrentLanguage == 0 ? "Walk Through Walls and Kill Your Enemies" : "Biegaj Przez Sciany I Zabijaj Przeciwnikow";
+            TaskText = () => Patches.TranslationPatches.CurrentLanguage == 0 ? "Use your power to surprise your enemies" : "Uzyj swoich mocy aby zaskoczyc przeciwnikow";
             Color = Patches.Colors.Impostor;
             RoleType = RoleEnum.Noclip;
             AddToRoleHistory(RoleType);

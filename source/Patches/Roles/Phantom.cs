@@ -14,7 +14,7 @@ namespace TownOfUs.Roles
         {
             Name = "Phantom";
             ImpostorText = () => "";
-            TaskText = () => "Complete all your tasks without being caught!";
+            TaskText = () => Patches.TranslationPatches.CurrentLanguage == 0 ? "Complete all your tasks without being caught!" : "Skoncz swoje zadania nie bedac zlapanym!";
             Color = Patches.Colors.Phantom;
             RoleType = RoleEnum.Phantom;
             AddToRoleHistory(RoleType);
