@@ -1,7 +1,6 @@
 ## *To repozytorium to odbicie od linii głównej Town Of Us - Remastered w wersji przyjaznej dla polaków.*
+# Pobrania: 
 ![GitHub all releases](https://img.shields.io/github/downloads/wygon/Town-Of-Us-WYGON/total)
-![](https://komarev.com/ghpvc/?username=wygon&color=blue)
-![GitHub stars](https://img.shields.io/github/stars/wygon/Town-Of-Us-WYGON?style=social)
 
 ![LOGO](./Images/TOU-logo.png)
 ![Roles](./Images/Roles.png)
