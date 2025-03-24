@@ -4,7 +4,6 @@
 ![](https://komarev.com/ghpvc/?username=wygon&color=blue)
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/wygon/Town-Of-Us-WYGON)
 
-
 ![LOGO](./Images/TOU-W-logo.png)
 ![Roles](./Images/Roles.png)
 
