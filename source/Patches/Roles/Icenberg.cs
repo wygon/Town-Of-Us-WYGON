@@ -32,6 +32,7 @@ namespace TownOfUs.Roles
             LastKill = DateTime.UtcNow;
             FreezeButton = null;
             KillTarget = null;
+            FreezeTarget = null;
             RoleType = RoleEnum.Icenberg;
             AddToRoleHistory(RoleType);
             ImpostorText = () => Patches.TranslationPatches.CurrentLanguage == 0 ? "So cold... Ye?" : "Zimno... Co?";
@@ -123,10 +124,10 @@ namespace TownOfUs.Roles
         public void RpcSetFreezed(PlayerControl freezed)
         {
             //Utils.Rpc(CustomRPC.Freeze, Player.PlayerId, freezed.PlayerId);
-            Coroutines.Start(AbilityCoroutine.Freeze(this, freezed));
+            Coroutines.Start(AbilityCoroutineIcenberg.Freeze(this, freezed));
             //SetFreezed(freezed);
         }
-        public static class AbilityCoroutine
+        public static class AbilityCoroutineIcenberg
         {
             public static Dictionary<byte, DateTime> tickDictionary = new();
 
@@ -153,7 +154,7 @@ namespace TownOfUs.Roles
                     var remainingTime = CustomGameOptions.FreezeDuration - elapsedTime;
                     Debug.Log($"Total freeze time elapsed: {elapsedTime}s");
 
-                    if (__instance.Player.Data.IsDead || remainingTime <= 0)
+                    if (__instance.Player.Data.IsDead || remainingTime <= 0)// powinien tam byc freezeplayer a nie instance if (freezePlayer.Data.IsDead || remainingTime <= 0)
                     {
                         Debug.Log("Freeze duration expired or player is dead. Unfreezing...");
                         break;
@@ -168,27 +169,6 @@ namespace TownOfUs.Roles
                 __instance.LastFreeze = DateTime.UtcNow;
                 __instance.FreezeTarget = null;
                 Debug.Log("Exiting freeze loop");
-            }
-            public static IEnumerator CheckFreezeDuration(DateTime freezeActivation, float freezeDuration)
-            {
-                while ((DateTime.UtcNow - freezeActivation).TotalSeconds < freezeDuration)
-                {
-                    yield return new WaitForSeconds(0.5f);
-                }
-
-                // Odmrażanie wszystkich po zakończeniu czasu
-                UnfreezeAllPlayers();
-            }
-            public static void UnfreezeAllPlayers()
-            {
-                foreach (var player in PlayerControl.AllPlayerControls)
-                {
-                    if (player.MyPhysics != null)
-                    {
-                        player.MyPhysics.enabled = true;
-                    }
-                }
-                Debug.Log("All players have been unfrozen.");
             }
         }
 

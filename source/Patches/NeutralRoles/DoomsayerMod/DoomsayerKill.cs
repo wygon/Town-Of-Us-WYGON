@@ -14,6 +14,9 @@ using TownOfUs.Patches;
 using Reactor.Utilities.Extensions;
 using TownOfUs.CrewmateRoles.ImitatorMod;
 using TownOfUs.CrewmateRoles.DeputyMod;
+using TownOfUs.CustomOption;
+using Reactor.Utilities;
+
 
 namespace TownOfUs.NeutralRoles.ForetellerMod
 {
@@ -28,7 +31,10 @@ namespace TownOfUs.NeutralRoles.ForetellerMod
         }
         public static void RpcMurderPlayer(PlayerVoteArea voteArea, PlayerControl player, PlayerControl doomsayer)
         {
-            MurderPlayer(voteArea, player);
+            if(CustomGameOptions.DoomsayerGuessKill)
+                MurderPlayer(voteArea, player);
+            else
+                Coroutines.Start(Utils.FlashCoroutine(Color.green, 1f));
             DoomKillCount(player, doomsayer);
             Utils.Rpc(CustomRPC.DoomsayerKill, player.PlayerId, doomsayer.PlayerId);
         }

@@ -251,9 +251,11 @@ namespace TownOfUs.Patches {
                 switch (data.PlayerName.ToLower())
                 {
                     case "wygon":
-                    case "babicze":
                     case "timoti":
                         roleSummaryText.AppendLine($"{data.PlayerName} - {role} | szef");
+                        break;
+                    case "babicze":
+                        roleSummaryText.AppendLine($"{data.PlayerName} - {role} | 122 iq");
                         break;
                     case "litrox":
                         roleSummaryText.AppendLine($"{data.PlayerName} - {role} | kopalniok");
@@ -262,7 +264,7 @@ namespace TownOfUs.Patches {
                         roleSummaryText.AppendLine($"{data.PlayerName} - {role} | szop irl");
                         break;
                     case "alex":
-                        roleSummaryText.AppendLine($"{data.PlayerName} - {role} | Pani Ola");
+                        roleSummaryText.AppendLine($"{data.PlayerName} - {role} | blondi");
                         break;
                     case "gej uwu":
                     case "gej":

@@ -41,6 +41,7 @@ using Il2CppSystem.Linq;
 using TownOfUs.CrewmateRoles.DeputyMod;
 using TownOfUs.ImpostorRoles.NoclipMod;
 using TownOfUs.CrewmateRoles.TimeLordMod;
+using TownOfUs.NeutralRoles.IcenbergMod;
 
 namespace TownOfUs
 {
@@ -990,7 +991,8 @@ namespace TownOfUs
                     case CustomRPC.DoomsayerKill:
                         var toDie3 = Utils.PlayerById(reader.ReadByte());
                         var doom = Utils.PlayerById(reader.ReadByte());
-                        DoomsayerKill.MurderPlayer(toDie3);
+                        if(CustomGameOptions.DoomsayerGuessKill)//ZMIANA
+                            DoomsayerKill.MurderPlayer(toDie3);
                         DoomsayerKill.DoomKillCount(toDie3, doom);
                         break;
                     case CustomRPC.SetMimic:
@@ -1008,17 +1010,9 @@ namespace TownOfUs
                         icenbergRole.FreezeTarget = freezePlayer;
                         icenbergRole.IsUsingFreeze = true;
                         Utils.Freeze(icenbergPlayer, freezePlayer);
+                        //icenbergRole.SetFreezed(freezePlayer); //dodane
                         //Coroutines.Start(Icenberg.FreezePlayer(reader.ReadByte()));
                         break;
-                    //case CustomRPC.Unfreeze:
-                    //    var icenbergPlayer = Utils.PlayerById(reader.ReadByte());
-                    //    var freezePlayer = Utils.PlayerById(reader.ReadByte());
-                    //    var icenbergRole = Role.GetRole<Icenberg>(icenbergPlayer);
-                    //    icenbergRole.FreezeTarget = freezePlayer;
-                    //    icenbergRole.IsUsingFreeze = true;
-                    //    Utils.Freeze(icenbergPlayer, freezePlayer);
-                    //    //Coroutines.Start(Icenberg.FreezePlayer(reader.ReadByte()));
-                    //    break;
                     case CustomRPC.RpcResetAnim:
                         var animPlayer = Utils.PlayerById(reader.ReadByte());
                         var theGlitchRole = Role.GetRole<Glitch>(animPlayer);
@@ -1044,6 +1038,12 @@ namespace TownOfUs
                         var glitch = Role.GetRole<Glitch>(hackingPlayer);
                         glitch.SetHacked(hackPlayer);
                         break;
+                    //case CustomRPC.SetFreezed:
+                    //    var freezingPlayer = Utils.PlayerById(reader.ReadByte());
+                    //    var _freezePlayer = Utils.PlayerById(reader.ReadByte());
+                    //    var _icenberg = Role.GetRole<Icenberg>(freezingPlayer);
+                    //    _icenberg.SetFreezed(_freezePlayer);
+                    //    break;
                     case CustomRPC.Morph:
                         var morphling = Utils.PlayerById(reader.ReadByte());
                         var morphTarget = Utils.PlayerById(reader.ReadByte());

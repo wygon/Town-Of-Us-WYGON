@@ -395,6 +395,7 @@ namespace TownOfUs
         public static bool RetributionOnVote => Generate.RetributionOnVote.Get();
         public static bool HunterBodyReport => Generate.HunterBodyReport.Get();
         public static bool DoomsayerCantObserve => Generate.DoomsayerCantObserve.Get();
+        public static bool DoomsayerGuessKill => Generate.DoomsayerGuessKill.Get();
         public static float HypnotiseCd => Generate.HypnotiseCooldown.Get();
         public static float JailCd => Generate.JailCooldown.Get();
         public static int MaxExecutes => (int)Generate.MaxExecutes.Get();

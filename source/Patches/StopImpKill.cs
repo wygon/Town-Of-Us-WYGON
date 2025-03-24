@@ -6,6 +6,8 @@ using TownOfUs.CrewmateRoles.SheriffMod;
 using TownOfUs.Roles;
 using Reactor.Utilities;
 using static TownOfUs.Roles.Glitch;
+using static TownOfUs.Roles.Icenberg;
+using TownOfUs.Roles.Modifiers;
 
 namespace TownOfUs
 {
@@ -31,6 +33,16 @@ namespace TownOfUs
             if (PlayerControl.LocalPlayer.Is(RoleEnum.Warlock) && PlayerControl.LocalPlayer.IsHacked())
             {
                 Coroutines.Start(AbilityCoroutine.Hack(PlayerControl.LocalPlayer));
+                return false;
+            }
+            if (PlayerControl.LocalPlayer.Is(RoleEnum.Warlock) && PlayerControl.LocalPlayer.IsFreezed())
+            {
+                //Icenberg icenberg;
+                foreach (var role in Role.GetRoles(RoleEnum.Icenberg))
+                {
+                    var icenberg = (Icenberg)role;
+                    Coroutines.Start(AbilityCoroutineIcenberg.Freeze(icenberg, PlayerControl.LocalPlayer));
+                }
                 return false;
             }
             var interact = Utils.Interact(PlayerControl.LocalPlayer, target, true);

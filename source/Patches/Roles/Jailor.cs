@@ -15,7 +15,7 @@ namespace TownOfUs.Roles
         public GameObject JailCell = new GameObject();
         public TMP_Text UsesText = new TMP_Text();
         public int Executes { get; set; }
-
+        public bool IsAnyJailed => Jailed != null;
         public Jailor(PlayerControl player) : base(player)
         {
             Name = "Jailor";
@@ -28,7 +28,7 @@ namespace TownOfUs.Roles
             Executes = CustomGameOptions.MaxExecutes;
             CanJail = true;
         }
-
+        
         public DateTime LastJailed { get; set; }
 
         public float JailTimer()

@@ -449,6 +449,7 @@ namespace TownOfUs.CustomOption
         public static CustomToggleOption DoomsayerGuessNeutralKilling;
         public static CustomToggleOption DoomsayerGuessImpostors;
         public static CustomToggleOption DoomsayerCantObserve;
+        public static CustomToggleOption DoomsayerGuessKill;
 
         public static CustomHeaderOption Vampire;
         public static CustomNumberOption BiteCooldown;
@@ -1261,6 +1262,7 @@ namespace TownOfUs.CustomOption
             DoomsayerGuessNeutralKilling = new CustomToggleOption(num++, MultiMenu.neutral, "Foreteller Can Guess Neutral Killing Roles", true);
             DoomsayerGuessImpostors = new CustomToggleOption(num++, MultiMenu.neutral, "Foreteller Can Guess Impostor Roles", true);
             DoomsayerCantObserve = new CustomToggleOption(num++, MultiMenu.neutral, "Foreteller Can't Observe", true);
+            //DoomsayerGuessKill = new CustomToggleOption(num++, MultiMenu.neutral, "Foreteller Kills while guess", true);
 
             Executioner =
                 new CustomHeaderOption(num++, MultiMenu.neutral, "<color=#8C4005FF>Executioner</color>");

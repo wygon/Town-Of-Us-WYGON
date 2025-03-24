@@ -13,6 +13,8 @@ using AmongUs.GameOptions;
 using TownOfUs.Patches;
 using static TownOfUs.DisableAbilities;
 using TownOfUs.Patches.NeutralRoles;
+using TownOfUs.Roles;
+using TownOfUs;
 
 namespace TownOfUs.Roles
 {

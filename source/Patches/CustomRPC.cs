@@ -87,7 +87,7 @@ namespace TownOfUs
         SetMimic,
         RpcResetAnim,
         SetHacked,
-        //SetFreeze,
+        SetFreezed,
         Freeze,
 
         ExecutionerToJester,

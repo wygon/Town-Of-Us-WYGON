@@ -42,11 +42,28 @@ Dołącz do naszego [Discord](https://discord.gg/Aw8Ns2g5aT), jeśli masz jakie�
 # Wydania
 | Among Us - Wersja| Mod Wersja | Link |
 |----------|-------------|-----------------|
+| 24.03.2025r | v1.0.3-beta | [Pobierz](https://github.com/wygon/Town-Of-Us-WYGON/releases/download/v.1.0.3-beta/ToU-W.v1.0.3-beta.rar) |
 | 18.03.2025r | v1.0.2 | [Pobierz](https://github.com/wygon/Town-Of-Us-WYGON/releases/download/v1.0.2/ToU-W.v1.0.2.rar) |
 | 04.03.2025r | v1.0.1 | [Pobierz](https://github.com/wygon/Town-Of-Us-WYGON/releases/download/v1.0.1/Town-Of-Us-R-WYGON-1.0.1.zip) |
 
 <details>
   <summary> Changelog </summary>
+
+ <details>
+  <summary> v1.0.3-beta </summary>
+  <p> Poprawiono: </p>
+  <ul>
+    <li>Zamrozeni nie moga uzywac swoich umiejetnosci - Icenberg</li>
+  </ul>
+  <p> Dodano: </p>
+  <ul>
+    <li>Jezyk polski w grze (czesciowo)</li>
+    <li>Jailor nie musi uzywac /jail aby komunikowac sie z wiezniem</li>
+    <li>Over15Wygon - mod na sloty powyzej 15 osob w lobby(jesli posiadaszswoj wlasny to musicie usunac go aby wszystko dzialalo prawidlowo)</li>
+  </ul>
+  <p>To wersja beta do testow - jesli znajdziesz blad napisz [Discord](https://discord.gg/Aw8Ns2g5aT)</p>
+  <hr>
+  </details>
 
   <details>
   <summary> v1.0.2 </summary>
@@ -291,7 +308,8 @@ Seer to Członek załogi, który może ujawnić sojusz innych graczy.\
 Na podstawie ustawień Seer może dowiedzieć się, czy gracz jest Dobrym czy Złym.\
 Imię gracza zmienia kolor w zależności od frakcji i roli.
 ### Opcje gry
-| Nazwa | Opis | Typ | Domyślny | |----------|:-------------:|:------:|:------:|
+| Nazwa | Opis | Typ | Domyślny | 
+|----------|:-------------:|:------:|:------:|
 | Seer | Procentowe prawdopodobieństwo pojawienia się Seer | Procent | 0% |
 | Czas odnowienia Seer | Czas odnowienia przycisku ujawnienia Seer | Czas | 25 s |
 | Role Crewmate Killing są czerwone | Role Crewmate Killing są wyświetlane jako czerwone | Przełącz | Fałsz |
@@ -451,7 +469,8 @@ Kiedy Weteran jest w stanie gotowości, każdy, czy to członek załogi, neutral
 Vigilante to Członek załogi, który może zabijać podczas spotkań.\
 Podczas spotkań Vigilante może zdecydować się zabić kogoś, zgadując jego rolę, jednak jeśli zgadnie niepoprawnie, ginie.
 ### Opcje gry
-| Nazwa | Opis | Typ | Domyślne | |----------|:-------------:|:------:|:------:|
+| Nazwa | Opis | Typ | Domyślne | 
+|----------|:-------------:|:------:|:------:|
 | Vigilante | Procentowe prawdopodobieństwo pojawienia się Vigilante | Procent | 0% |
 | Vigilante Kill | Liczba zabójstw, które Vigilante może wykonać dzięki swojej umiejętności | Liczba | 1 |
 | Vigilante Multiple Kill | Czy Vigilante może zabić więcej niż raz na spotkanie | Przełącz | Fałsz |
@@ -911,7 +930,8 @@ Celem Icenberga jest zabicie wszystkich i zostanie ostatnią osobą stojącą.\
 Icenberg może zamrozić graczy, uniemożliwiając im ruch.
 
 ### Opcje gry
-| Nazwa | Opis | Typ | Domyślny | |----------|:-------------:|:------:|:------:|
+| Nazwa | Opis | Typ | Domyślny | 
+|----------|:-------------:|:------:|:------:|
 | Icenberg | Procentowe prawdopodobieństwo pojawienia się Icenberga | Procent | 0% |
 | Czas odnowienia zamrożenia | Czas odnowienia przycisku zamrożenia Icenberga | Czas | 25 s |
 | Czas trwania zamrożenia | Czas trwania zamrożenia Icenberga | Czas | 3 s |
@@ -1077,9 +1097,22 @@ Undertaker to oszust, który może przeciągać i upuszczać ciała.
 | Undertaker | Prawdopodobieństwo pojawienia się Undertakera | Procent | 0% |
 | Czas odnowienia umiejętności Undertaker Drag | Czas odnowienia umiejętności Undertaker Drag | Czas | 25 s |
 | Prędkość Undertaker podczas przeciągania | Jak szybko Undertaker porusza się podczas przeciągania ciała w porównaniu do normalnego | Mnożnik | 0,75x |
-| Undertaker może się odpowietrzyć | Czy Undertaker może się odpowietrzyć | Przełącz | Fałsz |
-| Undertaker może się odpowietrzyć podczas przeciągania | Czy Undertaker może się odpowietrzyć podczas przeciągania ciała | Przełącz | Fałsz |
+| Undertaker może ventowac | Czy Undertaker może ventowac | Przełącz | Fałsz |
+| Undertaker może ventowac podczas przeciągania | Czy Undertaker może ventowac przeciągania ciała | Przełącz | Fałsz |
 
+-----------------------
+## Noclip
+### **Zespół: Oszuści**
+
+Noclip to oszust, który może tymczasowo przechodzić przez ściany.
+
+### Opcje gry
+| Nazwa | Opis | Typ | Domyślne |
+|----------|:-------------:|:------:|:------:|
+| Noclip | Procentowe prawdopodobieństwo pojawienia się Noclipa | Procent | 0% |
+| Czas odnowienia Noclipa | Czas odnowienia umiejetnosci Noclipa | Czas | 25s |
+| Czas trwania Noclipa | Jak długo trwa Noclip | Czas | 10s |
+| Noclip może może ventowac | Czy Noclip może ventowac | Przełącz | Fałsz |
 -----------------------
 
 # Modyfikatory
@@ -1089,7 +1122,8 @@ Modyfikatory są dodawane do ról graczy.
 Zabicie Następstwa zmusza zabójcę do użycia jego umiejętności (jeśli ją posiada i nie jest używana).
 
 ### Opcje gry
-| Nazwa | Opis | Typ | Domyślne | |----------|:-------------:|:------:|:------:|
+| Nazwa | Opis | Typ | Domyślne | 
+|----------|:-------------:|:------:|:------:|
 | Następstwa | Procentowe prawdopodobieństwo pojawienia się Następstw | Procent | 0% |
 
 -----------------------
@@ -1164,7 +1198,8 @@ Mają taką samą liczbę zebrań jak zwykły gracz.
 Flash porusza się z większą prędkością w porównaniu do zwykłego gracza.
 
 ### Opcje gry
-| Nazwa | Opis | Typ | Domyślne | |----------|:-------------:|:------:|:------:|
+| Nazwa | Opis | Typ | Domyślne | 
+|----------|:-------------:|:------:|:------:|
 | Flash | Procentowe prawdopodobieństwo pojawienia się Flasha | Procent | 0% |
 | Prędkość | Jak szybko Flash się porusza w porównaniu do normalnego | Mnożnik | 1,25x |
 
@@ -1237,7 +1272,8 @@ Nieśmiały staje się przezroczysty, gdy stoi nieruchomo przez krótki czas.
 Szósty zmysł to członek załogi, który widzi, kto wchodzi z nim w interakcję.
 
 ### Opcje gry
-| Nazwa | Opis | Typ | Domyślny | |----------|:-------------:|:------:|:------:|
+| Nazwa | Opis | Typ | Domyślny | 
+|----------|:-------------:|:------:|:------:|
 | Szósty zmysł | Procentowe prawdopodobieństwo pojawienia się Szóstego zmysłu | Procent | 0% |
 
 -----------------------

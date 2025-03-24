@@ -29,6 +29,8 @@ using TownOfUs.Patches.NeutralRoles;
 using Il2CppSystem.Linq;
 using AsmResolver.DotNet.Code.Cil;
 using Reactor.Networking.Attributes;
+using static TownOfUs.Roles.Icenberg;
+using static TownOfUs.DisableAbilities;
 
 namespace TownOfUs
 {
@@ -50,28 +52,7 @@ namespace TownOfUs
                 PlayerControl.LocalPlayer.MyPhysics.enabled = true;
             }
         }
-        public static void UnfreezeAll(PlayerControl killer, PlayerControl player)
-        {
-            Coroutines.Start(IUnfreezeAllPlayers(killer, player));
-        }
-
-        public static IEnumerator IUnfreezeAllPlayers(PlayerControl killer, PlayerControl player)
-        {
-                if (player.MyPhysics != null)
-                {
-                    player.MyPhysics.enabled = true;
-                }
-
-                if (PlayerControl.LocalPlayer.MyPhysics != null)
-                {
-                    PlayerControl.LocalPlayer.MyPhysics.enabled = true;
-                }
-
-                Debug.Log($"Unfroze {player.name}");
-
-                // Opcjonalnie można dodać krótkie opóźnienie między odmrażaniem kolejnych graczy
-                yield return new WaitForSeconds(0.1f);
-        }
+       
         public static void Freeze(PlayerControl killer, PlayerControl target)
         {
             Coroutines.Start(IFreezePlayer(killer, target));
@@ -85,6 +66,7 @@ namespace TownOfUs
             {
                 PlayerControl.LocalPlayer.MyPhysics.enabled = false;
                 Coroutines.Start(Utils.FlashCoroutine(Color.blue, CustomGameOptions.FreezeDuration));
+                Coroutines.Start(DisableAbility.StopAbility(CustomGameOptions.FreezeDuration));
             }
             var sigma = lf;
             while (true)
@@ -396,7 +378,23 @@ namespace TownOfUs
                 return hackedPlayer != null && player.PlayerId == hackedPlayer.PlayerId && !hackedPlayer.Data.IsDead && !glitch.Player.Data.IsDead;
             });
         }
-
+        public static bool IsFreezed(this PlayerControl player)
+        {
+            return Role.GetRoles(RoleEnum.Icenberg).Any(role =>
+            {
+                var icenberg = (Icenberg)role;
+                var hackedPlayer = icenberg.Freezed;
+                return hackedPlayer != null && player.PlayerId == hackedPlayer.PlayerId && !hackedPlayer.Data.IsDead && !icenberg.Player.Data.IsDead;
+            });
+        }
+        public static Icenberg GetIcenberg(this PlayerControl player)
+        {
+            return Role.GetRoles(RoleEnum.Icenberg).FirstOrDefault(role =>
+            {
+                var icenberg = (Icenberg)role;
+                return icenberg != null && player == icenberg.Player;
+            })as Icenberg;
+        }
         public static bool IsHypnotised(this PlayerControl player)
         {
             return Role.GetRoles(RoleEnum.Hypnotist).Any(role =>
@@ -416,6 +414,14 @@ namespace TownOfUs
             {
                 var imitator = (Imitator)role;
                 return imitator.jailedPlayer == player && !player.Data.IsDead && !player.Data.Disconnected;
+            });
+        }        
+        public static bool IsAnyJailed(this PlayerControl player)
+        {
+            return Role.GetRoles(RoleEnum.Jailor).Any(role =>
+            {
+                var jailor = (Jailor)role;
+                return jailor.IsAnyJailed == player && !player.Data.IsDead && !player.Data.Disconnected;
             });
         }
 
@@ -655,6 +661,15 @@ namespace TownOfUs
             if (player.IsHacked())
             {
                 Coroutines.Start(AbilityCoroutine.Hack(player));
+                return false;
+            }
+            if (player.IsFreezed())
+            {
+                foreach (var role in Role.GetRoles(RoleEnum.Icenberg))
+                {
+                    var icenberg = (Icenberg)role;
+                    Coroutines.Start(AbilityCoroutineIcenberg.Freeze(icenberg, PlayerControl.LocalPlayer));
+                }
                 return false;
             }
             var targetId = byte.MaxValue;

@@ -466,7 +466,19 @@ namespace TownOfUs.Patches
                         else DestroyableSingleton<HudManager>.Instance.Chat.AddChat(PlayerControl.LocalPlayer, "Invalid Command.");
                         return false;
                     }
-                    else if (chatText.ToLower().StartsWith("/m") || chatText.ToLower().StartsWith("/ m") || chatText.ToLower().StartsWith("/modifier") || chatText.ToLower().StartsWith("/ modifier"))
+                    else if(chatText.ToLower().StartsWith("/me") || chatText.ToLower().StartsWith("/ me") || chatText.ToLower().StartsWith("/ja") || chatText.ToLower().StartsWith("/ ja"))
+                    {
+                        var role = Role.GetRole(PlayerControl.LocalPlayer);
+                        if (role != null) AddRoleMessage(role.RoleType);
+                        else if (AmongUsClient.Instance.GameState == InnerNet.InnerNetClient.GameStates.Started) DestroyableSingleton<HudManager>.Instance.Chat.AddChat(PlayerControl.LocalPlayer, "You do not have a role.");
+                        else DestroyableSingleton<HudManager>.Instance.Chat.AddChat(PlayerControl.LocalPlayer, "Invalid Command.");
+                        var modifier = Modifier.GetModifier(PlayerControl.LocalPlayer);
+                        if (modifier != null) AddModifierMessage(modifier.ModifierType);
+                        else if (AmongUsClient.Instance.GameState == InnerNet.InnerNetClient.GameStates.Started) DestroyableSingleton<HudManager>.Instance.Chat.AddChat(PlayerControl.LocalPlayer, "You do not have a modifier.");
+                        else DestroyableSingleton<HudManager>.Instance.Chat.AddChat(PlayerControl.LocalPlayer, "Invalid Command.");
+                        return false;
+                    }
+                    else if (chatText.ToLower().StartsWith("/modi") || chatText.ToLower().StartsWith("/ modi") || chatText.ToLower().StartsWith("/modifier") || chatText.ToLower().StartsWith("/ modifier"))
                     {
                         var modifier = Modifier.GetModifier(PlayerControl.LocalPlayer);
                         if (modifier != null) AddModifierMessage(modifier.ModifierType);
@@ -474,17 +486,41 @@ namespace TownOfUs.Patches
                         else DestroyableSingleton<HudManager>.Instance.Chat.AddChat(PlayerControl.LocalPlayer, "Invalid Command.");
                         return false;
                     }
+                    else if (chatText.ToLower().StartsWith("/help") || chatText.ToLower().StartsWith("/ help") || chatText.ToLower().StartsWith("/pomoc") || chatText.ToLower().StartsWith("/ pomoc"))
+                    {
+                        string mess = Patches.TranslationPatches.CurrentLanguage == 0 ? 
+                            "Commands:\n" +
+                            "/me\n" +
+                            "/(rolename)\n"
+                            : 
+                            "Komendy:\n" +
+                            "/ja\n" +
+                            "/(nazwa roli)";
+                        DestroyableSingleton<HudManager>.Instance.Chat.AddChat(PlayerControl.LocalPlayer, mess);
+                        return false;
+                    }
                 }
-                if ((chatText.ToLower().StartsWith("/jail") || chatText.ToLower().StartsWith("/ jail")) && sourcePlayer.Is(RoleEnum.Jailor) && MeetingHud.Instance)
+                //if ((chatText.ToLower().StartsWith("/j") || chatText.ToLower().StartsWith("/ j")) && sourcePlayer.Is(RoleEnum.Jailor) && MeetingHud.Instance)
+                //{
+                //    if (PlayerControl.LocalPlayer.Is(RoleEnum.Jailor) || PlayerControl.LocalPlayer.IsJailed())
+                //    {
+                //        if (chatText.ToLower().StartsWith("/j")) chatText = chatText[2..]; //msg
+                //        else if (chatText.ToLower().StartsWith("/j ")) chatText = chatText[3..];
+                //        else if (chatText.ToLower().StartsWith("/ j")) chatText = chatText[3..];
+                //        else if (chatText.ToLower().StartsWith("/ j ")) chatText = chatText[4..];
+                //        JailorMessage = true;
+                //        if (sourcePlayer != PlayerControl.LocalPlayer && PlayerControl.LocalPlayer.IsJailed() && !sourcePlayer.Data.IsDead) sourcePlayer = PlayerControl.LocalPlayer;
+                //        return true;
+                //    }
+                //    else return false;
+                //}
+                if (sourcePlayer.Is(RoleEnum.Jailor) && MeetingHud.Instance && sourcePlayer.IsAnyJailed())
                 {
                     if (PlayerControl.LocalPlayer.Is(RoleEnum.Jailor) || PlayerControl.LocalPlayer.IsJailed())
                     {
-                        if (chatText.ToLower().StartsWith("/jail")) chatText = chatText[5..];
-                        else if (chatText.ToLower().StartsWith("/jail ")) chatText = chatText[6..];
-                        else if (chatText.ToLower().StartsWith("/ jail")) chatText = chatText[6..];
-                        else if (chatText.ToLower().StartsWith("/ jail ")) chatText = chatText[7..];
                         JailorMessage = true;
-                        if (sourcePlayer != PlayerControl.LocalPlayer && PlayerControl.LocalPlayer.IsJailed() && !sourcePlayer.Data.IsDead) sourcePlayer = PlayerControl.LocalPlayer;
+                        if (sourcePlayer != PlayerControl.LocalPlayer && PlayerControl.LocalPlayer.IsJailed() && !sourcePlayer.Data.IsDead) 
+                            sourcePlayer = PlayerControl.LocalPlayer;
                         return true;
                     }
                     else return false;
