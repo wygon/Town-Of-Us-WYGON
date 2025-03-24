@@ -46,7 +46,7 @@ Dołącz do naszego [Discord](https://discord.gg/Aw8Ns2g5aT), jeśli masz jakie�
 # Wydania
 | Among Us - Wersja| Mod Wersja | Link |
 |----------|-------------|-----------------|
-| 24.03.2025r | v1.0.3-beta | [Pobierz](https://github.com/wygon/Town-Of-Us-WYGON/releases/download/v.1.0.3-beta/ToU-W.v1.0.3-beta.rar) |
+| 24.03.2025r | v1.0.3-beta | [Pobierz](https://github.com/wygon/Town-Of-Us-WYGON/releases/download/v1.0.3/ToU-W.v1.0.3.rar) |
 | 18.03.2025r | v1.0.2 | [Pobierz](https://github.com/wygon/Town-Of-Us-WYGON/releases/download/v1.0.2/ToU-W.v1.0.2.rar) |
 | 04.03.2025r | v1.0.1 | [Pobierz](https://github.com/wygon/Town-Of-Us-WYGON/releases/download/v1.0.1/Town-Of-Us-R-WYGON-1.0.1.zip) |
 
