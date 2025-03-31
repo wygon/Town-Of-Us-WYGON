@@ -1,7 +1,7 @@
 ## *To repozytorium jest rozszerzeniem dla moda Town Of Us - Remastered dostosowanym pod polskich graczy.*
 
 ![GitHub all releases](https://img.shields.io/github/downloads/wygon/Town-Of-Us-WYGON/total)
-![Profile views](https://komarev.com/ghpvc/?username=wygon&color=blue)
+![](https://komarev.com/ghpvc/?username=wygon&color=blue)
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/wygon/Town-Of-Us-WYGON)
 
 ![LOGO](./Images/TOU-W-logo.png)
