@@ -1,4 +1,4 @@
-## *To repozytorium to odbicie od linii głównej Town Of Us - Remastered w wersji przyjaznej dla polaków.*
+## *To repozytorium jest rozszerzeniem dla moda Town Of Us - Remastered dostosowanym pod polskich graczy.*
 
 ![GitHub all releases](https://img.shields.io/github/downloads/wygon/Town-Of-Us-WYGON/total)
 ![](https://komarev.com/ghpvc/?username=wygon&color=blue)
@@ -7,15 +7,15 @@
 ![LOGO](./Images/TOU-W-logo.png)
 ![Roles](./Images/Roles.png)
 
-Modyfikacja Among Us dodająca mnóstwo ról, modyfikatorów i ustawień gry
+Modyfikacja Among Us dodająca wiele nowych ról, modyfikatorów oraz niestandardowych ustawień.
 
-Dołącz do naszego [Discord](https://discord.gg/Aw8Ns2g5aT), jeśli masz jakieś problemy lub chcesz znaleźć ludzi do gry!
+Dołącz do naszego serwera [Discord](https://discord.gg/Aw8Ns2g5aT), jeśli masz jakieś problemy lub chcesz znaleźć ludzi do gry!
 
-| **Impostor Role**            | **Crewmate Role**                 | **Neutral Role**                 | **Modyfikacje**              |
+| **Role Impostorów**            | **Role Crewmatów**                 | **Role Neutralne**                 | **Modyfikatory**              |
 |:----------------------------:|:---------------------------------:|:--------------------------------:|:----------------------------:|
 | [Blackmailer](#blackmailer)  | [Altruist](#altruist)             | [Amnesiac](#amnesiac)            | [Aftermath](#aftermath)      |
 | [Bomber](#bomber)            | [Aurial](#aurial)                 | [Arsonist](#arsonist)            | [Bait](#bait)                |
-| [Escapist](#escapist)        | [Deputy](#deputy)                 | [Foreteller](#Foreteller)        | [Button Barry](#button-barry)|
+| [Escapist](#escapist)        | [Deputy](#deputy)                 | [Foreteller](#foreteller)        | [Button Barry](#button-barry)|
 | [Grenadier](#grenadier)      | [Detective](#detective)           | [Executioner](#executioner)      | [Diseased](#diseased)        |
 | [Hypnotist](#hypnotist)      | [Engineer](#engineer)             | [Guardian Angel](#guardian-angel)| [Disperser](#disperser)      |
 | [Janitor](#janitor)          | [Haunter](#haunter)               | [Jester](#jester)                | [Double Shot](#double-shot)  |
@@ -44,14 +44,14 @@ Dołącz do naszego [Discord](https://discord.gg/Aw8Ns2g5aT), jeśli masz jakie�
 |                              | [Falcon](#falcon)                 |                                  |                              |
 -----------------------
 # Wydania
-| Among Us - Wersja| Mod Wersja | Link |
+| Wersja Among Us | Wersja Moda | Link |
 |----------|-------------|-----------------|
 | 24.03.2025r | v1.0.3-beta | [Pobierz](https://github.com/wygon/Town-Of-Us-WYGON/releases/download/v1.0.3/ToU-W.v1.0.3.rar) |
 | 18.03.2025r | v1.0.2 | [Pobierz](https://github.com/wygon/Town-Of-Us-WYGON/releases/download/v1.0.2/ToU-W.v1.0.2.rar) |
 | 04.03.2025r | v1.0.1 | [Pobierz](https://github.com/wygon/Town-Of-Us-WYGON/releases/download/v1.0.1/Town-Of-Us-R-WYGON-1.0.1.zip) |
 
 <details>
-  <summary> Changelog </summary>
+  <summary> Ostatnie zmiany: </summary>
 
  <details>
   <summary> v1.0.3-beta </summary>
@@ -65,7 +65,7 @@ Dołącz do naszego [Discord](https://discord.gg/Aw8Ns2g5aT), jeśli masz jakie�
     <li>Jailor nie musi uzywac /jail aby komunikowac sie z wiezniem</li>
     <li>Over15Wygon - mod na sloty powyzej 15 osob w lobby(jesli posiadaszswoj wlasny to musicie usunac go aby wszystko dzialalo prawidlowo)</li>
   </ul>
-  <p>To wersja beta do testow - jesli znajdziesz blad napisz [Discord](https://discord.gg/Aw8Ns2g5aT)</p>
+<p>To wersja beta do testów - jeśli znajdziesz błąd, poinformuj mnie na <a href="https://discord.gg/Aw8Ns2g5aT" target="_blank">Discordzie</a>.</p>
   <hr>
   </details>
 
@@ -89,7 +89,6 @@ Dołącz do naszego [Discord](https://discord.gg/Aw8Ns2g5aT), jeśli masz jakie�
     <li>Noclip</li>
   </ul>
   </details>
-
 </details>
 
 
@@ -99,94 +98,92 @@ Dołącz do naszego [Discord](https://discord.gg/Aw8Ns2g5aT), jeśli masz jakie�
 - Among Us
 - Steam lub Epic Games
 
-## Poradnik instalacji (Steam) [TIKTOK](https://www.tiktok.com/@wygon_/video/7485104005807344919?is_from_webapp=1&sender_device=pc&web_id=7372484063931090464)
+## Instrukcja instalacji (Steam) [TIKTOK](https://www.tiktok.com/@wygon_/video/7485104005807344919?is_from_webapp=1&sender_device=pc&web_id=7372484063931090464)
 
-## Installation Guide (Epic Games)
-**1. [Download](#releases) the Town of Us version corresponding to the installed Among Us version.**\
+## Instrukcja instalacji (Epic Games)  
+**1. [Pobierz](#wydania) wersję Town of Us odpowiadającą zainstalowanej wersji Among Us.**\
 \
-**2. Go to your Epic Games library.**\
+**2. Przejdź do swojej biblioteki w Epic Games.**\
 \
-**3. Find Among Us and click on the 3 dots `...` > click `Uninstall`.**\
+**3. Znajdź Among Us i kliknij 3 kropki `...` > kliknij `Odinstaluj`.**\
 \
-**4. Confirm you want to Uninstall Among Us.**\
+**4. Potwierdź, że chcesz odinstalować Among Us.**\
 \
-**5. In the Epic library, click on Among Us to install.**\
+**5. W bibliotece Epic Games kliknij na Among Us, aby ponownie zainstalować grę.**\
 \
-**6. Copy the Folder Path.**\
+**6. Skopiuj ścieżkę do folderu.**\
 \
-**7. Uncheck Auto-Update.**\
+**7. Odznacz opcję Auto-Update.**\
 \
-**8. Click on Install.**\
+**8. Kliknij na Zainstaluj.**\
 \
-**9. Click Yes on the Windows popup.**\
+**9. Kliknij Tak na wyskakującym oknie systemu Windows.**\
 \
-**10. Paste the folder path in Windows search bar.**\
+**10. Wklej skopiowaną ścieżkę folderu w pasek wyszukiwania Windows.**\
 \
-**11. Click on Enter.**\
+**11. Naciśnij Enter.**\
 \
-**12. Copy all the Among Us files and put them in a new folder on your desktop or anywhere else.**\
+**12. Skopiuj wszystkie pliki Among Us i przenieś je do nowego folderu na pulpicie lub w innym miejscu.**\
 \
-**13. Paste the contents of the town of us zip in the new folder.**\
+**13. Wklej zawartość pliku .zip Town of Us - WYGON do nowego folderu.**\
 \
-**14. Download the exe file [here](https://github.com/whichtwix/EpicGamesStarter/releases/latest) and place it in your among us folder.**\
+**14. Pobierz [plik exe](https://github.com/whichtwix/EpicGamesStarter/releases/latest) i umieść go w folderze Among Us.**\
 \
-**15. Open the ```EpicGamesStarter.exe``` by double clicking it to start the game in the copy.**\
+**15. Uruchom ```EpicGamesStarter.exe``` klikając dwukrotnie, aby rozpocząć zmodyfikowaną wersję gry w osobnym folderze.**\
 \
-**16. Add the folder as a exclusion for any antivirus you have and for windows defender.**\
+**16. Dodaj folder do wyjątków w programie antywirusowym oraz w Windows Defender.**\
 \
-A first launch may take awhile as it sets up and downloads prerequisites, so be patient if it doesn't launch immediately.<br/>
-<br/>
+Przy pierwszym uruchomieniu może to potrwać dłużej, ponieważ gra będzie pobierać niezbędne pliki.<br/>  
+<br/>  
+Jeśli modyfikacja nie działa i wersja Among Us, którą widzisz w głównym menu pod logo Town of Us lub w lewym dolnym rogu, nie odpowiada wersji wskazanej w tabeli [Wydania](#wydania) powyżej, wykonaj następujące kroki, aby uzyskać potrzebną wersję gry:  
 
-If the mod does not work and the version of Among Us that you see in the main menu, under the town of us logo or bottom left, does not correspond to the version indicated in the [releases table](#releases) above please do the following to get the correct version:
-
-**1. Download the latest downgrade script(DowngradeEpic.ps1) [here](https://github.com/whichtwix/EpicGamesDowngrader/releases/latest).**\
+**1. Pobierz najnowszy [skrypt do przywracania poprzedniej wersji Among Us (DowngradeEpic.ps1)](https://github.com/whichtwix/EpicGamesDowngrader/releases/latest).**\
 \
-**2. Right click the file and click "run with powershell". If it does not open or instantly closes do the following:**\
-    - search powershell in your windows search bar and open it <br>
-    - navigate to the folder the script is in, by doing for example ```cd downloads``` or ```cd desktop``` <br>
-    - write ```Set-ExecutionPolicy Unrestricted -Scope Process``` and click enter <br>
-    - write ```./DowngradeEpic.ps1``` and click enter <br>
+**2. Kliknij prawym przyciskiem na plik i wybierz „Run with PowerShell”. Jeśli okno nie otworzy się lub zamknie od razu, wykonaj poniższe kroki:**\
+    - Wyszukaj PowerShell w pasku wyszukiwania Windows i otwórz go <br>
+    - Przejdź do folderu, w którym znajduje się skrypt, np. używając polecenia ```cd downloads``` (Pobrane) lub ```cd desktop``` (Pulpit)<br>
+    - Wpisz ```Set-ExecutionPolicy Unrestricted -Scope Process``` i naciśnij Enter <br>
+    - Wpisz ```./DowngradeEpic.ps1``` i naciśnij Enter <br>
 \
-**3. Click the y key the couple times it prompts, and look above the prompt at the 'install path' to see where among us is getting installed.**\
+**3. Naciśnij klawisz y kilka razy, gdy skrypt o to poprosi, a następnie sprawdź ścieżkę instalacji nad poleceniem, aby zobaczyć, gdzie jest instalowana gra Among Us.**\
 \
-**4. After its finished reinstall the mod to that path**\
+**4. Po zakończeniu instalacji przejdź do tej ścieżki i ponownie zainstaluj modyfikację w tym folderze**\
 \
-**5. Open the game using a .cmd file that gets created in the same folder the script is, it will have the version of among us in its name. Do not use the epic launcher.**\
+**5. Uruchom grę, używając pliku .cmd, który zostanie utworzony w tym samym folderze, w którym znajduje się skrypt, będzie zawierał wersję Among Us w nazwie. Nie używaj Epic Games Launcher.**\
 \
-If there any problems with the script please check the [faq](https://github.com/whichtwix/EpicGamesDowngrader/tree/main#common-issues), and make contact with the discord server or in a issue [here](https://github.com/whichtwix/EpicGamesDowngrader/issues/new).<br/>
-<br/>
-
-![Install](https://i.imgur.com/pvBAyZN.png)
-<br/>
-## Issues
-If you have issues installing Town of Us, you can join our [Discord](https://discord.gg/ugyc4EVUYZ) to receive help.
+Jeśli wystąpią jakiekolwiek problemy ze skryptem, sprawdź [FAQ](https://github.com/whichtwix/EpicGamesDowngrader/tree/main#common-issues), skontaktuj się z nami na serwerze <a href="https://discord.gg/Aw8Ns2g5aT" target="_blank">Discord</a> lub zgłoś problem [tutaj](https://github.com/whichtwix/EpicGamesDowngrader/issues/new).<br/>  
+<br/>  
+![Install](https://i.imgur.com/pvBAyZN.png)  
+<br/>  
+## Problemy  
+Jeśli napotkasz jakiekolwiek trudności podczas instalacji Town of Us, dołącz do naszego serwera [Discord](https://discord.gg/Aw8Ns2g5aT), aby uzyskać pomoc.  
 
 -----------------------
 # Role
 # Crewmate
 ## Aurial
-### **Zespół: Crewmate**
+### **Typ: Crewmate**
 Aurial to Crewmate, który może wyczuwać rzeczy w otaczającej go Aurze.\
 Jeśli którykolwiek gracz w pobliżu Auriala użyje zdolności, Aurial otrzyma strzałkę wskazującą miejsce, w którym użyto tej zdolności.
 
 ### Opcje gry
-| Nazwa | Opis | Typ | Domyślne |
+| Nazwa | Opis | Typ | Domyślnie |
 |----------|:-------------:|:------:|:------:|
 | Aurial | Procentowe prawdopodobieństwo pojawienia się Aurial | Procent | 0% |
-| Zakres koloru promieniowania | Zasięg aury Aurial, w którym widzą kolor użytkownika zdolności | Mnożnik | 0,5x |
-| Maksymalny zasięg promieniowania | Maksymalny zasięg aury Aurial, w którym widzą użycia zdolności | Mnożnik | 1,5x |
+| Zakres koloru | Zasięg aury Aurial, w którym widzą kolor użytkownika zdolności | Mnożnik | 0,5x |
+| Maksymalny zasięg | Maksymalny zasięg aury Aurial, w którym widzą użycia zdolności | Mnożnik | 1,5x |
 | Czas trwania wykrywania | Czas trwania strzałki pokazującej użycie umiejętności | Czas | 10s |
 
 -----------------------
 ## Detective
-### **Zespół: Crewmate**
+### **Typ: Crewmate**
 Detektyw jest Crewmate, który może badać miejsca zbrodni, a następnie badać graczy.\
 Detektyw musi najpierw znaleźć miejsce zbrodni i je zbadać.\
 Podczas tej samej lub kolejnych rund Detektyw może badać graczy, aby sprawdzić, czy to oni byli zabójcą.\
 Jeśli badany gracz jest zabójcą lub znajdował się w pobliżu miejsca zbrodni w dowolnym momencie, otrzyma czerwony błysk, w przeciwnym razie błysk będzie zielony.
 
 ### Opcje gry
-| Nazwa | Opis | Typ | Domyślne |
+| Nazwa | Opis | Typ | Domyślnie |
 |----------|:------------:|:------:|:------:|
 | Detektyw | Procentowe prawdopodobieństwo pojawienia się Detektywa | Procent | 0% |
 | Czas odnowienia badania | Czas odnowienia przycisku badania Detektywa | Czas | 25 s |
@@ -196,28 +193,28 @@ Jeśli badany gracz jest zabójcą lub znajdował się w pobliżu miejsca zbrodn
 
 -----------------------
 ## Haunter
-### **Zespół: Crewmate**
+### **Typ: Crewmate**
 Haunter to martwy Crewmate, który może ujawnić oszustów, jeśli wykona wszystkie swoje zadania.\
 Po wykonaniu wszystkich zadań oszustowie są ujawniani żywym członkom załogi po zwołaniu spotkania.\
 Jednak jeśli klikniesz Hauntera, traci on zdolność ujawniania oszustów i znów staje się zwykłym duchem.
 
 ### Opcje gry
-| Nazwa | Opis | Typ | Domyślny |
+| Nazwa | Opis | Typ | Domyślnie |
 |----------|:-------------:|:------:|:------:|
 | Haunter | Procentowe prawdopodobieństwo pojawienia się Hauntera | Procent | 0% |
 | Kiedy można kliknąć Hauntera | Liczba zadań pozostałych, gdy można kliknąć Hauntera | Liczba | 5 |
 | Alert Hauntera | Liczba zadań pozostałych, gdy oszuści zostaną powiadomieni, że Haunter jest prawie ukończony | Liczba | 1 |
 | Haunter ujawnia neutralne role | Czy Haunter ujawnia również neutralne role | Przełącz | Fałsz |
-| Kto może kliknąć Hauntera | Czy nawet inni członkowie załogi mogą kliknąć Hauntera | Wszyscy / Osoby spoza załogi / Tylko Impy | Wszyscy |
+| Kto może kliknąć Hauntera | Czy nawet inni Crewmate mogą kliknąć Hauntera | Wszyscy / Osoby spoza załogi / Tylko Impy | Wszyscy |
 
 -----------------------
 ## Investigator
-### **Zespół: Crewmate**
+### **Typ: Crewmate**
 Śledczy to Członek załogi, który widzi ślady stóp graczy.\
 Każdy ślad znika po określonym czasie.
 
 ### Opcje gry
-| Nazwa | Opis | Typ | Domyślne |
+| Nazwa | Opis | Typ | Domyślnie |
 |----------|:------------:|:------:|:------:|
 | Śledczy | Procentowe prawdopodobieństwo pojawienia się Śledczego | Procent | 0% |
 | Rozmiar śladu | Rozmiar śladu w skali od 1 do 10 | Liczba | 4 |
@@ -228,12 +225,12 @@ Każdy ślad znika po określonym czasie.
 
 -----------------------
 ## Lookout
-### **Zespół: Crewmate**
+### **Typ: Crewmate**
 
 Lookout to Członek załogi, który może obserwować innych graczy podczas rund.\
 Podczas spotkań będzie widział wszystkie role, które wchodzą w interakcje z każdym obserwowanym graczem.
 ### Opcje gry
-| Nazwa | Opis | Typ | Domyślne |
+| Nazwa | Opis | Typ | Domyślnie |
 |----------|:------------:|:------:|:------:|
 | Lookout | Prawdopodobieństwo procentowe pojawienia się Lookout | Procent | 0% |
 | Czas odnowienia Watch | Czas odnowienia przycisku Watch Lookout | Czas | 25 s |
@@ -242,24 +239,24 @@ Podczas spotkań będzie widział wszystkie role, które wchodzą w interakcje z
 
 -----------------------
 ## Mystic
-### **Zespół: Crewmate**
+### **Typ: Crewmate**
 Mystic to członek załogi, który otrzymuje powiadomienie informujące o śmierci kogoś.\
 Poza tym Mystic na krótko otrzymuje strzałkę wskazującą w kierunku ciała.
 ### Opcje gry
-| Nazwa | Opis | Typ | Domyślne |
+| Nazwa | Opis | Typ | Domyślnie |
 |----------|:------------:|:------:|:------:|
 | Mystic | Prawdopodobieństwo procentowe pojawienia się Mystic | Procent | 0% |
 | Czas trwania strzałki | Czas trwania strzałek wskazujących na ciała | Czas | 0,1 s |
 
 -----------------------
 ## Oracle
-### **Zespół: Członkowie załogi**
+### **Typ: Crewmate**
 Oracle to członek załogi, który może sprawić, że inny gracz wyzna mu informacje.\
 Oracle ma 3 umiejętności, pierwsza to taka, że ​​gdy umrze, osoba wyznająca mu ujawni swoje pochodzenie.\
 Druga to taka, że ​​za każdym razem, gdy spotka Oracle, otrzymuje wyznanie o tym, kto może być zły.\
 Ostatnią umiejętnością jest udzielenie błogosławieństwa osobie wyznającej mu, dzięki czemu wyznający gracz zyskuje immunitet głosowy!
 ### Opcje gry
-| Nazwa | Opis | Typ | Domyślne |
+| Nazwa | Opis | Typ | Domyślnie |
 |----------|:------------:|:------:|:------:|
 | Oracle | Prawdopodobieństwo procentowe pojawienia się Oracle | Procent | 0% |
 | Czas odnowienia Confess | Czas odnowienia przycisku Confess Oracle | Czas | 25 s |
@@ -270,12 +267,12 @@ Ostatnią umiejętnością jest udzielenie błogosławieństwa osobie wyznające
 
 -----------------------
 ## Seer
-### **Zespół: Członkowie załogi**
+### **Typ: Crewmate**
 Seer to Członek załogi, który może ujawnić sojusz innych graczy.\
 Na podstawie ustawień Seer może dowiedzieć się, czy gracz jest Dobrym czy Złym.\
 Imię gracza zmienia kolor w zależności od frakcji i roli.
 ### Opcje gry
-| Nazwa | Opis | Typ | Domyślny | 
+| Nazwa | Opis | Typ | Domyślnie | 
 |----------|:-------------:|:------:|:------:|
 | Seer | Procentowe prawdopodobieństwo pojawienia się Seer | Procent | 0% |
 | Czas odnowienia Seer | Czas odnowienia przycisku ujawnienia Seer | Czas | 25 s |
@@ -287,13 +284,13 @@ Imię gracza zmienia kolor w zależności od frakcji i roli.
 
 -----------------------
 ## Snitch
-### **Zespół: Członkowie załogi**
+### **Typ: Crewmate**
 
 Snitch to Członek załogi, który może otrzymać strzałki wskazujące na Oszustów, gdy wszystkie ich zadania zostaną wykonane.\
 Imiona Oszustów również będą wyświetlane na czerwono na ich ekranie.\
 Jednak gdy pozostało im tylko jedno zadanie, Oszuści otrzymują strzałkę wskazującą na Snitcha.
 ### Opcje gry
-| Nazwa | Opis | Typ | Domyślne |
+| Nazwa | Opis | Typ | Domyślnie |
 |----------|:------------:|:------:|:------:|
 | Snitch | Prawdopodobieństwo procentowe pojawienia się Snitcha | Procent | 0% |
 | Snitch widzi neutralne role | Czy Snitch ujawnia również neutralne role | Przełącz | Fałsz |
@@ -303,25 +300,25 @@ Jednak gdy pozostało im tylko jedno zadanie, Oszuści otrzymują strzałkę wsk
 
 -----------------------
 ## Spy
-### **Zespół: Członkowie załogi**
+### **Typ: Crewmate**
 
 Szpieg to członek załogi, który uzyskuje więcej informacji, gdy znajduje się w Tabeli administratora.\
 W Tabeli administratora szpieg może zobaczyć kolory każdej osoby na mapie.
 ### Opcje gry
-| Nazwa | Opis | Typ | Domyślne |
+| Nazwa | Opis | Typ | Domyślnie |
 |----------|:-------------:|:-------:|:-------:|
 | Szpieg | Prawdopodobieństwo pojawienia się Szpiega | Procent | 0% |
 | Kto widzi zwłoki na mapie administracyjnej | Którzy gracze widzą zwłoki na mapie administracyjnej | Nikt / Szpieg / Wszyscy oprócz Szpiega / Wszyscy | Nikt |
 
 -----------------------
 ## Tracker
-### **Zespół: Członkowie załogi**
+### **Typ: Crewmate**
 
 Tracker to członek załogi, który może śledzić innych graczy, śledząc ich podczas rundy.\
 Gdy ktoś zacznie śledzić kogoś, strzałka stale na niego wskazuje, a jej wartość aktualizuje się w ustalonych odstępach czasu.
 
 ### Opcje gry
-| Nazwa | Opis | Typ | Domyślne |
+| Nazwa | Opis | Typ | Domyślnie |
 |----------|:------------:|:------:|:------:|
 | Tracker | Procentowe prawdopodobieństwo pojawienia się Trackera | Procent | 0% |
 | Interwał aktualizacji strzałki | Czas, w którym strzałka aktualizuje się do nowej lokalizacji śledzonego gracza | Czas | 5s |
@@ -331,7 +328,7 @@ Gdy ktoś zacznie śledzić kogoś, strzałka stale na niego wskazuje, a jej war
 
 -----------------------
 ## Trapper
-### **Zespół: Członkowie załogi**
+### **Typ: Crewmate**
 
 Traper to członek załogi, który może umieszczać pułapki na mapie.\
 Gdy gracze wchodzą do pułapki, uruchamiają pułapkę.\
@@ -339,7 +336,7 @@ Podczas następnego spotkania wszyscy gracze, którzy uruchomili pułapkę, będ
 Jednakże odbywa się to w losowej kolejności, bez określania, kto wszedł do pułapki, ani jaką rolę pełni konkretny gracz.
 
 ### Opcje gry
-| Nazwa | Opis | Typ | Domyślne |
+| Nazwa | Opis | Typ | Domyślnie |
 |----------|:-------------:|:------:|:------:|
 | Traper | Procentowe prawdopodobieństwo pojawienia się Trapera | Procent | 0% |
 | Minimalny czas w pułapce do zarejestrowania | Jak długo gracz musi pozostać w pułapce, aby została uruchomiona | Czas | 1s |
@@ -350,28 +347,28 @@ Jednakże odbywa się to w losowej kolejności, bez określania, kto wszedł do 
 | Minimalna liczba ról wymaganych do uruchomienia pułapki | Liczba graczy, którzy muszą wejść do pułapki, aby została uruchomiona | Liczba | 3 |
 
 -----------------------
-## Imitator
-### **Zespół: Członkowie załogi**
+## Deputy
+### **Typ: Crewmate**
 Zastępca jest członkiem załogi, który może obozować innych graczy.\
 Obozujący gracze zaalarmują zastępcę, gdy zostaną zabici.\
 Podczas następnego spotkania zastępca może spróbować zastrzelić swojego zabójcę.\
 Jeśli uda im się zastrzelić zabójcę, giną, w przeciwnym razie nic się nie dzieje.
 
 ### Opcje gry
-| Nazwa | Opis | Typ | Domyślne |
+| Nazwa | Opis | Typ | Domyślnie |
 |----------|:-------------:|:------:|:------:|
 | Zastępca | Prawdopodobieństwo pojawienia się Zastępcy | Procent | 0% |
 
 -----------------------
 ## Hunter
-### **Zespół: Członkowie załogi**
+### **Typ: Crewmate**
 
 Łowca jest postacią Zabójcy Członka załogi, która potrafi śledzić graczy i zabijać ich, jeśli zrobią coś podejrzanego.\
 W przeciwieństwie do szeryfa, Łowca nie umiera, jeśli zabije niewinnego gracza,\
 jednak Łowca może zabić tylko tych graczy, którzy dali mu prawdopodobny powód.
 
 ### Opcje gry
-| Nazwa | Opis | Typ | Domyślne |
+| Nazwa | Opis | Typ | Domyślnie |
 |----------|:-------------:|:------:|:------:|
 | Łowca | Procentowe prawdopodobieństwo pojawienia się Łowcy | Procent | 0% |
 | Czas odnowienia zabójstwa Łowcy | Czas odnowienia przycisku Zabij Łowcy | Liczba | 25 s |
@@ -383,7 +380,7 @@ jednak Łowca może zabić tylko tych graczy, którzy dali mu prawdopodobny pow�
 
 -----------------------
 ## Jailor
-### **Zespół: Członkowie załogi**
+### **Typ: Crewmate**
 Jailor to Członek załogi, który może więzić Członków załogi.\
 Podczas spotkań wszyscy gracze mogą zobaczyć, kiedy Członek załogi jest uwięziony.\
 Kiedy ktoś jest uwięziony, nie może używać żadnej umiejętności spotkania i nie można na nim użyć żadnej umiejętności spotkania.\
@@ -392,7 +389,7 @@ Jeśli Jailor uzna więźnia za złego, może go zabić.\
 Jeśli Jailor wykona egzekucję nieprawidłowo, traci możliwość więzienia.
 
 ### Opcje gry
-| Nazwa | Opis | Typ | Domyślne |
+| Nazwa | Opis | Typ | Domyślnie |
 |----------|:------------:|:------:|:------:|
 | Jailor | Prawdopodobieństwo procentowe pojawienia się Jailora | Procent | 0% |
 | Czas odnowienia więzienia | Czas odnowienia przycisku więzienia Jailora | Czas | 25s |
@@ -400,12 +397,12 @@ Jeśli Jailor wykona egzekucję nieprawidłowo, traci możliwość więzienia.
 
 -----------------------
 ## Sheriff
-### **Zespół: Członkowie załogi**
+### **Typ: Crewmate**
 Szeryf to Członek załogi, który ma zdolność eliminowania oszustów za pomocą przycisku zabijania.\
 Jeśli jednak zabije Członka załogi lub neutralnego gracza, którego nie może zabić, sam ginie.
 
 ### Opcje gry
-| Nazwa | Opis | Typ | Domyślne |
+| Nazwa | Opis | Typ | Domyślnie |
 |----------|:-------------:|:------:|:------:|
 | Szeryf | Procentowe prawdopodobieństwo pojawienia się Szeryfa | Procent | 0% |
 | Szeryf Miskill zabija Członka załogi | Czy drugi gracz zostanie zabity, jeśli Szeryf nie wystrzeli | Przełącz | Fałsz |
@@ -416,12 +413,12 @@ Jeśli jednak zabije Członka załogi lub neutralnego gracza, którego nie może
 
 -----------------------
 ## Veteran
-### **Drużyna: Członkowie załogi**
+### **Typ: Crewmate**
 
 Weteran jest członkiem załogi, który może przejść w stan gotowości.\
 Kiedy Weteran jest w stanie gotowości, każdy, czy to członek załogi, neutralny czy oszust, jeśli wejdzie w interakcję z Weteranem, ginie.
 ### Opcje gry
-| Nazwa | Opis | Typ | Domyślne |
+| Nazwa | Opis | Typ | Domyślnie |
 |----------|:-------------:|:-------:|:------:|
 | Weteran | Procentowe prawdopodobieństwo pojawienia się Weterana | Procent | 0% |
 | Może zostać zabity w stanie gotowości | Czy Weteran zginie, gdy ktoś spróbuje go zabić, gdy jest w stanie gotowości | Przełącz | Fałsz |
@@ -431,12 +428,12 @@ Kiedy Weteran jest w stanie gotowości, każdy, czy to członek załogi, neutral
 
 -----------------------
 ## Vigilante
-### **Zespół: Członkowie załogi**
+### **Typ: Crewmate**
 
 Vigilante to Członek załogi, który może zabijać podczas spotkań.\
 Podczas spotkań Vigilante może zdecydować się zabić kogoś, zgadując jego rolę, jednak jeśli zgadnie niepoprawnie, ginie.
 ### Opcje gry
-| Nazwa | Opis | Typ | Domyślne | 
+| Nazwa | Opis | Typ | Domyślnie | 
 |----------|:-------------:|:------:|:------:|
 | Vigilante | Procentowe prawdopodobieństwo pojawienia się Vigilante | Procent | 0% |
 | Vigilante Kill | Liczba zabójstw, które Vigilante może wykonać dzięki swojej umiejętności | Liczba | 1 |
@@ -449,7 +446,7 @@ Podczas spotkań Vigilante może zdecydować się zabić kogoś, zgadując jego 
 
 -----------------------
 ## Altruist
-### **Zespół: Członkowie załogi**
+### **Typ: Crewmate**
 
 Altruista to członek załogi, który potrafi wskrzeszać martwych graczy.\
 Po znalezieniu zwłok Altruista może nacisnąć przycisk wskrzeszania, ryzykując poświęceniem się dla wskrzeszenia innego gracza.\
@@ -457,7 +454,7 @@ Jeśli ta opcja jest włączona, martwe ciało znika, więc na miejscu pozostaje
 Po określonym czasie gracz zostanie wskrzeszony, jeśli wskrzeszenie nie zostanie przerwane.
 
 ### Opcje gry
-| Nazwa | Opis | Typ | Domyślny |
+| Nazwa | Opis | Typ | Domyślnie |
 |----------|:-------------:|:------:|:------:|
 | Altruista | Procentowe prawdopodobieństwo pojawienia się Altruisty | Procent | 0% |
 | Czas trwania ożywienia Altruisty | Czas potrzebny Altruiście na ożywienie martwego ciała | Czas | 10s |
@@ -465,7 +462,7 @@ Po określonym czasie gracz zostanie wskrzeszony, jeśli wskrzeszenie nie zostan
 
 -----------------------
 ## Medic
-### **Zespół: Członkowie załogi**
+### **Typ: Crewmate**
 Medyk to Członek załogi, który może dać każdemu graczowi tarczę, która uczyni go nieśmiertelnym, dopóki Medyk nie umrze.\
 Gracz z tarczą nie może zostać zabity przez nikogo, chyba że przez samobójstwo.\
 Jeśli Medyk zgłosi zgon, może otrzymać raport zawierający wskazówki dotyczące tożsamości Zabójcy.\
@@ -509,7 +506,7 @@ Raport może zawierać imię zabójcy lub typ koloru (ciemniejszy/jaśniejszy)
 - Rainbow - Lighter
 
 ### Opcje gry
-| Nazwa | Opis | Typ | Domyślne |
+| Nazwa | Opis | Typ | Domyślnie |
 |----------|:-------------:|:------:|:------:|
 | Medyk | Procentowe prawdopodobieństwo pojawienia się Medyka | Procent | 0% |
 | Pokaż gracza chronionego | Kto powinien widzieć, kto jest chroniony | Ja / Medyk / Ja + Medyk / Wszyscy | Ja |
@@ -521,7 +518,7 @@ Raport może zawierać imię zabójcy lub typ koloru (ciemniejszy/jaśniejszy)
 
 -----------------------
 ## Warden
-### **Zespół: Członkowie załogi**
+### **Typ: Crewmate**
 Strażnik jest członkiem załogi, który może wzmacniać innych graczy.\
 Z wzmocnionymi graczami nie można wchodzić w interakcje ani ich zabijać.\
 Jeśli ktoś próbuje wchodzić w interakcje lub zabijać wzmocnionego gracza,\
@@ -529,45 +526,45 @@ Zarówno Strażnik, jak i interaktor lub zabójca otrzymują alert.\
 Wzmocnienie nie zatrzymuje bezpośrednich zabójstw.
 
 ### Opcje gry
-| Nazwa | Opis | Typ | Domyślne |
+| Nazwa | Opis | Typ | Domyślnie |
 |----------|:------------:|:------:|:------:|
 | Strażnik | Prawdopodobieństwo pojawienia się Strażnika w procentach | Procent | 0% |
 
 -----------------------
 ## Engineer
-### **Zespół: Członkowie załogi**
+### **Typ: Crewmate**
 Inżynier to Członek załogi, który może naprawiać sabotaże z dowolnego miejsca na mapie.\
 Mogą używać otworów wentylacyjnych, aby łatwo przemieszczać się po mapie.
 
 ### Opcje gry
-| Nazwa | Opis | Typ | Domyślne |
+| Nazwa | Opis | Typ | Domyślnie |
 |----------|:------------:|:------:|:------:|
 | Inżynier | Prawdopodobieństwo pojawienia się Inżyniera w procentach | Procent | 0% |
 | Maksymalna liczba napraw | Liczba razy, kiedy Inżynier może naprawić sabotaż | Liczba | 5 |
 
 -----------------------
 ## Imitator
-### **Zespół: Członkowie załogi**
+### **Typ: Crewmate**
 Imitator to Członek załogi, który może naśladować martwych członków załogi.\
 Podczas spotkań Imitator może wybrać, kogo będzie naśladował w następnej rundzie spośród martwych.\
 Może wybrać wykorzystanie każdego martwego gracza tyle razy, ile chce.
 
 ### Opcje gry
-| Nazwa | Opis | Typ | Domyślne |
+| Nazwa | Opis | Typ | Domyślnie |
 |----------|:------------:|:------:|:------:|
 | Imitator | Procentowe prawdopodobieństwo pojawienia się Imitatora | Procent | 0% |
 | Imitator może zostać burmistrzem | Czy Imitator może na stałe zostać burmistrzem | Przełącz | Prawda |
 
 -----------------------
 ## Medium
-### **Zespół: Członkowie załogi**
+### **Typ: Crewmate**
 Medium to Członek załogi, który widzi duchy.\
 Podczas każdej rundy Medium ma umiejętność zwaną Mediacja.\
 Jeśli Medium użyje tej umiejętności i nikt nie będzie martwy, nic się nie stanie.\
 Jednak jeśli ktoś nie żyje, Medium i martwy gracz będą mogli się widzieć i komunikować zza grobu!
 
 ### Opcje gry
-| Nazwa | Opis | Typ | Domyślne |
+| Nazwa | Opis | Typ | Domyślnie |
 |----------|:------------:|:------:|:------:|
 | Medium | Procentowe prawdopodobieństwo pojawienia się Medium | Procent | 0% |
 | Czas odnowienia Mediacji | Czas odnowienia przycisku Mediacji Medium | Czas | 10 s |
@@ -577,49 +574,49 @@ Jednak jeśli ktoś nie żyje, Medium i martwy gracz będą mogli się widzieć 
 
 -----------------------
 ## Politician
-### **Zespół: Członkowie załogi**
+### **Typ: Crewmate**
 Polityk jest członkiem załogi, który może prowadzić kampanię wśród innych graczy.\
 Gdy kampania dotrze do połowy lub większej liczby członków załogi, polityk może ujawnić się jako nowy burmistrz.\
 Jeśli kampania dotrze do mniej niż połowy członków załogi, ujawnienie się nie powiedzie, a polityk nie będzie mógł prowadzić kampanii przez 1 rundę.
 
 ### Opcje gry
-| Nazwa | Opis | Typ | Domyślne |
+| Nazwa | Opis | Typ | Domyślnie |
 |----------|:------------:|:------:|:------:|
 | Polityk | Procentowe prawdopodobieństwo pojawienia się polityka | Procent | 0% |
 | Czas odnowienia kampanii | Czas odnowienia przycisku kampanii polityka | Czas | 25 s |
 
 -----------------------
 ## Prosecutor
-### **Zespół: Członkowie załogi**
+### **Typ: Crewmate**
 Prokurator jest członkiem załogi, który może raz na grę ścigać gracza, co skutkuje wygnaniem go na tym spotkaniu.\
 Prokurator może również widzieć głosy nieanonimowo.
 
 ### Opcje gry
-| Nazwa | Opis | Typ | Domyślne |
+| Nazwa | Opis | Typ | Domyślnie |
 |----------|:------------:|:------:|:------:|
 | Prokurator | Procentowe prawdopodobieństwo pojawienia się Prokuratora | Procent | 0% |
 | Prokurator ginie, gdy wygania członka załogi | Czy Prokurator również zostaje wygnany, gdy wygania członka załogi | Przełącz | Fałsz |
 
 -----------------------
 ## Swapper
-### **Zespół: Członkowie załogi**
+### **Typ: Crewmate**
 Swapper to Członek załogi, który może zamieniać głosy na 2 graczy podczas spotkania.\
 Wszystkie głosy na pierwszego gracza będą zamiast tego liczone na drugiego gracza i odwrotnie.
 
 ### Opcje gry
-| Nazwa | Opis | Typ | Domyślne |
+| Nazwa | Opis | Typ | Domyślnie |
 |----------|:------------:|:------:|:------:|
 | Swapper | Procentowe prawdopodobieństwo pojawienia się Swappera | Procent | 0% |
 | Swapper może nacisnąć przycisk | Czy Swapper może nacisnąć przycisk | Przełącz | Prawda |
 
 -----------------------
 ## Transporter
-### **Zespół: Członkowie załogi**
+### **Typ: Crewmate**
 Transporter to Członek załogi, który może dowolnie zmieniać położenie dwóch losowych graczy.\
 Gracze, którzy zostali przetransportowani, są powiadamiani niebieskim błyskiem na ekranie.
 
 ### Opcje gry
-| Nazwa | Opis | Typ | Domyślne |
+| Nazwa | Opis | Typ | Domyślnie |
 |----------|:------------:|:------:|:------:|
 | Transporter | Procentowe prawdopodobieństwo pojawienia się Transportera | Procent | 0% |
 | Czas odnowienia Transportera | Czas odnowienia zdolności transportowej Transportera | Czas | 25 s |
@@ -628,12 +625,12 @@ Gracze, którzy zostali przetransportowani, są powiadamiani niebieskim błyskie
 
 -----------------------
 ## Falcon
-### **Zespół: Członkowie załogi**
+### **Typ: Crewmate**
 
 Falcon to Członek załogi, który może tymczasowo widzieć więcej.
 
 ### Opcje gry
-| Nazwa | Opis | Typ | Domyślne |
+| Nazwa | Opis | Typ | Domyślnie |
 |----------|:------------:|:------:|:------:|
 | Falcon | Procentowe prawdopodobieństwo pojawienia się Noclip | Procent | 0% |
 | Czas odnowienia Wingman | Czas odnowienia przycisku Wingman | Czas | 25s |
@@ -644,14 +641,14 @@ Falcon to Członek załogi, który może tymczasowo widzieć więcej.
 -----------------------
 # Role neutralne
 ## Amnesiac
-### **Zespół: Neutralny**
+### **Typ: Neutral**
 Amnesiac to rola neutralna bez warunku wygranej.\
 Nie mają żadnych zadań i są zasadniczo bez roli.\
 Jednak mogą zapamiętać rolę, znajdując martwego gracza.\
 Po przypomnieniu sobie swojej roli próbują wygrać z nowym warunkiem wygranej.
 
 ### Opcje gry
-| Nazwa | Opis | Typ | Domyślne |
+| Nazwa | Opis | Typ | Domyślnie |
 |----------|:------------:|:------:|:------:|
 | Amnesiac | Prawdopodobieństwo procentowe pojawienia się Amnesiac | Procent | 0% |
 | Amnesiac Otrzymuje Strzały | Czy Amnesiac ma strzały wskazujące na ciała zmarłych | Przełącz | Fałsz |
@@ -659,15 +656,15 @@ Po przypomnieniu sobie swojej roli próbują wygrać z nowym warunkiem wygranej.
 
 -----------------------
 ## Guardian Angel
-### **Zespół: Neutralny**
+### **Typ: Neutral**
 Anioł Stróż to neutralna rola, która jest zgodna z frakcją celu.\
 Ich zadaniem jest ochrona celu za wszelką cenę.\
 Jeśli cel przegra, oni przegrywają.
 
 ### Opcje gry
-| Nazwa | Opis | Typ | Domyślne |
+| Nazwa | Opis | Typ | Domyślnie |
 |----------|:-------------:|:------:|:------:|
-| Anioł Stróż | Procentowe prawdopodobieństwo pojawienia się Anioła Stróża | Procent | 0% |
+| Anioł Stróż | Prawdopodobieństwo pojawienia się Anioła Stróża | Procent | 0% |
 | Czas odnowienia ochrony | Czas odnowienia przycisku Ochrony Anioła Stróża | Czas | 25 s |
 | Czas trwania ochrony | Jak długo trwa Ochrona Anioła Stróża | Czas | 10 s |
 | Czas odnowienia zabójstwa resetowany podczas ataku | Czas odnowienia zabójstwa atakującego po zaatakowaniu chronionego celu | Czas | 2,5 s |
@@ -680,14 +677,14 @@ Jeśli cel przegra, oni przegrywają.
 
 -----------------------
 ## Survivor
-### **Drużyna: Neutralna**
-Ocalały to neutralna rola, która może wygrać po prostu przeżywając.\
+### **Typ: Neutral**
+Survivor to neutralna rola, która może wygrać po prostu przeżywając.\
 Jednak jeśli Kochankowie lub Neutralna Zła rola wygrywa grę, ocalały przegrywa.
 
 ### Opcje gry
-| Nazwa | Opis | Typ | Domyślne |
+| Nazwa | Opis | Typ | Domyślnie |
 |----------|:------------:|:------:|:------:|
-| Ocalały | Procentowe prawdopodobieństwo pojawienia się Ocalałego | Procent | 0% |
+| Survivor | Prawdopodobieństwo pojawienia się Ocalałego | Procent | 0% |
 | Czas odnowienia kamizelki | Czas odnowienia przycisku Kamizelki Ocalałego | Czas | 25 s |
 | Czas trwania kamizelki | Jak długo trwa Kamizelka Ocalałego | Czas | 10 s |
 | Czas odnowienia zabójstwa resetowany podczas ataku | Atakujący zabijają cooldown po zaatakowaniu veste Survivor | Czas | 2,5 s |
@@ -695,15 +692,15 @@ Jednak jeśli Kochankowie lub Neutralna Zła rola wygrywa grę, ocalały przegry
 
 -----------------------
 ## Foreteller
-### **Drużyna: Neutralna**
+### **Typ: Neutral**
 Foreteller jest rolą Neutralną z własnym warunkiem wygranej.\
 Ich celem jest zabicie 4 graczy, aby wygrać.\
 Posiadają dodatkową zdolność obserwacji, która wskazuje na role niektórych graczy.
 
 ### Opcje gry
-| Nazwa | Opis | Typ | Domyślne |
+| Nazwa | Opis | Typ | Domyślnie |
 |----------|:------------:|:------:|:------:|
-| Foreteller | Prawdopodobieństwo procentowe pojawienia się Foretellera | Procent | 0% |
+| Foreteller | Prawdopodobieństwo pojawienia się Foretellera | Procent | 0% |
 | Cooldown Obserwacji | Cooldown przycisku Obserwacji Foretellera | Czas | 25s |
 | Przepowiadający zgaduje neutralne łagodne | Czy Przepowiadający może zgadywać role neutralne łagodne | Przełącz | Prawda |
 | Przepowiadający zgaduje neutralne złe | Czy Przepowiadający może zgadywać role neutralne złe | Przełącz | Prawda |
@@ -713,14 +710,14 @@ Posiadają dodatkową zdolność obserwacji, która wskazuje na role niektórych
 
 -----------------------
 ## Executioner
-### **Zespół: Neutralny**
+### **Typ: Neutral**
 
 Kat jest rolą neutralną z własnym warunkiem wygranej.\
 Ich celem jest wyrzucenie gracza, określonego na początku gry.\
 Jeśli gracz zostanie wyrzucony, wygrywa grę.
 
 ### Opcje gry
-| Nazwa | Opis | Typ | Domyślne |
+| Nazwa | Opis | Typ | Domyślnie |
 |----------|:------------:|:------:|:------:|
 | Kat | Procentowe prawdopodobieństwo pojawienia się Kata | Procent | 0% |
 | Kat staje się martwym celem | Jaką rolę przyjmuje Kat, gdy jego cel umiera | Członek załogi / Amnezjak / Ocalały / Jester | Członek załogi |
@@ -729,15 +726,15 @@ Jeśli gracz zostanie wyrzucony, wygrywa grę.
 
 -----------------------
 ## Jester
-### **Zespół: Neutralny**
+### **Typ: Neutral**
 Jester jest rolą neutralną z własnym warunkiem wygranej.\
 Jeśli zostaną wyrzuceni po spotkaniu, gra się kończy i wygrywają.\
-Jednak Jester nie wygrywa, jeśli wygrywają członkowie załogi, oszuści lub inna neutralna rola.
+Jednak Jester nie wygrywa, jeśli wygrywają Crewmate, oszuści lub inna neutralna rola.
 
 ### Opcje gry
-| Nazwa | Opis | Typ | Domyślne |
+| Nazwa | Opis | Typ | Domyślnie |
 |----------|:------------:|:-------:|:------:|
-| Jester | Prawdopodobieństwo procentowe pojawienia się Jestera | Procent | 0% |
+| Jester | Prawdopodobieństwo pojawienia się Jestera | Procent | 0% |
 | Jester Can Button | Czy błazen może nacisnąć przycisk | Przełącz | Prawda |
 | Błazen może się wygadać | Czy błazen może się wygadać | Przełącz | Fałsz |
 | Błazen ma wizję oszusta | Czy błazen ma wizję oszusta | Przełącz | Fałsz |
@@ -745,35 +742,35 @@ Jednak Jester nie wygrywa, jeśli wygrywają członkowie załogi, oszuści lub i
 
 -----------------------
 ## Phantom
-### **Zespół: Neutralny**
+### **Typ: Neutral**
 
 Phantom jest rolą neutralną z własnym warunkiem wygranej.\
 Stają się półniewidzialni, gdy umierają i muszą wykonać wszystkie swoje zadania, nie dając się złapać.
 
 ### Opcje gry
-| Nazwa | Opis | Typ | Domyślne |
+| Nazwa | Opis | Typ | Domyślnie |
 |----------|:-------------:|:------:|:------:|
-| Phantom | Procentowe prawdopodobieństwo pojawienia się Phantom | Procent | 0% |
+| Phantom | Prawdopodobieństwo pojawienia się Phantom | Procent | 0% |
 | Kiedy Phantom może zostać kliknięty | Liczba zadań pozostałych, gdy Phantom może zostać kliknięty | Liczba | 5 |
 | Phantom Spook On Victory | Czy Phantom może kogoś przestraszyć, gdy wygrywa | Przełącz | Prawda |
 
 -----------------------
-## Soul collector
-### **Zespół: Neutralny**
+## Soul Collector
+### **Typ: Neutral**
 Zbieracz dusz to rola neutralna z własnym warunkiem wygranej.\
 Ich celem jest zebranie określonej liczby dusz, aby wygrać.
 
 ### Opcje gry
-| Nazwa | Opis | Typ | Domyślne |
+| Nazwa | Opis | Typ | Domyślnie |
 |----------|:-------------:|:------:|:------:|
-| Zbieracz dusz | Procentowe prawdopodobieństwo pojawienia się Zbieracza dusz | Procent | 0% |
+| Zbieracz dusz | Prawdopodobieństwo pojawienia się Zbieracza dusz | Procent | 0% |
 | Czas odnowienia żniw | Czas odnowienia przycisku Zbieracza dusz | Czas | 25 s |
 | Pasywne zbieranie dusz w każdej rundzie | Czy Zbieracz dusz zbiera duszę po każdym spotkaniu | Przełącz | Prawda |
 | Liczba dusz wymaganych do wygranej | Liczba dusz, których Zbieracz dusz potrzebuje, aby wygrać | Liczba | 5 |
 
 -----------------------
 ## Arsonist
-### **Zespół: Neutralny**
+### **Typ: Neutral**
 
 Podpalacz jest rolą neutralną z własnym warunkiem wygranej.\
 Ma dwie umiejętności, jedną jest oblewanie innych graczy benzyną.\
@@ -781,9 +778,9 @@ Drugą jest podpalanie wszystkich oblanych graczy.\
 Podpalacz musi być ostatnim żywym zabójcą, aby wygrać grę.
 
 ### Opcje gry
-| Nazwa | Opis | Typ | Domyślne |
+| Nazwa | Opis | Typ | Domyślnie |
 |----------|:------------:|:------:|:------:|
-| Podpalacz | Procentowe prawdopodobieństwo pojawienia się Podpalacza | Procent | 0% |
+| Podpalacz | Prawdopodobieństwo pojawienia się Podpalacza | Procent | 0% |
 | Czas odnowienia Oblania | Czas odnowienia przycisku Oblania Podpalacza | Czas | 25 s |
 | Maksymalna liczba żywych graczy oblanych benzyną | Maksymalna liczba graczy, których Podpalacz może oblał | Liczba | 5 |
 | Arsonist Has Impostor Vision | Czy Arsonist Has Impostor Vision | Przełącz | Fałsz |
@@ -791,7 +788,7 @@ Podpalacz musi być ostatnim żywym zabójcą, aby wygrać grę.
 
 -----------------------
 ## Juggernaut
-### **Drużyna: Neutralna**
+### **Typ: Neutral**
 
 Juggernaut jest rolą neutralną z własnym warunkiem wygranej.\
 Specjalną umiejętnością Juggernauta jest to, że czas odnowienia zabójstwa zmniejsza się z każdym zabójstwem.\
@@ -800,16 +797,16 @@ Juggernaut jest również ukrytą rolą, co oznacza, że ​​pojawi się losow
 Juggernaut musi być ostatnim żywym zabójcą, aby wygrać grę.
 
 ### Opcje gry
-| Nazwa | Opis | Typ | Domyślny |
+| Nazwa | Opis | Typ | Domyślnie |
 |----------|:-------------:|:------:|:------:|
-| Juggernaut | Procentowe prawdopodobieństwo pojawienia się Juggernauta | Procent | 0% |
+| Juggernaut | Prawdopodobieństwo pojawienia się Juggernauta | Procent | 0% |
 | Czas odnowienia zabójstwa Juggernauta | Początkowy czas odnowienia przycisku Zabij Juggernauta | Czas | 25 s |
 | Skrócony czas odnowienia zabójstwa na zabójstwo | Ilość czasu skrócona o czas odnowienia zabójstwa Juggernauta na zabójstwo | Czas | 5 s |
 | Juggernaut może się odpowietrzyć | Czy Juggernaut może się odpowietrzyć | Przełącz | Fałsz |
 
 -----------------------
 ## Plaguebearer
-### **Zespół: Neutralny**
+### **Typ: Neutral**
 
 Plaguebearer jest rolą neutralną z własnym warunkiem wygranej, a także zdolnością do transformacji w inną rolę.\
 Plaguebearer ma jedną zdolność, która pozwala mu zarażać innych graczy.\
@@ -819,16 +816,16 @@ Pestilence to niezniszczalna siła, którą można zabić tylko poprzez głosowa
 Plaguebearer lub Pestilence muszą być ostatnimi żywymi zabójcami, aby wygrać grę.
 
 ### Opcje gry
-| Nazwa | Opis | Typ | Domyślny |
+| Nazwa | Opis | Typ | Domyślnie |
 |----------|:-------------:|:------:|:------:|
-| Plaguebearer | Procentowe prawdopodobieństwo pojawienia się Plaguebearera | Procent | 0% |
+| Plaguebearer | Prawdopodobieństwo pojawienia się Plaguebearera | Procent | 0% |
 | Czas odnowienia infekcji | Czas odnowienia przycisku Infect (Zakaż) Plaguebearera | Czas | 25 s |
 | Czas odnowienia zabójstwa zarazy | Czas odnowienia przycisku Kill (Zabij) zarazy | Czas | 25 s |
 | Zaraza może się ulotnić | Czy zaraza może się ulotnić | Przełącz | Fałsz |
 
 -----------------------
 ## The Glitch
-### **Zespół: Neutralny**
+### **Typ: Neutral**
 
 The Glitch to rola neutralna z własnym warunkiem wygranej.\
 Celem The Glitch jest zabicie wszystkich i zostanie ostatnią osobą stojącą.\
@@ -837,7 +834,7 @@ Hackowanie uniemożliwia zhakowanemu graczowi robienie czegokolwiek poza chodzen
 The Glitch może naśladować kogoś, co powoduje, że wygląda on dokładnie jak druga osoba.
 
 ### Opcje gry
-| Nazwa | Opis | Typ | Domyślne |
+| Nazwa | Opis | Typ | Domyślnie |
 |----------|:------------:|:-------:|:------:|
 | The Glitch | Prawdopodobieństwo procentowe pojawienia się The Glitch | Procent | 0% |
 | Czas odnowienia Mimika | Czas odnowienia przycisku Mimika The Glitch | Czas | 25 s |
@@ -849,8 +846,8 @@ The Glitch może naśladować kogoś, co powoduje, że wygląda on dokładnie ja
 | Glitch może się odpowietrzyć | Czy Glitch może się odpowietrzyć | Przełącz | Fałsz |
 
 -----------------------
-## Wampir
-### **Zespół: Neutralny**
+## Vampire
+### **Typ: Neutral**
 
 Wampir jest rolą neutralną z własnym warunkiem wygranej.\
 Wampir może nawracać lub zabijać innych graczy, gryząc ich.\
@@ -858,7 +855,7 @@ Jeśli ugryziony gracz był członkiem załogi, zamieni się w Wampira (chyba ż
 W przeciwnym wypadku zabiją ugryzionego gracza.
 
 ### Opcje gry
-| Nazwa | Opis | Typ | Domyślne |
+| Nazwa | Opis | Typ | Domyślnie |
 |----------|:------------:|:------:|:------:|
 | Wampir | Prawdopodobieństwo pojawienia się Wampira w procentach | Procent | 0% |
 | Czas odnowienia Ugryzienia | Czas odnowienia przycisku Ugryzienia Wampira | Czas | 25 s |
@@ -871,7 +868,7 @@ W przeciwnym wypadku zabiją ugryzionego gracza.
 
 -----------------------
 ## Werewolf
-### **Drużyna: Neutralna**
+### **Typ: Neutral**
 
 Wilkołak jest rolą neutralną z własnym warunkiem wygranej.\
 Chociaż Wilkołak ma przycisk zabijania, nie może go użyć, chyba że zostanie Rozwalony.\
@@ -880,7 +877,7 @@ Jednak w przeciwieństwie do większości zabójców ich czas odnowienia zabójs
 Wilkołak musi być ostatnim żywym zabójcą, aby wygrać grę.
 
 ### Opcje gry
-| Nazwa | Opis | Typ | Domyślne |
+| Nazwa | Opis | Typ | Domyślnie |
 |----------|:------------:|:------:|:------:|
 | Wilkołak | Procentowe prawdopodobieństwo pojawienia się Wilkołaka | Procent | 0% |
 | Czas odnowienia Rozwalonego | Czas odnowienia przycisku Szału Wilkołaka | Czas | 25 s |
@@ -890,14 +887,14 @@ Wilkołak musi być ostatnim żywym zabójcą, aby wygrać grę.
 
 -----------------------
 ## Icenberg
-### **Drużyna: Neutralna**
+### **Typ: Neutral**
 
 Icenberg jest rolą neutralną z własnym warunkiem zwycięstwa.\
 Celem Icenberga jest zabicie wszystkich i zostanie ostatnią osobą stojącą.\
 Icenberg może zamrozić graczy, uniemożliwiając im ruch.
 
 ### Opcje gry
-| Nazwa | Opis | Typ | Domyślny | 
+| Nazwa | Opis | Typ | Domyślnie | 
 |----------|:-------------:|:------:|:------:|
 | Icenberg | Procentowe prawdopodobieństwo pojawienia się Icenberga | Procent | 0% |
 | Czas odnowienia zamrożenia | Czas odnowienia przycisku zamrożenia Icenberga | Czas | 25 s |
@@ -907,26 +904,44 @@ Icenberg może zamrozić graczy, uniemożliwiając im ruch.
 | Icenberg może się odpowietrzyć | Czy Icenberg może się odpowietrzyć | Przełącz | Prawda |
 
 -----------------------
-# Role oszustów
+# Role Impostorów
 ## Escapist
-### **Zespół: Oszuści**
+### **Typ: Impostor**
 
 Uciekinierka to oszust, który może teleportować się do innej lokalizacji.\
 Raz na rundę Uciekinierka może oznaczyć lokalizację, do której może uciec później w rundzie.
 
 ### Opcje gry
-| Nazwa | Opis | Typ | Domyślne |
+| Nazwa | Opis | Typ | Domyślnie |
 |----------|:------------:|:------:|:------:|
 | Uciekinierka | Procentowe prawdopodobieństwo pojawienia się Uciekinierki | Procent | 0% |
 | Czas odnowienia powrotu | Czas odnowienia przycisku powrotu Uciekinierki | Czas | 25 s |
 | Uciekinierka może się odpowietrzyć | Czy Uciekinierka może się odpowietrzyć | Przełącz | Fałsz |
 
 -----------------------
+## Grenadier
+### **Team: Impostors**
+
+The Grenadier is an Impostor that can throw smoke grenades.\
+During the game, the Grenadier has the option to throw down a smoke grenade which blinds crewmates so they can't see.\
+However, a sabotage and a smoke grenade can not be active at the same time.
+
+### Game Options
+| Name | Description | Type | Default |
+|----------|:-------------:|:------:|:------:|
+| Grenadier | The percentage probability of the Grenadier appearing | Percentage | 0% |
+| Flash Grenade Cooldown | The cooldown of the Grenadier's Flash button | Time | 25s |
+| Flash Grenade Duration | How long the Flash Grenade lasts for | Time | 10s |
+| Flash Radius | How wide the flash radius is | Multiplier | 1x |
+| Indicate Flashed Crewmates | Whether the Grenadier can see who has been flashed | Toggle | False |
+| Grenadier can Vent | Whether the Grenadier can Vent | Toggle | False |
+
+-----------------------
 ## Venerer
-### **Zespół: Oszuści**
+### **Typ: Impostor**
 
 ### Opcje gry
-| Nazwa | Opis | Typ | Domyślne |
+| Nazwa | Opis | Typ | Domyślnie |
 |----------|:-------------:|:------:|:------:|
 | Venerer | Procentowe prawdopodobieństwo pojawienia się Venerera | Procent | 0% |
 | Czas odnowienia umiejętności | Czas odnowienia przycisku umiejętności Venerera | Czas | 25 s |
@@ -936,14 +951,14 @@ Raz na rundę Uciekinierka może oznaczyć lokalizację, do której może uciec 
 
 -----------------------
 ## Bomber
-### **Zespół: Oszuści**
+### **Typ: Impostor**
 
 Bombowiec to oszust, który ma zdolność podkładania bomb zamiast zabijania.\
 Po podłożeniu bomby, bomba będzie detonować przez ustalony okres czasu zgodnie z ustawieniami.\
 Po detonacji bomba zabije wszystkich członków załogi (i oszustów!) w promieniu.
 
 ### Opcje gry
-| Nazwa | Opis | Typ | Domyślne |
+| Nazwa | Opis | Typ | Domyślnie |
 |----------|:------------:|:------:|:------:|
 | Bombowiec | Procentowe prawdopodobieństwo pojawienia się Bombowca | Procent | 0% |
 | Opóźnienie detonacji | Opóźnienie detonacji po podłożeniu bomby | Czas | 5s |
@@ -953,15 +968,15 @@ Po detonacji bomba zabije wszystkich członków załogi (i oszustów!) w promien
 | Wszystkie Impy widzą bombę | Czy wszyscy Oszuści widzą bomby Bombowca | Przełącz | Fałsz |
 
 -----------------------
-## Zbieracz
-### **Drużyna: Oszuści**
+## Scavenger
+### **Typ: Impostor**
 
 Zbieracz to Oszust, który poluje na ofiarę.\
 Z każdym udanym polowaniem Zbieracz ma skrócony czas odnowienia zabójstwa.\
 W przypadku nieudanego zabicia Zbieracz ma znacznie wydłużony czas odnowienia zabójstwa.
 
 ### Opcje gry
-| Nazwa | Opis | Typ | Domyślne |
+| Nazwa | Opis | Typ | Domyślnie |
 |----------|:-------------:|:------:|:------:|
 | Zbieracz | Procentowe prawdopodobieństwo pojawienia się Zbieracza | Procent | 0% |
 | Czas trwania Zbieracza | Jak długo trwa zbieranie Zbieracza | Czas | 25s |
@@ -970,15 +985,29 @@ W przypadku nieudanego zabicia Zbieracz ma znacznie wydłużony czas odnowienia 
 | Mnożnik czasu odnowienia Zbieracza po błędnym zabiciu | Zwiększony czas odnowienia Zbieracza po błędnym zabiciu | Mnożnik | 3x |
 
 -----------------------
+## Swooper
+### **Team: Impostors**
+
+The Swooper is an Impostor that can temporarily turn invisible.
+
+### Game Options
+| Name | Description | Type | Default |
+|----------|:-------------:|:------:|:------:|
+| Swooper | The percentage probability of the Swooper appearing | Percentage | 0% |
+| Swooper Cooldown | The cooldown of the Swooper's Swoop button | Time | 25s |
+| Swooper Duration | How long the Swooping lasts for | Time | 10s |
+| Swooper can Vent | Whether the Swooper can Vent | Toggle | False |
+
+-----------------------
 ## Traitor
-### **Zespół: Oszuści**
+### **Typ: Impostor**
 
 Jeśli wszyscy Oszuści zginą przed pewnym momentem w grze, losowy członek załogi zostaje wybrany, aby zostać Zdrajcą.\
 Zdrajca nie ma żadnych dodatkowych umiejętności, a jego zadaniem jest po prostu pomścić zabitych Oszustów.\
 Gdy ten gracz zamieni się w Zdrajcę, jego sojusz zawiązuje się z Oszustami.
 
 ### Opcje gry
-| Nazwa | Opis | Typ | Domyślne |
+| Nazwa | Opis | Typ | Domyślnie |
 |----------|:------------:|:------:|:------:|
 | Zdrajca | Procentowe prawdopodobieństwo pojawienia się Zdrajcy | Procent | 0% |
 | Minimalna liczba żywych osób, gdy Zdrajca może się pojawić | Minimalna liczba żywych osób, gdy Zdrajca może się pojawić | Liczba | 5 |
@@ -986,14 +1015,14 @@ Gdy ten gracz zamieni się w Zdrajcę, jego sojusz zawiązuje się z Oszustami.
 
 -----------------------
 ## Warlock
-### **Drużyna: Oszuści**
+### **Typ: Impostor**
 
 Warlock to oszust, który może ładować swój przycisk zabijania.\
 Po aktywacji Warlock może używać swojego przycisku zabijania w nieskończoność, dopóki nie wyczerpie się mu ładunek.\
 Jednak nie musi w pełni ładować swojego przycisku zabijania, aby go użyć.
 
 ### Opcje gry
-| Nazwa | Opis | Typ | Domyślne |
+| Nazwa | Opis | Typ | Domyślnie |
 |----------|:------------:|:------:|:------:|
 | Warlock | Procentowe prawdopodobieństwo pojawienia się Warlocka | Procent | 0% |
 | Czas pełnego naładowania | Czas pełnego naładowania przycisku Kill Button Warlocka | Czas | 25 s |
@@ -1001,13 +1030,13 @@ Jednak nie musi w pełni ładować swojego przycisku zabijania, aby go użyć.
 
 -----------------------
 ## Blackmailer
-### **Zespół: Oszuści**
+### **Typ: Impostor**
 Szantażysta to oszust, który może uciszyć ludzi na spotkaniach.\
 Podczas każdej rundy Szantażysta może podejść do kogoś i go szantażować.\
 Uniemożliwia to szantażowanej osobie zabieranie głosu i ewentualne głosowanie podczas następnego spotkania.
 
 ### Opcje gry
-| Nazwa | Opis | Typ | Domyślne |
+| Nazwa | Opis | Typ | Domyślnie |
 |----------|:------------:|:------:|:------:|
 | Szantażysta | Procentowe prawdopodobieństwo pojawienia się Szantażysty | Procent | 0% |
 | Początkowy czas odnowienia szantażu | Początkowy czas odnowienia przycisku Szantaż Szantaż | Czas | 10 s |
@@ -1015,51 +1044,66 @@ Uniemożliwia to szantażowanej osobie zabieranie głosu i ewentualne głosowani
 | Maksymalna liczba żywych osób, w których szantażowany może głosować | Maksymalna liczba żywych graczy, która pozwala szantażowanemu graczowi głosować | Liczba | 5 |
 
 -----------------------
-## Hipnotist
-### **Zespół: Oszuści**
+## Hypnotist
+### **Typ: Impostor**
 Hipnotyzer to oszust, który potrafi hipnotyzować ludzi.\
 Gdy wystarczająca liczba osób zostanie zahipnotyzowana, Hipnotyzer może uwolnić Histerię Masową.\
 Po uwolnieniu Histerii Masowej wszyscy zahipnotyzowani gracze widzą wszystkich innych graczy jako siebie, zakamuflowanych lub niewidzialnych.\
 Gdy Hipnotyzer umrze, Histeria Masowa zostanie usunięta i ludzie znów będą mogli widzieć wszystkich normalnie.
 
 ### Opcje gry
-| Nazwa | Opis | Typ | Domyślne |
+| Nazwa | Opis | Typ | Domyślnie |
 |----------|:------------:|:------:|:------:|
 | Hipnotyzer | Procentowe prawdopodobieństwo pojawienia się Hipnotyzera | Procent | 0% |
 | Czas odnowienia Hipnotyzera | Czas odnowienia przycisku Hipnotyzera | Czas | 25 s |
 
 -----------------------
 ## Janitor
-### **Zespół: Oszuści**
+### **Typ: Impostor**
 Sprzątacz to oszust, który może czyścić ciała.\
 Zarówno ich umiejętność Zabij, jak i Czyść mają wspólny czas odnowienia, co oznacza, że ​​muszą wybrać, której z nich chcą użyć.
 
 ### Opcje gry
-| Nazwa | Opis | Typ | Domyślne |
+| Nazwa | Opis | Typ | Domyślnie |
 |----------|:------------:|:------:|:------:|
 | Sprzątacz | Prawdopodobieństwo pojawienia się Sprzątarza w procentach | Procent | 0% |
 
 -----------------------
 ## Miner
-### **Zespół: Oszuści**
+### **Typ: Impostor**
 
 Górnik to oszust, który może tworzyć nowe otwory wentylacyjne.\
 Te otwory wentylacyjne łączą się tylko ze sobą, tworząc nowe przejście.
 
 ### Opcje gry
-| Nazwa | Opis | Typ | Domyślne |
+| Nazwa | Opis | Typ | Domyślnie |
 |----------|:-------------:|:------:|:------:|
 | Górnik | Procentowe prawdopodobieństwo pojawienia się Górnika | Procent | 0% |
 | Czas odnowienia kopalni | Czas odnowienia przycisku Kopalni Górnika | Czas | 25 s |
 
 -----------------------
+## Morphling
+### **Team: Impostors**
+
+The Morphling is an Impostor that can Morph into another player.\
+At the beginning of the game and after every meeting, they can choose someone to Sample.\
+They can then Morph into that person at any time for a limited amount of time.
+
+### Game Options
+| Name | Description | Type | Default |
+|----------|:-------------:|:------:|:------:|
+| Morphling | The percentage probability of the Morphling appearing | Percentage | 0% |
+| Morph Cooldown | The cooldown of the Morphling's Morph button | Time | 25s |
+| Morph Duration | How long the Morph lasts for | Time | 10s |
+| Morphling can Vent | Whether the Morphling can Vent | Toggle | False |
+
 ## Undertaker
-### **Zespół: Oszuści**
+### **Typ: Impostor**
 
 Undertaker to oszust, który może przeciągać i upuszczać ciała.
 
 ### Opcje gry
-| Nazwa | Opis | Typ | Domyślne |
+| Nazwa | Opis | Typ | Domyślnie |
 |----------|:------------:|:------:|:------:|
 | Undertaker | Prawdopodobieństwo pojawienia się Undertakera | Procent | 0% |
 | Czas odnowienia umiejętności Undertaker Drag | Czas odnowienia umiejętności Undertaker Drag | Czas | 25 s |
@@ -1069,12 +1113,12 @@ Undertaker to oszust, który może przeciągać i upuszczać ciała.
 
 -----------------------
 ## Noclip
-### **Zespół: Oszuści**
+### **Typ: Impostor**
 
 Noclip to oszust, który może tymczasowo przechodzić przez ściany.
 
 ### Opcje gry
-| Nazwa | Opis | Typ | Domyślne |
+| Nazwa | Opis | Typ | Domyślnie |
 |----------|:-------------:|:------:|:------:|
 | Noclip | Procentowe prawdopodobieństwo pojawienia się Noclipa | Procent | 0% |
 | Czas odnowienia Noclipa | Czas odnowienia umiejetnosci Noclipa | Czas | 25s |
@@ -1084,12 +1128,12 @@ Noclip to oszust, który może tymczasowo przechodzić przez ściany.
 
 # Modyfikatory
 Modyfikatory są dodawane do ról graczy.
-## Następstwa
+## Aftermath
 ### **Zastosowane do: Członków załogi**
 Zabicie Następstwa zmusza zabójcę do użycia jego umiejętności (jeśli ją posiada i nie jest używana).
 
 ### Opcje gry
-| Nazwa | Opis | Typ | Domyślne | 
+| Nazwa | Opis | Typ | Domyślnie | 
 |----------|:-------------:|:------:|:------:|
 | Następstwa | Procentowe prawdopodobieństwo pojawienia się Następstw | Procent | 0% |
 
@@ -1099,19 +1143,19 @@ Zabicie Następstwa zmusza zabójcę do użycia jego umiejętności (jeśli ją 
 Zabicie Przynęty powoduje, że zabójca automatycznie zgłasza siebie.
 
 ### Opcje gry
-| Nazwa | Opis | Typ | Domyślne |
+| Nazwa | Opis | Typ | Domyślnie |
 |----------|:-----------:|:------:|:------:|
 | Przynęta | Procentowe prawdopodobieństwo pojawienia się Przynęty | Procent | 0% |
 | Minimalne opóźnienie Przynęty | Minimalny czas, w którym zabójca Przynęty zgłasza ciało | Czas | 0s |
 | Maksymalne opóźnienie Przynęty | Maksymalny czas, w którym zabójca przynęty zgłasza ciało | Czas | 1s |
 
 -----------------------
-## Dieseased
+## Diseased
 ### **Dotyczy: Członków załogi**
 Zabicie Chorego wydłuża czas odnowienia zabójstwa zabójcy.
 
 ### Opcje gry
-| Nazwa | Opis | Typ | Domyślne |
+| Nazwa | Opis | Typ | Domyślnie |
 |----------|:------------:|:------:|:------:|
 | Chory | Procentowe prawdopodobieństwo pojawienia się Chorego | Procent | 0% |
 | Mnożnik zabójstwa | O ile zwiększa się czas odnowienia zabójstwa oszusta | Mnożnik | 3x |
@@ -1122,7 +1166,7 @@ Zabicie Chorego wydłuża czas odnowienia zabójstwa zabójcy.
 Zabicie Mroźnego spowalnia zabójcę na krótki czas.
 
 ### Opcje gry
-| Nazwa | Opis | Typ | Domyślny |
+| Nazwa | Opis | Typ | Domyślnie |
 |----------|:-------------:|:------:|:------:|
 | Frosty | Procentowe prawdopodobieństwo pojawienia się Frosty | Procent | 0% |
 | Czas trwania chłodu | Czas trwania chłodu po zabiciu Frosty | Czas | 10s |
@@ -1134,7 +1178,7 @@ Zabicie Mroźnego spowalnia zabójcę na krótki czas.
 Zadania Multitaskera są przejrzyste.
 
 ### Opcje gry
-| Nazwa | Opis | Typ | Domyślne |
+| Nazwa | Opis | Typ | Domyślnie |
 |----------|:-------------:|:------:|:------:|
 | Multitasker | Procentowe prawdopodobieństwo pojawienia się Multitaskera | Procent | 0% |
 
@@ -1144,7 +1188,7 @@ Zadania Multitaskera są przejrzyste.
 Wizja Torch nie zmniejsza się, gdy światła są sabotowane.
 
 ### Opcje gry
-| Nazwa | Opis | Typ | Domyślne |
+| Nazwa | Opis | Typ | Domyślnie |
 |----------|:------------:|:------:|:------:|
 | Torch | Procentowe prawdopodobieństwo pojawienia się Torch | Procent | 0% |
 
@@ -1155,7 +1199,7 @@ Button Barry ma możliwość zwołania zebrania z dowolnego miejsca na mapie, na
 Mają taką samą liczbę zebrań jak zwykły gracz.
 
 ### Opcje gry
-| Nazwa | Opis | Typ | Domyślne |
+| Nazwa | Opis | Typ | Domyślnie |
 |----------|:-------------:|:------:|:------:|
 | Button Barry | Procentowe prawdopodobieństwo pojawienia się Button Barry | Procent | 0% |
 
@@ -1165,7 +1209,7 @@ Mają taką samą liczbę zebrań jak zwykły gracz.
 Flash porusza się z większą prędkością w porównaniu do zwykłego gracza.
 
 ### Opcje gry
-| Nazwa | Opis | Typ | Domyślne | 
+| Nazwa | Opis | Typ | Domyślnie | 
 |----------|:-------------:|:------:|:------:|
 | Flash | Procentowe prawdopodobieństwo pojawienia się Flasha | Procent | 0% |
 | Prędkość | Jak szybko Flash się porusza w porównaniu do normalnego | Mnożnik | 1,25x |
@@ -1176,7 +1220,7 @@ Flash porusza się z większą prędkością w porównaniu do zwykłego gracza.
 Gigant to gigantyczny Członek załogi, który ma zmniejszoną prędkość chodzenia.
 
 ### Opcje gry
-| Nazwa | Opis | Typ | Domyślne |
+| Nazwa | Opis | Typ | Domyślnie |
 |----------|:------------:|:------:|:------:|
 | Gigant | Procentowe prawdopodobieństwo pojawienia się Giganta | Procent | 0% |
 | Prędkość | Jak szybko Gigant się porusza w porównaniu do normalnego | Mnożnik | 0,75x |
@@ -1192,7 +1236,7 @@ Aby to zrobić, uzyskują dostęp do prywatnego czatu, widocznego tylko dla nich
 Jednak mogą również wygrać ze swoją drużyną, stąd Kochankowie nie znają roli drugiego kochanka.
 
 ### Opcje gry
-| Nazwa | Opis | Typ | Domyślne |
+| Nazwa | Opis | Typ | Domyślnie |
 |----------|:-------------:|:------:|:------:|
 | Kochankowie | Procentowe prawdopodobieństwo pojawienia się Kochanków | Procent | 0% |
 | Oboje Kochankowie Umierają | Czy drugi Kochanek automatycznie umiera, jeśli drugi umrze | Przełącz | Prawda |
@@ -1206,7 +1250,7 @@ Jednak mogą również wygrać ze swoją drużyną, stąd Kochankowie nie znają
 
 Mini jest malutkim Członkiem Załogi.
 ### Opcje Gry
-| Nazwa | Opis | Typ | Domyślne |
+| Nazwa | Opis | Typ | Domyślnie |
 |----------|:------------:|:-------:|:-------:|
 | Mini | Procentowe prawdopodobieństwo pojawienia się Mini | Procent | 0% |
 
@@ -1216,7 +1260,7 @@ Mini jest malutkim Członkiem Załogi.
 Radar to członek załogi, który wie, gdzie jest najbliższy gracz.
 
 ### Opcje gry
-| Nazwa | Opis | Typ | Domyślne |
+| Nazwa | Opis | Typ | Domyślnie |
 |----------|:------------:|:------:|:------:|
 | Radar | Procent prawdopodobieństwa pojawienia się radaru | Procent | 0% |
 
@@ -1226,7 +1270,7 @@ Radar to członek załogi, który wie, gdzie jest najbliższy gracz.
 Nieśmiały staje się przezroczysty, gdy stoi nieruchomo przez krótki czas.
 
 ### Opcje gry
-| Nazwa | Opis | Typ | Domyślne |
+| Nazwa | Opis | Typ | Domyślnie |
 |----------|:-------------:|:------:|:------:|
 | Shy | Procent prawdopodobieństwa pojawienia się Shy | Procent | 0% |
 | Opóźnienie przezroczystości | Opóźnienie, zanim Shy zacznie stawać się przezroczysty | Czas | 5s |
@@ -1239,7 +1283,7 @@ Nieśmiały staje się przezroczysty, gdy stoi nieruchomo przez krótki czas.
 Szósty zmysł to członek załogi, który widzi, kto wchodzi z nim w interakcję.
 
 ### Opcje gry
-| Nazwa | Opis | Typ | Domyślny | 
+| Nazwa | Opis | Typ | Domyślnie | 
 |----------|:-------------:|:------:|:------:|
 | Szósty zmysł | Procentowe prawdopodobieństwo pojawienia się Szóstego zmysłu | Procent | 0% |
 
@@ -1250,7 +1294,7 @@ Detektyw jest członkiem załogi, który zdobywa wiedzę, zgłaszając zwłoki.\
 Podczas spotkań Detektyw może zobaczyć role wszystkich graczy, w których zgłosili.
 
 ### Opcje gry
-| Nazwa | Opis | Typ | Domyślne |
+| Nazwa | Opis | Typ | Domyślnie |
 |----------|:------------:|:------:|:------:|
 | Detektyw | Procentowe prawdopodobieństwo pojawienia się Detektywa | Procent | 0% |
 -----------------------
@@ -1260,7 +1304,7 @@ Jeśli którykolwiek głos jest remisowy, głos Tiebreakera zostanie uznany.\
 Jeśli zagłosowali na innego gracza, zostaną wyeliminowani.
 
 ### Opcje gry
-| Nazwa | Opis | Typ | Domyślne |
+| Nazwa | Opis | Typ | Domyślnie |
 |----------|:------------:|:------:|:------:|
 | Tiebreaker | Procentowe prawdopodobieństwo pojawienia się Tiebreakera | Procent | 0% |
 -----------------------
@@ -1269,7 +1313,7 @@ Jeśli zagłosowali na innego gracza, zostaną wyeliminowani.
 Właśnie jesteś pijany
 
 ### Opcje gry
-| Nazwa | Opis | Typ | Domyślne |
+| Nazwa | Opis | Typ | Domyślnie |
 |----------|:------------:|:------:| | Pijany | Procentowe prawdopodobieństwo pojawienia się Pijanego | Procent | 0% |
 | PijaneRundy | Rundy będące pijanymi | Rundy | 3 |
 
@@ -1281,7 +1325,7 @@ Dotyczy to otworów wentylacyjnych górników.\
 Nie pojawia się na statku powietrznym ani w zanurzeniu.
 
 ### Opcje gry
-| Nazwa | Opis | Typ | Domyślne |
+| Nazwa | Opis | Typ | Domyślnie |
 |----------|:-------------:|:------:|:------:|
 | Rozpraszacz | Procentowe prawdopodobieństwo pojawienia się Rozpraszacza | Procent | 0% |
 
@@ -1293,7 +1337,7 @@ Po wykorzystaniu swojego życia zostaje oznaczony czerwonym błyskiem\
 i nie może już zgadnąć osoby, którą źle odgadł do końca spotkania.
 
 ### Opcje gry
-| Nazwa | Opis | Typ | Domyślne |
+| Nazwa | Opis | Typ | Domyślnie |
 |----------|:------------:|:------:|:------:|
 | Double Shot| Prawdopodobieństwo pojawienia się Double Shot w procentach | Procent | 0% |
 
@@ -1304,7 +1348,7 @@ i nie może już zgadnąć osoby, którą źle odgadł do końca spotkania.
 Sabotażysta to Impostor z pasywną redukcją czasu odnowienia sabotażu.
 
 ### Opcje gry
-| Nazwa | Opis | Typ | Domyślny |
+| Nazwa | Opis | Typ | Domyślnie |
 |----------|:-------------:|:------:|:------:|
 | Sabotażysta | Procent prawdopodobieństwa pojawienia się Sabotażysty | Procent | 0% |
 | Zmniejszony bonus za sabotaż | Ilość czasu usunięta z czasów odnowienia sabotażu Sabotażysty | Czas | 10 s |
@@ -1317,7 +1361,7 @@ Underdog to Oszust z wydłużonym czasem odnowienia zabicia.\
 Kiedy jest jedynym pozostałym Oszustem, jego czas odnowienia zabicia zostanie skrócony.
 
 ### Opcje gry
-| Nazwa | Opis | Typ | Domyślny |
+| Nazwa | Opis | Typ | Domyślnie |
 |----------|:-------------:|:------:|:------:|
 | Underdog | Procentowe prawdopodobieństwo pojawienia się Underdoga | Procent | 0% |
 | Bonus do czasu odnowienia zabójstwa | Ilość czasu dodana lub odjęta od czasu odnowienia zabójstwa Underdoga | Czas | 5s |
@@ -1351,7 +1395,7 @@ Jeśli nie będzie wystarczającej liczby członków załogi lub oszustów, zost
 - Any
 
 ### Opcje gry
-| Nazwa | Opis | Typ | Domyślne |
+| Nazwa | Opis | Typ | Domyślnie |
 |----------|:-------------:|:------:|:------:|
 | Unikalne role | Czy wszystkie role mogą pojawić się maksymalnie 1 raz | Przełącz | Prawda |
 | Slot 1 | Jaki typ roli może pojawić się w Slocie 1 | Patrz powyżej dla Bucketów | Non-Imp |
@@ -1376,7 +1420,7 @@ Jeśli nie będzie wystarczającej liczby członków załogi lub oszustów, zost
 | Slot 20 | Jaki typ roli może pojawić się w Slocie 20 | Patrz powyżej dla Bucketów | Non-Imp |
 -----------------------
 # Ustawienia mapy
-| Nazwa | Opis | Typ | Domyślny |
+| Nazwa | Opis | Typ | Domyślnie |
 |----------|:-------------:|:------:|:------:|
 | Wybierz losową mapę | Czy mapa jest wybierana losowo na początku gry | Przełącz | Fałsz |
 | Szansa Skeld | Procentowe prawdopodobieństwo wybrania mapy Skeld | Procent | 0% |
@@ -1395,7 +1439,7 @@ Jeśli nie będzie wystarczającej liczby członków załogi lub oszustów, zost
 
 -----------------------
 # Ustawienia Better Polus
-| Nazwa | Opis | Typ | Domyślne |
+| Nazwa | Opis | Typ | Domyślnie |
 |----------|:-------------:|:------:|:------:|
 | Lepszy układ odpowietrzników Polus | Optymalizacja układu odpowietrzników w Polus | Przełącz | Fałsz |
 | Przeniesienie parametrów życiowych do laboratorium | Czy panel parametrów życiowych zostanie przeniesiony do laboratorium | Przełącz | Fałsz |
@@ -1404,7 +1448,7 @@ Jeśli nie będzie wystarczającej liczby członków załogi lub oszustów, zost
 
 -----------------------
 # Opcje gry niestandardowej
-| Nazwa | Opis | Typ | Domyślne |
+| Nazwa | Opis | Typ | Domyślnie |
 |----------|:-------------:|:------:|:------:|
 | Zakamuflowana komunikacja | Czy wszyscy stają się zakamuflowani, gdy komunikacja jest sabotowana | Przełącz | Fałsz |
 | Zabij każdego podczas zakamuflowanej komunikacji | Czy członkowie drużyny mogą zabijać się nawzajem podczas zakamuflowanej komunikacji | Przełącz | Fałsz |
@@ -1415,11 +1459,11 @@ Jeśli nie będzie wystarczającej liczby członków załogi lub oszustów, zost
 | Wyłącz przycisk pomijania spotkania | Czy przycisk spotkania jest wyłączony | Nie / Awaryjny / Zawsze | Nie |
 | Pierwsza tarcza śmierci w następnej grze | Czy pierwszy gracz, który zginie, otrzyma tarczę na pierwszą rundę w następnej grze | Przełącz | Fałsz |
 | Neutralne zło wygrywa grę | Czy wygrana neutralnego zła kończy grę | Przełącz | Prawda |
-| Zabójcy załogi kontynuują grę | Czy gra będzie kontynuowana, jeśli członkowie załogi będą mogli się bronić | Przełącz | Fałsz |
+| Zabójcy załogi kontynuują grę | Czy gra będzie kontynuowana, jeśli Crewmate będą mogli się bronić | Przełącz | Fałsz |
 
 -----------------------
 # Ustawienia śledzenia zadań
-| Nazwa | Opis | Typ | Domyślne |
+| Nazwa | Opis | Typ | Domyślnie |
 |----------|:------------:|:-------:|
 | Zobacz zadania w trakcie rundy | Czy ludzie widzą aktualizację swoich zadań w grze | Przełącz | Fałsz |
 | Zobacz zadania w trakcie spotkań | Czy ludzie widzą liczbę swoich zadań w trakcie spotkań | Przełącz | Fałsz |
@@ -1427,14 +1471,14 @@ Jeśli nie będzie wystarczającej liczby członków załogi lub oszustów, zost
 
 -----------------------
 ## Zdolność zabójcy
-### **Zespół: Oszuści**
+### **Typ: Impostor**
 
 Zdolność zabójcy jest przyznawana określonej liczbie Oszustów lub Neutralnych Zabójców.\
 Ta zdolność daje Oszustowi lub Neutralnemu Zabójcy szansę na zabicie podczas spotkań poprzez zgadywanie ról lub modyfikatorów innych.\
 Jeśli zgadną źle, giną zamiast tego.
 
 ### Opcje gry
-| Nazwa | Opis | Typ | Domyślne |
+| Nazwa | Opis | Typ | Domyślnie |
 |----------|:------------:|:------:|:------:|
 | Liczba Oszustów Zabójców | Ilu Oszustów może zabić | Liczba | 1 |
 | Liczba Neutralnych Zabójców Zabójców | Ilu neutralnych zabójców może zabić | Liczba | 1 |
