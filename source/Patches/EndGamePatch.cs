@@ -95,6 +95,7 @@ namespace TownOfUs.Patches {
                     else if (role.Value == RoleEnum.Escapist) { playerRole += "<color=#" + Patches.Colors.Impostor.ToHtmlStringRGBA() + ">Escapist</color> > "; }
                     else if (role.Value == RoleEnum.Imitator) { playerRole += "<color=#" + Patches.Colors.Imitator.ToHtmlStringRGBA() + ">Imitator</color> > "; }
                     else if (role.Value == RoleEnum.Bomber) { playerRole += "<color=#" + Patches.Colors.Impostor.ToHtmlStringRGBA() + ">Bomber</color> > "; }
+                    else if (role.Value == RoleEnum.Kamikaze) { playerRole += "<color=#" + Patches.Colors.Impostor.ToHtmlStringRGBA() + ">Kamikaze</color> > "; }
                     else if (role.Value == RoleEnum.Foreteller) { playerRole += "<color=#" + Patches.Colors.Foreteller.ToHtmlStringRGBA() + ">Foreteller</color> > "; }
                     else if (role.Value == RoleEnum.Vampire) { playerRole += "<color=#" + Patches.Colors.Vampire.ToHtmlStringRGBA() + ">Vampire</color> > "; }
                     else if (role.Value == RoleEnum.Prosecutor) { playerRole += "<color=#" + Patches.Colors.Prosecutor.ToHtmlStringRGBA() + ">Prosecutor</color> > "; }

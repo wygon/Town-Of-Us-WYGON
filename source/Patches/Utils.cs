@@ -31,6 +31,7 @@ using AsmResolver.DotNet.Code.Cil;
 using Reactor.Networking.Attributes;
 using static TownOfUs.Roles.Icenberg;
 using static TownOfUs.DisableAbilities;
+using TownOfUs.ImpostorRoles.KamikazeMod;
 
 namespace TownOfUs
 {
@@ -1700,6 +1701,14 @@ namespace TownOfUs
                 bomber.PlantButton.graphic.sprite = TownOfUs.PlantSprite;
                 bomber.Bomb.ClearBomb();
             }
+            
+            if (PlayerControl.LocalPlayer.Is(RoleEnum.Kamikaze))
+            {
+                var kami = Role.GetRole<Kamikaze>(PlayerControl.LocalPlayer);
+                kami.PlantButton.graphic.sprite = TownOfUs.PlantSprite;
+                kami.Bomb.ClearBomb();
+            }
+
             if (PlayerControl.LocalPlayer.Is(RoleEnum.Grenadier))
             {
                 var grenadier = Role.GetRole<Grenadier>(PlayerControl.LocalPlayer);

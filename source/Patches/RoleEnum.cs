@@ -65,6 +65,7 @@ namespace TownOfUs
         Hypnotist,
         Scavenger,
         Noclip,
+        Kamikaze,
 
         Crewmate,
         Impostor,

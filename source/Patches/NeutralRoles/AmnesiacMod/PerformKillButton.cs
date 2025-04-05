@@ -25,6 +25,7 @@ namespace TownOfUs.NeutralRoles.AmnesiacMod
             if (!PlayerControl.LocalPlayer.CanMove) return false;
             if (PlayerControl.LocalPlayer.Data.IsDead) return false;
             var role = Role.GetRole<Amnesiac>(PlayerControl.LocalPlayer);
+            var amneRole = Role.GetRole<Amnesiac>(PlayerControl.LocalPlayer);
 
             var flag2 = __instance.isCoolingDown;
             if (flag2) return false;
@@ -151,7 +152,7 @@ namespace TownOfUs.NeutralRoles.AmnesiacMod
 
             newRole = Role.GetRole(other);
             newRole.Player = amnesiac;
-
+            
             if ((role == RoleEnum.Glitch || role == RoleEnum.Icenberg || role == RoleEnum.Juggernaut || role == RoleEnum.Pestilence ||
                 role == RoleEnum.Werewolf) && PlayerControl.LocalPlayer == other)
             {
@@ -603,19 +604,21 @@ namespace TownOfUs.NeutralRoles.AmnesiacMod
                 DestroyableSingleton<HudManager>.Instance.KillButton.gameObject.SetActive(false);
             }
 
-            var killsList = (newRole.Kills, newRole.CorrectKills, newRole.IncorrectKills, newRole.CorrectAssassinKills, newRole.IncorrectAssassinKills);
+            var killsList = (newRole.Kills, newRole.CorrectKills, newRole.IncorrectKills, newRole.CorrectAssassinKills, newRole.IncorrectAssassinKills, newRole.PlayerNotes);
             var otherRole = Role.GetRole(other);
             newRole.Kills = otherRole.Kills;
             newRole.CorrectKills = otherRole.CorrectKills;
             newRole.IncorrectKills = otherRole.IncorrectKills;
             newRole.CorrectAssassinKills = otherRole.CorrectAssassinKills;
             newRole.IncorrectAssassinKills = otherRole.IncorrectAssassinKills;
+            newRole.PlayerNotes = amneRole.PlayerNotes;
             otherRole.Kills = killsList.Kills;
             otherRole.CorrectKills = killsList.CorrectKills;
             otherRole.IncorrectKills = killsList.IncorrectKills;
             otherRole.CorrectAssassinKills = killsList.CorrectAssassinKills;
             otherRole.IncorrectAssassinKills = killsList.IncorrectAssassinKills;
-
+            otherRole.PlayerNotes = killsList.PlayerNotes;
+            
             if (amnesiac.Is(Faction.Impostors) && (!amnesiac.Is(RoleEnum.Traitor) || CustomGameOptions.SnitchSeesTraitor))
             {
                 foreach (var snitch in Role.GetRoles(RoleEnum.Snitch))

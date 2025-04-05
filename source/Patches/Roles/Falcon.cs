@@ -57,6 +57,7 @@ namespace TownOfUs.Roles
             Enabled = false;
             LastZoom = DateTime.UtcNow;
             Zooming(Enabled);
+            HudManager.Instance.ShadowQuad.gameObject.SetActive(true);
             //Debug.Log($"[WingMan] Player {Player.name} unzoomed.");
         }
         private void Zooming(bool enabled)
@@ -69,6 +70,7 @@ namespace TownOfUs.Roles
                     cam.orthographicSize = size;
             }
             ResolutionManager.ResolutionChanged.Invoke((float)Screen.width / Screen.height, Screen.width, Screen.height, Screen.fullScreen);
+            HudManager.Instance.ShadowQuad.gameObject.SetActive(false);
         }
         public bool sabotageLightsZoom()
         {

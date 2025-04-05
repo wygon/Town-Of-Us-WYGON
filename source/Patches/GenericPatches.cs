@@ -2,6 +2,7 @@ using TownOfUs;
 using AmongUs.GameOptions;
 using HarmonyLib;
 using System.Linq;
+using UnityEngine;
 
 namespace TownOfUs.Patches;
 
@@ -31,10 +32,19 @@ internal static class GenericPatches
         public static void Postfix(PingTracker __instance)
         {
             //__instance.text.text += "<line-height=50%><indent=25%>\n<size=60%><color=#cf61c7>townofus.pl</color></indent>";
+            if (IsInLobby())
+            {
+                return;
+            }
             __instance.text.text += "<line-height=50%>\n<size=60%><color=#1B7BEE>Town Of US - Wygon</color>";
         }
     }
 
+    private static bool IsInLobby()
+    {
+        // Sprawdü, czy obiekt Lobby istnieje w scenie
+        return GameObject.FindObjectOfType<LobbyBehaviour>() != null;
+    }
 
     [HarmonyPatch(typeof(GameOptionsMenu), nameof(GameOptionsMenu.Initialize))]
     public static class GameOptionsMenu_Initialize

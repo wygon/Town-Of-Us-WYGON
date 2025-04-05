@@ -31,10 +31,11 @@ namespace TownOfUs.NeutralRoles.ForetellerMod
         }
         public static void RpcMurderPlayer(PlayerVoteArea voteArea, PlayerControl player, PlayerControl doomsayer)
         {
-            if(CustomGameOptions.DoomsayerGuessKill)
-                MurderPlayer(voteArea, player);
-            else
-                Coroutines.Start(Utils.FlashCoroutine(Color.green, 1f));
+            //if(CustomGameOptions.DoomsayerGuessKill)
+            //    MurderPlayer(voteArea, player);
+            //else
+            //    Coroutines.Start(Utils.FlashCoroutine(Color.green, 1f));
+            MurderPlayer(voteArea, player);
             DoomKillCount(player, doomsayer);
             Utils.Rpc(CustomRPC.DoomsayerKill, player.PlayerId, doomsayer.PlayerId);
         }

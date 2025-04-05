@@ -991,8 +991,8 @@ namespace TownOfUs
                     case CustomRPC.DoomsayerKill:
                         var toDie3 = Utils.PlayerById(reader.ReadByte());
                         var doom = Utils.PlayerById(reader.ReadByte());
-                        if(CustomGameOptions.DoomsayerGuessKill)//ZMIANA
-                            DoomsayerKill.MurderPlayer(toDie3);
+                        //if(CustomGameOptions.DoomsayerGuessKill)//ZMIANA
+                        DoomsayerKill.MurderPlayer(toDie3);
                         DoomsayerKill.DoomKillCount(toDie3, doom);
                         break;
                     case CustomRPC.SetMimic:
@@ -1764,6 +1764,9 @@ namespace TownOfUs
 
                 if (CustomGameOptions.BomberOn > 0)
                     ImpostorKillingRoles.Add((typeof(Bomber), CustomGameOptions.BomberOn, true));
+
+                if (CustomGameOptions.KamikazeOn > 0)
+                    ImpostorSupportRoles.Add((typeof(Kamikaze), CustomGameOptions.KamikazeOn, true));
 
                 if (CustomGameOptions.WarlockOn > 0)
                     ImpostorKillingRoles.Add((typeof(Warlock), CustomGameOptions.WarlockOn, false || CustomGameOptions.UniqueRoles));

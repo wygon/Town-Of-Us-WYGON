@@ -82,6 +82,7 @@ namespace TownOfUs.CustomOption
         public static CustomNumberOption JanitorOn;
         public static CustomNumberOption MinerOn;
         public static CustomNumberOption UndertakerOn;
+        public static CustomNumberOption KamikazeOn;
 
         public static CustomHeaderOption CrewmateModifiers;
         public static CustomNumberOption AftermathOn;
@@ -442,6 +443,13 @@ namespace TownOfUs.CustomOption
         public static CustomToggleOption BomberVent;
         public static CustomToggleOption AllImpsSeeBomb;
 
+        public static CustomHeaderOption Kamikaze;
+        public static CustomNumberOption KamikazeMaxKillsInDetonation;
+        public static CustomNumberOption KamikazeDetonateDelay;
+        public static CustomNumberOption KamikazeDetonateRadius;
+        public static CustomToggleOption KamikazeVent;
+        public static CustomToggleOption KamikazeAllImpsSeeBomb;
+
         public static CustomHeaderOption Doomsayer;
         public static CustomNumberOption ObserveCooldown;
         public static CustomToggleOption DoomsayerGuessNeutralBenign;
@@ -698,6 +706,8 @@ namespace TownOfUs.CustomOption
             MinerOn = new CustomNumberOption(num++, MultiMenu.imposter, "<color=#FF0000FF>Miner</color>", 0f, 0f, 100f, 10f,
                 PercentFormat);
             UndertakerOn = new CustomNumberOption(num++, MultiMenu.imposter, "<color=#FF0000FF>Undertaker</color>", 0f, 0f, 100f, 10f,
+                PercentFormat);
+            KamikazeOn = new CustomNumberOption(num++, MultiMenu.imposter, "<color=#FF0000FF>Kamikaze</color>", 100f, 0f, 100f, 10f,
                 PercentFormat);
 
             CrewmateModifiers = new CustomHeaderOption(num++, MultiMenu.modifiers, "Crewmate Modifiers");
@@ -1448,6 +1458,13 @@ namespace TownOfUs.CustomOption
                 new CustomToggleOption(num++, MultiMenu.imposter, "Bomber Can Vent", false);
             AllImpsSeeBomb =
                 new CustomToggleOption(num++, MultiMenu.imposter, "All Impostors See Bomb", false);
+
+            //Kamikaze =
+            //    new CustomHeaderOption(num++, MultiMenu.imposter, "<color=#FF0000FF>Kamikaze</color>");
+            //KamikazeMaxKillsInDetonation =
+            //    new CustomNumberOption(num++, MultiMenu.imposter, "Max Kills In Detonation", 5, 1, 15, 1);
+            //KamikazeVent =
+            //    new CustomToggleOption(num++, MultiMenu.imposter, "Kamikaze Can Vent", true);
 
             Scavenger = new CustomHeaderOption(num++, MultiMenu.imposter, "<color=#FF0000FF>Scavenger</color>");
             ScavengeDuration =

@@ -23,6 +23,7 @@ namespace TownOfUs.Roles
     {
         public static Sprite LockSprite = TownOfUs.LockSprite;
         public static Sprite FreezeSprite = TownOfUs.FreezeSprite;
+        public static Sprite BlizzardSprite = TownOfUs.BlizzardSprite;
 
         public Icenberg(PlayerControl owner) : base(owner)
         {
@@ -31,8 +32,10 @@ namespace TownOfUs.Roles
             LastFreeze = DateTime.UtcNow;
             LastKill = DateTime.UtcNow;
             FreezeButton = null;
+            FreezeAllButton = null;
             KillTarget = null;
             FreezeTarget = null;
+            FreezeAllButtonUsed = false;
             RoleType = RoleEnum.Icenberg;
             AddToRoleHistory(RoleType);
             ImpostorText = () => Patches.TranslationPatches.CurrentLanguage == 0 ? "So cold... Ye?" : "Zimno... Co?";
@@ -44,10 +47,12 @@ namespace TownOfUs.Roles
         public DateTime LastFreeze { get; set; }
         public DateTime LastKill { get; set; }
         public KillButton FreezeButton { get; set; }
+        public KillButton FreezeAllButton { get; set; }
         public PlayerControl KillTarget { get; set; }
         public PlayerControl FreezeTarget { get; set; }
         public bool IsUsingFreeze { get; set; }
         public bool IcenbergWins { get; set; }
+        public bool FreezeAllButtonUsed { get; set; }
 
         internal override bool GameEnd(LogicGameFlowNormal __instance)
         {
@@ -102,6 +107,8 @@ namespace TownOfUs.Roles
 
             FreezeButtonHandler.FreezeButtonUpdate(this, __instance);
 
+            FreezeButtonHandler.FreezeAllButtonUpdate(this, __instance);
+
             if (__instance.KillButton != null && Player.Data.IsDead)
                 __instance.KillButton.SetTarget(null);
 
@@ -115,8 +122,12 @@ namespace TownOfUs.Roles
             {
                 FreezeButtonHandler.FreezeButtonPress(this);
             }
-            else
-                KillButtonHandler.KillButtonPress(this);
+            if (__instance == FreezeAllButton)
+            {
+                FreezeButtonHandler.FreezeAllButtonPress(this);
+                return false;
+            }
+            KillButtonHandler.KillButtonPress(this);
 
             return false;
         }
@@ -126,6 +137,16 @@ namespace TownOfUs.Roles
             //Utils.Rpc(CustomRPC.Freeze, Player.PlayerId, freezed.PlayerId);
             Coroutines.Start(AbilityCoroutineIcenberg.Freeze(this, freezed));
             //SetFreezed(freezed);
+        }        
+        public void RpcSetFreezedAll()
+        {
+            foreach (var player in PlayerControl.AllPlayerControls)
+            {
+                if (player != this.Player && !player.Data.Disconnected && !player.Data.IsDead)
+                {
+                    Coroutines.Start(AbilityCoroutineIcenberg.Freeze(this, player));
+                }
+            }
         }
         public static class AbilityCoroutineIcenberg
         {
@@ -291,7 +312,65 @@ namespace TownOfUs.Roles
                         CustomGameOptions.FreezeCooldown);
                 }
             }
+            public static void FreezeAllButtonUpdate(Icenberg __gInstance, HudManager __instance)
+            {
+                if (__gInstance.FreezeAllButton == null)
+                {
+                    __gInstance.FreezeAllButton = Object.Instantiate(__instance.KillButton, __instance.KillButton.transform.parent);
+                    __gInstance.FreezeAllButton.gameObject.SetActive(true);
+                    __gInstance.FreezeAllButton.graphic.enabled = true;
+                }
 
+                __gInstance.FreezeAllButton.graphic.sprite = BlizzardSprite;
+
+                __gInstance.FreezeAllButton.gameObject.SetActive((__instance.UseButton.isActiveAndEnabled || __instance.PetButton.isActiveAndEnabled)
+                    && !MeetingHud.Instance && !__gInstance.Player.Data.IsDead
+                    && AmongUsClient.Instance.GameState == InnerNetClient.GameStates.Started);
+
+                __gInstance.FreezeAllButton.transform.position = new Vector3(__gInstance.FreezeButton.transform.position.x,
+                    __gInstance.FreezeAllButton.transform.position.y, __instance.ReportButton.transform.position.z);
+
+                if (__gInstance.FreezeAllButtonUsed)
+                {
+                    __gInstance.FreezeAllButton.graphic.color = Palette.DisabledClear;
+                    __gInstance.FreezeAllButton.graphic.material.SetFloat("_Desat", 1f);
+                    __gInstance.FreezeAllButton.gameObject.SetActive(false);
+
+                    return;
+                }
+                __gInstance.IsUsingFreeze = true;
+                if (__gInstance.IsUsingFreeze)
+                {
+                    __gInstance.FreezeAllButton.graphic.material.SetFloat("_Desat", 0f);
+                    __gInstance.FreezeAllButton.graphic.color = Palette.EnabledColor;
+                }
+                else if (!__gInstance.FreezeAllButton.isCoolingDown && __gInstance.Player.moveable)
+                {
+                    __gInstance.FreezeAllButton.isCoolingDown = false;
+                    __gInstance.FreezeAllButton.graphic.material.SetFloat("_Desat", 0f);
+                    __gInstance.FreezeAllButton.graphic.color = Palette.EnabledColor;
+                }
+                else
+                {
+                    __gInstance.FreezeAllButton.isCoolingDown = true;
+                    __gInstance.FreezeAllButton.graphic.material.SetFloat("_Desat", 1f);
+                    __gInstance.FreezeAllButton.graphic.color = Palette.DisabledClear;
+                }
+
+                if (__gInstance.IsUsingFreeze && !__gInstance.FreezeAllButtonUsed)
+                {
+                    __gInstance.FreezeAllButton.SetCoolDown(
+                        CustomGameOptions.FreezeCooldown -
+                        (float)(DateTime.UtcNow - __gInstance.LastFreeze).TotalSeconds,
+                        CustomGameOptions.FreezeCooldown);
+                }
+                if (!__gInstance.FreezeAllButtonUsed)
+                {
+                    __gInstance.FreezeAllButton.graphic.color = Palette.EnabledColor;
+                    __gInstance.FreezeAllButton.graphic.material.SetFloat("_Desat", 0f);
+                    return;
+                }
+            }
             public static void FreezeButtonPress(Icenberg __gInstance)
             {
                 List<byte> freezeTargets = new List<byte>();
@@ -319,6 +398,15 @@ namespace TownOfUs.Roles
                     return freezetargetIDs.Contains(y.PlayerId);
                 });
                 Coroutines.Start(pk.Open(0f, true));
+            }
+            public static void FreezeAllButtonPress(Icenberg __gInstance)
+            {
+                if (!__gInstance.FreezeAllButtonUsed)
+                {
+                    __gInstance.RpcSetFreezedAll();
+                    //__gInstance.FreezeCount++;
+                }
+                    __gInstance.FreezeAllButtonUsed = true;
             }
         }
     }

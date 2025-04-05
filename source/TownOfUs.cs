@@ -25,19 +25,20 @@ using System.Linq;
 
 namespace TownOfUs
 {
-    [BepInPlugin(Id, "Town Of Us", VersionString)]
+    [BepInPlugin(Id, "Wygon's Town", VersionString)]
     [BepInDependency(ReactorPlugin.Id)]
     [BepInDependency(SubmergedCompatibility.SUBMERGED_GUID, BepInDependency.DependencyFlags.SoftDependency)]
     [ReactorModFlags(Reactor.Networking.ModFlags.RequireOnAllClients)]
     public class TownOfUs : BasePlugin
     {
         public const string Id = "com.slushiegoose.townofus";
-        public const string VersionString = "5.2.1";
+        public const string VersionString = "2.0.0";
         public static System.Version Version = System.Version.Parse(VersionString);
-        public const string VersionTag = "<color=#ff33fc></color>";
+        public const string VersionTag = "";
 
         public const int MaxPlayers = 35;
         public const int MaxImpostors = 35 / 2;
+        public static string WygonTextColor = "0045CD";
 
         public static AssetLoader bundledAssets;
 
@@ -117,6 +118,8 @@ namespace TownOfUs
         public static Sprite WingManSprite;
         public static Sprite RewindSprite;
         public static Sprite FreezeSprite;
+        public static Sprite BlizzardSprite;
+        public static Sprite SuicideSprite;
 
         public static Sprite ToUBanner;
         public static Sprite UpdateTOUButton;
@@ -229,6 +232,8 @@ namespace TownOfUs
             WingManSprite = CreateSprite("TownOfUs.Resources.Wingman.png");
             RewindSprite = CreateSprite("TownOfUs.Resources.Rewind.png");
             FreezeSprite = CreateSprite("TownOfUs.Resources.Freeze.png");
+            BlizzardSprite = CreateSprite("TownOfUs.Resources.Blizzard.png");
+            SuicideSprite = CreateSprite("TownOfUs.Resources.Suicide.png");
 
             ToUBanner = CreateSprite("TownOfUs.Resources.TownOfUsBanner.png");
             UpdateTOUButton = CreateSprite("TownOfUs.Resources.UpdateToUButton.png");

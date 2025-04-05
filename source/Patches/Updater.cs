@@ -33,7 +33,7 @@ namespace TownOfUs
                 {
                     string action = AUversion > RequiredVersions.Keys.Max() ? "downgrade" : "update";
                     string info =
-                        $"ALERT\nTown of Us {TownOfUs.VersionString} requires {RequiredVersions.Values.Last()}\nyou have {Application.version}\nPlease {action} your among us version"
+                        $"ALERT\nWygon's Town {TownOfUs.VersionString} requires {RequiredVersions.Values.Last()}\nyou have {Application.version}\nPlease {action} your among us version"
                         + "\nvisit Github or Discord for any help";
                     TwitchManager man = DestroyableSingleton<TwitchManager>.Instance;
                     ModUpdater.InfoPopup = UnityEngine.Object.Instantiate(man.TwitchPopup);
@@ -104,9 +104,16 @@ namespace TownOfUs
             }
         }
 
+        //private static List<ModUpdater.UpdateData> GetVersioning()
+        //{
+        //    var text = ModUpdater.Httpclient.GetAsync("https://github.com/eDonnes124/Town-Of-Us-R/raw/master/source/Versioning.json")
+        //                         .GetAwaiter().GetResult().Content.ReadAsStringAsync().Result;
+        //    var data = JsonSerializer.Deserialize<List<ModUpdater.UpdateData>>(text, options: new() { ReadCommentHandling = JsonCommentHandling.Skip });
+        //    return data;
+        //}
         private static List<ModUpdater.UpdateData> GetVersioning()
         {
-            var text = ModUpdater.Httpclient.GetAsync("https://github.com/eDonnes124/Town-Of-Us-R/raw/master/source/Versioning.json")
+            var text = ModUpdater.Httpclient.GetAsync("https://github.com/wygon/Town-Of-Us-WYGON/raw/master/source/Versioning.json")
                                  .GetAwaiter().GetResult().Content.ReadAsStringAsync().Result;
             var data = JsonSerializer.Deserialize<List<ModUpdater.UpdateData>>(text, options: new() { ReadCommentHandling = JsonCommentHandling.Skip });
             return data;
@@ -217,9 +224,13 @@ namespace TownOfUs
             try
             {
                 string githubURI = "";
+                //if (updateType == "TOU")
+                //{
+                //    githubURI = "https://api.github.com/repos/eDonnes124/Town-Of-Us-R/releases/latest";
+                //}
                 if (updateType == "TOU")
                 {
-                    githubURI = "https://api.github.com/repos/eDonnes124/Town-Of-Us-R/releases/latest";
+                    githubURI = "https://api.github.com/repos/wygon/Town-Of-Us-WYGON/releases/latest";
                 }
                 else if (updateType == "Submerged")
                 {

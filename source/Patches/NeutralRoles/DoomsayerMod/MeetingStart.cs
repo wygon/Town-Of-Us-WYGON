@@ -47,7 +47,7 @@ namespace TownOfUs.NeutralRoles.ForetellerMod
             else if (player.Is(RoleEnum.Executioner) || player.Is(RoleEnum.Jester) || player.Is(RoleEnum.Mayor) || player.Is(RoleEnum.Politician) || player.Is(RoleEnum.TimeLord)
                  || player.Is(RoleEnum.Swapper) || player.Is(RoleEnum.Traitor) || player.Is(RoleEnum.Venerer) || player.Is(RoleEnum.Veteran) || player.Is(RoleEnum.Falcon))
                 return $"You observe that {player.GetDefaultOutfit().PlayerName} has a trick up their sleeve";
-            else if (player.Is(RoleEnum.Bomber) || player.Is(RoleEnum.Deputy) || player.Is(RoleEnum.Jailor) || player.Is(RoleEnum.Juggernaut)
+            else if (player.Is(RoleEnum.Bomber) || player.Is(RoleEnum.Kamikaze) || player.Is(RoleEnum.Deputy) || player.Is(RoleEnum.Jailor) || player.Is(RoleEnum.Juggernaut)
                  || player.Is(RoleEnum.Sheriff) || player.Is(RoleEnum.Vigilante) || player.Is(RoleEnum.Warlock) || player.Is(RoleEnum.Icenberg))
                 return $"You observe that {player.GetDefaultOutfit().PlayerName} is capable of performing relentless attacks";
             else if (player.Is(RoleEnum.Crewmate) || player.Is(RoleEnum.Impostor))
@@ -80,9 +80,9 @@ namespace TownOfUs.NeutralRoles.ForetellerMod
             else if (player.Is(RoleEnum.Executioner) || player.Is(RoleEnum.Jester) || player.Is(RoleEnum.Mayor) || player.Is(RoleEnum.Politician) || player.Is(RoleEnum.TimeLord)
                  || player.Is(RoleEnum.Swapper) || player.Is(RoleEnum.Traitor) || player.Is(RoleEnum.Venerer) || player.Is(RoleEnum.Veteran) || player.Is(RoleEnum.Falcon))
                 return "(Executioner, Jester, Politician, Swapper, Traitor, Venerer, Veteran, TimeLord or Falcon)";
-            else if (player.Is(RoleEnum.Bomber) || player.Is(RoleEnum.Deputy) || player.Is(RoleEnum.Jailor) || player.Is(RoleEnum.Juggernaut)
+            else if (player.Is(RoleEnum.Bomber) || player.Is(RoleEnum.Kamikaze) || player.Is(RoleEnum.Deputy) || player.Is(RoleEnum.Jailor) || player.Is(RoleEnum.Juggernaut)
                  || player.Is(RoleEnum.Sheriff) || player.Is(RoleEnum.Vigilante) || player.Is(RoleEnum.Warlock) || player.Is(RoleEnum.Icenberg))
-                return "(Bomber, Deputy, Jailor, Juggernaut, Sheriff, Vigilante, Warlock or Icenberg)";
+                return "(Bomber, Kamikaze, Deputy, Jailor, Juggernaut, Sheriff, Vigilante, Warlock or Icenberg)";
             else if (player.Is(RoleEnum.Crewmate) || player.Is(RoleEnum.Impostor))
                 return "(Crewmate or Impostor)";
             else return "Error";

@@ -1,63 +1,26 @@
 [
   { // Keys are integers from Constants.GetBroadCastVersion()
     "InternalVersions": { // Keep internal versions in order if multiple
-      "50595550": "2023.11.28"
-    },
-    "ModVersion": "5.0.3"
-  },
-  {
-    "InternalVersions": {
-      "50603750": "2024.6.4",
-      "50603650": "2024.3.5"
-    },
-    "ModVersion": "5.0.4"
-  },
-  {
-    "InternalVersions": {
-      "50607300": "2024.9.4"
-    },
-    "ModVersion": "5.1.0"
-  },
-  {
-    "InternalVersions": {
-      "50607300": "2024.9.4"
-    },
-    "ModVersion": "5.1.1"
-  },
-  {
-    "InternalVersions": {
-      "50614900": "2024.10.29"
-    },
-    "ModVersion": "5.1.2"
-  },
-  {
-    "InternalVersions": {
-      "50614900": "2024.10.29"
-    },
-    "ModVersion": "5.2.0"
-  },
-  {
-    "InternalVersions": {
-      "50614900": "2024.10.29"
-    },
-    "ModVersion": "5.2.1"
-  },
-  {
-    "InternalVersions": {
-      "50614901": "2025.03.04"
+      "50614900": "2025.03.04"
     },
     "ModVersion": "1.0.1"
   },
   {
     "InternalVersions": {
-      "50614902": "2025.03.18"
+      "50614900": "2025.03.18"
     },
     "ModVersion": "1.0.2"
   },
   {
     "InternalVersions": {
-      "50614903": "2025.03.24"
+      "50614900": "2025.03.24"
     },
     "ModVersion": "1.0.3"
+  },
+  {
+    "InternalVersions": {
+      "50614900": "2025.03.24"
+    },
+    "ModVersion": "2.0.0"
   }
 ]

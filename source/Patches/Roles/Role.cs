@@ -23,7 +23,7 @@ namespace TownOfUs.Roles
         public static bool NobodyWins;
         public static bool SurvOnlyWins;
         public static bool VampireWins;
-
+        public string PlayerNotes { get; set; }
         public List<KillButton> ExtraButtons = new List<KillButton>();
 
         public Func<string> ImpostorText;
@@ -33,6 +33,7 @@ namespace TownOfUs.Roles
         {
             Player = player;
             RoleDictionary.Add(player.PlayerId, this);
+            PlayerNotes = "NOTATKI:";
             //TotalTasks = player.Data.Tasks.Count;
             //TasksLeft = TotalTasks;
         }

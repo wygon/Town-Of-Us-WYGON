@@ -57,6 +57,11 @@ namespace TownOfUs
                         var bomber = Role.GetRole<Bomber>(PlayerControl.LocalPlayer);
                         if (bomber.Detonating) disableExtra = false;
                     }
+                    else if (PlayerControl.LocalPlayer.Is(RoleEnum.Kamikaze))
+                    {
+                        var kami = Role.GetRole<Kamikaze>(PlayerControl.LocalPlayer);
+                        if (kami.Detonating) disableExtra = false;
+                    }
                     else if (PlayerControl.LocalPlayer.Is(RoleEnum.Grenadier))
                     {
                         var gren = Role.GetRole<Grenadier>(PlayerControl.LocalPlayer);
@@ -215,6 +220,9 @@ namespace TownOfUs
                             icenberg.FreezeButton.enabled = false;
                             icenberg.FreezeButton.graphic.color = Palette.DisabledClear;
                             icenberg.FreezeButton.graphic.material.SetFloat("_Desat", 1f);
+                            icenberg.FreezeAllButton.enabled = false;
+                            icenberg.FreezeAllButton.graphic.color = Palette.DisabledClear;
+                            icenberg.FreezeAllButton.graphic.material.SetFloat("_Desat", 1f);
                         }
                     }
 

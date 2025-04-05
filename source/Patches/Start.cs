@@ -188,6 +188,16 @@ namespace TownOfUs.Patches
                 noclip.LastNoclip = DateTime.UtcNow;
                 noclip.LastNoclip = noclip.LastNoclip.AddSeconds(CustomGameOptions.InitialCooldowns - CustomGameOptions.NoclipCd);
             }
+            
+            if (PlayerControl.LocalPlayer.Is(RoleEnum.Kamikaze))
+            {
+                if (PlayerControl.LocalPlayer.Is(RoleEnum.Kamikaze))
+                {
+                    var kamikaze = Role.GetRole<Kamikaze>(PlayerControl.LocalPlayer);
+                    kamikaze.StartingCooldown = DateTime.UtcNow;
+                    kamikaze.StartingCooldown = kamikaze.StartingCooldown.AddSeconds(10f);
+                }
+            }
 
             if (PlayerControl.LocalPlayer.Is(RoleEnum.Venerer))
             {
