@@ -52,7 +52,32 @@ Dołącz do naszego [Discord](https://discord.gg/Aw8Ns2g5aT), jeśli masz jakie�
 
 <details>
   <summary> Changelog </summary>
-
+**Added:**
+- Jailor:
+ - Jailed see jail screen,
+ - Jailor can type /all to write with everyone.
+- Bunch new commands (type /help in game to see all),
+- Notes for everyone,
+- Icenberg new Skill Blizzard,
+ - Freezing all live players,
+- Kamikaze new impostor role.
+ <details>
+  <summary> v2.0.0 </summary>
+  <p> Dodano: </p>
+  <ul>
+    <p>Jailor:</p>
+    <li>Zamkniety widzi "jail screen"</li>
+    <li>Jailor moze uzyc /all by komunikowac sie ze wszystkimi</li>
+  </ul>
+  <p>Nowe komendy - sprawdz /help</p>
+  <p>Notatki dla wszystkich</p>
+  <ul>
+    <p>Icenberg:</p>
+    <li>Nowa umiejetnosc Blizzard, zamraza wszystkich zyjacych graczy.</li>
+  </ul>
+  <p>Nowa rola Kamikaze.</p>
+  <hr>
+  </details>
  <details>
   <summary> v1.0.3-beta </summary>
   <p> Poprawiono: </p>
