@@ -46,21 +46,13 @@ Dołącz do naszego [Discord](https://discord.gg/Aw8Ns2g5aT), jeśli masz jakie�
 # Wydania
 | Among Us - Wersja| Mod Wersja | Link |
 |----------|-------------|-----------------|
+| 24.03.2025r | v2.0.0 | [Pobierz](https://github.com/wygon/Town-Of-Us-WYGON/releases/download/v2.0.0/ToU-W.v2.0.0.zip) |
 | 24.03.2025r | v1.0.3-beta | [Pobierz](https://github.com/wygon/Town-Of-Us-WYGON/releases/download/v.1.0.3-beta/ToU-W.v1.0.3-beta.rar) |
 | 18.03.2025r | v1.0.2 | [Pobierz](https://github.com/wygon/Town-Of-Us-WYGON/releases/download/v1.0.2/ToU-W.v1.0.2.rar) |
 | 04.03.2025r | v1.0.1 | [Pobierz](https://github.com/wygon/Town-Of-Us-WYGON/releases/download/v1.0.1/Town-Of-Us-R-WYGON-1.0.1.zip) |
 
 <details>
   <summary> Changelog </summary>
-**Added:**
-- Jailor:
- - Jailed see jail screen,
- - Jailor can type /all to write with everyone.
-- Bunch new commands (type /help in game to see all),
-- Notes for everyone,
-- Icenberg new Skill Blizzard,
- - Freezing all live players,
-- Kamikaze new impostor role.
  <details>
   <summary> v2.0.0 </summary>
   <p> Dodano: </p>
