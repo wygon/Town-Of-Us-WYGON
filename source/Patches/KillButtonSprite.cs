@@ -46,6 +46,8 @@ namespace TownOfUs
         private static Sprite Zoom => TownOfUs.ZoomPlusActiveButton;
         private static Sprite WingMan => TownOfUs.WingManSprite;
         private static Sprite Rewind => TownOfUs.RewindSprite;
+        private static Sprite Admin => TownOfUs.AdminSprite;
+        private static Sprite Vitals => TownOfUs.VitalsSprite;
 
         private static Sprite Kill;
 
@@ -183,6 +185,11 @@ namespace TownOfUs
             else if (PlayerControl.LocalPlayer.Is(RoleEnum.Deputy))
             {
                 __instance.KillButton.graphic.sprite = Camp;
+                flag = true;
+            }
+            else if (PlayerControl.LocalPlayer.Is(RoleEnum.Spy))
+            {
+                __instance.KillButton.graphic.sprite = Admin;
                 flag = true;
             }
             else
