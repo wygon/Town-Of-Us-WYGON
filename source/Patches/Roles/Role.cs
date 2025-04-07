@@ -65,6 +65,7 @@ namespace TownOfUs.Roles
         protected internal int IncorrectKills { get; set; } = 0;
         protected internal int CorrectAssassinKills { get; set; } = 0;
         protected internal int IncorrectAssassinKills { get; set; } = 0;
+        protected internal int HiddenBodies { get; set; } = 0;
 
         public bool Local => PlayerControl.LocalPlayer.PlayerId == Player.PlayerId;
 
@@ -207,6 +208,11 @@ namespace TownOfUs.Roles
             {
                 var scRole = (SoulCollector)sc;
                 if (scRole.CollectedSouls && CustomGameOptions.NeutralEvilWinEndsGame) return;
+            }
+            foreach (var vult in GetRoles(RoleEnum.Vulture))
+            {
+                var vultRole = (Vulture)vult;
+                if (vultRole.vultureWin && CustomGameOptions.NeutralEvilWinEndsGame) return;
             }
 
             VampireWins = true;
@@ -816,6 +822,11 @@ namespace TownOfUs.Roles
                 {
                     ((Amnesiac)role).BodyArrows.Values.DestroyAll();
                     ((Amnesiac)role).BodyArrows.Clear();
+                }
+                foreach (var role in AllRoles.Where(x => x.RoleType == RoleEnum.Vulture))
+                {
+                    ((Vulture)role).BodyArrows.Values.DestroyAll();
+                    ((Vulture)role).BodyArrows.Clear();
                 }
                 foreach (var role in AllRoles.Where(x => x.RoleType == RoleEnum.Medium))
                 {

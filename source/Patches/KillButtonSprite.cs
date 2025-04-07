@@ -48,6 +48,7 @@ namespace TownOfUs
         private static Sprite Rewind => TownOfUs.RewindSprite;
         private static Sprite Admin => TownOfUs.AdminSprite;
         private static Sprite Vitals => TownOfUs.VitalsSprite;
+        private static Sprite Eat => TownOfUs.EatSprite;
 
         private static Sprite Kill;
 
@@ -190,6 +191,11 @@ namespace TownOfUs
             else if (PlayerControl.LocalPlayer.Is(RoleEnum.Spy))
             {
                 __instance.KillButton.graphic.sprite = Admin;
+                flag = true;
+            }
+            else if (PlayerControl.LocalPlayer.Is(RoleEnum.Vulture))
+            { 
+                __instance.KillButton.graphic.sprite = Eat;
                 flag = true;
             }
             else

@@ -1658,6 +1658,12 @@ namespace TownOfUs
                 var sc = (SoulCollector)role;
                 if (PlayerControl.LocalPlayer != sc.Player || PlayerControl.LocalPlayer.Data.IsDead) SoulExtensions.ClearSouls(sc.Souls);
             }
+            foreach (var role in Role.GetRoles(RoleEnum.Vulture))
+            {
+                var vulture = (Vulture)role;
+                vulture.LastEaten = DateTime.UtcNow;
+                vulture.CurrentTarget = null;
+            }
             #endregion
             #region ImposterRoles
             if (PlayerControl.LocalPlayer.Is(RoleEnum.Escapist))

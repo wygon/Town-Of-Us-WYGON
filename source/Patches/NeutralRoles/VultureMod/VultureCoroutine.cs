@@ -1,27 +1,30 @@
+﻿using System;
 using System.Collections;
 using TownOfUs.Roles;
 using UnityEngine;
+using Object = UnityEngine.Object;
 
-namespace TownOfUs.ImpostorRoles.JanitorMod
+namespace TownOfUs.NeutralRoles.VultureMod
 {
-    public class Coroutine
+    public class VultureCoroutine
     {
         private static readonly int BodyColor = Shader.PropertyToID("_BodyColor");
         private static readonly int BackColor = Shader.PropertyToID("_BackColor");
 
-        public static IEnumerator CleanCoroutine(DeadBody body, Janitor role)
+        public static IEnumerator CleanCoroutine(DeadBody body, Vulture role)
         {
             if (PlayerControl.LocalPlayer.Is(RoleEnum.Lookout))
             {
                 var lookout = Role.GetRole<Lookout>(PlayerControl.LocalPlayer);
                 if (lookout.Watching.ContainsKey(body.ParentId))
                 {
-                    if (!lookout.Watching[body.ParentId].Contains(RoleEnum.Janitor)) lookout.Watching[body.ParentId].Add(RoleEnum.Janitor);
+                    if (!lookout.Watching[body.ParentId].Contains(RoleEnum.Vulture)) lookout.Watching[body.ParentId].Add(RoleEnum.Vulture);
                 }
             }
 
             KillButtonTarget.SetTarget(DestroyableSingleton<HudManager>.Instance.KillButton, null, role);
-            role.Player.SetKillTimer(GameOptionsManager.Instance.currentNormalGameOptions.KillCooldown);
+            role.LastEaten = DateTime.UtcNow;
+            role.eatenBodies++;
             role.HiddenBodies++;
             SpriteRenderer renderer = null;
             foreach (var body2 in body.bodyRenderers) renderer = body2;

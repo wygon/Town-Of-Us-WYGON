@@ -379,6 +379,11 @@ namespace TownOfUs.Patches
                         AddRoleMessage(RoleEnum.TimeLord);
                         return false;
                     }
+                    else if (chatText.ToLower().StartsWith("/vult") || chatText.ToLower().StartsWith("/ vult"))
+                    {
+                        AddRoleMessage(RoleEnum.Vulture);
+                        return false;
+                    }
                     else if (chatText.ToLower().StartsWith("/lover") || chatText.ToLower().StartsWith("/ lover"))
                     {
                         AddModifierMessage(ModifierEnum.Lover);
@@ -618,6 +623,7 @@ namespace TownOfUs.Patches
                 if (CustomGameOptions.ExecutionerOn > 0) ColorMapping.Add("Executioner", Colors.Executioner);
                 if (CustomGameOptions.JesterOn > 0 || (CustomGameOptions.ExecutionerOn > 0 && CustomGameOptions.OnTargetDead == OnTargetDead.Jester) || (CustomGameOptions.GuardianAngelOn > 0 && CustomGameOptions.GaOnTargetDeath == BecomeOptions.Jester)) ColorMapping.Add("Jester", Colors.Jester);
                 if (CustomGameOptions.SoulCollectorOn > 0) ColorMapping.Add("Soul Collector", Colors.SoulCollector);
+                if (CustomGameOptions.VultureOn > 0) ColorMapping.Add("Vulture", Colors.Vulture);
 
                 if (CustomGameOptions.ArsonistOn > 0 && !PlayerControl.LocalPlayer.Is(RoleEnum.Arsonist)) ColorMapping.Add("Arsonist", Colors.Arsonist);
                 if (CustomGameOptions.GlitchOn > 0 && !PlayerControl.LocalPlayer.Is(RoleEnum.Glitch)) ColorMapping.Add("The Glitch", Colors.Glitch);
@@ -821,6 +827,8 @@ namespace TownOfUs.Patches
                     "The Scavenger is an impostor who must hunt down prey. Once their kill cooldown is up they are given a target to kill and being their scavenge. If they kill that target they get a reduced kill cooldown and regenerate their scavenge duration. If they don't kill their target they are given an increased kill cooldown.");
                 if (role == RoleEnum.Deputy) DestroyableSingleton<HudManager>.Instance.Chat.AddChat(PlayerControl.LocalPlayer,
                     "The Deputy is a crewmate who can camp other players. If the player is killed they will receive an alert notifying them of their death. During the following meeting they may then shoot anyone. If they shoot the killer, they die unless fortified or invincible, if they are wrong nothing happens.");
+                if (role == RoleEnum.Vulture) DestroyableSingleton<HudManager>.Instance.Chat.AddChat(PlayerControl.LocalPlayer,
+                    "Eat them all...");
             }
             public static void AddModifierMessage(ModifierEnum modifier)
             {
