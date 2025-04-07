@@ -241,6 +241,13 @@ namespace TownOfUs.Patches
                 }
             }
 
+            if (PlayerControl.LocalPlayer.Is(RoleEnum.Vulture))
+            {
+                var vulture = Role.GetRole<Vulture>(PlayerControl.LocalPlayer);
+                vulture.LastEaten = DateTime.UtcNow;
+                vulture.LastEaten = vulture.LastEaten.AddSeconds(CustomGameOptions.InitialCooldowns - CustomGameOptions.VultureKillCooldown);
+            }
+
             if (PlayerControl.LocalPlayer.Is(RoleEnum.Glitch))
             {
                 var glitch = Role.GetRole< Glitch> (PlayerControl.LocalPlayer);
