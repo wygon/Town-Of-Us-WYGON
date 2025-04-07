@@ -22,8 +22,6 @@ namespace TownOfUs.Patches
             if (phantomRole != null) neWin = true;
             var scRole = Role.AllRoles.FirstOrDefault(x => x.RoleType == RoleEnum.SoulCollector && ((SoulCollector)x).CollectedSouls && ((SoulCollector)x).Player == PlayerControl.LocalPlayer);
             if (scRole != null) neWin = true;
-            var vRole = Role.AllRoles.FirstOrDefault(x => x.RoleType == RoleEnum.Vulture && ((Vulture)x).vultureWin && ((Vulture)x).Player == PlayerControl.LocalPlayer);
-            if (vRole != null) neWin = true;
             if (neWin)
             {
                 __instance.WinText.text = "</color><color=#008DFFFF>Victory";

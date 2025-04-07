@@ -122,7 +122,6 @@ namespace TownOfUs
         public static Sprite SuicideSprite;
         public static Sprite VitalsSprite;
         public static Sprite AdminSprite;
-        public static Sprite EatSprite;
 
         public static Sprite ToUBanner;
         public static Sprite UpdateTOUButton;
@@ -239,7 +238,6 @@ namespace TownOfUs
             SuicideSprite = CreateSprite("TownOfUs.Resources.Suicide.png");
             VitalsSprite = CreateSprite("TownOfUs.Resources.Vitals.png");
             AdminSprite = CreateSprite("TownOfUs.Resources.Admin.png");
-            EatSprite = CreateSprite("TownOfUs.Resources.Eat.png");
 
             ToUBanner = CreateSprite("TownOfUs.Resources.TownOfUsBanner.png");
             UpdateTOUButton = CreateSprite("TownOfUs.Resources.UpdateToUButton.png");

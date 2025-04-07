@@ -28,7 +28,6 @@ namespace TownOfUs
                             playerInfo._object.Is(RoleEnum.Werewolf) || playerInfo._object.Is(RoleEnum.Foreteller) ||
                             playerInfo._object.Is(RoleEnum.Vampire) || playerInfo._object.Is(RoleEnum.SoulCollector) ||
                             playerInfo._object.Is(RoleEnum.Phantom) || playerInfo._object.Is(RoleEnum.Haunter) ||
-                            playerInfo._object.Is(RoleEnum.Vulture) ||
                             (playerInfo._object.Is(ModifierEnum.Lover) && !Modifier.GetModifier<Lover>(playerInfo._object).OtherLover.Player.Is(Faction.Crewmates))
                         ))
                     {
@@ -62,8 +61,7 @@ namespace TownOfUs
                            || playerControl.Is(RoleEnum.Werewolf)
                            || playerControl.Is(RoleEnum.Foreteller)
                            || playerControl.Is(RoleEnum.Vampire)
-                           || playerControl.Is(RoleEnum.SoulCollector)
-                           || playerControl.Is(RoleEnum.Vulture);
+                           || playerControl.Is(RoleEnum.SoulCollector);
 
                 // If the console is not a sabotage repair console
                 if (flag && !__instance.AllowImpostor)
