@@ -52,7 +52,6 @@ namespace TownOfUs.CustomOption
         public static CustomNumberOption JesterOn;
         public static CustomNumberOption PhantomOn;
         public static CustomNumberOption SoulCollectorOn;
-        public static CustomNumberOption VultureOn;
 
         public static CustomHeaderOption NeutralKillingRoles;
         public static CustomNumberOption ArsonistOn;
@@ -140,7 +139,6 @@ namespace TownOfUs.CustomOption
         public static CustomToggleOption FirstDeathShield;
         public static CustomToggleOption NeutralEvilWinEndsGame;
         public static CustomToggleOption CrewKillersContinue;
-        public static CustomToggleOption VultureJanitorInSameGame;
 
         public static CustomHeaderOption BetterPolusSettings;
         public static CustomToggleOption VentImprovements;
@@ -425,14 +423,6 @@ namespace TownOfUs.CustomOption
         public static CustomNumberOption RampageKillCooldown;
         public static CustomToggleOption WerewolfVent;
 
-        public static CustomHeaderOption Vulture;
-        public static CustomNumberOption VultureKillCooldown;
-        public static CustomToggleOption VultureVent;
-        public static CustomToggleOption VultureImpVision;
-        public static CustomToggleOption VultureRememberArrows;
-        public static CustomNumberOption VultureRememberArrowDelay;
-        public static CustomNumberOption VultureEatCount;
-
         public static CustomHeaderOption Detective;
         public static CustomNumberOption ExamineCooldown;
         public static CustomToggleOption DetectiveReportOn;
@@ -665,8 +655,6 @@ namespace TownOfUs.CustomOption
                 PercentFormat);
             SoulCollectorOn = new CustomNumberOption(num++, MultiMenu.neutral, "<color=#99FFCCFF>Soul Collector</color>", 0f, 0f, 100f, 10f,
                 PercentFormat);
-            VultureOn = new CustomNumberOption(num++, MultiMenu.neutral, "<color=#916E6EFF>Vulture</color>", 0f, 0f, 100f, 10f,
-            PercentFormat);
 
             NeutralKillingRoles = new CustomHeaderOption(num++, MultiMenu.neutral, "Neutral Killing Roles");
             ArsonistOn = new CustomNumberOption(num++, MultiMenu.neutral, "<color=#FF4D00FF>Arsonist</color>", 0f, 0f, 100f, 10f,
@@ -1396,20 +1384,6 @@ namespace TownOfUs.CustomOption
                 new CustomNumberOption(num++, MultiMenu.neutral, "Rampage Kill Cooldown", 10f, 0.5f, 15f, 0.5f, CooldownFormat);
             WerewolfVent =
                 new CustomToggleOption(num++, MultiMenu.neutral, "Werewolf Can Vent When Rampaged", false);
-
-            Vulture = 
-                new CustomHeaderOption(num++, MultiMenu.neutral, "<color=#916E6EFF>Vulture</color>");
-            VultureKillCooldown = 
-                new CustomNumberOption(num++, MultiMenu.neutral, "Vulture Eat Cooldown", 25f, 10f, 60f, 2.5f, CooldownFormat);
-            VultureVent = 
-                new CustomToggleOption(num++, MultiMenu.neutral, "Vulture Can Vent", true);
-            VultureImpVision =
-                new CustomToggleOption(num++, MultiMenu.neutral, "Vulture Has Impostor Vision", true);
-            VultureRememberArrows =
-                new CustomToggleOption(num++, MultiMenu.neutral, "Vulture Gets Arrows Pointing To Dead Bodies", true);
-            VultureRememberArrowDelay =
-                new CustomNumberOption(num++, MultiMenu.neutral, "Time After Death Arrow Appears", 3f, 0f, 15f, 1f, CooldownFormat);
-            VultureEatCount = new CustomNumberOption(num++, MultiMenu.neutral, "Eat Count Need To Victory", 3, 1, 15, 1);
 
             Escapist =
                 new CustomHeaderOption(num++, MultiMenu.imposter, "<color=#FF0000FF>Escapist</color>");
