@@ -1409,7 +1409,7 @@ namespace TownOfUs.CustomOption
                 new CustomToggleOption(num++, MultiMenu.neutral, "Vulture Gets Arrows Pointing To Dead Bodies", true);
             VultureRememberArrowDelay =
                 new CustomNumberOption(num++, MultiMenu.neutral, "Time After Death Arrow Appears", 3f, 0f, 15f, 1f, CooldownFormat);
-            VultureEatCount = new CustomNumberOption(num++, MultiMenu.neutral, "Eat Count Need To Vicotory", 3, 1, 15, 1);
+            VultureEatCount = new CustomNumberOption(num++, MultiMenu.neutral, "Eat Count Need To Victory", 3, 1, 15, 1);
 
             Escapist =
                 new CustomHeaderOption(num++, MultiMenu.imposter, "<color=#FF0000FF>Escapist</color>");
