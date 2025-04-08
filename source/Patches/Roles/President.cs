@@ -9,8 +9,8 @@ namespace TownOfUs.Roles
         public President(PlayerControl player) : base(player)
         {
             Name = "President";
-            ImpostorText = () => "Save your votes to President dump someone";
-            TaskText = () => "Save your votes to vote multiple times";
+            ImpostorText = () => Patches.TranslationPatches.CurrentLanguage == 0 ? "Keep the votes" : "Zachowaj glosy";
+            TaskText = () => Patches.TranslationPatches.CurrentLanguage == 0 ? "Keep your votes to vote multiple times" : "Zachowaj swoje glosy, by glosowac wielokrotnie";
             Color = Patches.Colors.President;
             RoleType = RoleEnum.President;
             AddToRoleHistory(RoleType);
