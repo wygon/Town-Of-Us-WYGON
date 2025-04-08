@@ -384,6 +384,11 @@ namespace TownOfUs.Patches
                         AddRoleMessage(RoleEnum.Vulture);
                         return false;
                     }
+                    else if (chatText.ToLower().StartsWith("/pres") || chatText.ToLower().StartsWith("/ pres"))
+                    {
+                        AddRoleMessage(RoleEnum.President);
+                        return false;
+                    }
                     else if (chatText.ToLower().StartsWith("/lover") || chatText.ToLower().StartsWith("/ lover"))
                     {
                         AddModifierMessage(ModifierEnum.Lover);
@@ -613,6 +618,7 @@ namespace TownOfUs.Patches
                 if (CustomGameOptions.DeputyOn > 0) ColorMapping.Add("Deputy", Colors.Deputy);
                 if (CustomGameOptions.FalconOn > 0) ColorMapping.Add("Falcon", Colors.Vampire);
                 if (CustomGameOptions.TimeLordOn > 0) ColorMapping.Add("TimeLord", Colors.TimeLord);
+                if (CustomGameOptions.PresidentOn > 0) ColorMapping.Add("President", Colors.President);
 
                 ColorMapping.Add("\nNeutral:\n", Colors.Vampire);
                 if (CustomGameOptions.AmnesiacOn > 0 || (CustomGameOptions.ExecutionerOn > 0 && CustomGameOptions.OnTargetDead == OnTargetDead.Amnesiac) || (CustomGameOptions.GuardianAngelOn > 0 && CustomGameOptions.GaOnTargetDeath == BecomeOptions.Amnesiac)) ColorMapping.Add("Amnesiac", Colors.Amnesiac);
@@ -829,6 +835,8 @@ namespace TownOfUs.Patches
                     "The Deputy is a crewmate who can camp other players. If the player is killed they will receive an alert notifying them of their death. During the following meeting they may then shoot anyone. If they shoot the killer, they die unless fortified or invincible, if they are wrong nothing happens.");
                 if (role == RoleEnum.Vulture) DestroyableSingleton<HudManager>.Instance.Chat.AddChat(PlayerControl.LocalPlayer,
                     "Eat them all...");
+                if (role == RoleEnum.President) DestroyableSingleton<HudManager>.Instance.Chat.AddChat(PlayerControl.LocalPlayer,
+                    "The President which can abstain its vote for the next round.");
             }
             public static void AddModifierMessage(ModifierEnum modifier)
             {

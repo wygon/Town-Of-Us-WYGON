@@ -36,6 +36,7 @@ namespace TownOfUs.Roles
 
             ColorMapping.Add("Crewmate", Colors.Crewmate);
             if (CustomGameOptions.PoliticianOn > 0) ColorMapping.Add("Politician", Colors.Politician);
+            if (CustomGameOptions.PresidentOn > 0) ColorMapping.Add("President", Colors.President);
             if (CustomGameOptions.SheriffOn > 0) ColorMapping.Add("Sheriff", Colors.Sheriff);
             if (CustomGameOptions.EngineerOn > 0) ColorMapping.Add("Engineer", Colors.Engineer);
             if (CustomGameOptions.SwapperOn > 0) ColorMapping.Add("Swapper", Colors.Swapper);

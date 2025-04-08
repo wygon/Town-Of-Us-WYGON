@@ -1,4 +1,5 @@
 using System;
+using TownOfUs.Roles;
 namespace TownOfUs.CustomOption
 {
     public class Generate
@@ -36,6 +37,7 @@ namespace TownOfUs.CustomOption
         public static CustomNumberOption ImitatorOn;
         public static CustomNumberOption MediumOn;
         public static CustomNumberOption PoliticianOn;
+        public static CustomNumberOption PresidentOn;
         public static CustomNumberOption ProsecutorOn;
         public static CustomNumberOption SwapperOn;
         public static CustomNumberOption TransporterOn;
@@ -506,6 +508,11 @@ namespace TownOfUs.CustomOption
         public static CustomHeaderOption Politician;
         public static CustomNumberOption CampaignCooldown;
 
+        public static CustomHeaderOption President;
+        public static CustomNumberOption PresidentVoteBank;
+        public static CustomToggleOption PresidentAnonymous;
+        public static CustomNumberOption PresidentMaximumBank;
+
         public static CustomHeaderOption Hypnotist;
         public static CustomNumberOption HypnotiseCooldown;
 
@@ -635,6 +642,8 @@ namespace TownOfUs.CustomOption
             MediumOn = new CustomNumberOption(num++, MultiMenu.crewmate, "<color=#A680FFFF>Medium</color>", 0f, 0f, 100f, 10f,
                 PercentFormat);
             PoliticianOn = new CustomNumberOption(num++, MultiMenu.crewmate, "<color=#660099FF>Politician</color>", 0f, 0f, 100f, 10f,
+                PercentFormat);
+            PresidentOn = new CustomNumberOption(num++, MultiMenu.crewmate, "<color=#7066A6FF>President</color>", 0f, 0f, 100f, 10f,
                 PercentFormat);
             ProsecutorOn = new CustomNumberOption(num++, MultiMenu.crewmate, "<color=#B38000FF>Prosecutor</color>", 0f, 0f, 100f, 10f,
                 PercentFormat);
@@ -1208,6 +1217,15 @@ namespace TownOfUs.CustomOption
             CampaignCooldown =
                 new CustomNumberOption(num++, MultiMenu.crewmate, "Campaign Cooldown", 25f, 10f, 60f, 2.5f, CooldownFormat);
 
+            President =
+                new CustomHeaderOption(num++, MultiMenu.crewmate, "<color=#7066A6FF>President</color>");
+            PresidentVoteBank =
+                new CustomNumberOption(num++, MultiMenu.crewmate, "Initial President Vote Bank", 1, 0, 15, 1);
+            PresidentAnonymous =
+                new CustomToggleOption(num++, MultiMenu.crewmate, "President Votes Show Anonymous", false);
+            PresidentMaximumBank =
+                new CustomNumberOption(num++, MultiMenu.crewmate, "The Maximum Amount Of Votes In The Vote Bank", 3, 2, 20, 1);
+
             Prosecutor =
                 new CustomHeaderOption(num++, MultiMenu.crewmate, "<color=#B38000FF>Prosecutor</color>");
             ProsDiesOnIncorrectPros =
@@ -1322,6 +1340,21 @@ namespace TownOfUs.CustomOption
             SoulsToWin =
                  new CustomNumberOption(num++, MultiMenu.neutral, "Amount Of Souls Required To Win", 5, 1, 15, 1);
 
+            Vulture =
+                new CustomHeaderOption(num++, MultiMenu.neutral, "<color=#916E6EFF>Vulture</color>");
+            VultureKillCooldown =
+                new CustomNumberOption(num++, MultiMenu.neutral, "Vulture Eat Cooldown", 25f, 10f, 60f, 2.5f, CooldownFormat);
+            VultureVent =
+                new CustomToggleOption(num++, MultiMenu.neutral, "Vulture Can Vent", true);
+            VultureImpVision =
+                new CustomToggleOption(num++, MultiMenu.neutral, "Vulture Has Impostor Vision", true);
+            VultureRememberArrows =
+                new CustomToggleOption(num++, MultiMenu.neutral, "Vulture Gets Arrows Pointing To Dead Bodies", true);
+            VultureRememberArrowDelay =
+                new CustomNumberOption(num++, MultiMenu.neutral, "Time After Death Arrow Appears", 3f, 0f, 15f, 1f, CooldownFormat);
+            VultureEatCount = new CustomNumberOption(num++, MultiMenu.neutral, "Eat Count Need To Victory", 3, 1, 15, 1);
+
+
             Arsonist = new CustomHeaderOption(num++, MultiMenu.neutral, "<color=#FF4D00FF>Arsonist</color>");
             DouseCooldown =
                 new CustomNumberOption(num++, MultiMenu.neutral, "Douse Cooldown", 25f, 10f, 60f, 2.5f, CooldownFormat);
@@ -1396,20 +1429,6 @@ namespace TownOfUs.CustomOption
                 new CustomNumberOption(num++, MultiMenu.neutral, "Rampage Kill Cooldown", 10f, 0.5f, 15f, 0.5f, CooldownFormat);
             WerewolfVent =
                 new CustomToggleOption(num++, MultiMenu.neutral, "Werewolf Can Vent When Rampaged", false);
-
-            Vulture = 
-                new CustomHeaderOption(num++, MultiMenu.neutral, "<color=#916E6EFF>Vulture</color>");
-            VultureKillCooldown = 
-                new CustomNumberOption(num++, MultiMenu.neutral, "Vulture Eat Cooldown", 25f, 10f, 60f, 2.5f, CooldownFormat);
-            VultureVent = 
-                new CustomToggleOption(num++, MultiMenu.neutral, "Vulture Can Vent", true);
-            VultureImpVision =
-                new CustomToggleOption(num++, MultiMenu.neutral, "Vulture Has Impostor Vision", true);
-            VultureRememberArrows =
-                new CustomToggleOption(num++, MultiMenu.neutral, "Vulture Gets Arrows Pointing To Dead Bodies", true);
-            VultureRememberArrowDelay =
-                new CustomNumberOption(num++, MultiMenu.neutral, "Time After Death Arrow Appears", 3f, 0f, 15f, 1f, CooldownFormat);
-            VultureEatCount = new CustomNumberOption(num++, MultiMenu.neutral, "Eat Count Need To Victory", 3, 1, 15, 1);
 
             Escapist =
                 new CustomHeaderOption(num++, MultiMenu.imposter, "<color=#FF0000FF>Escapist</color>");

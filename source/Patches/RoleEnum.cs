@@ -6,6 +6,7 @@ namespace TownOfUs
         Jester,
         Engineer,
         Mayor,
+        President,
         Swapper,
         Investigator,
         Medic,

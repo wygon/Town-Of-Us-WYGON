@@ -7,6 +7,7 @@ namespace TownOfUs.Patches
         // Crew Colors
         public readonly static Color Crewmate = Color.white;
         public readonly static Color Mayor = new Color(0.44f, 0.31f, 0.66f, 1f);
+        public readonly static Color President = new Color(0.44f, 0.31f, 0.66f, 1f);
         public readonly static Color Sheriff = Color.yellow;
         public readonly static Color Engineer = new Color(1f, 0.65f, 0.04f, 1f);
         public readonly static Color Swapper = new Color(0.4f, 0.9f, 0.4f, 1f);
@@ -37,7 +38,6 @@ namespace TownOfUs.Patches
         public readonly static Color Deputy = new Color(1f, 0.8f, 0f, 1f);
         public readonly static Color Falcon = Color.white;
         public readonly static Color TimeLord = new Color(0f, 0f, 1f, 1f);
-        public readonly static Color Vulture = new Color32(145, 110, 110, 255);
 
         // Neutral Colors
         public readonly static Color Jester = new Color(1f, 0.75f, 0.8f, 1f);
@@ -56,6 +56,7 @@ namespace TownOfUs.Patches
         public readonly static Color Foreteller = new Color(0f, 1f, 0.5f, 1f);
         public readonly static Color Vampire = new Color(0.15f, 0.15f, 0.15f, 1f);
         public readonly static Color SoulCollector = new Color(0.6f, 1f, 0.8f, 1f);
+        public readonly static Color Vulture = new Color32(145, 110, 110, 255);
         //Imposter Colors
         public readonly static Color Impostor = Palette.ImpostorRed;
 

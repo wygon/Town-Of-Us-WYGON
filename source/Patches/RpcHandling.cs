@@ -769,7 +769,7 @@ namespace TownOfUs
                 Utils.Rpc(CustomRPC.SetPhantom, byte.MaxValue);
             }
 
-            var exeTargets = PlayerControl.AllPlayerControls.ToArray().Where(x => x.Is(Faction.Crewmates) && !x.Is(ModifierEnum.Lover) && !x.Is(RoleEnum.Politician) && !x.Is(RoleEnum.Prosecutor) && !x.Is(RoleEnum.Swapper) && !x.Is(RoleEnum.Vigilante) && !x.Is(RoleEnum.Jailor) && x != SetTraitor.WillBeTraitor).ToList();
+            var exeTargets = PlayerControl.AllPlayerControls.ToArray().Where(x => x.Is(Faction.Crewmates) && !x.Is(ModifierEnum.Lover) && !x.Is(RoleEnum.President) && !x.Is(RoleEnum.Politician) && !x.Is(RoleEnum.Prosecutor) && !x.Is(RoleEnum.Swapper) && !x.Is(RoleEnum.Vigilante) && !x.Is(RoleEnum.Jailor) && x != SetTraitor.WillBeTraitor).ToList();
             foreach (var role in Role.GetRoles(RoleEnum.Executioner))
             {
                 var exe = (Executioner)role;
@@ -952,6 +952,15 @@ namespace TownOfUs
                     case CustomRPC.Bite:
                         var newVamp = Utils.PlayerById(reader.ReadByte());
                         Bite.Convert(newVamp);
+                        break;
+
+                    case CustomRPC.SetExtraVotes:
+
+                        var president = Utils.PlayerById(reader.ReadByte());
+                        var presidentRole = Role.GetRole<President>(president);
+                        presidentRole.ExtraVotes = reader.ReadBytesAndSize().ToList();
+                        if (!president.Is(RoleEnum.President)) presidentRole.VoteBank -= presidentRole.ExtraVotes.Count;
+
                         break;
 
                     case CustomRPC.SetSwaps:
@@ -1523,6 +1532,9 @@ namespace TownOfUs
                         escapistRole.EscapePoint = escapePos;
                         Escapist.Escape(escapist);
                         break;
+                    case CustomRPC.AddPresidentVoteBank:
+                        Role.GetRole<President>(Utils.PlayerById(reader.ReadByte())).VoteBank += reader.ReadInt32();
+                        break;
                     case CustomRPC.RemoveAllBodies:
                         var buggedBodies = Object.FindObjectsOfType<DeadBody>();
                         foreach (var body in buggedBodies)
@@ -1666,6 +1678,9 @@ namespace TownOfUs
                 #region Crewmate Roles
                 if (CustomGameOptions.PoliticianOn > 0)
                     CrewmateSupportRoles.Add((typeof(Politician), CustomGameOptions.PoliticianOn, true));
+
+                if (CustomGameOptions.PresidentOn > 0)
+                    CrewmateSupportRoles.Add((typeof(President), CustomGameOptions.PresidentOn, true));
 
                 if (CustomGameOptions.SheriffOn > 0)
                     CrewmateKillingRoles.Add((typeof(Sheriff), CustomGameOptions.SheriffOn, false || CustomGameOptions.UniqueRoles));
