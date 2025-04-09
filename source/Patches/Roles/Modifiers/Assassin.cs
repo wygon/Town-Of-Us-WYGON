@@ -58,7 +58,7 @@ namespace TownOfUs.Roles.Modifiers
             if (CustomGameOptions.LookoutOn > 0) ColorMapping.Add("Lookout", Colors.Lookout);
             if (CustomGameOptions.DeputyOn > 0) ColorMapping.Add("Deputy", Colors.Deputy);
             if (CustomGameOptions.FalconOn > 0) ColorMapping.Add("Falcon", Colors.Falcon);
-            if (CustomGameOptions.TimeLordOn > 0) ColorMapping.Add("TimeLord", Colors.TimeLord);
+            if (CustomGameOptions.TimeLordOn > 0) ColorMapping.Add("Time Lord", Colors.TimeLord);
 
             // Add Neutral roles if enabled
             if (CustomGameOptions.AssassinGuessNeutralBenign)

@@ -617,7 +617,7 @@ namespace TownOfUs.Patches
                 if (CustomGameOptions.LookoutOn > 0) ColorMapping.Add("Lookout", Colors.Lookout);
                 if (CustomGameOptions.DeputyOn > 0) ColorMapping.Add("Deputy", Colors.Deputy);
                 if (CustomGameOptions.FalconOn > 0) ColorMapping.Add("Falcon", Colors.Vampire);
-                if (CustomGameOptions.TimeLordOn > 0) ColorMapping.Add("TimeLord", Colors.TimeLord);
+                if (CustomGameOptions.TimeLordOn > 0) ColorMapping.Add("Time Lord", Colors.TimeLord);
                 if (CustomGameOptions.PresidentOn > 0) ColorMapping.Add("President", Colors.President);
 
                 ColorMapping.Add("\nNeutral:\n", Colors.Vampire);
@@ -760,7 +760,7 @@ namespace TownOfUs.Patches
                 if (role == RoleEnum.Falcon) DestroyableSingleton<HudManager>.Instance.Chat.AddChat(
                     PlayerControl.LocalPlayer, "The Falcon is a crewmate who can zoom out map to see whats happening.");
                 if (role == RoleEnum.TimeLord) DestroyableSingleton<HudManager>.Instance.Chat.AddChat(
-                    PlayerControl.LocalPlayer, "The TimeLord is a crewmate who can rewind time.");
+                    PlayerControl.LocalPlayer, "The Time Lord is a crewmate who can rewind time.");
                 if (role == RoleEnum.Undertaker) DestroyableSingleton<HudManager>.Instance.Chat.AddChat(
                     PlayerControl.LocalPlayer, "The Undertaker is an impostor who can drag bodies to different locations.");
                 if (role == RoleEnum.Haunter) DestroyableSingleton<HudManager>.Instance.Chat.AddChat(

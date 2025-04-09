@@ -79,7 +79,7 @@ namespace TownOfUs.NeutralRoles.ForetellerMod
                 return "(Engineer, Escapist, Grenadier, Guardian Angel, Medic, Survivor or Warden)";
             else if (player.Is(RoleEnum.Executioner) || player.Is(RoleEnum.Jester) || player.Is(RoleEnum.Mayor) || player.Is(RoleEnum.President) || player.Is(RoleEnum.Politician) || player.Is(RoleEnum.TimeLord)
                  || player.Is(RoleEnum.Swapper) || player.Is(RoleEnum.Traitor) || player.Is(RoleEnum.Venerer) || player.Is(RoleEnum.Veteran) || player.Is(RoleEnum.Falcon))
-                return "(Executioner, Jester, President, Politician, Swapper, Traitor, Venerer, Veteran, TimeLord or Falcon)";
+                return "(Executioner, Jester, President, Politician, Swapper, Traitor, Venerer, Veteran, Time Lord or Falcon)";
             else if (player.Is(RoleEnum.Bomber) || player.Is(RoleEnum.Kamikaze) || player.Is(RoleEnum.Deputy) || player.Is(RoleEnum.Jailor) || player.Is(RoleEnum.Juggernaut)
                  || player.Is(RoleEnum.Sheriff) || player.Is(RoleEnum.Vigilante) || player.Is(RoleEnum.Warlock) || player.Is(RoleEnum.Icenberg))
                 return "(Bomber, Kamikaze, Deputy, Jailor, Juggernaut, Sheriff, Vigilante, Warlock or Icenberg)";

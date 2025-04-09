@@ -14,6 +14,7 @@ namespace TownOfUs.CrewmateRoles.TimeLordMod
                 Object.Destroy(__instance.gameObject);
                 return false;
             }
+
             return true;
         }
     }
