@@ -142,7 +142,6 @@ namespace TownOfUs.CustomOption
         public static CustomToggleOption FirstDeathShield;
         public static CustomToggleOption NeutralEvilWinEndsGame;
         public static CustomToggleOption CrewKillersContinue;
-        public static CustomToggleOption VultureJanitorInSameGame;
 
         public static CustomHeaderOption BetterPolusSettings;
         public static CustomToggleOption VentImprovements;
@@ -1347,7 +1346,7 @@ namespace TownOfUs.CustomOption
             VultureVent =
                 new CustomToggleOption(num++, MultiMenu.neutral, "Vulture Can Vent", true);
             VultureImpVision =
-                new CustomToggleOption(num++, MultiMenu.neutral, "Vulture Has Impostor Vision", true);
+                new CustomToggleOption(num++, MultiMenu.neutral, "Vulture Has Impostor Vision", false);
             VultureRememberArrows =
                 new CustomToggleOption(num++, MultiMenu.neutral, "Vulture Gets Arrows Pointing To Dead Bodies", true);
             VultureRememberArrowDelay =

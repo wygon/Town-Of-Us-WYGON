@@ -611,9 +611,8 @@ namespace TownOfUs.NeutralRoles.AmnesiacMod
             else if (role == RoleEnum.Vulture)
             {
                 var vultureRole = Role.GetRole<Vulture>(amnesiac);
-                vultureRole.LastEaten = DateTime.UtcNow;
-                vultureRole.CurrentTarget = null;
-                vultureRole.eatenBodies = 0;
+                vultureRole.BodiesEaten = 0;
+                vultureRole.Cooldown = CustomGameOptions.VultureKillCooldown;
             }
 
             else if (!(amnesiac.Is(RoleEnum.Altruist) || amnesiac.Is(RoleEnum.Amnesiac) || amnesiac.Is(Faction.Impostors)))

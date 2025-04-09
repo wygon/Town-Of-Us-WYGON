@@ -212,7 +212,7 @@ namespace TownOfUs.Roles
             foreach (var vult in GetRoles(RoleEnum.Vulture))
             {
                 var vultRole = (Vulture)vult;
-                if (vultRole.vultureWin && CustomGameOptions.NeutralEvilWinEndsGame) return;
+                if (vultRole.VultureWins && CustomGameOptions.NeutralEvilWinEndsGame) return;
             }
 
             VampireWins = true;

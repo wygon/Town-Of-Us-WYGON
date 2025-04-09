@@ -32,7 +32,7 @@ namespace TownOfUs
     public class TownOfUs : BasePlugin
     {
         public const string Id = "com.slushiegoose.townofus";
-        public const string VersionString = "2.0.0";
+        public const string VersionString = "2.1.0";
         public static System.Version Version = System.Version.Parse(VersionString);
         public const string VersionTag = "";
 

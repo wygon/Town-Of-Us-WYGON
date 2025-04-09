@@ -32,7 +32,7 @@ namespace TownOfUs
         VampireWin,
 
         JanitorClean,
-        VultureClean,
+        VultureEat,
         VultureWin,
         FixLights,
         EngineerFix,

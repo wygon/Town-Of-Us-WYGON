@@ -3,11 +3,13 @@ using Reactor.Utilities;
 using TownOfUs.Roles;
 using UnityEngine;
 using AmongUs.GameOptions;
+using System;
+using TownOfUs;
 
 namespace TownOfUs.NeutralRoles.VultureMod
 {
     [HarmonyPatch(typeof(KillButton), nameof(KillButton.DoClick))]
-    public class PerformKillButton
+    public class PerformKill
 
     {
         public static bool Prefix(KillButton __instance)
@@ -18,12 +20,12 @@ namespace TownOfUs.NeutralRoles.VultureMod
             if (PlayerControl.LocalPlayer.Data.IsDead) return false;
             var role = Role.GetRole<Vulture>(PlayerControl.LocalPlayer);
 
-            if (__instance == role.CleanButton)
+            if (__instance == DestroyableSingleton<HudManager>.Instance.KillButton)
             {
-                var flag2 = role.VultureTimer() == 0f;
-                if (!flag2) return false;
+                var flag2 = __instance.isCoolingDown;
+                if (flag2) return false;
                 if (!__instance.enabled) return false;
-                if (role.Player.inVent) return false;
+                if (!role.CurrentTarget) return false;
                 var maxDistance = GameOptionsData.KillDistances[GameOptionsManager.Instance.currentNormalGameOptions.KillDistance];
                 if (Vector2.Distance(role.CurrentTarget.TruePosition,
                     PlayerControl.LocalPlayer.GetTruePosition()) > maxDistance) return false;
@@ -36,9 +38,10 @@ namespace TownOfUs.NeutralRoles.VultureMod
                     foreach (var pb in Role.GetRoles(RoleEnum.Plaguebearer)) ((Plaguebearer)pb).RpcSpreadInfection(player, role.Player);
                 }
 
-                Utils.Rpc(CustomRPC.VultureClean, PlayerControl.LocalPlayer.PlayerId, playerId);
+                Utils.Rpc(CustomRPC.VultureEat, PlayerControl.LocalPlayer.PlayerId, playerId);
 
-                Coroutines.Start(VultureCoroutine.CleanCoroutine(role.CurrentTarget, role));
+                Coroutines.Start(Coroutine.EatCoroutine(role.CurrentTarget, role));
+                role.Cooldown = CustomGameOptions.VultureKillCooldown;
                 return false;
             }
 

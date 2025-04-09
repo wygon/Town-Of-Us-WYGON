@@ -223,7 +223,7 @@ namespace TownOfUs.Patches {
                     if (playerControl.Is(RoleEnum.Vulture))
                     {
                         var vul = Role.GetRole<Vulture>(playerControl);
-                        if (vul.vultureWin)
+                        if (vul.VultureWins)
                         {
                             AdditionalTempData.otherWinners.Add(new AdditionalTempData.Winners() { PlayerName = vul.Player.Data.PlayerName, Role = RoleEnum.Vulture });
                             playerName += $"<color=#EFBF04>{playerControl.Data.PlayerName}</color>";

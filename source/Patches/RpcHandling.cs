@@ -26,7 +26,6 @@ using TownOfUs.Roles;
 using TownOfUs.Roles.Modifiers;
 using UnityEngine;
 using Coroutine = TownOfUs.ImpostorRoles.JanitorMod.Coroutine;
-using VultureCoroutine = TownOfUs.NeutralRoles.VultureMod.VultureCoroutine;
 using Object = UnityEngine.Object;
 using PerformKillButton = TownOfUs.NeutralRoles.AmnesiacMod.PerformKillButton;
 using Random = UnityEngine.Random;
@@ -133,8 +132,6 @@ namespace TownOfUs
 
             var crewRoles = new List<(Type, int, bool)>();
             var impRoles = new List<(Type, int, bool)>();
-            bool janitorSelected = false;
-            bool vultureSelected = false;
 
             // sort out bad lists
             var players = impostors.Count + crewmates.Count;
@@ -274,33 +271,32 @@ namespace TownOfUs
                     }
                     break;
                 }
-                if (!CustomGameOptions.VultureJanitorInSameGame && vultureSelected)
-                {
-                    ImpostorSupportRoles.RemoveAll(x => x.Item1 == typeof(Janitor));
-                    if (ImpostorSupportRoles.Count == 0)
-                    {
-                        while (buckets.Contains(RoleOptions.ImpSupport))
-                        {
-                            buckets.Remove(buckets.FindLast(x => x == RoleOptions.ImpSupport));
-                            buckets.Add(RoleOptions.ImpCommon);
-                        }
-                        break;
-                    }
-                }
                 var addedRole = SelectRole(ImpostorSupportRoles);
                 impRoles.Add(addedRole);
                 ImpostorSupportRoles.Remove(addedRole);
-                if (addedRole.Item1 == typeof(Janitor))
-                {
-                    janitorSelected = true;
-                    if (!CustomGameOptions.VultureJanitorInSameGame)
-                        NeutralEvilRoles.RemoveAll(x => x.Item1 == typeof(Vulture));
-                }
-                addedRole = (addedRole.Item1, 10, addedRole.Item3);
-                if (!addedRole.Item3) ImpostorSupportRoles.Add(addedRole);
+                addedRole.Item2 -= 5;
+                if (addedRole.Item2 > 0 && !addedRole.Item3) ImpostorSupportRoles.Add(addedRole);
                 buckets.Remove(RoleOptions.ImpSupport);
             }
-
+            commonImpRoles.AddRange(ImpostorSupportRoles);
+            while (buckets.Contains(RoleOptions.ImpKilling))
+            {
+                if (ImpostorKillingRoles.Count == 0)
+                {
+                    while (buckets.Contains(RoleOptions.ImpKilling))
+                    {
+                        buckets.Remove(buckets.FindLast(x => x == RoleOptions.ImpKilling));
+                        buckets.Add(RoleOptions.ImpRandom);
+                    }
+                    break;
+                }
+                var addedRole = SelectRole(ImpostorKillingRoles);
+                impRoles.Add(addedRole);
+                ImpostorKillingRoles.Remove(addedRole);
+                addedRole.Item2 -= 5;
+                if (addedRole.Item2 > 0 && !addedRole.Item3) ImpostorKillingRoles.Add(addedRole);
+                buckets.Remove(RoleOptions.ImpKilling);
+            }
             commonImpRoles.AddRange(ImpostorSupportRoles);
 
             while (buckets.Contains(RoleOptions.ImpKilling))
@@ -495,6 +491,7 @@ namespace TownOfUs
                 buckets.Remove(RoleOptions.NeutBenign);
             }
             var commonNeutRoles = NeutralBenignRoles;
+
             while (buckets.Contains(RoleOptions.NeutEvil))
             {
                 if (NeutralEvilRoles.Count == 0)
@@ -506,30 +503,11 @@ namespace TownOfUs
                     }
                     break;
                 }
-                if (!CustomGameOptions.VultureJanitorInSameGame && janitorSelected)
-                {
-                    NeutralEvilRoles.RemoveAll(x => x.Item1 == typeof(Vulture));
-                    if (NeutralEvilRoles.Count == 0)
-                    {
-                        while (buckets.Contains(RoleOptions.NeutEvil))
-                        {
-                            buckets.Remove(buckets.FindLast(x => x == RoleOptions.NeutEvil));
-                            buckets.Add(RoleOptions.NeutCommon);
-                        }
-                        break;
-                    }
-                }
                 var addedRole = SelectRole(NeutralEvilRoles);
                 crewRoles.Add(addedRole);
                 NeutralEvilRoles.Remove(addedRole);
-                if (addedRole.Item1 == typeof(Vulture))
-                {
-                    vultureSelected = true;
-                    if (!CustomGameOptions.VultureJanitorInSameGame)
-                        ImpostorSupportRoles.RemoveAll(x => x.Item1 == typeof(Janitor));
-                }
-                addedRole = (addedRole.Item1, 10, addedRole.Item3);
-                if (!addedRole.Item3) NeutralEvilRoles.Add(addedRole);
+                addedRole.Item2 -= 5;
+                if (addedRole.Item2 > 0 && !addedRole.Item3) NeutralEvilRoles.Add(addedRole);
                 buckets.Remove(RoleOptions.NeutEvil);
             }
 
@@ -895,16 +873,18 @@ namespace TownOfUs
                                 Coroutines.Start(Coroutine.CleanCoroutine(body, janitorRole));
 
                         break;
-                    case CustomRPC.VultureClean:
-                        readByte1 = reader.ReadByte();
-                        var vulturePlayer = Utils.PlayerById(readByte1);
+
+                    case CustomRPC.VultureEat:
+                        var vulturePlayer = Utils.PlayerById(reader.ReadByte());
                         var vultureRole = Role.GetRole<Vulture>(vulturePlayer);
-                        readByte = reader.ReadByte();
-                        var vultureDeadBodies = Object.FindObjectsOfType<DeadBody>();
-                        foreach (var body1 in vultureDeadBodies)
-                            if (body1.ParentId == readByte)
-                                Coroutines.Start(VultureCoroutine.CleanCoroutine(body1, vultureRole));
+                        var ThedeadBodies = Object.FindObjectsOfType<DeadBody>();
+                        foreach (var body in ThedeadBodies)
+                            if (body.ParentId == reader.ReadByte())
+                                Coroutines.Start(global::TownOfUs.NeutralRoles.VultureMod.Coroutine.EatCoroutine(body,
+                                vultureRole));
+
                         break;
+
                     case CustomRPC.EngineerFix:
                         if (ShipStatus.Instance.Systems.ContainsKey(SystemTypes.MushroomMixupSabotage))
                         {
@@ -1306,8 +1286,9 @@ namespace TownOfUs
                         grenadierRole.Flash();
                         break;
                     case CustomRPC.VultureWin:
-                        var theVultureTheRole = Role.AllRoles.FirstOrDefault(x => x.RoleType == RoleEnum.Vulture);
-                        ((Vulture)theVultureTheRole)?.Wins();
+                        var Vulture = Utils.PlayerById(reader.ReadByte());
+                        var VultureRole = Role.GetRole<Vulture>(Vulture);
+                        VultureRole.Wins();
                         break;
                     case CustomRPC.ArsonistWin:
                         var theArsonistTheRole = Role.AllRoles.FirstOrDefault(x => x.RoleType == RoleEnum.Arsonist);

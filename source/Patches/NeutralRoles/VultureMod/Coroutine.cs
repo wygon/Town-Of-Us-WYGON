@@ -1,31 +1,18 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using TownOfUs.Roles;
+using TownOfUs;
 using UnityEngine;
-using Object = UnityEngine.Object;
 
 namespace TownOfUs.NeutralRoles.VultureMod
 {
-    public class VultureCoroutine
+    public class Coroutine
     {
         private static readonly int BodyColor = Shader.PropertyToID("_BodyColor");
         private static readonly int BackColor = Shader.PropertyToID("_BackColor");
 
-        public static IEnumerator CleanCoroutine(DeadBody body, Vulture role)
+        public static IEnumerator EatCoroutine(DeadBody body, Vulture role)
         {
-            if (PlayerControl.LocalPlayer.Is(RoleEnum.Lookout))
-            {
-                var lookout = Role.GetRole<Lookout>(PlayerControl.LocalPlayer);
-                if (lookout.Watching.ContainsKey(body.ParentId))
-                {
-                    if (!lookout.Watching[body.ParentId].Contains(RoleEnum.Vulture)) lookout.Watching[body.ParentId].Add(RoleEnum.Vulture);
-                }
-            }
-
             KillButtonTarget.SetTarget(DestroyableSingleton<HudManager>.Instance.KillButton, null, role);
-            role.LastEaten = DateTime.UtcNow;
-            role.eatenBodies++;
-            role.HiddenBodies++;
             SpriteRenderer renderer = null;
             foreach (var body2 in body.bodyRenderers) renderer = body2;
             var backColor = renderer.material.GetColor(BackColor);
@@ -40,6 +27,12 @@ namespace TownOfUs.NeutralRoles.VultureMod
             }
 
             Object.Destroy(body.gameObject);
+            role.BodiesEaten++;
+            if (role.BodiesEaten == CustomGameOptions.VultureEatCount)
+            {
+                role.Wins();
+                Utils.Rpc(CustomRPC.VultureWin, role.Player.PlayerId);
+            }
         }
     }
 }
