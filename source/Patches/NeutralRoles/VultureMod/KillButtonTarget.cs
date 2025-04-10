@@ -29,7 +29,7 @@ namespace TownOfUs.NeutralRoles.VultureMod
                 SpriteRenderer component = null;
                 foreach (var body in role.CurrentTarget.bodyRenderers) component = body;
                 component.material.SetFloat("_Outline", 1f);
-                component.material.SetColor("_OutlineColor", Color.red);
+                component.material.SetColor("_OutlineColor", Color.yellow);
                 __instance.graphic.color = Palette.EnabledColor;
                 __instance.graphic.material.SetFloat("_Desat", 0f);
                 return;

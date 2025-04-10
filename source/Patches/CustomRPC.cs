@@ -107,8 +107,5 @@ namespace TownOfUs
         SubmergedFixOxygen,
 
         ContentAddition,
-
-        SetExtraVotes,
-        AddPresidentVoteBank,
     }
 }

@@ -384,11 +384,6 @@ namespace TownOfUs.Patches
                         AddRoleMessage(RoleEnum.Vulture);
                         return false;
                     }
-                    else if (chatText.ToLower().StartsWith("/pres") || chatText.ToLower().StartsWith("/ pres"))
-                    {
-                        AddRoleMessage(RoleEnum.President);
-                        return false;
-                    }
                     else if (chatText.ToLower().StartsWith("/lover") || chatText.ToLower().StartsWith("/ lover"))
                     {
                         AddModifierMessage(ModifierEnum.Lover);
@@ -834,9 +829,7 @@ namespace TownOfUs.Patches
                 if (role == RoleEnum.Deputy) DestroyableSingleton<HudManager>.Instance.Chat.AddChat(PlayerControl.LocalPlayer,
                     "The Deputy is a crewmate who can camp other players. If the player is killed they will receive an alert notifying them of their death. During the following meeting they may then shoot anyone. If they shoot the killer, they die unless fortified or invincible, if they are wrong nothing happens.");
                 if (role == RoleEnum.Vulture) DestroyableSingleton<HudManager>.Instance.Chat.AddChat(PlayerControl.LocalPlayer,
-                    "Eat them all...");
-                if (role == RoleEnum.President) DestroyableSingleton<HudManager>.Instance.Chat.AddChat(PlayerControl.LocalPlayer,
-                    "The President which can abstain its vote for the next round.");
+                    "The Vulture is a neutral evil, his task is to eat bodies during the round to win.");
             }
             public static void AddModifierMessage(ModifierEnum modifier)
             {

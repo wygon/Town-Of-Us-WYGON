@@ -44,7 +44,6 @@ namespace TownOfUs
     public static class CustomGameOptions
     {
         public static int PoliticianOn => (int)Generate.PoliticianOn.Get();
-        public static int PresidentOn => (int)Generate.PresidentOn.Get();
         public static int JesterOn => (int)Generate.JesterOn.Get();
         public static int SheriffOn => (int)Generate.SheriffOn.Get();
         public static int JanitorOn => (int)Generate.JanitorOn.Get();
@@ -136,9 +135,6 @@ namespace TownOfUs
         public static bool SheriffKillsNE => Generate.SheriffKillsNE.Get();
         public static bool SheriffKillsNK => Generate.SheriffKillsNK.Get();
         public static float SheriffKillCd => Generate.SheriffKillCd.Get();
-        public static int PresidentVoteBank => (int)Generate.PresidentVoteBank.Get();
-        public static bool PresidentAnonymous => Generate.PresidentAnonymous.Get();
-        public static float PresidentMaximumBank => Generate.PresidentMaximumBank.Get();
         public static bool SwapperButton => Generate.SwapperButton.Get();
         public static float FootprintSize => Generate.FootprintSize.Get();
         public static float FootprintInterval => Generate.FootprintInterval.Get();

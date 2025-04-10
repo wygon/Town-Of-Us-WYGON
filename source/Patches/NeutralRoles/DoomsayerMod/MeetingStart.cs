@@ -44,7 +44,7 @@ namespace TownOfUs.NeutralRoles.ForetellerMod
             else if (player.Is(RoleEnum.Engineer) || player.Is(RoleEnum.Escapist) || player.Is(RoleEnum.Grenadier) || player.Is(RoleEnum.GuardianAngel)
                  || player.Is(RoleEnum.Medic) || player.Is(RoleEnum.Survivor) || player.Is(RoleEnum.Warden))
                 return $"You observe that {player.GetDefaultOutfit().PlayerName} hides to guard themself or others";
-            else if (player.Is(RoleEnum.Executioner) || player.Is(RoleEnum.Jester) || player.Is(RoleEnum.Mayor) || player.Is(RoleEnum.President) || player.Is(RoleEnum.Politician) || player.Is(RoleEnum.TimeLord)
+            else if (player.Is(RoleEnum.Executioner) || player.Is(RoleEnum.Jester) || player.Is(RoleEnum.Mayor) || player.Is(RoleEnum.Politician) || player.Is(RoleEnum.TimeLord)
                  || player.Is(RoleEnum.Swapper) || player.Is(RoleEnum.Traitor) || player.Is(RoleEnum.Venerer) || player.Is(RoleEnum.Veteran) || player.Is(RoleEnum.Falcon))
                 return $"You observe that {player.GetDefaultOutfit().PlayerName} has a trick up their sleeve";
             else if (player.Is(RoleEnum.Bomber) || player.Is(RoleEnum.Kamikaze) || player.Is(RoleEnum.Deputy) || player.Is(RoleEnum.Jailor) || player.Is(RoleEnum.Juggernaut)
@@ -67,7 +67,7 @@ namespace TownOfUs.NeutralRoles.ForetellerMod
                 return "(Blackmailer, Detective, Foreteller, Oracle, Snitch or Trapper)";
             else if (player.Is(RoleEnum.Altruist) || player.Is(RoleEnum.Amnesiac) || player.Is(RoleEnum.Janitor)
                  || player.Is(RoleEnum.Medium) || player.Is(RoleEnum.SoulCollector) || player.Is(RoleEnum.Undertaker) || player.Is(RoleEnum.Vampire) || player.Is(RoleEnum.Vulture))
-                return "(Altruist, Amnesiac, Janitor, Medium, Soul Collector, Undertaker, Vampire, Vulture)";
+                return "(Altruist, Amnesiac, Janitor, Medium, Soul Collector, Undertaker, Vampire or Vulture)";
             else if (player.Is(RoleEnum.Hunter) || player.Is(RoleEnum.Investigator) || player.Is(RoleEnum.Lookout) || player.Is(RoleEnum.Scavenger)
                  || player.Is(RoleEnum.Swooper) || player.Is(RoleEnum.Tracker) || player.Is(RoleEnum.Werewolf) || player.Is(RoleEnum.Noclip))
                 return "(Hunter, Investigator, Lookout, Scavenger, Swooper, Tracker, Werewolf or Noclip)";
@@ -77,9 +77,9 @@ namespace TownOfUs.NeutralRoles.ForetellerMod
             else if (player.Is(RoleEnum.Engineer) || player.Is(RoleEnum.Escapist) || player.Is(RoleEnum.Grenadier) || player.Is(RoleEnum.GuardianAngel)
                  || player.Is(RoleEnum.Medic) || player.Is(RoleEnum.Survivor) || player.Is(RoleEnum.Warden))
                 return "(Engineer, Escapist, Grenadier, Guardian Angel, Medic, Survivor or Warden)";
-            else if (player.Is(RoleEnum.Executioner) || player.Is(RoleEnum.Jester) || player.Is(RoleEnum.Mayor) || player.Is(RoleEnum.President) || player.Is(RoleEnum.Politician) || player.Is(RoleEnum.TimeLord)
+            else if (player.Is(RoleEnum.Executioner) || player.Is(RoleEnum.Jester) || player.Is(RoleEnum.Mayor) || player.Is(RoleEnum.Politician) || player.Is(RoleEnum.TimeLord)
                  || player.Is(RoleEnum.Swapper) || player.Is(RoleEnum.Traitor) || player.Is(RoleEnum.Venerer) || player.Is(RoleEnum.Veteran) || player.Is(RoleEnum.Falcon))
-                return "(Executioner, Jester, President, Politician, Swapper, Traitor, Venerer, Veteran, Time Lord or Falcon)";
+                return "(Executioner, Jester, Politician, Swapper, Traitor, Venerer, Veteran, Time Lord or Falcon)";
             else if (player.Is(RoleEnum.Bomber) || player.Is(RoleEnum.Kamikaze) || player.Is(RoleEnum.Deputy) || player.Is(RoleEnum.Jailor) || player.Is(RoleEnum.Juggernaut)
                  || player.Is(RoleEnum.Sheriff) || player.Is(RoleEnum.Vigilante) || player.Is(RoleEnum.Warlock) || player.Is(RoleEnum.Icenberg))
                 return "(Bomber, Kamikaze, Deputy, Jailor, Juggernaut, Sheriff, Vigilante, Warlock or Icenberg)";

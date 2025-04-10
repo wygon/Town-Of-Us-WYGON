@@ -5,7 +5,7 @@ using TownOfUs.Roles;
 using TownOfUs;
 using UnityEngine;
 
-namespace TownOfUsEdited.NeutralRoles.VultureMod
+namespace TownOfUs.NeutralRoles.VultureMod
 {
     [HarmonyPatch(typeof(EndGameManager), nameof(EndGameManager.Start))]
     public static class Outro
