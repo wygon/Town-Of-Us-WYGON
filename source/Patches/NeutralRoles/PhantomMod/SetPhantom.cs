@@ -36,6 +36,8 @@ namespace TownOfUs.NeutralRoles.PhantomMod
             if (jestRole != null) return;
             var scRole = Role.AllRoles.FirstOrDefault(x => x.RoleType == RoleEnum.SoulCollector && ((SoulCollector)x).CollectedSouls && ((SoulCollector)x).Player == WillBePhantom);
             if (scRole != null) return;
+            var vultRole = Role.AllRoles.FirstOrDefault(x => x.RoleType == RoleEnum.Vulture && ((Vulture)x).VultureWins && ((Vulture)x).Player == WillBePhantom);
+            if (vultRole != null) return;
             if (WillBePhantom.Data.Disconnected) return;
             if (!WillBePhantom.Data.IsDead && WillBePhantom != exiled) return;
 

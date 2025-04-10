@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using TownOfUs.CrewmateRoles.TimeLordMod;
 using UnityEngine;
 using TMPro;
@@ -9,11 +9,11 @@ namespace TownOfUs.Roles
     {
         public int UsesLeft;
         public TextMeshPro UsesText;
-        public bool isRewind;
+
         public bool ButtonUsable => UsesLeft != 0;
         public TimeLord(PlayerControl player) : base(player)
         {
-            Name = "TimeLord";
+            Name = "Time Lord";
             ImpostorText = () => Patches.TranslationPatches.CurrentLanguage == 0 ? "Rewind Time" : "Cofnij Czas";
             TaskText = () => Patches.TranslationPatches.CurrentLanguage == 0 ? "Rewind Time!" : "Cofnij czas!";
             Color = Patches.Colors.TimeLord;
@@ -48,11 +48,11 @@ namespace TownOfUs.Roles
             }
 
 
-            var flag2 = num - (float)timespan.TotalMilliseconds < 0f;
+            var flag2 = num - (float) timespan.TotalMilliseconds < 0f;
             if (flag2) return 0;
-            return (num - (float)timespan.TotalMilliseconds) / 1000f;
+            return (num - (float) timespan.TotalMilliseconds) / 1000f;
         }
-        
+
         public float GetCooldown()
         {
             return RecordRewind.rewinding ? CustomGameOptions.RewindDuration : CustomGameOptions.RewindCooldown;

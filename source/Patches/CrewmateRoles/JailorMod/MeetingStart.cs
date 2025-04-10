@@ -40,7 +40,7 @@ namespace TownOfUs.CrewmateRoles.JailorrMod
                     {
                         jailedMess = Patches.TranslationPatches.CurrentLanguage == 0 ?
                             $"You are jailed, convince the Jailor that you are Crew to avoid being executed" :
-                            $"Jestes uwieziony, przekonaj Jailora, że jestes Crewmate, aby uniknac egzekucji";
+                            $"Jestes uwieziony, przekonaj Jailora, ze jestes Crewmate, aby uniknac egzekucji";
                         DestroyableSingleton<HudManager>.Instance.Chat.AddChat(PlayerControl.LocalPlayer, jailedMess);
                     }
                 }

@@ -14,6 +14,7 @@ using TownOfUs.CrewmateRoles.ImitatorMod;
 using TownOfUs.Patches;
 using Reactor.Utilities.Extensions;
 using TownOfUs.CrewmateRoles.DeputyMod;
+using Hazel;
 
 namespace TownOfUs.Modifiers.AssassinMod
 {
