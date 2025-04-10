@@ -613,7 +613,6 @@ namespace TownOfUs.Patches
                 if (CustomGameOptions.DeputyOn > 0) ColorMapping.Add("Deputy", Colors.Deputy);
                 if (CustomGameOptions.FalconOn > 0) ColorMapping.Add("Falcon", Colors.Vampire);
                 if (CustomGameOptions.TimeLordOn > 0) ColorMapping.Add("Time Lord", Colors.TimeLord);
-                if (CustomGameOptions.PresidentOn > 0) ColorMapping.Add("President", Colors.President);
 
                 ColorMapping.Add("\nNeutral:\n", Colors.Vampire);
                 if (CustomGameOptions.AmnesiacOn > 0 || (CustomGameOptions.ExecutionerOn > 0 && CustomGameOptions.OnTargetDead == OnTargetDead.Amnesiac) || (CustomGameOptions.GuardianAngelOn > 0 && CustomGameOptions.GaOnTargetDeath == BecomeOptions.Amnesiac)) ColorMapping.Add("Amnesiac", Colors.Amnesiac);
