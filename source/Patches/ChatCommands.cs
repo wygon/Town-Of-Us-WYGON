@@ -379,6 +379,11 @@ namespace TownOfUs.Patches
                         AddRoleMessage(RoleEnum.TimeLord);
                         return false;
                     }
+                    else if (chatText.ToLower().StartsWith("/vult") || chatText.ToLower().StartsWith("/ vult"))
+                    {
+                        AddRoleMessage(RoleEnum.Vulture);
+                        return false;
+                    }
                     else if (chatText.ToLower().StartsWith("/lover") || chatText.ToLower().StartsWith("/ lover"))
                     {
                         AddModifierMessage(ModifierEnum.Lover);
@@ -607,7 +612,7 @@ namespace TownOfUs.Patches
                 if (CustomGameOptions.LookoutOn > 0) ColorMapping.Add("Lookout", Colors.Lookout);
                 if (CustomGameOptions.DeputyOn > 0) ColorMapping.Add("Deputy", Colors.Deputy);
                 if (CustomGameOptions.FalconOn > 0) ColorMapping.Add("Falcon", Colors.Vampire);
-                if (CustomGameOptions.TimeLordOn > 0) ColorMapping.Add("TimeLord", Colors.TimeLord);
+                if (CustomGameOptions.TimeLordOn > 0) ColorMapping.Add("Time Lord", Colors.TimeLord);
 
                 ColorMapping.Add("\nNeutral:\n", Colors.Vampire);
                 if (CustomGameOptions.AmnesiacOn > 0 || (CustomGameOptions.ExecutionerOn > 0 && CustomGameOptions.OnTargetDead == OnTargetDead.Amnesiac) || (CustomGameOptions.GuardianAngelOn > 0 && CustomGameOptions.GaOnTargetDeath == BecomeOptions.Amnesiac)) ColorMapping.Add("Amnesiac", Colors.Amnesiac);
@@ -618,6 +623,7 @@ namespace TownOfUs.Patches
                 if (CustomGameOptions.ExecutionerOn > 0) ColorMapping.Add("Executioner", Colors.Executioner);
                 if (CustomGameOptions.JesterOn > 0 || (CustomGameOptions.ExecutionerOn > 0 && CustomGameOptions.OnTargetDead == OnTargetDead.Jester) || (CustomGameOptions.GuardianAngelOn > 0 && CustomGameOptions.GaOnTargetDeath == BecomeOptions.Jester)) ColorMapping.Add("Jester", Colors.Jester);
                 if (CustomGameOptions.SoulCollectorOn > 0) ColorMapping.Add("Soul Collector", Colors.SoulCollector);
+                if (CustomGameOptions.VultureOn > 0) ColorMapping.Add("Vulture", Colors.Vulture);
 
                 if (CustomGameOptions.ArsonistOn > 0 && !PlayerControl.LocalPlayer.Is(RoleEnum.Arsonist)) ColorMapping.Add("Arsonist", Colors.Arsonist);
                 if (CustomGameOptions.GlitchOn > 0 && !PlayerControl.LocalPlayer.Is(RoleEnum.Glitch)) ColorMapping.Add("The Glitch", Colors.Glitch);
@@ -748,7 +754,7 @@ namespace TownOfUs.Patches
                 if (role == RoleEnum.Falcon) DestroyableSingleton<HudManager>.Instance.Chat.AddChat(
                     PlayerControl.LocalPlayer, "The Falcon is a crewmate who can zoom out map to see whats happening.");
                 if (role == RoleEnum.TimeLord) DestroyableSingleton<HudManager>.Instance.Chat.AddChat(
-                    PlayerControl.LocalPlayer, "The TimeLord is a crewmate who can rewind time.");
+                    PlayerControl.LocalPlayer, "The Time Lord is a crewmate who can rewind time.");
                 if (role == RoleEnum.Undertaker) DestroyableSingleton<HudManager>.Instance.Chat.AddChat(
                     PlayerControl.LocalPlayer, "The Undertaker is an impostor who can drag bodies to different locations.");
                 if (role == RoleEnum.Haunter) DestroyableSingleton<HudManager>.Instance.Chat.AddChat(
@@ -821,6 +827,8 @@ namespace TownOfUs.Patches
                     "The Scavenger is an impostor who must hunt down prey. Once their kill cooldown is up they are given a target to kill and being their scavenge. If they kill that target they get a reduced kill cooldown and regenerate their scavenge duration. If they don't kill their target they are given an increased kill cooldown.");
                 if (role == RoleEnum.Deputy) DestroyableSingleton<HudManager>.Instance.Chat.AddChat(PlayerControl.LocalPlayer,
                     "The Deputy is a crewmate who can camp other players. If the player is killed they will receive an alert notifying them of their death. During the following meeting they may then shoot anyone. If they shoot the killer, they die unless fortified or invincible, if they are wrong nothing happens.");
+                if (role == RoleEnum.Vulture) DestroyableSingleton<HudManager>.Instance.Chat.AddChat(PlayerControl.LocalPlayer,
+                    "The Vulture is a neutral evil, his task is to eat bodies during the round to win.");
             }
             public static void AddModifierMessage(ModifierEnum modifier)
             {

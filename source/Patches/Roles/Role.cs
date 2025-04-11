@@ -208,6 +208,11 @@ namespace TownOfUs.Roles
                 var scRole = (SoulCollector)sc;
                 if (scRole.CollectedSouls && CustomGameOptions.NeutralEvilWinEndsGame) return;
             }
+            foreach (var vulture in GetRoles(RoleEnum.Vulture))
+            {
+                var vultureRole = (Vulture)vulture;
+                if (vultureRole.VultureWins && CustomGameOptions.NeutralEvilWinEndsGame) return;
+            }
 
             VampireWins = true;
 
@@ -816,6 +821,11 @@ namespace TownOfUs.Roles
                 {
                     ((Amnesiac)role).BodyArrows.Values.DestroyAll();
                     ((Amnesiac)role).BodyArrows.Clear();
+                }
+                foreach (var role in AllRoles.Where(x => x.RoleType == RoleEnum.Vulture))
+                {
+                    ((Vulture)role).BodyArrows.Values.DestroyAll();
+                    ((Vulture)role).BodyArrows.Clear();
                 }
                 foreach (var role in AllRoles.Where(x => x.RoleType == RoleEnum.Medium))
                 {

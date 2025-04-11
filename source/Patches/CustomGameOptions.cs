@@ -100,6 +100,7 @@ namespace TownOfUs
         public static int HypnotistOn => (int)Generate.HypnotistOn.Get();
         public static int JailorOn => (int)Generate.JailorOn.Get();
         public static int SoulCollectorOn => (int)Generate.SoulCollectorOn.Get();
+        public static int VultureOn => (int)Generate.VultureOn.Get();
         public static int LookoutOn => (int)Generate.LookoutOn.Get();
         public static int ScavengerOn => (int)Generate.ScavengerOn.Get();
         public static int DeputyOn => (int)Generate.DeputyOn.Get();
@@ -298,6 +299,12 @@ namespace TownOfUs
         public static float RampageDuration => Generate.RampageDuration.Get();
         public static float RampageKillCd => Generate.RampageKillCooldown.Get();
         public static bool WerewolfVent => Generate.WerewolfVent.Get();
+        public static float VultureCD => Generate.VultureCooldown.Get();
+        public static bool VultureVent => Generate.VultureVent.Get();
+        public static bool VultureImpVision => Generate.VultureImpVision.Get();
+        public static bool VultureArrow => Generate.VultureArrow.Get();
+        public static int VultureBodies => (int)Generate.VultureBodies.Get();
+        public static float VultureArrowDelay => Generate.VultureArrowDelay.Get();
         public static float TrapCooldown => Generate.TrapCooldown.Get();
         public static bool TrapsRemoveOnNewRound => Generate.TrapsRemoveOnNewRound.Get();
         public static int MaxTraps => (int)Generate.MaxTraps.Get();
