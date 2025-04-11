@@ -62,7 +62,8 @@ namespace TownOfUs
                            || playerControl.Is(RoleEnum.Werewolf)
                            || playerControl.Is(RoleEnum.Foreteller)
                            || playerControl.Is(RoleEnum.Vampire)
-                           || playerControl.Is(RoleEnum.SoulCollector);
+                           || playerControl.Is(RoleEnum.SoulCollector)
+                           || playerControl.Is(RoleEnum.Vulture);
 
                 // If the console is not a sabotage repair console
                 if (flag && !__instance.AllowImpostor)

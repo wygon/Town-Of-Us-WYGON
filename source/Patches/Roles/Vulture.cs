@@ -15,7 +15,7 @@ namespace TownOfUs.Roles
         {
             Name = "Vulture";
             ImpostorText = () => Patches.TranslationPatches.CurrentLanguage == 0 ? "Eat all bodies!" : "Zjedz wszystkie ciala!";
-            TaskText = () => Patches.TranslationPatches.CurrentLanguage == 0 ? $"Eat {CustomGameOptions.VultureBodies} dead bodies to win!" : $"Zjedz {CustomGameOptions.VultureBodies} martwych ciał, by wygrac";
+            TaskText = () => Patches.TranslationPatches.CurrentLanguage == 0 ? $"Eat {CustomGameOptions.VultureBodies} dead bodies to win!\nFake Tasks:" : $"Zjedz {CustomGameOptions.VultureBodies} martwych ciał, by wygrac\nFake Tasks:";
             Color = Patches.Colors.Vulture;
             Cooldown = CustomGameOptions.VultureCD;
             RoleType = RoleEnum.Vulture;
