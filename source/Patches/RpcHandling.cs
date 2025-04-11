@@ -259,6 +259,7 @@ namespace TownOfUs
                 buckets.Remove(RoleOptions.ImpConceal);
             }
             var commonImpRoles = ImpostorConcealingRoles;
+
             while (buckets.Contains(RoleOptions.ImpSupport))
             {
                 if (ImpostorSupportRoles.Count == 0)
@@ -278,6 +279,26 @@ namespace TownOfUs
                 buckets.Remove(RoleOptions.ImpSupport);
             }
             commonImpRoles.AddRange(ImpostorSupportRoles);
+            while (buckets.Contains(RoleOptions.ImpKilling))
+            {
+                if (ImpostorKillingRoles.Count == 0)
+                {
+                    while (buckets.Contains(RoleOptions.ImpKilling))
+                    {
+                        buckets.Remove(buckets.FindLast(x => x == RoleOptions.ImpKilling));
+                        buckets.Add(RoleOptions.ImpRandom);
+                    }
+                    break;
+                }
+                var addedRole = SelectRole(ImpostorKillingRoles);
+                impRoles.Add(addedRole);
+                ImpostorKillingRoles.Remove(addedRole);
+                addedRole.Item2 -= 5;
+                if (addedRole.Item2 > 0 && !addedRole.Item3) ImpostorKillingRoles.Add(addedRole);
+                buckets.Remove(RoleOptions.ImpKilling);
+            }
+            commonImpRoles.AddRange(ImpostorSupportRoles);
+
             while (buckets.Contains(RoleOptions.ImpKilling))
             {
                 if (ImpostorKillingRoles.Count == 0)
@@ -470,6 +491,7 @@ namespace TownOfUs
                 buckets.Remove(RoleOptions.NeutBenign);
             }
             var commonNeutRoles = NeutralBenignRoles;
+
             while (buckets.Contains(RoleOptions.NeutEvil))
             {
                 if (NeutralEvilRoles.Count == 0)
@@ -488,7 +510,9 @@ namespace TownOfUs
                 if (addedRole.Item2 > 0 && !addedRole.Item3) NeutralEvilRoles.Add(addedRole);
                 buckets.Remove(RoleOptions.NeutEvil);
             }
+
             commonNeutRoles.AddRange(NeutralEvilRoles);
+
             while (buckets.Contains(RoleOptions.NeutKilling))
             {
                 if (NeutralKillingRoles.Count == 0)
@@ -849,6 +873,18 @@ namespace TownOfUs
                                 Coroutines.Start(Coroutine.CleanCoroutine(body, janitorRole));
 
                         break;
+
+                    case CustomRPC.VultureEat:
+                        var vulturePlayer = Utils.PlayerById(reader.ReadByte());
+                        var vultureRole = Role.GetRole<Vulture>(vulturePlayer);
+                        var ThedeadBodies = Object.FindObjectsOfType<DeadBody>();
+                        foreach (var body in ThedeadBodies)
+                            if (body.ParentId == reader.ReadByte())
+                                Coroutines.Start(global::TownOfUs.NeutralRoles.VultureMod.Coroutine.EatCoroutine(body,
+                                vultureRole));
+
+                        break;
+
                     case CustomRPC.EngineerFix:
                         if (ShipStatus.Instance.Systems.ContainsKey(SystemTypes.MushroomMixupSabotage))
                         {
@@ -1239,6 +1275,11 @@ namespace TownOfUs
                         }
                         grenadierRole.flashedPlayers = playerControlList;
                         grenadierRole.Flash();
+                        break;
+                    case CustomRPC.VultureWin:
+                        var Vulture = Utils.PlayerById(reader.ReadByte());
+                        var VultureRole = Role.GetRole<Vulture>(Vulture);
+                        VultureRole.Wins();
                         break;
                     case CustomRPC.ArsonistWin:
                         var theArsonistTheRole = Role.AllRoles.FirstOrDefault(x => x.RoleType == RoleEnum.Arsonist);
@@ -1706,6 +1747,9 @@ namespace TownOfUs
 
                 if (CustomGameOptions.SoulCollectorOn > 0)
                     NeutralEvilRoles.Add((typeof(SoulCollector), CustomGameOptions.SoulCollectorOn, true));
+
+                if (CustomGameOptions.VultureOn > 0)
+                    NeutralEvilRoles.Add((typeof(Vulture), CustomGameOptions.VultureOn, true));
 
                 if (CustomGameOptions.SurvivorOn > 0)
                     NeutralBenignRoles.Add((typeof(Survivor), CustomGameOptions.SurvivorOn, false || CustomGameOptions.UniqueRoles));

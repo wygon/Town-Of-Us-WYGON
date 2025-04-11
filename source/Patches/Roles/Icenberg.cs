@@ -121,6 +121,7 @@ namespace TownOfUs.Roles
             if (__instance == FreezeButton)
             {
                 FreezeButtonHandler.FreezeButtonPress(this);
+                return false;
             }
             if (__instance == FreezeAllButton)
             {

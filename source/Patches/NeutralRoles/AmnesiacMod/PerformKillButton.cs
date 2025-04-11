@@ -144,6 +144,7 @@ namespace TownOfUs.NeutralRoles.AmnesiacMod
                 case RoleEnum.Foreteller:
                 case RoleEnum.Vampire:
                 case RoleEnum.SoulCollector:
+                case RoleEnum.Vulture:
 
                     rememberImp = false;
 
@@ -597,6 +598,12 @@ namespace TownOfUs.NeutralRoles.AmnesiacMod
             {
                 var bomberRole = Role.GetRole<Bomber>(amnesiac);
                 bomberRole.Bomb.ClearBomb();
+            }
+            else if (role == RoleEnum.Vulture)
+            {
+                var vultureRole = Role.GetRole<Vulture>(amnesiac);
+                vultureRole.BodiesEaten = 0;
+                vultureRole.Cooldown = CustomGameOptions.VultureCD;
             }
 
             else if (!(amnesiac.Is(RoleEnum.Altruist) || amnesiac.Is(RoleEnum.Amnesiac) || amnesiac.Is(Faction.Impostors)))

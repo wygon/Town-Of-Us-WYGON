@@ -46,6 +46,7 @@ namespace TownOfUs
         private static Sprite Zoom => TownOfUs.ZoomPlusActiveButton;
         private static Sprite WingMan => TownOfUs.WingManSprite;
         private static Sprite Rewind => TownOfUs.RewindSprite;
+        private static Sprite Eat => TownOfUs.EatSprite;
 
         private static Sprite Kill;
 
@@ -185,6 +186,11 @@ namespace TownOfUs
                 __instance.KillButton.graphic.sprite = Camp;
                 flag = true;
             }
+            else if (PlayerControl.LocalPlayer.Is(RoleEnum.Vulture))
+            {
+                __instance.KillButton.graphic.sprite = Eat;
+                flag = true;
+            }
             else
             {
                 __instance.KillButton.graphic.sprite = Kill;
@@ -200,7 +206,8 @@ namespace TownOfUs
             }
             if (PlayerControl.LocalPlayer.Is(RoleEnum.Engineer) || PlayerControl.LocalPlayer.Is(RoleEnum.Glitch) 
                  || PlayerControl.LocalPlayer.Is(RoleEnum.Icenberg) || PlayerControl.LocalPlayer.Is(RoleEnum.Pestilence)
-                 || PlayerControl.LocalPlayer.Is(RoleEnum.Juggernaut) || PlayerControl.LocalPlayer.Is(RoleEnum.Vampire))
+                 || PlayerControl.LocalPlayer.Is(RoleEnum.Juggernaut) || PlayerControl.LocalPlayer.Is(RoleEnum.Vampire) 
+                 || PlayerControl.LocalPlayer.Is(RoleEnum.Vulture))
             {
                 __instance.ImpostorVentButton.transform.localPosition = new Vector3(-2f, 0f, 0f);
             }

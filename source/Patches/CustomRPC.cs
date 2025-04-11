@@ -32,6 +32,8 @@ namespace TownOfUs
         VampireWin,
 
         JanitorClean,
+        VultureEat,
+        VultureWin,
         FixLights,
         EngineerFix,
         SetSwaps,
@@ -104,6 +106,6 @@ namespace TownOfUs
 
         SubmergedFixOxygen,
 
-        ContentAddition
+        ContentAddition,
     }
 }

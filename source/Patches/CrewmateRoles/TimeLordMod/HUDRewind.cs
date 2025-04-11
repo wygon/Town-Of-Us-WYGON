@@ -7,8 +7,6 @@ namespace TownOfUs.CrewmateRoles.TimeLordMod
     [HarmonyPatch(typeof(PlayerControl), nameof(PlayerControl.FixedUpdate))]
     public class HUDRewind
     {
-        public static Sprite RewindSprite => TownOfUs.RewindSprite;
-
         public static void Postfix(PlayerControl __instance)
         {
             UpdateRewindButton(__instance);
@@ -30,13 +28,11 @@ namespace TownOfUs.CrewmateRoles.TimeLordMod
             if (isDead)
             {
                 rewindButton.gameObject.SetActive(false);
-                //rewindButton.isActive = false;
+              //  rewindButton.isActive = false;
             }
             else
             {
                 rewindButton.gameObject.SetActive(!MeetingHud.Instance);
-                rewindButton.graphic.sprite = RewindSprite;
-                rewindButton.graphic.enabled = true;
                 //  rewindButton.isActive = !MeetingHud.Instance;
                 if (role.ButtonUsable)
                     rewindButton.SetCoolDown(role.TimeLordRewindTimer(), role.GetCooldown());
