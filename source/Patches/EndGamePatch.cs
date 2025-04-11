@@ -277,6 +277,9 @@ namespace TownOfUs.Patches {
                     case "alex":
                         roleSummaryText.AppendLine($"{data.PlayerName} - {role} | blondi");
                         break;
+                    case "lob":
+                        roleSummaryText.AppendLine($"{data.PlayerName} - {role} | gluchy");
+                        break;
                     case "gej uwu":
                     case "gej":
                     case "uwu gej":
