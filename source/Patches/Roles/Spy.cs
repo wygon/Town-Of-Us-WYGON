@@ -2,6 +2,8 @@ namespace TownOfUs.Roles
 {
     public class Spy : Role
     {
+
+        KillButton _AdminButton;
         public Spy(PlayerControl player) : base(player)
         {
             Name = "Spy";
@@ -10,6 +12,17 @@ namespace TownOfUs.Roles
             Color = Patches.Colors.Spy;
             RoleType = RoleEnum.Spy;
             AddToRoleHistory(RoleType);
+        }
+
+        public KillButton AdminButton
+        {
+            get => _AdminButton;
+            set
+            {
+                _AdminButton = value;
+                ExtraButtons.Clear();
+                ExtraButtons.Add(value);
+            }
         }
     }
 }
