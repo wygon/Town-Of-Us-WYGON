@@ -191,6 +191,14 @@ namespace TownOfUs
                 __instance.KillButton.graphic.sprite = Eat;
                 flag = true;
             }
+            else if (PlayerControl.LocalPlayer.Is(RoleEnum.Spy))
+            {
+                __instance.KillButton.graphic.sprite = TownOfUs.AdminSprite;
+                __instance.KillButton.buttonLabelText.text = "Admin";
+                __instance.KillButton.buttonLabelText.color = Color.green;
+                __instance.KillButton.buttonLabelText.gameObject.SetActive(true);
+                flag = true;
+            }
             else
             {
                 __instance.KillButton.graphic.sprite = Kill;

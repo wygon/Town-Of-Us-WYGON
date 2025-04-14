@@ -32,9 +32,9 @@ namespace TownOfUs
     public class TownOfUs : BasePlugin
     {
         public const string Id = "com.slushiegoose.townofus";
-        public const string VersionString = "2.1.4";
+        public const string VersionString = "2.2.0";
         public static System.Version Version = System.Version.Parse(VersionString);
-        public const string VersionTag = "";
+        public const string VersionTag = "beta";
 
         public const int MaxPlayers = 35;
         public const int MaxImpostors = 35 / 2;
@@ -121,6 +121,7 @@ namespace TownOfUs
         public static Sprite BlizzardSprite;
         public static Sprite SuicideSprite;
         public static Sprite EatSprite;
+        public static Sprite AdminSprite;
 
         public static Sprite ToUBanner;
         public static Sprite UpdateTOUButton;
@@ -236,6 +237,7 @@ namespace TownOfUs
             BlizzardSprite = CreateSprite("TownOfUs.Resources.Blizzard.png");
             SuicideSprite = CreateSprite("TownOfUs.Resources.Suicide.png");
             EatSprite = CreateSprite("TownOfUs.Resources.Eat.png");
+            AdminSprite = CreateSprite("TownOfUs.Resources.Admin.png");
 
             ToUBanner = CreateSprite("TownOfUs.Resources.TownOfUsBanner.png");
             UpdateTOUButton = CreateSprite("TownOfUs.Resources.UpdateToUButton.png");
