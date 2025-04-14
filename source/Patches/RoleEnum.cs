@@ -49,6 +49,7 @@ namespace TownOfUs
         Deputy,
         Falcon,
         TimeLord,
+        Vulture,
 
         Miner,
         Swooper,
@@ -95,7 +96,8 @@ namespace TownOfUs
         Shy,
         Mini,
         Saboteur,
-        Drunk
+        Drunk,
+        Reversed,
     }
 
     public enum AbilityEnum
