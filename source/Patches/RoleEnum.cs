@@ -96,7 +96,8 @@ namespace TownOfUs
         Shy,
         Mini,
         Saboteur,
-        Drunk
+        Drunk,
+        Reversed,
     }
 
     public enum AbilityEnum

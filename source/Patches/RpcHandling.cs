@@ -1878,6 +1878,8 @@ namespace TownOfUs
 
                 if (Check(CustomGameOptions.DrunkOn))
                     GlobalModifiers.Add((typeof(Drunk), CustomGameOptions.DrunkOn));
+                if (Check(CustomGameOptions.ReversedOn))
+                    GlobalModifiers.Add((typeof(Reversed), CustomGameOptions.ReversedOn));
                 #endregion
                 #region Impostor Modifiers
                 if (Check(CustomGameOptions.DisperserOn) && GameOptionsManager.Instance.currentNormalGameOptions.MapId < 4)

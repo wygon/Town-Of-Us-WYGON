@@ -555,6 +555,8 @@ namespace TownOfUs.CustomOption
         public static CustomHeaderOption Drunk;
         public static CustomNumberOption DrunkDuration;
 
+        public static CustomNumberOption ReversedOn;
+
         public static CustomHeaderOption Shy;
         public static CustomNumberOption InvisDelay;
         public static CustomNumberOption TransformInvisDuration;
@@ -748,6 +750,8 @@ namespace TownOfUs.CustomOption
             MiniOn = new CustomNumberOption(num++, MultiMenu.modifiers, "<color=#CCFFE6FF>Mini</color>", 0f, 0f, 100f, 10f,
                 PercentFormat);
             RadarOn = new CustomNumberOption(num++, MultiMenu.modifiers, "<color=#FF0080FF>Radar</color>", 0f, 0f, 100f, 10f,
+                PercentFormat);
+            ReversedOn = new CustomNumberOption(num++, MultiMenu.modifiers, "<color=#19247CFF>Reverse</color>", 0f, 0f, 100f, 10f,
                 PercentFormat);
             ShyOn = new CustomNumberOption(num++, MultiMenu.modifiers, "<color=#FFB3CCFF>Shy</color>", 0f, 0f, 100f, 10f,
                 PercentFormat);
