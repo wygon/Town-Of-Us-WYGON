@@ -139,8 +139,9 @@ namespace TownOfUs.Patches {
                 else if (playerControl.Is(ModifierEnum.Mini)) playerRole += " (<color=#" + Patches.Colors.Mini.ToHtmlStringRGBA() + ">Mini</color>)";
                 else if (playerControl.Is(ModifierEnum.Saboteur)) playerRole += " (<color=#" + Patches.Colors.Impostor.ToHtmlStringRGBA() + ">Saboteur</color>)";
                 else if (playerControl.Is(ModifierEnum.Drunk)) playerRole += " (<color=#" + Patches.Colors.Drunk.ToHtmlStringRGBA() + ">Drunk</color>)";
+                else if (playerControl.Is(ModifierEnum.Reversed)) playerRole += " (<color=#" + Patches.Colors.Reversed.ToHtmlStringRGBA() + ">Reversed</color>)";
 
-                var player = Role.GetRole(playerControl);
+                    var player = Role.GetRole(playerControl);
                 if (playerControl.Is(RoleEnum.Phantom) || playerControl.Is(Faction.Crewmates))
                 {
                     if ((player.TotalTasks - player.TasksLeft)/player.TotalTasks == 1) playerRole += " | Tasks: <color=#" + Color.green.ToHtmlStringRGBA() + $">{player.TotalTasks - player.TasksLeft}/{player.TotalTasks}</color>";

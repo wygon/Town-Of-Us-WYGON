@@ -127,6 +127,7 @@ namespace TownOfUs
         public static int ShyOn => (int)Generate.ShyOn.Get();
         public static int MiniOn => (int)Generate.MiniOn.Get();
         public static int SaboteurOn => (int)Generate.SaboteurOn.Get();
+        public static int ReversedOn => (int)Generate.ReversedOn.Get();
         public static float InitialCooldowns => Generate.InitialCooldowns.Get();
         public static bool BothLoversDie => Generate.BothLoversDie.Get();
         public static bool NeutralLovers => Generate.NeutralLovers.Get();
